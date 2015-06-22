@@ -1,0 +1,5 @@
+import cctbx
+import Crystal as c
+
+mycrys = c.Crystal()
+mycrys.load_cif('YMn2O5_icsd_165870.cif')

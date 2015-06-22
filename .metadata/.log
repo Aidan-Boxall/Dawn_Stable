@@ -1,0 +1,1154 @@
+!SESSION 2015-06-16 14:43:05.715 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:43:13.495
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:43:13.497
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-16 14:43:13.498
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:43:16.254
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:43:16.282
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:43:24.143
+!MESSAGE Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:517)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Expecting: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_2pc1m5aj3l00wvuga0tezgtwf/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:288)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:371)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:515)
+	... 6 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:43:24.878
+!MESSAGE Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_2pc1m5aj3l00wvuga0tezgtwf
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_2pc1m5aj3l00wvuga0tezgtwf
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:562)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:43:25.301
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/com.python.pydev.analysis/jython_v1_2pc1m5aj3l00wvuga0tezgtwf/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:43:43.642
+!MESSAGE The python client still hasn't connected back to the eclipse java vm (will retry...)
+!STACK 0
+java.lang.RuntimeException: The python client still hasn't connected back to the eclipse java vm (will retry...)
+	at org.python.pydev.core.log.Log.log(Log.java:54)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:334)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:232)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:165)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:222)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:361)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:167)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:309)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:348)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:236)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 14:44:50.155
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-06-16 14:44:54.543 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:44:56.710
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:44:56.712
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-16 14:44:56.713
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:44:59.811
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:44:59.820
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 14:46:44.834
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:48:10.852
+!MESSAGE No message gotten (null message).
+!STACK 0
+java.lang.NullPointerException
+	at org.python.pydev.debug.newconsole.env.PydevIProcessFactory.createInteractiveLaunch(PydevIProcessFactory.java:139)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory.createDefaultPydevInterpreter(PydevConsoleFactory.java:289)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory.createConsole(PydevConsoleFactory.java:69)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory.openConsole(PydevConsoleFactory.java:61)
+	at org.eclipse.ui.internal.console.OpenConsoleAction$ConsoleFactoryAction.run(OpenConsoleAction.java:140)
+	at org.eclipse.ui.internal.console.OpenConsoleAction$ConsoleFactoryAction.runWithEvent(OpenConsoleAction.java:150)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1276)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3562)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3186)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 14:50:32.675
+!MESSAGE Invalid preference category path: uk.ac.diamond.scisoft.ispybexplorer.rcp.category (bundle: org.dawnsci.commandserver.ui, page: org.dawnsci.commandserver.ui.activemqPage)
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:50:49.088
+!MESSAGE Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+
+!STACK 0
+java.lang.RuntimeException: Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:977)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:132)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$1.widgetSelected(PythonListEditor.java:223)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1276)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3562)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3186)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:215)
+	at org.eclipse.ui.internal.handlers.ShowPreferencePageHandler.execute(ShowPreferencePageHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:157)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1276)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3562)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3186)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:52:24.157
+!MESSAGE - Ok, file is non-null. Getting info on:/dls_sw/apps/python/anaconda/1.7.0/64/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/dls_sw/apps/python/anaconda/1.7.0/64/bin/python</executable>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/pyopencl-2013.1-py2.7-linux-x86_64.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/drmaa-0.7.6-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/txAMQP-0.6.2-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/tomopy-0.0.3-py2.7-linux-x86_64.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_build/lib</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/libtbx/pythonpath</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/boost_adaptbx</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/plat-linux2</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/lib-tk</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/lib-dynload</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/setuptools-15.0-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/wx-3.0-gtk2</lib>
+<lib>/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0</lib>
+<lib>/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>astropy</forced_lib>
+<forced_lib>astropy.units</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>werkzeug</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<env_var>SCISOFT_RMI_PORT=${scisoft_rmi_port}</env_var>
+<env_var>SCISOFT_RPC_PORT=${scisoft_rpc_port}</env_var>
+<env_var>SCISOFT_RPC_TEMP=${scisoft_rpc_temp}</env_var>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:/dls_sw/apps/python/anaconda/1.7.0/64/bin/python
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Making pythonpath environment... /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Making exec... /dls_sw/apps/python/anaconda/1.7.0/64/bin/python -u /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>2.7</version>
+<executable>/dls_sw/apps/python/anaconda/1.7.0/64/bin/python</executable>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/pyopencl-2013.1-py2.7-linux-x86_64.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/drmaa-0.7.6-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/txAMQP-0.6.2-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/tomopy-0.0.3-py2.7-linux-x86_64.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_build/lib</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/libtbx/pythonpath</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/boost_adaptbx</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/plat-linux2</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/lib-tk</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/lib-dynload</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/setuptools-15.0-py2.7.egg</lib>
+<lib>/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/wx-3.0-gtk2</lib>
+<lib>/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0</lib>
+<lib>/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150612-1030-linux64/</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>__builtin__</forced_lib>
+<forced_lib>__main__</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>astropy</forced_lib>
+<forced_lib>astropy.units</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>nose</forced_lib>
+<forced_lib>nose.tools</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>posix</forced_lib>
+<forced_lib>pwd</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>werkzeug</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<env_var>SCISOFT_RMI_PORT=${scisoft_rmi_port}</env_var>
+<env_var>SCISOFT_RPC_PORT=${scisoft_rpc_port}</env_var>
+<env_var>SCISOFT_RPC_TEMP=${scisoft_rpc_temp}</env_var>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterEditor.getNewInputObject(AbstractInterpreterEditor.java:977)
+	at org.python.copiedfromeclipsesrc.PythonListEditor.addPressed(PythonListEditor.java:132)
+	at org.python.copiedfromeclipsesrc.PythonListEditor$1.widgetSelected(PythonListEditor.java:225)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1276)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3562)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3186)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.dialogs.WorkbenchPreferenceDialog.open(WorkbenchPreferenceDialog.java:215)
+	at org.eclipse.ui.internal.handlers.ShowPreferencePageHandler.execute(ShowPreferencePageHandler.java:54)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:290)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:499)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:508)
+	at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(HandlerService.java:169)
+	at org.eclipse.ui.internal.handlers.SlaveHandlerService.executeCommand(SlaveHandlerService.java:241)
+	at org.eclipse.ui.internal.actions.CommandAction.runWithEvent(CommandAction.java:157)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1276)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3562)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3186)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:53:04.306
+!MESSAGE Restoring info for: /dls_sw/apps/python/anaconda/1.7.0/64/bin/python
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /dls_sw/apps/python/anaconda/1.7.0/64/bin/python
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:517)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+Caused by: java.io.IOException: Expecting: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_4xftr2o6g1h5hkcaotlpbv2qo/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:288)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:371)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:515)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 14:53:11.148
+!MESSAGE Finished restoring information for: /dls_sw/apps/python/anaconda/1.7.0/64/bin/python at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_4xftr2o6g1h5hkcaotlpbv2qo
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /dls_sw/apps/python/anaconda/1.7.0/64/bin/python at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_4xftr2o6g1h5hkcaotlpbv2qo
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:562)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:20.688
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/com.python.pydev.analysis/python_v1_4xftr2o6g1h5hkcaotlpbv2qo/python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:44.408
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/slicer/browser.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/slicer/browser.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:258)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:179)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:155)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:171)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:35)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:726)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:643)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:44.444
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/star.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/star.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:258)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:179)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:155)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:171)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:35)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:726)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:643)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:44.468
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/workspace.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/workspace.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:258)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:179)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:155)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:171)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:35)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:726)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:643)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:44.584
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/controllers.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/controllers.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:258)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:179)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:155)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:171)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:35)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:726)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:643)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:53:44.596
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/slicer.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/slicer.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalInfoWithBuild.restoreInfoForModuleManager(AbstractAdditionalInfoWithBuild.java:258)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:179)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:155)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.getAdditionalSystemInfo(AdditionalSystemInterpreterInfo.java:124)
+	at com.python.pydev.analysis.additionalinfo.AdditionalSystemInterpreterInfo.recreateAllInfo(AdditionalSystemInterpreterInfo.java:171)
+	at com.python.pydev.analysis.additionalinfo.builders.InterpreterObserver.notifyDefaultPythonpathRestored(InterpreterObserver.java:35)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.restorePythopathForInterpreters(AbstractInterpreterManager.java:726)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:643)
+	at org.python.pydev.ui.pythonpathconf.AbstractInterpreterPreferencesPage$3.run(AbstractInterpreterPreferencesPage.java:262)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:55:06.756
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/slicer/browser.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/slicer/browser.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:225)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:55:06.760
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/star.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/star.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:225)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:55:06.765
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/workspace.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/backends/sql/workspace.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:225)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:55:06.779
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/controllers.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/controllers.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:225)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 14:55:06.782
+!MESSAGE The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/slicer.py is not a valid encoding.
+!STACK 0
+java.io.UnsupportedEncodingException: The encoding found: >>utf<< on /dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/cubes/server/slicer.py is not a valid encoding.
+	at org.python.pydev.shared_core.io.FileUtils.getValidEncoding(FileUtils.java:705)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:666)
+	at org.python.pydev.shared_core.io.FileUtils.getPythonFileEncoding(FileUtils.java:736)
+	at org.python.pydev.core.FileUtilsFileBuffer.getCustomReturnFromFile(FileUtilsFileBuffer.java:172)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalTokensInfo.addAstInfo(AbstractAdditionalTokensInfo.java:282)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:225)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-06-16 14:56:42.529 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-16 14:56:44.046
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:56:44.659
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 14:56:44.661
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-16 14:56:44.662
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1889735576/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:56:47.995
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:56:48.002
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 14:57:14.301
+!MESSAGE Invalid preference category path: uk.ac.diamond.scisoft.ispybexplorer.rcp.category (bundle: org.dawnsci.commandserver.ui, page: org.dawnsci.commandserver.ui.activemqPage)
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:59:35.058
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 14:59:35.068
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+!SESSION 2015-06-16 15:18:40.731 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-16 15:18:42.235
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 15:18:42.859
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-16 15:18:42.861
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-16 15:18:42.862
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:18:45.934
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:18:45.943
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 15:19:00.071
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:20:56.659
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:20:56.660
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:20:57.059
+!MESSAGE Category uk.ac.diamond.sda.meta.category not found for view org.dawb.common.ui.views.headerTableView.  This view added to 'Other' category.
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:24:13.174
+!MESSAGE Category uk.ac.diamond.sda.meta.category not found for view org.dawb.common.ui.views.headerTableView.  This view added to 'Other' category.
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:24:47.709
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:24:47.710
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:25:12.582
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:25:12.589
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:32:04.550
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:32:04.551
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 0 2015-06-16 15:34:28.763
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:4361)
+	at org.eclipse.swt.SWT.error(SWT.java:4276)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:138)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3537)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3189)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2701)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2665)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2499)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:679)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:668)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1414)
+Caused by: java.lang.NullPointerException
+	at org.dawnsci.plotting.views.ToolPageView$7.run(ToolPageView.java:662)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	... 23 more
+
+!ENTRY org.eclipse.ui 4 4 2015-06-16 15:34:30.119
+!MESSAGE Part already exists in page layout: uk.ac.diamond.scisoft.analysis.rcp.plotViewDP.
+
+!ENTRY org.eclipse.ui 2 2 2015-06-16 15:37:00.941
+!MESSAGE Invalid preference category path: uk.ac.diamond.scisoft.ispybexplorer.rcp.category (bundle: org.dawnsci.commandserver.ui, page: org.dawnsci.commandserver.ui.activemqPage)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-16 15:50:28.334
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.eclipse.core.resources/.projects/mydata/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.jface 2 0 2015-06-16 15:50:28.455
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-16 15:50:28.455
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,com.python.pydev.analysis.actions.PyGlobalsBrowserWorkbench),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-16 15:50:56.700
+!MESSAGE No existing console history at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev.shared_interactive_console/history.py
+!STACK 0
+java.io.FileNotFoundException: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev.shared_interactive_console/history.py (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileReader.<init>(Unknown Source)
+	at org.python.pydev.shared_interactive_console.console.ScriptConsoleGlobalHistory.load(ScriptConsoleGlobalHistory.java:95)
+	at org.python.pydev.shared_interactive_console.console.ScriptConsoleGlobalHistory.<init>(ScriptConsoleGlobalHistory.java:44)
+	at org.python.pydev.shared_interactive_console.console.ScriptConsoleGlobalHistory.<clinit>(ScriptConsoleGlobalHistory.java:36)
+	at org.python.pydev.shared_interactive_console.console.ScriptConsoleHistory.<init>(ScriptConsoleHistory.java:56)
+	at org.python.pydev.shared_interactive_console.console.ui.ScriptConsole.<init>(ScriptConsole.java:160)
+	at org.python.pydev.debug.newconsole.PydevConsole.<init>(PydevConsole.java:81)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory.connectDebugger(PydevConsoleFactory.java:168)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory.access$1(PydevConsoleFactory.java:162)
+	at org.python.pydev.debug.newconsole.PydevConsoleFactory$1.run(PydevConsoleFactory.java:92)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2015-06-17 10:43:09.385 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-17 10:43:14.253
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-17 10:43:15.181
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-17 10:43:15.182
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-17 10:43:15.183
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-17 10:43:18.412
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-17 10:43:18.425
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-17 10:43:23.892
+!MESSAGE Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150616-1420-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150616-1420-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:517)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Expecting: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_529wtj0t3bwsqhpz9vnunygnv/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:288)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:371)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:515)
+	... 6 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-17 10:43:24.558
+!MESSAGE Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150616-1420-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_529wtj0t3bwsqhpz9vnunygnv
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150616-1420-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_529wtj0t3bwsqhpz9vnunygnv
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:562)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-17 10:43:24.831
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/com.python.pydev.analysis/jython_v1_529wtj0t3bwsqhpz9vnunygnv/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.jface 2 0 2015-06-17 10:43:37.018
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-17 10:43:37.018
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-17 10:43:42.140
+!MESSAGE The python client still hasn't connected back to the eclipse java vm (will retry...)
+!STACK 0
+java.lang.RuntimeException: The python client still hasn't connected back to the eclipse java vm (will retry...)
+	at org.python.pydev.core.log.Log.log(Log.java:54)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:334)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:232)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:165)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:222)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:361)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:167)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:309)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:348)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:236)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui 2 2 2015-06-17 10:44:38.467
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+!SESSION 2015-06-18 09:39:14.509 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-18 09:39:17.005
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-18 09:39:17.623
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-18 09:39:17.624
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-18 09:39:17.624
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk211065939/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-18 09:39:20.830
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-18 09:39:20.837
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.jface 2 0 2015-06-18 09:39:27.174
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-18 09:39:27.175
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2015-06-18 11:27:34.360
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 4 4 2015-06-19 10:39:51.553
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.ui 4 4 2015-06-19 10:39:51.555
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-19 10:39:52.561
+!MESSAGE Category uk.ac.diamond.sda.meta.category not found for view org.dawb.common.ui.views.headerTableView.  This view added to 'Other' category.
+
+!ENTRY org.eclipse.ui 2 2 2015-06-19 10:40:12.483
+!MESSAGE Invalid preference category path: uk.ac.diamond.scisoft.ispybexplorer.rcp.category (bundle: org.dawnsci.commandserver.ui, page: org.dawnsci.commandserver.ui.activemqPage)
+!SESSION 2015-06-22 09:22:50.066 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-06-22 09:22:54.709
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-22 09:22:55.897
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-06-22 09:22:55.899
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-06-22 09:22:55.899
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1650170349/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-06-22 09:22:59.644
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-06-22 09:22:59.653
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-22 09:23:05.356
+!MESSAGE Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:517)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException: Expecting: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_chekoia1h2m6gvc57m8laelcm/modulesKeys to exist (and be a file).
+	at org.python.pydev.editor.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:288)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:371)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:515)
+	... 6 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2015-06-22 09:23:05.995
+!MESSAGE Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_chekoia1h2m6gvc57m8laelcm
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/uk.ac.diamond.jython_2.5.3.v20150518-1612/jython2.5/jython.jar at: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.python.pydev/v1_chekoia1h2m6gvc57m8laelcm
+	at org.python.pydev.core.log.Log.logInfo(Log.java:66)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:562)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:337)
+	at org.python.pydev.ui.interpreters.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:641)
+	at uk.ac.diamond.scisoft.JythonCreator.initialiseInterpreter(JythonCreator.java:417)
+	at uk.ac.diamond.scisoft.JythonCreator.access$2(JythonCreator.java:125)
+	at uk.ac.diamond.scisoft.JythonCreator$1.run(JythonCreator.java:85)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-22 09:23:06.276
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/com.python.pydev.analysis/jython_v1_chekoia1h2m6gvc57m8laelcm/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-22 09:23:23.433
+!MESSAGE The python client still hasn't connected back to the eclipse java vm (will retry...)
+!STACK 0
+java.lang.RuntimeException: The python client still hasn't connected back to the eclipse java vm (will retry...)
+	at org.python.pydev.core.log.Log.log(Log.java:54)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:334)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:232)
+	at org.python.pydev.editor.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:165)
+	at org.python.pydev.editor.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:222)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:361)
+	at org.python.pydev.editor.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:167)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:309)
+	at org.python.pydev.editor.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:348)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:236)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.synchInfoToPythonPath(InterpreterInfoBuilder.java:108)
+	at org.python.pydev.editor.codecompletion.revisited.SynchSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SynchSystemModulesManager.java:391)
+	at org.python.pydev.editor.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:260)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface 2 0 2015-06-22 09:23:26.592
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-06-22 09:23:26.592
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)

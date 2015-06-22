@@ -1,0 +1,5 @@
+import scisoftpy as dnp
+
+dnp.plot.image(dnp.random.randint(500,1001))
+
+print 'Hello World'

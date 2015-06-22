@@ -1,0 +1,5 @@
+import numpy as np
+import numpy_quaternion as q
+
+print q
+

@@ -1,0 +1,5 @@
+import numpy as np
+import quaternion as q
+
+x=np.q(1,2,3,7)
+

@@ -1,0 +1,7 @@
+import cctbx
+import Crystal as c
+
+mycrys = c.Crystal()
+mycrys.load_cif('YMn2O5_icsd_165870.cif')
+mylist = mycrys.reflection_list(1.5,print_list = False)
+print mylist[0][4]

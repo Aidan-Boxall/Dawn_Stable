@@ -1,0 +1,6 @@
+import numpy
+import numpy_quaternion as p
+
+numpy.q = p.quaternion
+numpy.typeDict['quaternion'] = numpy.dtype(p.quaternion)
+print np.q(1,2,3,4)

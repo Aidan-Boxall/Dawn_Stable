@@ -1,0 +1,22 @@
+import cctbx
+import Crystal as c
+import math as mt
+
+l = 1 # l is the length between the sample and the detector.
+
+w = 1 # w is the width of the detector
+
+mycrys = c.Crystal()
+mycrys.load_cif('YMn2O5_icsd_165870.cif')
+mylist = mycrys.reflection_list(1.0)
+two_thetas=[]
+for lists in mylist:
+    two_thetas.append(lists[4])
+
+thetas = [two_theta/2.0*(mt.pi/180) for two_theta in two_thetas]
+
+radii = [l * mt.sin(theta) for theta in thetas]
+
+delta_chis = [w/r for r in radii]
+for two_theta,r in two_thetas,radii:
+    print two_theta,r

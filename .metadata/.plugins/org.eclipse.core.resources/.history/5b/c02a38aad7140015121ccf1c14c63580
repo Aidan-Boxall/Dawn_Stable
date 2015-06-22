@@ -1,0 +1,11 @@
+import cctbx
+import Crystal as c
+
+mycrys = c.Crystal()
+mycrys.load_cif('YMn2O5_icsd_165870.cif')
+mylist = mycrys.reflection_list(4)
+two_thetas=[]
+for lists in mylist:
+    two_thetas.append(lists[4])
+print two_thetas
+print mylist
