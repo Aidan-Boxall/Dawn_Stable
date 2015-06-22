@@ -1,0 +1,17 @@
+INSTUPCrystals.test
+/home/ljh75651/DAWN_stable/Diamond_Summer_Project/Crystals/test.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&2|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0&&3|10|2|0&&3|11|2|0&&3|12|2|0&&3|13|2|0&&3|14|2|0
+MYLIST=7
+MYCRYS=6
+delta_chis=11
+radii=10
+ENERGY=4
+Y_AXIS=12
+two_thetas=8
+two_theta=14
+thetas=9
+LENGTH=1
+momentum_in=13
+change_in_momentum=5
+WIDTH=3
+Crystals.test=2
