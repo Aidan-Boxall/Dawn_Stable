@@ -1,0 +1,10 @@
+import unittest
+
+
+class TestUnit(unittest.TestCase):
+
+    def test_test(self):
+        import test
+
+if __name__ == '__main__':
+    unittest.main()

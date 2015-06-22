@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="17" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -20,10 +20,12 @@
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.dawnsci.intro.show.welcome" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="uk.ac.diamond.scisoft.feedback.openFeedback" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -32,10 +34,21 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.python.pydev.editor.PythonEditor" name="practice.py" partName="practice" path="/home/ljh75651/DAWN_stable/Diamond_Project/Crystals/practice.py" title="practice" tooltip="Diamond_Project/Crystals/practice.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystals/practice.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="test.py" partName="test" path="/home/ljh75651/DAWN_stable/Diamond_Project/Crystals/test.py" title="test" tooltip="Diamond_Project/Crystals/test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystals/test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress"/>
@@ -65,7 +78,11 @@
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D" partName="XY Tools"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.2D" partName="Image Tools"/>
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
+<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project"/>
+<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project/Crystals"/>
+<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project"/>
+</viewState>
 </view>
 </views>
 <perspectives activePart="org.python.pydev.navigator.view" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
@@ -103,47 +120,34 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="navigator-folder">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="navigator-folder">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11030cfb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@11030cfb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="202" ratioRight="808" relationship="2" relative="navigator-folder"/>
-<info folder="true" part="folder" ratio="0.5990099" ratioLeft="484" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">
-<page content="org.dawb.workbench.views.dataSetView" label="Data"/>
+<info folder="true" part="folder" ratio="0.5990099" ratioLeft="484" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.workbench.views.dataSetView" label="Data"/>
 <page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="Image Tools"/>
 <page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="folder_1" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.dawb.passerelle.views.ValueView" appearance="2" expanded="2">
-<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
+<info folder="true" part="folder_1" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.passerelle.views.ValueView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="XY Tools"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -218,10 +222,11 @@
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.14937107" ratioLeft="190" ratioRight="1082" relationship="2" relative="navigators"/>
-<info folder="true" part="debug" ratio="0.59981513" ratioLeft="649" ratioRight="433" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="debug" ratio="0.7936803" ratioLeft="854" ratioRight="222" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
@@ -258,7 +263,30 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/Crystals/practice.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/Crystals/test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/unit_test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editor" path="/XMLExamples/readme.html"/>
+</editors>
+<item historyLabel="practice" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="test" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="readme" index="3"/>
+<item historyLabel="unit_test" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="test" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -274,5 +302,15 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project/unit_test.py">
+<persistable path="/Diamond_Project/unit_test.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test.py" tooltip="Diamond_Project/Crystals/test.py">
+<persistable path="/Diamond_Project/Crystals/test.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="practice.py" tooltip="Diamond_Project/Crystals/practice.py">
+<persistable path="/Diamond_Project/Crystals/practice.py"/>
+</file>
+</mruList>
 </workbench>

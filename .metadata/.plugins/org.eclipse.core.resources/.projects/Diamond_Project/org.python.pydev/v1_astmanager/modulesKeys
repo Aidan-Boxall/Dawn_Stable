@@ -1,1 +1,10 @@
 MODULES_MANAGER_V2
+Crystal|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal.py
+numpy_quaternion|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion.so
+numpy_quaternion-master.__init__|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/__init__.py
+numpy_quaternion-master.info|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/info.py
+numpy_quaternion-master.setup|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/setup.py
+practice|/home/ljh75651/DAWN_stable/Diamond_Project/practice.py
+quaternion|/home/ljh75651/DAWN_stable/Diamond_Project/quaternion.py
+rotation|/home/ljh75651/DAWN_stable/Diamond_Project/rotation.py
+test|/home/ljh75651/DAWN_stable/Diamond_Project/test.py

@@ -1,0 +1,4 @@
+#Mon Jun 22 15:51:25 BST 2015
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=python unit test

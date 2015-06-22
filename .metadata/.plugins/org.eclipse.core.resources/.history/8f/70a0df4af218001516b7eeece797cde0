@@ -1,0 +1,16 @@
+import unittest
+
+
+class TestUnit(unittest.TestCase):
+
+    def test_rotation(self):
+        import numpy as np
+import other as f
+        axis = np.array([0, 0, 1])
+        x = np.array([1, 0, 0])
+        angle = 45
+        q = f.rotation_to_quaternion(axis, angle)
+        f.rotate(x, q)
+
+if __name__ == '__main__':
+    unittest.main()
