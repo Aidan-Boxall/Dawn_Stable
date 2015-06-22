@@ -1239,3 +1239,13 @@ Contains: Could not delete: /home/ljh75651/DAWN_stable/Diamond_Summer_Project.
 !MESSAGE Save operation warnings.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2015-06-22 14:34:03.321
 !MESSAGE The project description file (.project) for 'Diamond_Summer_Project' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.python.pydev.shared_core 4 4 2015-06-22 15:09:42.583
+!MESSAGE Info: Rebuilding internal caches: /home/ljh75651/DAWN_stable/.metadata/.plugins/org.eclipse.core.resources/.projects/Another Attempt/com.python.pydev.analysis/AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.core.resources 2 2 2015-06-22 15:09:42.639
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-06-22 15:09:42.639
+!MESSAGE The project description file (.project) for 'data' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-06-22 15:09:42.639
+!MESSAGE The project description file (.project) for 'mydata' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
