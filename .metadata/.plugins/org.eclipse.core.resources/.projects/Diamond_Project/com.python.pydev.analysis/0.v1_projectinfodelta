@@ -1,1 +1,8 @@
-DELSTRunit_test
+INSTUPquaternion
+/home/ljh75651/DAWN_stable/Diamond_Project/quaternion.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0
+__all__=4
+__doc__=3
+quaternion=2
+__doc_title__=1
+numpy=5

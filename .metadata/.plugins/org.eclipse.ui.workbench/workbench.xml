@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="29" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -37,6 +37,10 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -45,14 +49,29 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystals/practice.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="test.py" partName="test" path="/home/ljh75651/DAWN_stable/Diamond_Project/Crystals/test.py" title="test" tooltip="Diamond_Project/Crystals/test.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystals/test.py"/>
+<editor id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test" path="/home/ljh75651/DAWN_stable/Diamond_Project/unit_test.py" title="unit_test" tooltip="Diamond_Project/unit_test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/unit_test.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="functions.py" partName="functions" path="/home/ljh75651/DAWN_stable/Diamond_Project/functions.py" title="functions" tooltip="Diamond_Project/functions.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/functions.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="other.py" partName="other" path="/home/ljh75651/DAWN_stable/Diamond_Project/other.py" title="other" tooltip="Diamond_Project/other.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/other.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="60" selectionOffset="977" selectionTopPixel="366"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="Crystal.py" partName="Crystal" path="/home/ljh75651/DAWN_stable/Diamond_Project/Crystal.py" title="Crystal" tooltip="Diamond_Project/Crystal.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystal.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4834"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress"/>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView" partName="PyUnit">
+<viewState/>
+</view>
 <view id="uk.ac.diamond.scisoft.analysis.rcp.plotView1" partName="Plot 1">
 <viewState/>
 </view>
@@ -80,12 +99,11 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project"/>
-<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project/Crystals"/>
-<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project"/>
+<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project/Crystal.py"/>
 </viewState>
 </view>
 </views>
-<perspectives activePart="org.python.pydev.navigator.view" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.dawb.workbench.ui.perspective.DataBrowsingPerspective" id="org.edna.workbench.application.perspective.DataPerspective" label="Data Browsing"/>
 <alwaysOnActionSet id="org.edna.common.ui.project.import"/>
@@ -201,6 +219,7 @@
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="uk.ac.diamond.scisoft.analysis.rcp.plotView1"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.dawb.common.ui.views.headerTableView"/>
@@ -239,10 +258,12 @@
 </folder>
 </info>
 <info folder="true" part="plot" ratio="0.29905438" ratioLeft="253" ratioRight="593" relationship="4" relative="debug">
-<folder activePageID="uk.ac.diamond.scisoft.analysis.rcp.plotView1" appearance="2" expanded="2">
+<folder activePageID="org.python.pydev.debug.pyunit.pyUnitView" appearance="2" expanded="2">
 <page content="uk.ac.diamond.scisoft.analysis.rcp.plotView1" label="Plot 1"/>
+<page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -269,6 +290,10 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/Crystals/test.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/unit_test.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.browser.editor" path="/XMLExamples/readme.html"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/unit_test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/functions.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/other.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project/Crystal.py"/>
 </editors>
 <item historyLabel="practice" index="0">
 <position info="not_deleted" x="0" y="0"/>
@@ -283,7 +308,19 @@
 <item historyLabel="unit_test" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item active="true" historyLabel="test" index="1">
+<item historyLabel="test" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="functions" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="other" index="6">
+<position info="not_deleted" x="977" y="60"/>
+</item>
+<item active="true" historyLabel="Crystal" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
@@ -303,6 +340,15 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="Crystal.py" tooltip="Diamond_Project/Crystal.py">
+<persistable path="/Diamond_Project/Crystal.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="other.py" tooltip="Diamond_Project/other.py">
+<persistable path="/Diamond_Project/other.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Diamond_Project/functions.py">
+<persistable path="/Diamond_Project/functions.py"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project/unit_test.py">
 <persistable path="/Diamond_Project/unit_test.py"/>
 </file>
