@@ -31,7 +31,50 @@ class TestUnit(unittest.TestCase):
             f.change_in_momentum(momentum_in, Y_AXIS, two_theta))
  
  
-    def test_reflection_plotting(self):
+#     def test_reflection_plotting(self):
+#         import functions as f
+#         import Crystal as c
+#         import numpy as np
+#         import matplotlib.pyplot as plt
+#  
+#  
+#         from mpl_toolkits.mplot3d import Axes3D
+#         mycrys = c.Crystal()
+#         mycrys.load_cif('icsd_29288-Si.cif')
+#  
+#         grouped_reflections = f.group_reflections(mycrys,8)
+#         fig = plt.figure()
+#         for i, group in enumerate(grouped_reflections):
+#             plot_width=np.sqrt(len(grouped_reflections))+1
+#             ax = fig.add_subplot(plot_width,plot_width,i+1, projection='3d')
+#             vectors = f.momentum_transfer_vectors(grouped_reflections[i],
+#                                                    mycrys)
+#             f.plot_vectors(vectors,fig,ax)
+#             f.plot_sphere(np.linalg.norm(vectors[0]),fig,ax)
+# 
+#  
+#     def test_stereogaphic_projection(self):
+#         import functions as f
+#         import Crystal as c
+#         import numpy as np
+#         import matplotlib.pyplot as plt
+# 
+# 
+#         mycrys = c.Crystal()
+#         mycrys.load_cif('icsd_29288-Si.cif')
+# 
+#         grouped_reflections = f.group_reflections(mycrys,8)
+#         fig = plt.figure()
+#         for i, group in enumerate(grouped_reflections):
+#             plot_width=np.sqrt(len(grouped_reflections))+1
+#             ax = fig.add_subplot(plot_width,plot_width,i+1)
+#             vectors = f.momentum_transfer_vectors(grouped_reflections[i],
+#                                                   mycrys)
+#             print i, len(group), grouped_reflections[i][0][4]
+#             f.stereographic_projection(vectors,fig,ax)
+#         plt.show()
+        
+    def test_plotting_Si(self):
         import functions as f
         import Crystal as c
         import numpy as np
@@ -44,36 +87,62 @@ class TestUnit(unittest.TestCase):
  
         grouped_reflections = f.group_reflections(mycrys,8)
         fig = plt.figure()
-        ax = fig.add_subplot(111, projection='3d')
- 
         for i, group in enumerate(grouped_reflections):
-            print i, len(group)
-            fig = plt.figure()
-            ax = fig.add_subplot(111, projection='3d')
+            plot_width=np.sqrt(len(grouped_reflections))+1
+            ax = fig.add_subplot(plot_width,plot_width,i+1, projection='3d')
             vectors = f.momentum_transfer_vectors(grouped_reflections[i],
                                                    mycrys)
             f.plot_vectors(vectors,fig,ax)
             f.plot_sphere(np.linalg.norm(vectors[0]),fig,ax)
+
+        fig = plt.figure()
+        for i, group in enumerate(grouped_reflections):
+            plot_width=np.sqrt(len(grouped_reflections))+1
+            ax = fig.add_subplot(plot_width,plot_width,i+1)
+            vectors = f.momentum_transfer_vectors(grouped_reflections[i],
+                                                  mycrys)
+            print i, len(group), grouped_reflections[i][0][4]
+            f.stereographic_projection(vectors,fig,ax)
         plt.show()
- 
-    def test_stereogaphic_projection(self):
+
+    def test_plotting_NiCO3(self):
         import functions as f
         import Crystal as c
         import numpy as np
         import matplotlib.pyplot as plt
-
-
+ 
+ 
+        from mpl_toolkits.mplot3d import Axes3D
         mycrys = c.Crystal()
-        mycrys.load_cif('icsd_29288-Si.cif')
-
+        mycrys.load_cif('NiCO3_icsd_61067.cif')
+ 
         grouped_reflections = f.group_reflections(mycrys,8)
+        fig = plt.figure()
         for i, group in enumerate(grouped_reflections):
+            plot_width=3
+            vectors = f.momentum_transfer_vectors(grouped_reflections[i],
+                                                   mycrys)
+            if i < 9:
+                ax = fig.add_subplot(plot_width,plot_width,i+1, projection='3d')
+                f.plot_vectors(vectors,fig,ax)
+                f.plot_sphere(np.linalg.norm(vectors[0]),fig,ax)
+
+        fig = plt.figure()
+        for i, group in enumerate(grouped_reflections):
+            plot_width=3
             vectors = f.momentum_transfer_vectors(grouped_reflections[i],
                                                   mycrys)
-            print i, len(group)
-            if i==9:
-                f.stereographic_projection(vectors)
+            print i, len(group), grouped_reflections[i][0][4]
+            if i < 9:
+                ax = fig.add_subplot(plot_width,plot_width,i+1)
+                f.stereographic_projection(vectors,fig,ax)
         plt.show()
 
+
+
+
+
 if __name__ == '__main__':
+    import matplotlib.pyplot as plt
     unittest.main()
+    plt.show()

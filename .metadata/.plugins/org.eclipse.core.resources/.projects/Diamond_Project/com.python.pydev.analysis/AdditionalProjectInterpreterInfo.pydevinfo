@@ -1,7 +1,7 @@
 -- VERSION_4
 -- START DISKCACHE
 /home/ljh75651/DAWN_stable/.metadata/.plugins/org.eclipse.core.resources/.projects/Diamond_Project/com.python.pydev.analysis/v2_indexcache
-functions|1435156427000|/home/ljh75651/DAWN_stable/Diamond_Project/functions.py
+functions|1435161532000|/home/ljh75651/DAWN_stable/Diamond_Project/functions.py
 numpy_quaternion-master.__init__|1396308692000|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/__init__.py
 chi_step|1435141223000|/home/ljh75651/DAWN_stable/Diamond_Project/chi_step.py
 Crystal_Class.Crystal_example5|1434534069000|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/Crystal_example5.py
@@ -10,7 +10,8 @@ Crystal_Class.Crystal_example3|1434534069000|/home/ljh75651/DAWN_stable/Diamond_
 numpy_quaternion-master.info|1396308692000|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/info.py
 Crystal_Class.Crystal_example2|1434534070000|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/Crystal_example2.py
 quaternion|1434624300000|/home/ljh75651/DAWN_stable/Diamond_Project/quaternion.py
-unit_test|1435155395000|/home/ljh75651/DAWN_stable/Diamond_Project/unit_test.py
+Crystals.practice|0|/home/ljh75651/DAWN_stable/Diamond_Project/Crystals/practice.py
+unit_test|1435161383000|/home/ljh75651/DAWN_stable/Diamond_Project/unit_test.py
 Crystal_Class.MagneticSpacegroup_example1|1434534069000|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/MagneticSpacegroup_example1.py
 Crystal|1435140833000|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal.py
 numpy_quaternion-master.setup|1396308692000|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion-master/setup.py
@@ -154,7 +155,7 @@ sit|11|site_equivalent_magnetic_operators!21&82@site_point_group!18&50@site_equi
 spa|4|space_group_operators!18&50@space_group!18&50@space_group!21&82@space_group!23&82@
 str|2|structure!36&51@structure!37&83@
 tem|1|temperature_range!35&51@
-tes|4|test_stereogaphic_projection!38&130@test_rotation!38&130@test_change_in_momentum!38&130@test_reflection_plotting!38&130@
+tes|4|test_plotting_NiCO3!38&130@test_rotation!38&130@test_change_in_momentum!38&130@test_plotting_Si!38&130@
 the|1|theta!19&50@
 val|3|validate_cctbx_atoms!6&50@validate_cell!23&82@validate_coord_to_pp_operator!23&82@
 -- END TREE

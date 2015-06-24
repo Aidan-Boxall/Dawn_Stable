@@ -194,9 +194,6 @@ def stereographic_projection(vector_list, fig=None, ax=None):
         fig: The figure onto which the axis is plotted. If None is passed a new
                 figure is made.
 
-        ax: The axis onto which the sphere is plotted. If None is passed a new
-                axis is made.
-
     Returns:
         None
     """
@@ -210,7 +207,7 @@ def stereographic_projection(vector_list, fig=None, ax=None):
     for i, vector in enumerate(vector_list):
         xs.append((vector[0]*radius)/(radius-vector[2]))
         ys.append((vector[1]*radius)/(radius-vector[2]))
-    plt.scatter(xs,ys)
+    ax.scatter(xs,ys)
     # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
     phi = np.linspace(0, 2 * np.pi, 100)
     theta = np.linspace(0, np.pi, 45)
@@ -218,10 +215,13 @@ def stereographic_projection(vector_list, fig=None, ax=None):
     y = radius * np.outer(np.sin(phi), np.sin(theta))
     z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
     for _, _theta in enumerate(theta):
-        x = radius * np.outer(np.cos(phi), np.sin(_theta))
-        y = radius * np.outer(np.sin(phi), np.sin(_theta))
-        z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
-        X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
-        Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
-        plt.plot(X,Y, color='red')
-    plt.axis([np.min(xs)*1.1,np.max(xs)*1.1,np.min(ys)*1.1,np.max(ys)*1.1])
+        if _theta != 0:
+            x = radius * np.outer(np.cos(phi), np.sin(_theta))
+            y = radius * np.outer(np.sin(phi), np.sin(_theta))
+            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+            ax.plot(X,Y, color='red')
+    axis_params = [np.absolute(np.min(xs))*1.1,np.max(xs)*1.1,np.absolute(np.min(ys))*1.1,np.max(ys)*1.1]
+    fig_len=max(axis_params)*1.1
+    ax.axis([-fig_len,fig_len,-fig_len,fig_len])
