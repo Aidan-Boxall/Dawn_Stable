@@ -302,7 +302,7 @@ class Crystal:
             cifstring = ciffile.read()
         self.general.cifstring = cifstring
         # 2) read file with cctbx
-        # e.g. filename = 'D:\other.cif'; icsd_code = '151772-ICSD' from 1st uncommented line in cif file = data_151772-ICSD
+        # e.g. filename = 'D:\chi_step.cif'; icsd_code = '151772-ICSD' from 1st uncommented line in cif file = data_151772-ICSD
         cif_crystal = iotbx.cif.reader(file_path = filename)
         try:
             cctbx_crystal = cif_crystal.build_crystal_structures()

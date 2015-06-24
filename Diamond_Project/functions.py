@@ -1,6 +1,10 @@
 import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
 
 import quaternion
+import Crystal
 
 
 def unit_vector(vector):
@@ -52,6 +56,7 @@ def rotate(vector, quaternion):
     new_vector = np.array(new_vector.imag)
     return new_vector
 
+
 def change_in_momentum(momentum_in, axis_of_rotation, two_theta):
     """Finds the change in momentum vector given momentum in, the axis of
     functions and the two theta angle
@@ -71,3 +76,152 @@ def change_in_momentum(momentum_in, axis_of_rotation, two_theta):
     _quaternion = rotation_to_quaternion(axis_of_rotation, two_theta)
     momentum_out = rotate(momentum_in, _quaternion)
     return momentum_out - momentum_in
+
+
+def group_reflections(crys, energy=8): 
+    """Groups reflections according to two theta value.
+
+    Args:
+        crys: A crystal class object.
+
+    Returns:
+        grouped_reflection_list: A list of reflections grouped into lists of 
+            reflections with the same two theta value.
+    """
+    reflection_list = crys.reflection_list(energy, refl='allowed',
+                                           print_list=True)
+    grouped_reflection_list = []
+    reflections_for_current_two_theta = []
+    previous_two_theta = np.around(reflection_list[0][4], 9)
+    for i, reflection in enumerate(reflection_list):
+        if i > 0:
+            previous_two_theta = np.around(reflection_list[i-1][4], 9)
+        current_two_theta = np.around(reflection[4], 9)
+        if current_two_theta == previous_two_theta:
+            reflections_for_current_two_theta.append(reflection)
+        else:
+            grouped_reflection_list.append(reflections_for_current_two_theta)
+            reflections_for_current_two_theta = [reflection]
+    if reflections_for_current_two_theta != []:  # In case last angle has only
+                #                                            one reflection.
+        grouped_reflection_list.append(reflections_for_current_two_theta)
+    return grouped_reflection_list
+
+
+def momentum_transfer_vectors(reflection_list, crys):
+    """Returns a list of the momentum transfer vectors in cartesian space
+    given a list of reflections.
+
+    Args:
+        reflection_list: A list of reflections
+
+        crys: The crystal to which the reflections belong.
+
+    Returns:
+        momentum_transfer_vectors: A list of the momentum transfer vectors.
+    """
+    b_matrix = crys.lattice.b_matrix()
+    momentum_transfer_vectors = []
+    for i, reflection in enumerate(reflection_list):
+        momentum_transfer_vector = np.dot(b_matrix, reflection[0])
+        momentum_transfer_vectors.append(momentum_transfer_vector)
+    return momentum_transfer_vectors
+
+
+def plot_sphere(radius=1, fig=None, ax=None):
+    """Plots a sphere given a radius
+
+    Args:
+        radius: The radius of the sphere.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * np.pi, 100)
+    theta = np.linspace(0, np.pi, 100)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    ax.plot_wireframe(x, y, z, rstride=5, cstride=5, color='y')
+
+
+def plot_vectors(vector_list, fig=None, ax=None):
+    """Given a list of vectors it plots them onto a 3D sphere.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+        zs.append(vector[2])
+    ax.scatter(xs, ys, zs, depthshade=False, s=30, c='black')
+
+
+def stereographic_projection(vector_list, fig=None, ax=None):
+    """Given a list of vectors it plots them onto a stereographic projection.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111)
+    radius = np.linalg.norm(vector_list[0])
+    xs=[]
+    ys=[]
+    for i, vector in enumerate(vector_list):
+        xs.append((vector[0]*radius)/(radius-vector[2]))
+        ys.append((vector[1]*radius)/(radius-vector[2]))
+    plt.scatter(xs,ys)
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * np.pi, 100)
+    theta = np.linspace(0, np.pi, 45)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    for _, _theta in enumerate(theta):
+        x = radius * np.outer(np.cos(phi), np.sin(_theta))
+        y = radius * np.outer(np.sin(phi), np.sin(_theta))
+        z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+        X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+        Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+        plt.plot(X,Y, color='red')
+    plt.axis([np.min(xs)*1.1,np.max(xs)*1.1,np.min(ys)*1.1,np.max(ys)*1.1])
