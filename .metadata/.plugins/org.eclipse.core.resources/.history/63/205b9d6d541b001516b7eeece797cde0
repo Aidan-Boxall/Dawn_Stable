@@ -1,0 +1,10 @@
+import scisoftpy as dnp
+
+
+dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.nxs')
+image_data = dh[0].instrument.pil100k.image_data
+print image_data
+print image_data[0][0]
+#dnp.io.load('/dls/i16/data/2015/cm12169-3/'+image_data[0][0][:25]+'0000_'+image_data[0][0][25:])
+for i,j in enumerate(image_data):
+    print j[0]

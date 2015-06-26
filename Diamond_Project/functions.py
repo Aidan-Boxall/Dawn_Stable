@@ -225,3 +225,58 @@ def stereographic_projection(vector_list, fig=None, ax=None):
     axis_params = [np.absolute(np.min(xs))*1.1,np.max(xs)*1.1,np.absolute(np.min(ys))*1.1,np.max(ys)*1.1]
     fig_len=max(axis_params)*1.1
     ax.axis([-fig_len,fig_len,-fig_len,fig_len])
+
+
+def many_vector_plots(crys, energy=8, number_of_plots='all'):
+    """Given a crystal it produces a number of 3D plots of equivalent
+           reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = np.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            plot_vectors(vectors, fig, ax)
+            plot_sphere(np.linalg.norm(vectors[0]), fig, ax)
+
+
+def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
+    """Given a crystal it produces a number of stereographic plots of equivalent
+           reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = np.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1)
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            stereographic_projection(vectors, fig, ax)

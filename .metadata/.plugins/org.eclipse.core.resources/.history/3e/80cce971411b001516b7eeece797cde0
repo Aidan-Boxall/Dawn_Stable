@@ -1,0 +1,7 @@
+import scisoftpy as dnp
+
+dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.nxs')
+print dh[0].pil100k.sum
+help(dh)
+#print dict(dh)
+print help(dh[0].pil100k)

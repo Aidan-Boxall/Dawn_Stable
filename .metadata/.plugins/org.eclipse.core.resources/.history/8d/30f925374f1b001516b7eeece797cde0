@@ -1,0 +1,4 @@
+import scisoftpy as dnp
+
+dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477-pilatus100k-files/00000_00050.tif')
+print dh[0].pil100k.path

@@ -1,0 +1,25 @@
+import scisoftpy as dnp
+
+
+dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.nxs')
+image_data = dh[0].instrument.pil100k.image_data
+print image_data
+print image_data[0][0]
+intergrals = dnp.array([[0]])
+#dnp.io.load('/dls/i16/data/2015/cm12169-3/'+image_data[0][0][:25]+'0000_'+image_data[0][0][25:])
+for i in range(image_data.shape[0]-1):
+#    print i
+    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477-pilatus100k-files/00000_'+image_data[i][0][25:],warn=False)
+#    dnp.plot.image(im[0])
+    intergral = dnp.array([[]])
+    print intergral.shape
+    for x in range(im[0].shape[0]):
+        intergral = dnp.append(intergral, sum(im[0][x]))
+    intergral = dnp.array([intergral])
+    print intergral
+    print intergrals.shape
+    intergrals = dnp.append(intergrals, intergral, axis=1)
+    if i==3:
+        break
+
+print intergrals

@@ -1,0 +1,5 @@
+import scisoftpy as dnp
+
+dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.nxs')
+for index,item in enumerate(dh[0]):
+    print item, type(item)
