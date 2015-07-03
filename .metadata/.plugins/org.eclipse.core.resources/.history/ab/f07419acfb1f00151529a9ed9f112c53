@@ -1,0 +1,5 @@
+import mylib
+mylib.f1()
+mylib.f2()
+mylib.f3()
+mylib.f4()

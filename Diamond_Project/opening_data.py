@@ -11,6 +11,7 @@ cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
 chi = None
 kphi = None
 sums = None
+path_index_orig = 518477
 path_index = 518477
 while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
     if chi is None:
@@ -22,9 +23,9 @@ while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
     else:
         kphi = np.append(kphi, dat.kphi)
     if sums is None:
-        sums = np.array(dat.sum)
+        sums = np.array([dat.sum])
     else:
-        sums = np.append(sums, dat.sum)
+        sums = np.append(sums, [dat.sum], axis=0)
     try:
         dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}.dat'.format(
             path_index), warn=False)
@@ -33,6 +34,10 @@ while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
     path_index += 1
     print path_index, dat.metadata.cmd
 print 'done'
+print np.max(sums)
+peak = np.where(sums==np.max(sums))
+im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:5.0f}.tif'.format(path_index_orig+peak[0], peak[1]+1), warn=False)
+dnp.plot.image(im)
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(chi,kphi,sums)
@@ -40,7 +45,7 @@ ax.set_xlabel('Chi Angle')
 ax.set_ylabel('Kphi Angle')
 ax.set_zlabel('Total Sum')
 plt.show()
-fig.savefig('/home/ljh75651/DAWN_stable/fig.png')
+# fig.savefig('/home/ljh75651/DAWN_stable/fig.png')
 # dh = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.nxs')
 # print dat.keys()
 # dnp.plot.plot(dat.kphi,dat.sum)

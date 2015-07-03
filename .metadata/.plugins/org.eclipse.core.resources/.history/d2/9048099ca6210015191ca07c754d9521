@@ -1,0 +1,148 @@
+import scisoftpy as dnp
+import functions as f
+
+class Vector(object):
+
+    def __init__(self, x=0.0, y=0.0, z=0.0):
+        self.x = float(x)
+        self.y = float(y)
+        self.z = float(z)
+
+    def __str__(self):
+        return 'Vector({0}, {1}, {2})'.format(self.x, self.y, self.z)
+
+    def __getitem__(self, index):
+        if index == 0:
+            return self.x
+        elif index == 1:
+            return self.y
+        elif index == 2:
+            return self.z
+
+    def __setitem__(self, index, set_to):
+        set_to = float(set_to)
+        if index == 0:
+            self.x = set_to
+        elif index == 1:
+            self.y = set_to
+        elif index == 2:
+            self.z = set_to
+
+    def __mul__(self, other):
+        if isinstance(other, Vector):
+            return self.x * other.x + self.y * other.y + self.z * other.z
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x*other,self.y*other, self.z*other)
+        if isinstance(other, dnp.ndarray):
+            vector = dnp.array([[self.x], [self.y], [self.z]])
+            return dnp.dot(vector, other)
+        if isinstance(other, Rotator):
+            vector = dnp.array([[self.x], [self.y], [self.z]])
+            return dnp.dot(vector, other.R)
+
+
+    def __rmul__(self, other):
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x*other,self.y*other, self.z*other)
+        if isinstance(other, dnp.ndarray):
+            vector = dnp.array([[self.x], [self.y], [self.z]])
+            return dnp.dot(other, vector)
+        if isinstance(other, Rotator):
+            vector = dnp.array([[self.x], [self.y], [self.z]])
+            new_vector = dnp.dot(other.R, vector)
+            new_vector = Vector(new_vector[0][0], new_vector[1][0], new_vector[2][0])
+            return new_vector
+    def modulus(self):
+        self.modulus = (self.x**2 + self.y**2 + self.z**2)**0.5
+        return self.modulus
+
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y, self.z + other.z)
+
+    def __div__(self, other):
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x/other,self.y/other, self.z/other)
+
+    def unit(self):
+        return self/self.modulus()
+
+    def xy_angle(self):
+        xy_plane = Vector(self.x, self.y, 0.0)
+        xy_plane = xy_plane.unit()
+        x_axis = Vector(1)
+        return dnp.arccos(xy_plane*x_axis)
+
+    def __pow__(self, other):
+        """Calculates the cross product if other is also a Vector"""
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x**other, self.y**other, self.z**other)
+        if isinstance(other, Vector):
+            return Vector(self.y*other.z - self.z*other.y, self.z*other.x - 
+                          self.x*other.z, self.x*other.y - self.y*other.x)
+
+    def __neg__(self):
+        return Vector(-self.x, -self.y, -self.z)
+
+    def __pos__(self):
+        return self
+
+    def tensor_product(self, other):
+        if isinstance(other, Vector):
+            other = dnp.array([[other.x], [other.y], [other.z]])
+            other = dnp.transpose(other)
+            vector = dnp.array([[self.x], [self.y], [self.z]])
+            M = dnp.dot(vector, other)
+            return M
+
+
+class Rotator(object):
+    def __init__(self, axis=None, angle=None, R=None):
+        if isinstance(R, dnp.ndarray):
+            self.R = R
+            return
+        if isinstance(angle, dnp.ndarray):
+            angle = angle[0]
+        elif isinstance(angle, int):
+            angle = float(angle)
+        if not isinstance(angle, float):
+            raise Exception('angle must be a float')
+        self.axis = axis.unit()
+        self.angle = f.convert_to_radians(angle)
+        M = dnp.array([[0.0, -axis.z, axis.y],
+                       [axis.z, 0.0, -axis.x],
+                       [-axis.y, axis.x, 0.0]])
+        N = axis.tensor_product(axis)
+        I = dnp.identity(3)
+        self.R = I*dnp.cos(self.angle) + M*dnp.sin(self.angle) + (1-dnp.cos(self.angle))*N
+ 
+    def __mul__(self, other):
+        if isinstance(other, Vector):
+            vector = dnp.array([[other.x], [other.y], [other.z]])
+            new_vector = dnp.dot(self.R, vector)
+            new_vector = Vector(new_vector[0][0], new_vector[1][0], new_vector[2][0])
+            return new_vector
+        if isinstance(other, Rotator):
+            new_R = dnp.dot(self.R, other.R)
+            return Rotator(R=new_R)
+
+def get_rotator(vector, target):
+    """Given a vector and a target vector finds the Rotator that turns one into
+    the other.
+    """
+    axis = vector**target
+    angle = dnp.arccos(vector.unit()*target.unit())
+    return Rotator(axis,angle)
+    
+
+x = Vector(1)
+y = Vector(0,1)
+z = Vector(0,0,1)
+# z = Vector(0,0,5)
+# r = Rotator(z,90)
+r = Rotator(z,30)
+
+a = r*r*r*x
+print a
+
+
+

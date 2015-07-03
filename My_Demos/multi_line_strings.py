@@ -1,0 +1,24 @@
+"""
+A
+multi
+line
+doc
+string
+this
+is
+reads
+like
+yoda
+it
+does
+"""
+'''
+so
+is
+this
+'''
+print '''and
+and
+and
+and
+'''

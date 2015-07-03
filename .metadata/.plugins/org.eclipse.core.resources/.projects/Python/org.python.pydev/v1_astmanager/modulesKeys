@@ -1,0 +1,16 @@
+MODULES_MANAGER_V2
+Networking.EMail.email|/home/ljh75651/Desktop/python-examples/Python/src/Networking/EMail/email.py
+Networking.PyCurl.01|/home/ljh75651/Desktop/python-examples/Python/src/Networking/PyCurl/01.py
+Networking.SNMP.01|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SNMP/01.py
+Networking.SNMP.02|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SNMP/02.py
+Networking.SSH.01_connect_to_remote_machine|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SSH/01_connect_to_remote_machine.py
+Networking.SSH.02_secure_file_copy|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SSH/02_secure_file_copy.py
+Networking.SSH.03_secure_ftp|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SSH/03_secure_ftp.py
+Networking.SSL.01|/home/ljh75651/Desktop/python-examples/Python/src/Networking/SSL/01.py
+_Play.01_Iterable|/home/ljh75651/Desktop/python-examples/Python/src/_Play/01_Iterable.py
+_Play.02_format_map|/home/ljh75651/Desktop/python-examples/Python/src/_Play/02_format_map.py
+_Play.03_context_manager|/home/ljh75651/Desktop/python-examples/Python/src/_Play/03_context_manager.py
+_Play.04_named_string_interpolation|/home/ljh75651/Desktop/python-examples/Python/src/_Play/04_named_string_interpolation.py
+_Play.05_crazy_comparisions|/home/ljh75651/Desktop/python-examples/Python/src/_Play/05_crazy_comparisions.py
+_Play.06|/home/ljh75651/Desktop/python-examples/Python/src/_Play/06.py
+_Play.07_serial|/home/ljh75651/Desktop/python-examples/Python/src/_Play/07_serial.py

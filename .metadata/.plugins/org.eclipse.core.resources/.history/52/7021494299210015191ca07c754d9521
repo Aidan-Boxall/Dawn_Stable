@@ -1,0 +1,111 @@
+import scisoftpy as dnp
+import functions as f
+
+class Vector(object):
+
+    def __init__(self, x=0.0, y=0.0, z=0.0):
+        self.x = float(x)
+        self.y = float(y)
+        self.z = float(z)
+
+    def __str__(self):
+        return '({0}, {1}, {2})'.format(self.x, self.y, self.z)
+
+    def __getitem__(self, index):
+        if index == 0:
+            return self.x
+        elif index == 1:
+            return self.y
+        elif index == 2:
+            return self.z
+
+    def __setitem__(self, index, set_to):
+        set_to = float(set_to)
+        if index == 0:
+            self.x = set_to
+        elif index == 1:
+            self.y = set_to
+        elif index == 2:
+            self.z = set_to
+
+    def __mul__(self, other):
+        if isinstance(other, Vector):
+            return self.x * other.x + self.y * other.y + self.z * other.z
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x*other,self.y*other, self.z*other)
+
+    def __rmul__(self, other):
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x*other,self.y*other, self.z*other)
+
+    def modulus(self):
+        self.modulus = (self.x**2 + self.y**2 + self.z**2)**0.5
+        return self.modulus
+
+    def __add__(self, other):
+        return Vector(self.x + other.x, self.y + other.y, self.z + other.z)
+
+    def __div__(self, other):
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x/other,self.y/other, self.z/other)
+
+    def unit(self):
+        return self/self.modulus()
+
+    def xy_angle(self):
+        xy_plane = Vector(self.x, self.y, 0.0)
+        xy_plane = xy_plane.unit()
+        x_axis = Vector(1)
+        return dnp.arccos(xy_plane*x_axis)
+
+    def __pow__(self, other):
+        """Calculates the cross product if other is also a Vector"""
+        if isinstance(other, int) or isinstance(other, float):
+            return Vector(self.x**other, self.y**other, self.z**other)
+        if isinstance(other, Vector):
+            return Vector(self.y*other.z - self.z*other.y, self.z*other.x - 
+                          self.x*other.z, self.x*other.y - self.y*other.x)
+
+class Rotator(object):
+    def __init__(self, axis, angle):
+        if isinstance(angle, dnp.ndarray):
+            angle = angle[0]
+        elif isinstance(angle, int):
+            angle = float(angle)
+        if not isinstance(angle, float):
+            raise Exception('angle must be a float')
+        self.axis = axis.unit()
+        self.angle = f.convert_to_radians(angle)
+        _ = self.axis * dnp.sin(self.angle/2.0)
+        self.quaternion = dnp.quaternion(dnp.cos(self.angle/2.0), _[0], _[1],
+                                                                        _[2])
+    def __mul__(self, other):
+        if isinstance(other, Vector):
+            new_vector = dnp.quaternion(0.0, other[0], other[1], other[2])
+            new_vector = self.quaternion * new_vector * dnp.conjugate(
+                                                            self.quaternion)
+            new_vector = Vector(new_vector.x, new_vector.y, new_vector.z)
+            return new_vector
+
+def seek_xy_angle(angle, vector=Vector(0,5,6), target=Vector(1)):
+    z_axis = Vector(0,0,1)
+    new_vector = Rotator(z_axis, angle)*vector
+    return dnp.abs(new_vector.xy_angle()-target.xy_angle())
+
+def seek_z_angle(angle, vector=Vector(0,5,6), target=Vector(1)):
+    pass
+
+def get_R(vector, target):
+    M1=target.a(vector)
+    M2=vector.a(vector)
+    M2 = M2.getI()
+    return M1*M2
+
+x = Vector(1)
+y = Vector(0,1)
+# z = Vector(0,0,5)
+# r = Rotator(z,90)
+
+print y**x
+
+

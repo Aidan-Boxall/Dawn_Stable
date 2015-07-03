@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_76" class="java.beans.XMLDecoder">
+ <object class="java.lang.Enum" method="valueOf">
+  <class>org.eclipse.dawnsci.plotting.api.PlotType</class>
+  <string>IMAGE</string>
+ </object>
+ <object class="org.eclipse.dawnsci.slicing.api.system.DimsData">
+  <void property="dimension">
+   <int>0</int>
+  </void>
+ </object>
+ <object class="org.eclipse.dawnsci.slicing.api.system.DimsData">
+  <void property="dimension">
+   <int>1</int>
+  </void>
+  <void property="plotAxis">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.eclipse.dawnsci.slicing.api.system.AxisType</class>
+    <string>X</string>
+   </object>
+  </void>
+ </object>
+ <object class="org.eclipse.dawnsci.slicing.api.system.DimsData">
+  <void property="dimension">
+   <int>2</int>
+  </void>
+  <void property="plotAxis">
+   <object class="java.lang.Enum" method="valueOf">
+    <class>org.eclipse.dawnsci.slicing.api.system.AxisType</class>
+    <string>Y</string>
+   </object>
+  </void>
+ </object>
+</java>

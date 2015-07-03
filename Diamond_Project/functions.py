@@ -1,4 +1,4 @@
-import numpy as np
+import scisoftpy as dnp
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -9,73 +9,77 @@ import Crystal
 
 def unit_vector(vector):
     """Returns a unit vector in the same direction as vector"""
-    return vector / np.linalg.norm(vector)
+    return vector / dnp.linalg.norm(vector)
 
 
 def convert_to_radians(angle):
-    """Converts an angle in degrees to radians"""
-    return angle * (np.pi/180.0)
+    """Converts an angle in degrees to radians."""
+    return angle * (dnp.pi/180.0)
 
 
-def rotation_to_quaternion(vector, angle):
-    """Converts a rotation in terms of an angle and unit vector into a
-    quaternion.
+def convert_to_degrees(angle):
+    """Converts an angle in radians to degrees."""
+    return angle * (180.0/dnp.pi)
 
-    Args:
-        axis: The vector in the direction of the axis of rotation.
-
-        angle The angle through which the rotation is made. It has to
-            be passed in degrees.
-
-    Returns:
-        A quaternion that performs the rotation.
-    """
-    axis = unit_vector(vector)
-    angle = convert_to_radians(angle)
-
-    _ = axis * np.sin(angle/2)
-
-    q = np.quaternion(np.cos(angle/2), _[0], _[1], _[2])
-
-    return q
-
-
-def rotate(vector, quaternion):
-    """Rotates a vector using a quaternion.
-
-    Args:
-        vector: The vector which is to be rotated.
-
-        quaternion: The quaternion which describes the rotation.
-
-    Returns:
-        The rotated vector.
-    """
-    vector = np.quaternion(0, vector[0], vector[1], vector[2])
-    new_vector = quaternion * vector * np.conjugate(quaternion)
-    new_vector = np.array(new_vector.imag)
-    return new_vector
-
-
-def change_in_momentum(momentum_in, axis_of_rotation, two_theta):
-    """Finds the change in momentum vector given momentum in, the axis of
-    functions and the two theta angle
-
-    Args:
-        momentum_in: The momentum vector of the incident beam. Units keV/c.
-
-        axis_of_rotion: The axis perpendicular to the difraction plane centred
-            on the sample.
-
-        two_theta: The two_theta angle of difraction. Angle must be passed in
-            degrees.
-
-    Returns:
-        change_in_momentum: The change in momentum vector.
-    """
-    _quaternion = rotation_to_quaternion(axis_of_rotation, two_theta)
-    momentum_out = rotate(momentum_in, _quaternion)
-    return momentum_out - momentum_in
+# def rotation_to_quaternion(vector, angle):
+#     """Converts a rotation in terms of an angle and unit vector into a
+#     quaternion.
+# 
+#     Args:
+#         axis: The vector in the direction of the axis of rotation.
+# 
+#         angle The angle through which the rotation is made. It has to
+#             be passed in degrees.
+# 
+#     Returns:
+#         A quaternion that performs the rotation.
+#     """
+#     axis = unit_vector(vector)
+#     angle = convert_to_radians(angle)
+# 
+#     _ = axis * dnp.sin(angle/2)
+# 
+#     q = dnp.quaternion(dnp.cos(angle/2), _[0], _[1], _[2])
+# 
+#     return q
+# 
+# 
+# def rotate(vector, quaternion):
+#     """Rotates a vector using a quaternion.
+# 
+#     Args:
+#         vector: The vector which is to be rotated.
+# 
+#         quaternion: The quaternion which describes the rotation.
+# 
+#     Returns:
+#         The rotated vector.
+#     """
+#     vector = dnp.quaternion(0, vector[0], vector[1], vector[2])
+#     new_vector = quaternion * vector * dnp.conjugate(quaternion)
+#     new_vector = dnp.array(new_vector.imag)
+#     return new_vector
+# 
+# 
+# def change_in_momentum(momentum_in, axis_of_rotation, two_theta):
+#     """Finds the change in momentum vector given momentum in, the axis of
+#     functions and the two theta angle
+# 
+#     Args:
+#         momentum_in: The momentum vector of the incident beam. Units keV/c.
+# 
+#         axis_of_rotion: The axis perpendicular to the difraction plane centred
+#             on the sample.
+# 
+#         two_theta: The two_theta angle of difraction. Angle must be passed in
+#             degrees.
+# 
+#     Returns:
+#         change_in_momentum: The change in momentum vector.
+#     """
+#     _quaternion = rotation_to_quaternion(axis_of_rotation, two_theta)
+#     momentum_out = rotate(momentum_in, _quaternion)
+#     return momentum_out - momentum_in
 
 
 def group_reflections(crys, energy=8): 
@@ -89,14 +93,14 @@ def group_reflections(crys, energy=8):
             reflections with the same two theta value.
     """
     reflection_list = crys.reflection_list(energy, refl='allowed',
-                                           print_list=True)
+                                           print_list=True, anomalous_flag=True)
     grouped_reflection_list = []
     reflections_for_current_two_theta = []
-    previous_two_theta = np.around(reflection_list[0][4], 9)
+    previous_two_theta = round(reflection_list[0][4], 9)
     for i, reflection in enumerate(reflection_list):
         if i > 0:
-            previous_two_theta = np.around(reflection_list[i-1][4], 9)
-        current_two_theta = np.around(reflection[4], 9)
+            previous_two_theta = round(reflection_list[i-1][4], 9)
+        current_two_theta = round(reflection[4], 9)
         if current_two_theta == previous_two_theta:
             reflections_for_current_two_theta.append(reflection)
         else:
@@ -123,7 +127,7 @@ def momentum_transfer_vectors(reflection_list, crys):
     b_matrix = crys.lattice.b_matrix()
     momentum_transfer_vectors = []
     for i, reflection in enumerate(reflection_list):
-        momentum_transfer_vector = np.dot(b_matrix, reflection[0])
+        momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
         momentum_transfer_vectors.append(momentum_transfer_vector)
     return momentum_transfer_vectors
 
@@ -148,11 +152,11 @@ def plot_sphere(radius=1, fig=None, ax=None):
     if ax is None:
         ax = fig.add_subplot(111, projection='3d')
     # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
-    phi = np.linspace(0, 2 * np.pi, 100)
-    theta = np.linspace(0, np.pi, 100)
-    x = radius * np.outer(np.cos(phi), np.sin(theta))
-    y = radius * np.outer(np.sin(phi), np.sin(theta))
-    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    phi = dnp.linspace(0, 2 * dnp.pi, 100)
+    theta = dnp.linspace(0, dnp.pi, 100)
+    x = radius * dnp.outer(dnp.cos(phi), dnp.sin(theta))
+    y = radius * dnp.outer(dnp.sin(phi), dnp.sin(theta))
+    z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(theta))
     ax.plot_wireframe(x, y, z, rstride=5, cstride=5, color='y')
 
 
@@ -201,7 +205,7 @@ def stereographic_projection(vector_list, fig=None, ax=None):
         fig = plt.figure()
     if ax is None:
         ax = fig.add_subplot(111)
-    radius = np.linalg.norm(vector_list[0])
+    radius = dnp.linalg.norm(vector_list[0])
     xs=[]
     ys=[]
     for i, vector in enumerate(vector_list):
@@ -209,20 +213,20 @@ def stereographic_projection(vector_list, fig=None, ax=None):
         ys.append((vector[1]*radius)/(radius-vector[2]))
     ax.scatter(xs,ys)
     # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
-    phi = np.linspace(0, 2 * np.pi, 100)
-    theta = np.linspace(0, np.pi, 45)
-    x = radius * np.outer(np.cos(phi), np.sin(theta))
-    y = radius * np.outer(np.sin(phi), np.sin(theta))
-    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
-    for _, _theta in enumerate(theta):
-        if _theta != 0:
-            x = radius * np.outer(np.cos(phi), np.sin(_theta))
-            y = radius * np.outer(np.sin(phi), np.sin(_theta))
-            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
-            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
-            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
-            ax.plot(X,Y, color='red')
-    axis_params = [np.absolute(np.min(xs))*1.1,np.max(xs)*1.1,np.absolute(np.min(ys))*1.1,np.max(ys)*1.1]
+#     phi = dnp.linspace(0, 2 * dnp.pi, 100)
+#     theta = dnp.linspace(0, dnp.pi, 45)
+#     x = radius * dnp.outer(dnp.cos(phi), dnp.sin(theta))
+#     y = radius * dnp.outer(dnp.sin(phi), dnp.sin(theta))
+#     z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(theta))
+#     for _, _theta in enumerate(theta):
+#         if _theta != 0:
+#             x = radius * dnp.outer(dnp.cos(phi), dnp.sin(_theta))
+#             y = radius * dnp.outer(dnp.sin(phi), dnp.sin(_theta))
+#             z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(_theta))
+#             X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+#             Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+#             ax.plot(X,Y, color='red')
+    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
     fig_len=max(axis_params)*1.1
     ax.axis([-fig_len,fig_len,-fig_len,fig_len])
 
@@ -247,12 +251,12 @@ def many_vector_plots(crys, energy=8, number_of_plots='all'):
     fig = plt.figure()
     for i, group in enumerate(grouped_reflections):
         if i < number_of_plots:
-            plot_width = np.sqrt(number_of_plots)+1
+            plot_width = dnp.sqrt(number_of_plots)+1
             ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
             vectors = momentum_transfer_vectors(grouped_reflections[i],
                                                     crys)
             plot_vectors(vectors, fig, ax)
-            plot_sphere(np.linalg.norm(vectors[0]), fig, ax)
+#             plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
 
 
 def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
@@ -275,7 +279,7 @@ def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
     fig = plt.figure()
     for i, group in enumerate(grouped_reflections):
         if i < number_of_plots:
-            plot_width = np.sqrt(number_of_plots)+1
+            plot_width = dnp.sqrt(number_of_plots)+1
             ax = fig.add_subplot(plot_width, plot_width, i+1)
             vectors = momentum_transfer_vectors(grouped_reflections[i],
                                                     crys)

@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="311" key="DIALOG_WIDTH"/>
-		<item value="297" key="DIALOG_Y_ORIGIN"/>
-		<item value="420" key="DIALOG_HEIGHT"/>
-		<item value="807" key="DIALOG_X_ORIGIN"/>
+		<item value="320" key="DIALOG_WIDTH"/>
+		<item value="196" key="DIALOG_Y_ORIGIN"/>
+		<item value="428" key="DIALOG_HEIGHT"/>
+		<item value="95" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
 		<item value="false" key="isRegEx"/>
-		<item value="false" key="casesensitive"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="reflection" key="selection"/>
+		<item value="np" key="selection"/>
 		<list key="findhistory">
-			<item value="reflection"/>
-			<item value="crystal list"/>
-			<item value="mt"/>
+			<item value="np"/>
+			<item value="min"/>
+			<item value="dnp.around"/>
+			<item value="vector"/>
+			<item value="group_reflections"/>
+			<item value="know"/>
+			<item value="I"/>
+			<item value="roiw"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dnp"/>
+			<item value="round"/>
+			<item value="Vector"/>
 			<item value="np"/>
 		</list>
 	</section>

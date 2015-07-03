@@ -1,0 +1,67 @@
+import scisoftpy as dnp
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+def get_mean(indata):  # need custom functions as array is too large for numpy
+    mean = sum(indata) / float(len(indata))
+    return mean
+
+
+def get_stdev(indata, mean):
+    stdevlist = []
+    for value in indata:
+        stdevlist.append(value**2 - mean**2)
+    stdev = np.sqrt((1 / float(len(indata) - 1)) * sum(stdevlist))
+    return stdev
+
+
+dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.dat', warn=False)
+dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/518478.dat', warn=False)
+cmd = dat.metadata.cmd
+cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
+#                            different commands.
+chi = None
+kphi = None
+sums = None
+path_index_orig = 518477
+path_index = 518477
+print 'Creating sums data...'
+while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
+    if chi is None:
+        chi = np.array([dat.metadata.chi]*len(dat.kphi))
+    else:
+        chi = np.append(chi, np.array([dat.metadata.chi]*len(dat.kphi)))
+    if kphi is None:
+        kphi = np.array(dat.kphi)
+    else:
+        kphi = np.append(kphi, dat.kphi)
+    if sums is None:
+        sums = np.array([dat.sum])
+    else:
+        sums = np.append(sums, [dat.sum], axis=0)
+    try:
+        dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}.dat'.format(
+            path_index), warn=False)
+    except ValueError:
+        break
+    path_index += 1
+    print path_index, dat.metadata.cmd
+print 'Done creating sums data.'
+sums_copy = sums.copy()
+
+mean = get_mean(sums)
+get_stdev = get_stdev(sums, mean)
+
+
+peaks = [item if item>mean+5*stdev for i, item in np.enumerate(sums)]
+print peaks
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(chi,kphi,sums)
+ax.set_xlabel('Chi Angle')
+ax.set_ylabel('Kphi Angle')
+ax.set_zlabel('Total Sum')
+plt.show()

@@ -1,0 +1,154 @@
+import scisoftpy as dnp
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+def get_mean(indata):  # need custom functions as array is too large for numpy
+    indata = indata.flatten()
+    mean = sum(indata) / float(len(indata))
+    return mean
+
+
+def get_stdev(indata, mean):
+    indata = indata.flatten()
+    stdevlist = []
+    for value in indata:
+        stdevlist.append(value**2 - mean**2)
+    stdev = np.sqrt((1 / float(len(indata) - 1)) * sum(stdevlist))
+    return stdev
+
+
+def get_max_list(workdata, mask):
+    "Returns a list of current maxima in the 'workdata' image."
+    maximum = np.max(workdata)
+    maxpoints = np.where(workdata==maximum)
+    maxcoords = zip(maxpoints[0],maxpoints[1])  # format into a list of xy coords
+    maxcoordscopy = list(maxcoords)             # copy of list
+#     for coords in maxcoords:
+#         if not mask[coords]:                # if coords are in mask,
+#             workdata[coords] = 0            #  remove them from workdata
+#             maxcoordscopy.remove(coords)    #  remove them from list to return
+    return maxcoordscopy
+
+def remove_peaks(workdata, mask, max_list, peak_list):
+    for item in max_list:
+        peak_list.append(item)
+        peak_mask = np.zeros(workdata.shape)
+        up = 0
+        while mask[(item[0] + up, item[1])]:
+            try:
+                peak_mask[(item[0] + up, item[1])] = 1
+            except IndexError:
+                break
+            up+=1
+        down = 0
+        while mask[(item[0] - down, item[1])]:
+            try:
+                peak_mask[(item[0] - down, item[1])] = 1
+            except IndexError:
+                break
+            down +=1
+        left = 0
+        while mask[(item[0], item[1] - left)]:
+            try:
+                peak_mask[(item[0], item[1] - left)] = 1
+            except IndexError:
+                break
+            left +=1
+        right = 0
+        while mask[(item[0], item[1] + right)]:
+            try:
+                peak_mask[(item[0], item[1] + right)] = 1
+            except IndexError:
+                break
+            right +=1
+        for y in range(-down,up+1):
+            for x in range(-left,right+1):
+                peak_mask[(item[0] + y, item[1] + x)] = 1
+        np.place(workdata, peak_mask, 0)
+        np.place(mask, peak_mask, 0)
+        return [workdata, mask, peak_list]
+dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.dat', warn=False)
+dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/518478.dat', warn=False)
+cmd = dat.metadata.cmd
+cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
+#                            different commands.
+chi = None
+kphi = None
+sums = None
+path_index_orig = 518477
+path_index = 518477
+print 'Creating sums data...'
+while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
+    if chi is None:
+        chi = np.array([dat.metadata.chi]*len(dat.kphi))
+    else:
+        chi = np.append(chi, np.array([dat.metadata.chi]*len(dat.kphi)))
+    if kphi is None:
+        kphi = np.array(dat.kphi)
+    else:
+        kphi = np.append(kphi, dat.kphi)
+    if sums is None:
+        print path_index
+        sums = np.array([dat.sum])
+    else:
+        sums = np.append(sums, [dat.sum], axis=0)
+    try:
+        dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}.dat'.format(
+            path_index), warn=False)
+    except ValueError:
+        break
+    print path_index, dat.metadata.cmd, sums.shape
+    path_index += 1
+print 'Done creating sums data.'
+
+# Define roi and sum it
+centre = (242,108)
+width = 30
+roi_sums = np.zeros(sums.shape)
+for p in range(sums.shape[0]):
+    print p
+    for i in range(sums.shape[1]):
+        im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+p, i), warn = False)
+        data = im[0].transpose()
+        roi_sum = np.sum(data[centre[0]-width/2:centre[0]+width/2][:])
+        roi_sums[p][i] = roi_sum
+
+
+sums_copy = roi_sums.copy()
+shape = sums.shape
+mask = np.ones(shape)
+mean = get_mean(sums)
+stdev = get_stdev(sums, mean)
+min_peak_height = mean + 4 * stdev
+for x, array in enumerate(sums_copy):
+    for y, item in enumerate(array):
+        if item < min_peak_height:
+            sums_copy[x][y] = 0
+            mask[x][y] = 0
+
+max_list = get_max_list(sums_copy, mask)
+peak_list = []
+while len(max_list) != len(sums_copy.flatten()):
+    new_data = remove_peaks(sums_copy, mask, max_list, peak_list)
+    sums_copy = new_data[0]
+    mask = new_data[1]
+    peak_list = new_data[2]
+    max_list = get_max_list(sums_copy, mask)
+    print len(peak_list)
+
+name_index = 1
+for peak in peak_list:
+    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0]-1, peak[1]), warn=False)# I don't know why its peak[0]-1 not peak[0] but it is.
+    dnp.plot.image(im[0], name='Peak '+str(name_index))
+    name_index+=1
+
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(chi,kphi,sums)
+ax.set_xlabel('Chi Angle')
+ax.set_ylabel('Kphi Angle')
+ax.set_zlabel('Total Sum')
+plt.show()
