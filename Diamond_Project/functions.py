@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 
-import quaternion
+import finding_the_rotation_matrix as rm
 import Crystal
 
 
@@ -20,6 +20,226 @@ def convert_to_radians(angle):
 def convert_to_degrees(angle):
     """Converts an angle in radians to degrees."""
     return angle * (180.0/dnp.pi)
+
+def group_reflections(crys, energy=8): 
+    """Groups reflections according to two theta value.
+
+    Args:
+        crys: A crystal class object.
+
+    Returns:
+        grouped_reflection_list: A list of reflections grouped into lists of 
+            reflections with the same two theta value.
+    """
+    reflection_list = crys.reflection_list(energy, refl='allowed',
+                                           print_list=False, anomalous_flag=True)
+    grouped_reflection_list = []
+    reflections_for_current_two_theta = []
+    previous_two_theta = round(reflection_list[0][4], 9)
+    for i, reflection in enumerate(reflection_list):
+        if i > 0:
+            previous_two_theta = round(reflection_list[i-1][4], 9)
+        current_two_theta = round(reflection[4], 9)
+        if current_two_theta == previous_two_theta:
+            reflections_for_current_two_theta.append(reflection)
+        else:
+            grouped_reflection_list.append(reflections_for_current_two_theta)
+            reflections_for_current_two_theta = [reflection]
+    if reflections_for_current_two_theta != []:  # In case last angle has only
+                #                                            one reflection.
+        grouped_reflection_list.append(reflections_for_current_two_theta)
+    return grouped_reflection_list
+
+
+def momentum_transfer_vectors(reflection_list, crys):
+    """Returns a list of the momentum transfer vectors in cartesian space
+    given a list of reflections.
+
+    Args:
+        reflection_list: A list of reflections
+
+        crys: The crystal to which the reflections belong.
+
+    Returns:
+        momentum_transfer_vectors: A list of the momentum transfer vectors.
+    """
+    b_matrix = crys.lattice.b_matrix()
+    momentum_transfer_vectors = []
+    for i, reflection in enumerate(reflection_list):
+        momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
+        momentum_transfer_vector = rm.Vector(momentum_transfer_vector[0],
+                                                momentum_transfer_vector[1],
+                                                    momentum_transfer_vector[2])
+        momentum_transfer_vectors.append(momentum_transfer_vector)
+    return momentum_transfer_vectors
+
+
+def plot_sphere(radius=1, fig=None, ax=None):
+    import numpy as np
+    """Plots a sphere given a radius
+
+    Args:
+        radius: The radius of the sphere.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * dnp.pi, 100)
+    theta = np.linspace(0, dnp.pi, 100)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    ax.plot_wireframe(x, y, z, rstride=5, cstride=5, color='y')
+
+
+def plot_vectors(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them onto a 3D sphere.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+        zs.append(vector[2])
+    ax.scatter(xs, ys, zs, depthshade=False, s=30, c=color)
+
+
+def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them onto a stereographic projection.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111)
+    radius = dnp.linalg.norm(vector_list[0])
+    xs=[]
+    ys=[]
+    for i, vector in enumerate(vector_list):
+        xs.append((vector[0]*radius)/(radius-vector[2]))
+        ys.append((vector[1]*radius)/(radius-vector[2]))
+    ax.scatter(xs,ys, color=color)
+    
+    import numpy as np
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * dnp.pi, 100)
+    theta = np.linspace(0, dnp.pi, 19)
+    print dnp.rad2deg(theta)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    for _, _theta in enumerate(theta):
+        if _theta != 0 and _theta!=dnp.pi/2:
+            print _theta
+            x = radius * np.outer(np.cos(phi), np.sin(_theta))
+            y = radius * np.outer(np.sin(phi), np.sin(_theta))
+            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+            ax.plot(X,Y, color='red')
+        elif _theta == dnp.pi/2:
+            x = radius * np.outer(np.cos(phi), np.sin(_theta))
+            y = radius * np.outer(np.sin(phi), np.sin(_theta))
+            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+            ax.plot(X,Y, color='green')
+    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
+    fig_len=max(axis_params)*1.1
+    ax.axis([-fig_len,fig_len,-fig_len,fig_len])
+
+
+def many_vector_plots(crys, energy=8, number_of_plots='all'):
+    """Given a crystal it produces a number of 3D plots of equivalent
+           reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = dnp.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            plot_vectors(vectors, fig, ax)
+            plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
+
+
+def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
+    """Given a crystal it produces a number of stereographic plots of equivalent
+           reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = dnp.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1)
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            stereographic_projection(vectors, fig, ax)
+
+
 
 # def rotation_to_quaternion(vector, angle):
 #     """Converts a rotation in terms of an angle and unit vector into a
@@ -82,205 +302,3 @@ def convert_to_degrees(angle):
 #     return momentum_out - momentum_in
 
 
-def group_reflections(crys, energy=8): 
-    """Groups reflections according to two theta value.
-
-    Args:
-        crys: A crystal class object.
-
-    Returns:
-        grouped_reflection_list: A list of reflections grouped into lists of 
-            reflections with the same two theta value.
-    """
-    reflection_list = crys.reflection_list(energy, refl='allowed',
-                                           print_list=True, anomalous_flag=True)
-    grouped_reflection_list = []
-    reflections_for_current_two_theta = []
-    previous_two_theta = round(reflection_list[0][4], 9)
-    for i, reflection in enumerate(reflection_list):
-        if i > 0:
-            previous_two_theta = round(reflection_list[i-1][4], 9)
-        current_two_theta = round(reflection[4], 9)
-        if current_two_theta == previous_two_theta:
-            reflections_for_current_two_theta.append(reflection)
-        else:
-            grouped_reflection_list.append(reflections_for_current_two_theta)
-            reflections_for_current_two_theta = [reflection]
-    if reflections_for_current_two_theta != []:  # In case last angle has only
-                #                                            one reflection.
-        grouped_reflection_list.append(reflections_for_current_two_theta)
-    return grouped_reflection_list
-
-
-def momentum_transfer_vectors(reflection_list, crys):
-    """Returns a list of the momentum transfer vectors in cartesian space
-    given a list of reflections.
-
-    Args:
-        reflection_list: A list of reflections
-
-        crys: The crystal to which the reflections belong.
-
-    Returns:
-        momentum_transfer_vectors: A list of the momentum transfer vectors.
-    """
-    b_matrix = crys.lattice.b_matrix()
-    momentum_transfer_vectors = []
-    for i, reflection in enumerate(reflection_list):
-        momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
-        momentum_transfer_vectors.append(momentum_transfer_vector)
-    return momentum_transfer_vectors
-
-
-def plot_sphere(radius=1, fig=None, ax=None):
-    """Plots a sphere given a radius
-
-    Args:
-        radius: The radius of the sphere.
-
-        fig: The figure onto which the axis is plotted. If None is passed a new
-                figure is made.
-
-        ax: The axis onto which the sphere is plotted. If None is passed a new
-                axis is made.
-
-    Returns:
-        None
-    """
-    if fig is None:
-        fig = plt.figure()
-    if ax is None:
-        ax = fig.add_subplot(111, projection='3d')
-    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
-    phi = dnp.linspace(0, 2 * dnp.pi, 100)
-    theta = dnp.linspace(0, dnp.pi, 100)
-    x = radius * dnp.outer(dnp.cos(phi), dnp.sin(theta))
-    y = radius * dnp.outer(dnp.sin(phi), dnp.sin(theta))
-    z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(theta))
-    ax.plot_wireframe(x, y, z, rstride=5, cstride=5, color='y')
-
-
-def plot_vectors(vector_list, fig=None, ax=None):
-    """Given a list of vectors it plots them onto a 3D sphere.
-
-    Args:
-        vector_list: The list of vectors to be plotted.
-
-        fig: The figure onto which the axis is plotted. If None is passed a new
-                figure is made.
-
-        ax: The axis onto which the sphere is plotted. If None is passed a new
-                axis is made.
-
-    Returns:
-        None
-    """
-    if fig is None:
-        fig = plt.figure()
-    if ax is None:
-        ax = fig.add_subplot(111, projection='3d')
-    xs = []
-    ys = []
-    zs = []
-    for i, vector in enumerate(vector_list):
-        xs.append(vector[0])
-        ys.append(vector[1])
-        zs.append(vector[2])
-    ax.scatter(xs, ys, zs, depthshade=False, s=30, c='black')
-
-
-def stereographic_projection(vector_list, fig=None, ax=None):
-    """Given a list of vectors it plots them onto a stereographic projection.
-
-    Args:
-        vector_list: The list of vectors to be plotted.
-
-        fig: The figure onto which the axis is plotted. If None is passed a new
-                figure is made.
-
-    Returns:
-        None
-    """
-    if fig is None:
-        fig = plt.figure()
-    if ax is None:
-        ax = fig.add_subplot(111)
-    radius = dnp.linalg.norm(vector_list[0])
-    xs=[]
-    ys=[]
-    for i, vector in enumerate(vector_list):
-        xs.append((vector[0]*radius)/(radius-vector[2]))
-        ys.append((vector[1]*radius)/(radius-vector[2]))
-    ax.scatter(xs,ys)
-    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
-#     phi = dnp.linspace(0, 2 * dnp.pi, 100)
-#     theta = dnp.linspace(0, dnp.pi, 45)
-#     x = radius * dnp.outer(dnp.cos(phi), dnp.sin(theta))
-#     y = radius * dnp.outer(dnp.sin(phi), dnp.sin(theta))
-#     z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(theta))
-#     for _, _theta in enumerate(theta):
-#         if _theta != 0:
-#             x = radius * dnp.outer(dnp.cos(phi), dnp.sin(_theta))
-#             y = radius * dnp.outer(dnp.sin(phi), dnp.sin(_theta))
-#             z = radius * dnp.outer(dnp.ones(dnp.size(phi)), dnp.cos(_theta))
-#             X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
-#             Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
-#             ax.plot(X,Y, color='red')
-    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
-    fig_len=max(axis_params)*1.1
-    ax.axis([-fig_len,fig_len,-fig_len,fig_len])
-
-
-def many_vector_plots(crys, energy=8, number_of_plots='all'):
-    """Given a crystal it produces a number of 3D plots of equivalent
-           reflections.
-
-    Args:
-        crys: The crystal to be used.
-
-        number_of_plots: The number_of_plots to produce, default is 'all'
-
-        energy: The beam energy.
-
-    Returns:
-        None
-    """
-    grouped_reflections = group_reflections(crys, energy)
-    if number_of_plots == 'all':
-        number_of_plots = len(grouped_reflections)
-    fig = plt.figure()
-    for i, group in enumerate(grouped_reflections):
-        if i < number_of_plots:
-            plot_width = dnp.sqrt(number_of_plots)+1
-            ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
-            vectors = momentum_transfer_vectors(grouped_reflections[i],
-                                                    crys)
-            plot_vectors(vectors, fig, ax)
-#             plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
-
-
-def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
-    """Given a crystal it produces a number of stereographic plots of equivalent
-           reflections.
-
-    Args:
-        crys: The crystal to be used.
-
-        number_of_plots: The number_of_plots to produce, default is 'all'
-
-        energy: The beam energy.
-
-    Returns:
-        None
-    """
-    grouped_reflections = group_reflections(crys, energy)
-    if number_of_plots == 'all':
-        number_of_plots = len(grouped_reflections)
-    fig = plt.figure()
-    for i, group in enumerate(grouped_reflections):
-        if i < number_of_plots:
-            plot_width = dnp.sqrt(number_of_plots)+1
-            ax = fig.add_subplot(plot_width, plot_width, i+1)
-            vectors = momentum_transfer_vectors(grouped_reflections[i],
-                                                    crys)
-            stereographic_projection(vectors, fig, ax)

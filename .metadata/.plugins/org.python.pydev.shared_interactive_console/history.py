@@ -1,200 +1,200 @@
-sums = None
-path_index_orig = 518477
-path_index = 518477
-print 'Creating sums data...'
-while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
-    try:
-        dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}.dat'.format(
-            path_index), warn=False)
-    except ValueError:
-        break
-    if chi is None:
-        chi = np.array([[dat.metadata.chi]*len(dat.kphi)])
-    else:
-        chi = np.append(chi, np.array([[dat.metadata.chi]*len(dat.kphi)]), axis=0)
-    if kphi is None:
-        kphi = np.array([dat.kphi])
-    else:
-        kphi = np.append(kphi, [dat.kphi], axis=0)
-    if sums is None:
-        sums = np.array([dat.sum])
-    else:
-        print path_index, 'again'
-        sums = np.append(sums, [dat.sum], axis=0)
-    path_index += 1
-print 'Done creating sums data.'
-# Define roi and sum it
-centre = (242,108)
-width = 30
-roi_sums = np.zeros(sums.shape)
-for p in range(sums.shape[0]):
-    print p
-    for i in range(sums.shape[1]):
-        im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+p, i), warn = False)
-        data = im[0].transpose()
-        roi_sum = np.sum(data[centre[0]-width/2:centre[0]+width/2][:])
-        roi_sums[p][i] = roi_sum
-import scisoftpy as dnp
-import numpy as np
+shi.sahpe
+chi.sahpe
+chi.shape
+chi[:,0]
+chi[:,:-1]
+chi[:,[:-1]]
+chi[:,range(len(chi[:,0]))-1]
+len(chi[:,0]))-1
+len(chi[:,0])-1
+chi[:,range(len(chi[:,0])-1]
+            
+)
+range(len(chi[:,0])-1
+      )
+range(len(chi[:,0])-1)
+chi[:,range(len(chi[:,0])-1]
+)
+chi[:,range(len(chi[:,0])-1)]
+chi[range(len(chi[:,0])-1),0]
+chi[range(1,len(chi[:,0])-1),0]
+dnp.plot.surface(roi_sums,chi[range(1,len(chi[:,0])-1),0],kphi[0])
+dnp.plot.image(roi_sums,chi[range(1,len(chi[:,0])-1),0],kphi[0])
+dnp.plot.image(roi_sums)
+dnp.plot.image(roi_sums, name= 'hi')
+dnp.plot.image(roi_sums, name= 'hip')
+dnp.plot.image(roi_sums, name= 'hi')
+dnp.plot.surface(roi_sums,chi[range(1,len(chi[:,0])-1),0],kphi[0], name = 'surface')
+dnp.plot.surface(roi_sums,chi[range(1,kphi[0],len(chi[:,0])-1),0], name = 'surface')
+dnp.plot.surface(roi_sums, chi[range(1,len(chi[:,0])-1),0], kphi[0], name = 'surface')
+dnp.plot.surface(roi_sums, chi[range(1,len(chi[:,0])-1),0], range(10), name = 'surface')
+dnp.plot.surface(roi_sums, chi[range(1,len(chi[:,0])-1),0], range(10), name = 'surface')
+dnp.plot.surface(roi_sums, chi[:,0], range(10), name = 'surface')
+dnp.plot.surface(roi_sums)
+dnp.plot.surface(roi_sums, chi[:,0], range(10), name = 'surface')
+dnp.plot.surface(roi_sums, name = 'surface')
+dnp.plot.image(roi_sums,chi[range(1,len(chi[:,0])-1),0],kphi[0], name=surface)
+dnp.plot.image(roi_sums,chi[range(1,len(chi[:,0])-1),0],kphi[0], name='surface')
+dnp.plot.image(roi_sums,chi[:,0],kphi[0], name='surface')
+dnp.plot.image(roi_sums,range(8),kphi[0], name='surface')
+dnp.plot.image(roi_sums,dnp.array(range(8)),kphi[0], name='surface')
+dnp.plot.image(roi_sums,dnp.array(range(20)),kphi[0], name='surface')
+dnp.plot.image(roi_sums,dnp.array(range(20)),kphi[0], name='surface')import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors(vectors, fig, ax)
+f.plot_sphere(vectors[0].modulus(), fig, ax)
+plt.show()
 #Configuring Environment, please wait
 import scisoftpy as dnp;import sys;sys.executable=''
 import scisoftpy as dnp
-import numpy as np
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-def get_mean(indata):  # need custom functions as array is too large for numpy
-    indata = indata.flatten()
-    mean = sum(indata) / float(len(indata))
-    return mean
-def get_stdev(indata, mean):
-    indata = indata.flatten()
-    stdevlist = []
-    for value in indata:
-        stdevlist.append(value**2 - mean**2)
-    stdev = np.sqrt((1 / float(len(indata) - 1)) * sum(stdevlist))
-    return stdev
-def get_max_list(workdata, mask):
-    "Returns a list of current maxima in the 'workdata' image."
-    maximum = np.max(workdata)
-    maxpoints = np.where(workdata==maximum)
-    maxcoords = zip(maxpoints[0],maxpoints[1])  # format into a list of xy coords
-    maxcoordscopy = list(maxcoords)             # copy of list
-#     for coords in maxcoords:
-#         if not mask[coords]:                # if coords are in mask,
-#             workdata[coords] = 0            #  remove them from workdata
-#             maxcoordscopy.remove(coords)    #  remove them from list to return
-    return maxcoordscopy
-def remove_peaks(workdata, mask, max_list, peak_list):
-    for item in max_list:
-        peak_list.append(item)
-        peak_mask = np.zeros(workdata.shape)
-        up = 0
-        while mask[(item[0] + up, item[1])]:
-            try:
-                peak_mask[(item[0] + up, item[1])] = 1
-            except IndexError:
-                break
-            up+=1
-        down = 0
-        while mask[(item[0] - down, item[1])]:
-            try:
-                peak_mask[(item[0] - down, item[1])] = 1
-            except IndexError:
-                break
-            down +=1
-        left = 0
-        while mask[(item[0], item[1] - left)]:
-            try:
-                peak_mask[(item[0], item[1] - left)] = 1
-            except IndexError:
-                break
-            left +=1
-        right = 0
-        while mask[(item[0], item[1] + right)]:
-            try:
-                peak_mask[(item[0], item[1] + right)] = 1
-            except IndexError:
-                break
-            right +=1
-        for y in range(-down,up+1):
-            for x in range(-left,right+1):
-                peak_mask[(item[0] + y, item[1] + x)] = 1
-        np.place(workdata, peak_mask, 0)
-        np.place(mask, peak_mask, 0)
-        return [workdata, mask, peak_list]
-dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.dat', warn=False)
-dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/518478.dat', warn=False)
-cmd = dat.metadata.cmd
-cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
-#                            different commands.
-chi = None
-kphi = None
-sums = None
-path_index_orig = 518477
-path_index = 518477
-print 'Creating sums data...'
-while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
-    try:
-        dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}.dat'.format(
-            path_index), warn=False)
-    except ValueError:
-        break
-    if chi is None:
-        chi = np.array([[dat.metadata.chi]*len(dat.kphi)])
-    else:
-        chi = np.append(chi, np.array([[dat.metadata.chi]*len(dat.kphi)]), axis=0)
-    if kphi is None:
-        kphi = np.array([dat.kphi])
-    else:
-        kphi = np.append(kphi, [dat.kphi], axis=0)
-    if sums is None:
-        sums = np.array([dat.sum])
-    else:
-        sums = np.append(sums, [dat.sum], axis=0)
-    path_index += 1
-print 'Done creating sums data.'
-# Define roi and sum it
-centre = (242,108)
-width = 30
-roi_sums = np.zeros(sums.shape)
-for p in range(sums.shape[0]):
-    print p
-    for i in range(sums.shape[1]):
-        im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+p, i), warn = False)
-        data = im[0].transpose()
-        roi_sum = np.sum(data[centre[0]-width/2:centre[0]+width/2][:])
-        roi_sums[p][i] = roi_sum
-sums_copy = roi_sums.copy()
-shape = sums.shape
-mask = np.ones(shape)
-mean = get_mean(sums_copy)
-stdev = get_stdev(sums_copy, mean)
-min_peak_height = mean + 5 * stdev
-for x, array in enumerate(sums_copy):
-    for y, item in enumerate(array):
-        if item < min_peak_height:
-            sums_copy[x][y] = 0
-            mask[x][y] = 0
-max_list = get_max_list(sums_copy, mask)
-peak_list = []
-while len(max_list) != len(sums_copy.flatten()):
-    new_data = remove_peaks(sums_copy, mask, max_list, peak_list)
-    sums_copy = new_data[0]
-    mask = new_data[1]
-    peak_list = new_data[2]
-    max_list = get_max_list(sums_copy, mask)
-    print len(peak_list)
-name_index = 1
-for peak in peak_list:
-    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0]-1, peak[1]), warn=False)  # I don't know why its peak[0]-1 not peak[0] but it is.
-    plt.imshow(im[0])
-    name_index += 1
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors(vectors, fig, ax)
+f.plot_sphere(vectors[0].modulus(), fig, ax)
 plt.show()
-name_index = 1
-for peak in peak_list:
-    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0]-1, peak[1]), warn=False)  # I don't know why its peak[0]-1 not peak[0] but it is.
-    plt.imshow(im[0])
-    plt.show()
-    name_index += 1
-name_index = 1
-for peak in peak_list:
-    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0], peak[1]), warn=False)  # I don't know why its peak[0]-1 not peak[0] but it is.
-    
-    plt.imshow(im[0])
-    plt.show()
-    name_index += 1
-name_index = 1
-for peak in peak_list:
-    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0], peak[1]), warn=False)  # I don't know why its peak[0]-1 not peak[0] but it is. 
-    plt.imshow(im[0])
-    plt.show()
-    name_index += 1
-name_index = 1
-for peak in peak_list:
-    im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0], peak[1]), warn=False)  # I don't know why its peak[0]-1 not peak[0] but it is. 
-    print sums[peak],np.sum(im[0])
-    plt.imshow(im[0])
-    plt.show()
-    name_index += 1
+cd
+cd /home/ljh75651/DAWN_stable
+cd /home/ljh75651/DAWN_stable/Diamond_Project
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors(vectors, fig, ax)
+f.plot_sphere(vectors[0].modulus(), fig, ax)
+plt.show()
+mock_data = vectors[1:]
+print mock_data
+print mock_data
+mock_data = vectors[:2]
+print mock_data
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+mock_data = vectors[:2]
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+mock_data = [vectors[0],vectors[2]]
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+mock_data = [vectors[0],vectors[2]]
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+mock_data
+mock_data[0]
+mock_data[0].modulus()
+mock_data[0].modulus
+mock_data[0].modulus
+mock_data[0].modulus()
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+mock_data = [vectors[0],vectors[2]]
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+mock_data = [vectors[0],vectors[2]]
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+help(dnp.random)
+dnp.random.rand()
+dnp.rand()
+dnp.random.rand()
+dnp.random.rand()
+dnp.random.rand()
+dnp.random.randint(0,361)
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+def random_rotation(vector):
+    random_rotation = rm.Rotator(rm.Vector(dnp.random.rand(),dnp.random.rand(),dnp.random.rand()),dnp.random.randint(0,361))
+    return random_rotation*vector
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+mock_data = [vectors[0],vectors[2]]
+target_data = [vectors[0],vectors[2]]
+mock_data[0] = random_rotation(mock_data[0])
+f.plot_vectors(mock_data, fig, ax)
+f.plot_sphere(mock_data[0].modulus(), fig, ax)
+plt.show()
+print mock_data[0]
+print target_data[0]
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+def random_rotation(vector_list):
+    random_rotation = rm.Rotator(rm.Vector(dnp.random.rand(),dnp.random.rand(),dnp.random.rand()),dnp.random.randint(0,361))
+    for vector in vector_list:
+        vector = random_rotation * vector
+    return vector_list
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+print l[0]
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+mock_data = [vectors[0],vectors[2]]
+target_data = [vectors[0],vectors[2]]

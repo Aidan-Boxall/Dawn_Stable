@@ -1,5 +1,5 @@
 import scisoftpy as dnp
-import functions as f
+
 
 class Vector(object):
 
@@ -33,31 +33,20 @@ class Vector(object):
             return self.x * other.x + self.y * other.y + self.z * other.z
         if isinstance(other, int) or isinstance(other, float):
             return Vector(self.x*other,self.y*other, self.z*other)
-        if isinstance(other, dnp.ndarray):
-            vector = dnp.array([[self.x], [self.y], [self.z]])
-            return dnp.dot(vector, other)
-        if isinstance(other, Rotator):
-            vector = dnp.array([[self.x], [self.y], [self.z]])
-            return dnp.dot(vector, other.R)
-
 
     def __rmul__(self, other):
         if isinstance(other, int) or isinstance(other, float):
             return Vector(self.x*other,self.y*other, self.z*other)
-        if isinstance(other, dnp.ndarray):
-            vector = dnp.array([[self.x], [self.y], [self.z]])
-            return dnp.dot(other, vector)
-        if isinstance(other, Rotator):
-            vector = dnp.array([[self.x], [self.y], [self.z]])
-            new_vector = dnp.dot(other.R, vector)
-            new_vector = Vector(new_vector[0][0], new_vector[1][0], new_vector[2][0])
-            return new_vector
+
     def modulus(self):
-        self.modulus = (self.x**2 + self.y**2 + self.z**2)**0.5
-        return self.modulus
+        self.mod = (self.x**2 + self.y**2 + self.z**2)**0.5
+        return self.mod
 
     def __add__(self, other):
         return Vector(self.x + other.x, self.y + other.y, self.z + other.z)
+
+    def __sub__(self, other):
+        return Vector(self.x - other.x, self.y - other.y, self.z - other.z)
 
     def __div__(self, other):
         if isinstance(other, int) or isinstance(other, float):
@@ -94,11 +83,24 @@ class Vector(object):
             M = dnp.dot(vector, other)
             return M
 
+    def dnp_array(self):
+        return dnp.array([self.x, self.y, self.z])
+
+    def __eq__(self,other):
+        if not isinstance(other, Vector):
+            return False
+        if round(self.x, 5) == round(other.x, 5):
+            if round(self.y, 5) == round(other.y, 5):
+                if round(self.z, 5) == round(other.z, 5):
+                    return True
+        return False
+
 
 class Rotator(object):
     def __init__(self, axis=None, angle=None, R=None):
         if isinstance(R, dnp.ndarray):
             self.R = R
+            self.axis = axis
             return
         if isinstance(angle, dnp.ndarray):
             angle = angle[0]
@@ -107,7 +109,7 @@ class Rotator(object):
         if not isinstance(angle, float):
             raise Exception('angle must be a float')
         self.axis = axis.unit()
-        self.angle = f.convert_to_radians(angle)
+        self.angle = float(dnp.radians(angle))
         M = dnp.array([[0.0, -axis.z, axis.y],
                        [axis.z, 0.0, -axis.x],
                        [-axis.y, axis.x, 0.0]])
@@ -125,6 +127,12 @@ class Rotator(object):
             new_R = dnp.dot(self.R, other.R)
             return Rotator(R=new_R)
 
+    def __str__(self):
+        if self.axis is not None:
+            return 'Rotator: axis: {0}, angle: {1}'.format(str(self.axis), float(dnp.rad2deg(self.angle)))
+        else:
+            return 'Rotator: R: {}'.format(self.R)
+
 def get_rotator(vector, target):
     """Given a vector and a target vector finds the Rotator that turns one into
     the other.
@@ -132,22 +140,52 @@ def get_rotator(vector, target):
     axis = vector**target
     axis = axis.unit()
     angle = dnp.arccos(vector.unit()*target.unit())
-    angle = f.convert_to_degrees(angle)
+    angle = float(dnp.rad2deg(angle))
     return Rotator(axis, angle)
-    
 
-x = Vector(1,1,5)
-x = x.unit()
-y = Vector(1,1)
-y = y.unit()
-z = Vector(0,0,1)
-# z = Vector(0,0,5)
-# r = Rotator(z,90)
-r = get_rotator(x,y)
-z = r*x
+def get_second_rotator(origional_target, vector, target):
+    axis = origional_target
+    axis = axis.unit()
+    vector = vector.unit()
+    target = target.unit()
+    v1 = vector - (vector*axis)*axis
+    v2 = target - (target*axis)*axis
+    angle = dnp.arccos(v1*v2)
+    angle = float(dnp.rad2deg(angle))
+    if (v1**v2).unit() == axis.unit():
+        return Rotator(axis, angle)
+    else:
+        return Rotator(axis, -angle)
 
-print y,z
+# def get_third_rotator(origional_target, vector, target):
+#     axis = origional_target
+#     axis = axis.unit()
+#     vector = vector.unit()
+#     target = target.unit()
+#     v1 = vector - (vector*axis)*axis
+#     v2 = target - (target*axis)*axis
+#     print (vector*axis)*axis, (target*axis)*axis
+#     angle = dnp.arccos(v1*v2)
+#     angle = float(dnp.rad2deg(angle))
+#     return Rotator(axis,-angle)
 
+
+# x =Vector()
+# y = Vector(0,1)
+# print x
+# y = y.unit()
+# z = Vector(0,0,1)
+# # z = Vector(0,0,5)
+# # r = Rotator(z,90)
+# r = get_rotator(x,y)
+# # z = r*x
+# print r.R
+# print y,z
+# m = Rotator(z,90)
+# n =m*m
+# print n.R
+# y = m*y
+# print y
 
 
 

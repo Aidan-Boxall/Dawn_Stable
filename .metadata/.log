@@ -5559,3 +5559,111 @@ java.lang.OutOfMemoryError: The dimensions given are too large, and there is not
 
 !ENTRY org.eclipse.ui 2 2 2015-07-02 15:30:12.590
 !MESSAGE Invalid preference category path: uk.ac.diamond.scisoft.ispybexplorer.rcp.category (bundle: org.dawnsci.commandserver.ui, page: org.dawnsci.commandserver.ui.activemqPage)
+!SESSION 2015-07-06 09:41:55.460 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-07-06 09:42:01.556
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk288183948/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-07-06 09:42:01.557
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk288183948/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-07-06 09:42:01.558
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk288183948/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-07-06 09:42:08.005
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-07-06 09:42:08.026
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.jface 2 0 2015-07-06 09:42:14.970
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-06 09:42:14.970
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+!SESSION 2015-07-06 11:37:33.216 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_76
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_GB
+Framework arguments:  -showLocation
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -showLocation -data /home/ljh75651/DAWN_stable
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-07-06 11:37:36.575
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-07-06 11:37:37.319
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1028863272/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 4 0 2015-07-06 11:37:37.320
+!MESSAGE [SCR] Error occurred while processing end tag of XML 'bundleentry://436.fwk1028863272/OSGI-INF/operationTransformer.xml' in bundle uk.ac.diamond.scisoft.analysis.processing.actor_1.0.0.v20150518-1614 [436]!  The component 'Operation Transformer' is invalid. The component must be immediate since it does not provide any services
+
+!ENTRY uk.ac.diamond.scisoft.analysis.processing.actor 2 0 2015-07-06 11:37:37.321
+!MESSAGE [SCR] No components were found while processing component definition file bundleentry://436.fwk1028863272/OSGI-INF/operationTransformer.xml
+
+!ENTRY org.eclipse.ui 4 4 2015-07-06 11:37:40.517
+!MESSAGE Plug-in 'org.dawb.tango.extensions' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.dawb.tango.extensions.open.shared.mem.monitor
+
+!ENTRY org.eclipse.ui 4 4 2015-07-06 11:37:40.534
+!MESSAGE Plug-in 'org.dawb.common.ui' contributed an invalid Menu Extension (Path: 'tools' is invalid): org.edna.common.ui.import.folder
+
+!ENTRY org.eclipse.jface 2 0 2015-07-06 11:37:47.230
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-07-06 11:37:47.230
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(com.python.pydev.analysis.actions.pyGlobalsBrowserWorkbench,Python Show Global Tokens (Global),
+		Python Show Global Tokens (Global),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.python.pydev.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.python.pydev.editor.actions.pyShowBrowser,Python Show Global Tokens (Editor),
+		Python Show Global Tokens (Editor),
+		Category(org.python.pydev.ui.category.source,PyDev - Editor,PyDev editor category,true),
+		ActionDelegateHandlerProxy(null,org.python.pydev.editor.actions.PyShowBrowser),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.python.pydev.ui.editor.scope,,,system)
+
+!ENTRY org.eclipse.ui 2 2 2015-07-06 18:03:30.939
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

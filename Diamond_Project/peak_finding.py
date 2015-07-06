@@ -69,16 +69,18 @@ def remove_peaks(workdata, mask, max_list, peak_list):
         np.place(workdata, peak_mask, 0)
         np.place(mask, peak_mask, 0)
         return [workdata, mask, peak_list]
-dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.dat', warn=False)
-dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/518478.dat', warn=False)
-cmd = dat.metadata.cmd
-cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
-#                            different commands.
+
 chi = None
 kphi = None
 sums = None
-path_index_orig = 518477
+path_index_orig = 520881
 path_index = 518477
+dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{}.dat'.format(path_index), warn=False)
+dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/().dat'.format(path_index+1), warn=False)
+cmd = dat.metadata.cmd
+cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
+#                            different commands.
+
 print 'Creating sums data...'
 while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
     if chi is None:

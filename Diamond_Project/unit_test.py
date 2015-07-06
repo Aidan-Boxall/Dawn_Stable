@@ -85,7 +85,7 @@ class TestUnit(unittest.TestCase):
         mycrys.load_cif('NiCO3_icsd_61067.cif')
         mycrys2 = c.Crystal()
         mycrys2.load_cif('icsd_29288-Si.cif') 
-        f.many_vector_plots(mycrys,8,10)
+        f.many_vector_plots(mycrys,8,1)
         f.many_stereographic_plots(mycrys,8,10)
         f.many_vector_plots(mycrys2)
         f.many_stereographic_plots(mycrys2)

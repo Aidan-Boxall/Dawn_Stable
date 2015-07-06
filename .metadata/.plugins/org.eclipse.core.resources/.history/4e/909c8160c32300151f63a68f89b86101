@@ -1,0 +1,10 @@
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+
+
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.grouped_reflections(mycrys)
+print l

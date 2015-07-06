@@ -9667,6 +9667,7 @@ numpy.lib.type_check|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-pa
 numpy.lib.ufunclike|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/lib/ufunclike.py
 numpy.lib.user_array|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/lib/user_array.py
 numpy.lib.utils|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/lib/utils.py
+numpy.linalg
 numpy.linalg.__init__|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/__init__.py
 numpy.linalg._umath_linalg|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/_umath_linalg.so
 numpy.linalg.info|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/info.py

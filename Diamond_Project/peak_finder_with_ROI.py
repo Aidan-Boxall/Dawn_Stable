@@ -69,16 +69,17 @@ def remove_peaks(workdata, mask, max_list, peak_list):
         np.place(workdata, peak_mask, 0)
         np.place(mask, peak_mask, 0)
         return [workdata, mask, peak_list]
-dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/518477.dat', warn=False)
-dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/518478.dat', warn=False)
-cmd = dat.metadata.cmd
-cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
-#                            different commands.
+
 chi = None
 kphi = None
 sums = None
-path_index_orig = 518477
-path_index = 518477
+path_index_orig = 520881
+path_index = 520881
+dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{}.dat'.format(path_index), warn=False)
+dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/{}.dat'.format(path_index+1), warn=False)
+cmd = dat.metadata.cmd
+cmd2 = dat2.metadata.cmd  # Scans kphi in 2 alternating directions therefore
+#                            different commands.
 print 'Creating sums data...'
 while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
     try:
@@ -100,6 +101,7 @@ while dat.metadata.cmd == cmd or dat.metadata.cmd == cmd2:
         sums = np.append(sums, [dat.sum], axis=0)
     path_index += 1
 print 'Done creating sums data.'
+print len(sums)
 
 # Define roi and sum it
 centre = (242,108)
@@ -119,7 +121,7 @@ for p in range(sums.shape[0]):
         roi_max_pix[p][i] = np.max(roi)
 
 
-sums_copy = roi_max_pix.copy()
+sums_copy = roi_sums.copy()
 shape = sums.shape
 mask = np.ones(shape)
 mean = get_mean(sums_copy)
@@ -152,8 +154,8 @@ for peak in peak_list:
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
-ax.scatter(chi,kphi,sums)
+ax.scatter(chi,kphi,roi_sums)
 ax.set_xlabel('Chi Angle')
 ax.set_ylabel('Kphi Angle')
-ax.set_zlabel('Total Sum')
+ax.set_zlabel('ROI Sum')
 plt.show()

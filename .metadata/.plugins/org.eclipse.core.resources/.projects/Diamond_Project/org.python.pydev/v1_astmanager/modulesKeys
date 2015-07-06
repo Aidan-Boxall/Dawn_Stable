@@ -9,6 +9,7 @@ Crystal_Class.MagneticSpacegroup|/home/ljh75651/DAWN_stable/Diamond_Project/Crys
 Crystal_Class.MagneticSpacegroup_example1|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/MagneticSpacegroup_example1.py
 Crystal_Class.MagneticSpacegroup_example2|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/MagneticSpacegroup_example2.py
 astro_lab|/home/ljh75651/DAWN_stable/Diamond_Project/astro_lab.py
+chi_step|/home/ljh75651/DAWN_stable/Diamond_Project/chi_step.py
 finding_the_rotation_matrix|/home/ljh75651/DAWN_stable/Diamond_Project/finding_the_rotation_matrix.py
 functions|/home/ljh75651/DAWN_stable/Diamond_Project/functions.py
 numpy_quaternion|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion.so
@@ -20,5 +21,6 @@ peak_finder_with_ROI|/home/ljh75651/DAWN_stable/Diamond_Project/peak_finder_with
 peak_finding|/home/ljh75651/DAWN_stable/Diamond_Project/peak_finding.py
 practice|/home/ljh75651/DAWN_stable/Diamond_Project/practice.py
 quaternion|/home/ljh75651/DAWN_stable/Diamond_Project/quaternion.py
+testing_rotation_finder|/home/ljh75651/DAWN_stable/Diamond_Project/testing_rotation_finder.py
 the_rotation_matrix|/home/ljh75651/DAWN_stable/Diamond_Project/the_rotation_matrix.py
 unit_test|/home/ljh75651/DAWN_stable/Diamond_Project/unit_test.py
