@@ -11731,6 +11731,7 @@ scipy.odr.add_newdocs|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-p
 scipy.odr.models|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/odr/models.py
 scipy.odr.odrpack|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/odr/odrpack.py
 scipy.odr.setup|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/odr/setup.py
+scipy.optimize
 scipy.optimize.__init__|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/optimize/__init__.py
 scipy.optimize._basinhopping|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/optimize/_basinhopping.py
 scipy.optimize._cobyla|/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/scipy/optimize/_cobyla.so

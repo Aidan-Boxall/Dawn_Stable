@@ -1,30 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="320" key="DIALOG_WIDTH"/>
-		<item value="196" key="DIALOG_Y_ORIGIN"/>
-		<item value="95" key="DIALOG_X_ORIGIN"/>
-		<item value="428" key="DIALOG_HEIGHT"/>
+		<item value="324" key="DIALOG_WIDTH"/>
+		<item value="243" key="DIALOG_Y_ORIGIN"/>
+		<item value="432" key="DIALOG_HEIGHT"/>
+		<item value="1314" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Sans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="true" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="radians" key="selection"/>
+		<item value="all_vectors" key="selection"/>
 		<list key="findhistory">
-			<item value="radians"/>
-			<item value="rad2deg"/>
-			<item value="np"/>
-			<item value="min"/>
-			<item value="dnp.around"/>
-			<item value="vector"/>
-			<item value="group_reflections"/>
-			<item value="know"/>
+			<item value="all_vectors"/>
+			<item value="mock_data[:9]"/>
+			<item value="vectors[:6]"/>
+			<item value="232"/>
+			<item value="plt.figure"/>
+			<item value="plt"/>
+			<item value="hkl"/>
+			<item value="add_rot"/>
 		</list>
 		<list key="replacehistory">
+			<item value="all_vectors_copy"/>
+			<item value="mock_data"/>
+			<item value="vectors"/>
+			<item value="rm.rotate_list"/>
 			<item value="dnp"/>
 			<item value="round"/>
 			<item value="Vector"/>

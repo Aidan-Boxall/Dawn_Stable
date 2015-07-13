@@ -1,5 +1,6 @@
 import scisoftpy as dnp
 import numpy as np
+import copy
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -75,6 +76,7 @@ kphi = None
 sums = None
 path_index_orig = 520881
 path_index = 520881
+expected_number_of_peaks = 1
 dat = dnp.io.load('/dls/i16/data/2015/cm12169-3/{}.dat'.format(path_index), warn=False)
 dat2 = dnp.io.load('/dls/i16/data/2015/cm12169-3/{}.dat'.format(path_index+1), warn=False)
 cmd = dat.metadata.cmd
@@ -120,36 +122,57 @@ for p in range(sums.shape[0]):
         max_pix[p][i] = np.max(data)
         roi_max_pix[p][i] = np.max(roi)
 
-
-sums_copy = roi_sums.copy()
-shape = sums.shape
-mask = np.ones(shape)
+sums_copy = copy.deepcopy(roi_sums)
 mean = get_mean(sums_copy)
 stdev = get_stdev(sums_copy, mean)
-min_peak_height = mean + 5 * stdev
-for x, array in enumerate(sums_copy):
-    for y, item in enumerate(array):
-        if item < min_peak_height:
-            sums_copy[x][y] = 0
-            mask[x][y] = 0
+shape = sums.shape
+min_no_of_stddevs = 5
 
-max_list = get_max_list(sums_copy, mask)
-peak_list = []
-while len(max_list) != len(sums_copy.flatten()):
-    new_data = remove_peaks(sums_copy, mask, max_list, peak_list)
-    sums_copy = new_data[0]
-    mask = new_data[1]
-    peak_list = new_data[2]
+while min_no_of_stddevs > 1:
+    sums_copy = copy.deepcopy(roi_sums)
+    min_no_of_stddevs = 5
+    mask = np.ones(shape)
+    min_peak_height = mean + min_no_of_stddevs * stdev
+    for x, array in enumerate(sums_copy):
+        for y, item in enumerate(array):
+            if item < min_peak_height:
+                sums_copy[x][y] = 0
+                mask[x][y] = 0
     max_list = get_max_list(sums_copy, mask)
-    print len(peak_list)
+    peak_list = []
+    while len(max_list) != len(sums_copy.flatten()):
+        new_data = remove_peaks(sums_copy, mask, max_list, peak_list)
+        sums_copy = new_data[0]
+        mask = new_data[1]
+        peak_list = new_data[2]
+        if len(peak_list) >= expected_number_of_peaks:
+            break
+        max_list = get_max_list(sums_copy, mask)
+        print len(peak_list)
+    if len(peak_list) >= expected_number_of_peaks:
+        break
+    min_no_of_stddevs -= 1
 
-name_index = 1
+if len(peak_list) == 0:
+    raise Exception('No peaks found in data')
+
+if len(peak_list) < expected_number_of_peaks:
+    raise Warning('Less than expected number of peaks found.')
+
+
+def find_peak_coords(peak_image):
+    data = peak_image[0].transpose()
+    roi = data[centre[0]-width/2:centre[0]+width/2][:]
+    peak_value = np.max(roi)
+    coords = dnp.where(peak_image[0]==peak_value)
+    coords = zip(coords[0], coords[1])
+    return coords[0]
+
 for peak in peak_list:
     im = dnp.io.load('/dls/i16/data/2015/cm12169-3/{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_orig+peak[0], peak[1]), warn=False)
-    print roi_sums[peak], name_index, len(peak_list)
+    print roi_sums[peak], len(peak_list), find_peak_coords(im)
     plt.imshow(im[0])
     plt.show()
-    name_index += 1
 
 
 fig = plt.figure()

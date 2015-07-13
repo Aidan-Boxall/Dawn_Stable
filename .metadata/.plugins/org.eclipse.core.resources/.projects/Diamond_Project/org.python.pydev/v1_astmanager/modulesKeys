@@ -10,6 +10,7 @@ Crystal_Class.MagneticSpacegroup_example1|/home/ljh75651/DAWN_stable/Diamond_Pro
 Crystal_Class.MagneticSpacegroup_example2|/home/ljh75651/DAWN_stable/Diamond_Project/Crystal_Class/MagneticSpacegroup_example2.py
 astro_lab|/home/ljh75651/DAWN_stable/Diamond_Project/astro_lab.py
 chi_step|/home/ljh75651/DAWN_stable/Diamond_Project/chi_step.py
+finding_the_U_matrix|/home/ljh75651/DAWN_stable/Diamond_Project/finding_the_U_matrix.py
 finding_the_rotation_matrix|/home/ljh75651/DAWN_stable/Diamond_Project/finding_the_rotation_matrix.py
 functions|/home/ljh75651/DAWN_stable/Diamond_Project/functions.py
 numpy_quaternion|/home/ljh75651/DAWN_stable/Diamond_Project/numpy_quaternion.so

@@ -1,0 +1,29 @@
+import scisoftpy as dnp
+import finding_the_rotation_matrix as rm
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+import copy
+
+
+def find_U_matrix(found_vectors, crystal):
+    """Given a Crystal class object with a cif file loaded into it, this
+    function returns the U matrix as a dnp array.
+
+    Args:
+        crystal: A Crystal class object.
+
+        found_vectors: A list of Vector class objects representing the momentum
+            transfer vectors of the measured Bragg peaks.
+
+    Returns:
+        U: The U matrix as a dnp object.
+    """
+    # First gets all the allowed momentum transfer vectors of the crystal.
+    grouped_reflections = f.group_reflections(crystal)
+    all_vectors = []
+    for i, group in enumerate(grouped_vectors):
+        group_vectors = f.momentum_transfer_vectors(group, crystal)
+        all_vectors += group_vectors
+    
+    

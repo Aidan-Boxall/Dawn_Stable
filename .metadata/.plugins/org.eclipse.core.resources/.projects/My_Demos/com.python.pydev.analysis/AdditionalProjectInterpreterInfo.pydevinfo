@@ -2,11 +2,10 @@
 -- START DISKCACHE
 /home/ljh75651/DAWN_stable/.metadata/.plugins/org.eclipse.core.resources/.projects/My_Demos/com.python.pydev.analysis/v2_indexcache
 functions|1435677086000|/home/ljh75651/DAWN_stable/My_Demos/functions.py
-other|1435671242000|/home/ljh75651/DAWN_stable/My_Demos/other.py
 hashs|1435676248000|/home/ljh75651/DAWN_stable/My_Demos/hashs.py
+other|1435671242000|/home/ljh75651/DAWN_stable/My_Demos/other.py
 trace|1435755768000|/home/ljh75651/DAWN_stable/My_Demos/trace.py
 trivial|1435756867000|/home/ljh75651/DAWN_stable/My_Demos/trivial.py
-multi_line_strings|1435666404000|/home/ljh75651/DAWN_stable/My_Demos/multi_line_strings.py
 my_range|1435667027000|/home/ljh75651/DAWN_stable/My_Demos/my_range.py
 mutable_and_immutable.py|1435668740000|/home/ljh75651/DAWN_stable/My_Demos/mutable_and_immutable/py.py
 functions_3|1435679592000|/home/ljh75651/DAWN_stable/My_Demos/functions_3.py
@@ -14,7 +13,6 @@ hello|1435659275000|/home/ljh75651/DAWN_stable/My_Demos/hello.py
 point|1435746391000|/home/ljh75651/DAWN_stable/My_Demos/point.py
 time|1435749697000|/home/ljh75651/DAWN_stable/My_Demos/time.py
 swap_function|1435677868000|/home/ljh75651/DAWN_stable/My_Demos/swap_function.py
-mutable_and_immutable.__init__|1435668083000|/home/ljh75651/DAWN_stable/My_Demos/mutable_and_immutable/__init__.py
 my_modules.mylib|1435760337000|/home/ljh75651/DAWN_stable/My_Demos/my_modules/mylib.py
 -- END DISKCACHE
 -- START DICTIONARY
@@ -26,10 +24,10 @@ my_modules.mylib|1435760337000|/home/ljh75651/DAWN_stable/My_Demos/my_modules/my
 20=Point.__init__
 6=trace
 5=trivial
-18=Time.__init__
+19=Time.__init__
 12=my_range
 2=mutable_and_immutable.py
-19=Time.add_one_min
+18=Time.add_one_min
 3=functions_3
 13=hello
 7=point
@@ -82,15 +80,15 @@ tem|0|
 tim|1|Time!81@
 tr|0|
 tra|1|trace!50@
-x|7|x!43@x!19@x!91@x!99@x!11@x!75@x!107@
-y|2|y!91@y!75@
+x|7|x!91@x!19@x!43@x!11@x!99@x!75@x!107@
+y|2|y!75@y!91@
 -- END TREE
 -- START TREE 2
 23
 !<m|0|
 __|0|
 __a|2|__add__!14&82@__add__!15&58@
-__i|4|__init__!14&82@__init__!16&18@__iadd__!14&82@__init__!15&58@
+__i|4|__init__!16&18@__iadd__!14&82@__init__!14&82@__init__!15&58@
 __m|0|
 __p|0|
 __r|1|__radd__!14&82@

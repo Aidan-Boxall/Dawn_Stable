@@ -69,7 +69,7 @@ def momentum_transfer_vectors(reflection_list, crys):
         momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
         momentum_transfer_vector = rm.Vector(momentum_transfer_vector[0],
                                                 momentum_transfer_vector[1],
-                                                    momentum_transfer_vector[2])
+                                                    momentum_transfer_vector[2], reflection[0])
         momentum_transfer_vectors.append(momentum_transfer_vector)
     return momentum_transfer_vectors
 
@@ -129,7 +129,7 @@ def plot_vectors(vector_list, fig=None, ax=None, color='black'):
         xs.append(vector[0])
         ys.append(vector[1])
         zs.append(vector[2])
-    ax.scatter(xs, ys, zs, depthshade=False, s=30, c=color)
+    ax.scatter(xs, ys, zs, depthshade=True, s=30, c=color)
 
 
 def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
@@ -160,13 +160,11 @@ def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
     # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
     phi = np.linspace(0, 2 * dnp.pi, 100)
     theta = np.linspace(0, dnp.pi, 19)
-    print dnp.rad2deg(theta)
     x = radius * np.outer(np.cos(phi), np.sin(theta))
     y = radius * np.outer(np.sin(phi), np.sin(theta))
     z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
     for _, _theta in enumerate(theta):
         if _theta != 0 and _theta!=dnp.pi/2:
-            print _theta
             x = radius * np.outer(np.cos(phi), np.sin(_theta))
             y = radius * np.outer(np.sin(phi), np.sin(_theta))
             z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
@@ -183,6 +181,7 @@ def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
     axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
     fig_len=max(axis_params)*1.1
     ax.axis([-fig_len,fig_len,-fig_len,fig_len])
+    return xs,ys
 
 
 def many_vector_plots(crys, energy=8, number_of_plots='all'):
@@ -203,14 +202,15 @@ def many_vector_plots(crys, energy=8, number_of_plots='all'):
     if number_of_plots == 'all':
         number_of_plots = len(grouped_reflections)
     fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
     for i, group in enumerate(grouped_reflections):
         if i < number_of_plots:
             plot_width = dnp.sqrt(number_of_plots)+1
-            ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
+#             ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
             vectors = momentum_transfer_vectors(grouped_reflections[i],
                                                     crys)
             plot_vectors(vectors, fig, ax)
-            plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
+#             plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
 
 
 def many_stereographic_plots(crys, energy=8, number_of_plots='all'):
