@@ -1,0 +1,121 @@
+import scisoftpy as dnp
+import copy
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+
+def combinations(iterable, r):
+    """Equivalent to itetools.combinations which is not available in jython"""
+    # combinations('ABCD', 2) --> AB AC AD BC BD CD
+    # combinations(range(4), 3) --> 012 013 023 123
+    pool = tuple(iterable)
+    n = len(pool)
+    if r > n:
+        return
+    indices = range(r)
+    yield tuple(pool[i] for i in indices)
+    while True:
+        for i in reversed(range(r)):
+            if indices[i] != i + n - r:
+                break
+        else:
+            return
+        indices[i] += 1
+        for j in range(i+1, r):
+            indices[j] = indices[j-1] + 1
+        yield tuple(pool[i] for i in indices)
+
+
+
+def get_rotator(vector, target):
+    """Given a vector and a target vector finds the Rotator that turns one into
+    the other.
+    """
+    axis = vector**target
+    axis = axis.normalize()
+    angle = dnp.arccos(vector.normalize().dot(target.normalize()))
+    return Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle))
+
+
+def get_second_rotator(origional_target, vector, target):
+    axis = origional_target.unit()
+#     axis = Vector(0,0,1)
+    vector = vector.unit()
+    target = target.unit()
+    v1 = vector - (vector*axis)*axis
+    v2 = target - (target*axis)*axis
+    angle = dnp.arccos(v1.unit()*v2.unit())
+    angle = float(dnp.rad2deg(angle))
+    if (v1**v2).modulus()<10**-15:
+        raise Exception('vector and target are parallel so the cross product is zero')
+    if (v1**v2).unit() == axis.unit():
+        return Rotator(axis, angle)
+    elif (v2**v1).unit() == axis.unit():
+        return Rotator(axis, -angle)
+    else:
+        raise Exception('Not rounding enough in get second rotator /n axis: {0} /n v1**v2: {1} /n v2**v1: {2}'.format(str(axis), str((v1**v2).unit()), str((v2**v1).unit())))
+
+def finding_the_targets(found_vectors, theoretical_vectors):
+    found_dot = found_vectors[0].unit()*found_vectors[1].unit()
+    found_angle = float(dnp.rad2deg(dnp.arccos(found_dot)))
+    for r in range(9, 1, -1):
+        for combination in combinations(theoretical_vectors, 2):
+            if round(combination[0].modulus(), r) == round(
+                found_vectors[0].modulus(), r) and round(combination[1].modulus(),
+                    r) == round(found_vectors[1].modulus(), r):
+                target_dot = combination[0].unit()*combination[1].unit()
+                target_angle = float(dnp.rad2deg(dnp.arccos(target_dot)))
+                if round(found_angle) == round(target_angle):
+                    return list(combination)
+            if round(combination[0].modulus(), r) == round(
+                found_vectors[1].modulus(), r) and round(combination[1].modulus(),
+                    r) == round(found_vectors[0].modulus(), r): 
+                target_dot = combination[0].unit()*combination[1].unit()
+                target_angle = float(dnp.rad2deg(dnp.arccos(target_dot)))
+                if round(found_angle) == round(target_angle):
+                    return [combination[1], combination[0]]
+    raise Exception("""Could not find two vectors with moduli that match the
+                        theoretical vectors to an accuracy of 2 decimal
+                            places and an angle between them which matches to 
+                                the nearest degree.""")
+
+
+def rotate_list(rotation, vector_list):
+    vectors_list = copy.deepcopy(vector_list)
+    for i, vector in enumerate(vectors_list):
+        vector = rotation * vector
+        vectors_list[i] = vector
+    return vectors_list
+
+# def get_third_rotator(origional_target, vector, target):
+#     axis = origional_target
+#     axis = axis.unit()
+#     vector = vector.unit()
+#     target = target.unit()
+#     v1 = vector - (vector*axis)*axis
+#     v2 = target - (target*axis)*axis
+#     print (vector*axis)*axis, (target*axis)*axis
+#     angle = dnp.arccos(v1*v2)
+#     angle = float(dnp.rad2deg(angle))
+#     return Rotator(axis,-angle)
+
+
+# x =Vector()
+# y = Vector(0,1)
+# print x
+# y = y.unit()
+# z = Vector(0,0,1)
+# # z = Vector(0,0,5)
+# # r = Rotator(z,90)
+# r = get_rotator(x,y)
+# # z = r*x
+# print r.R
+# print y,z
+# m = Rotator(z,90)
+# n =m*m
+# print n.R
+# y = m*y
+# print y
+
+
+

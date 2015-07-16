@@ -1,0 +1,18 @@
+import Crystal as c
+import functions as f
+
+def gap_to_next_two_theta(index, grouped_reflections):
+    group = grouped_reflections[index]
+    try:
+        pevious_group = grouped_reflections[index-1]
+    except IndexError:
+        padd
+        
+
+
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+grouped_reflections = f.group_reflections(mycrys)
+print grouped_reflections
+mycrys.reflection_list(8, 'sym')
+

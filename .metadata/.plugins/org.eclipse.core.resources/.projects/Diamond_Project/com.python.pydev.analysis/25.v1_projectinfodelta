@@ -1,1 +1,7 @@
-DELSTRopening_data
+INSTUPchi_step
+/home/ljh75651/DAWN_stable/Diamond_Project/chi_step.py
+INFOS:&&3|1|2|0&&3|3|2|0&&2|4|2|0
+chi_step=2
+get_chi_steps=4
+LENGTH=1
+WIDTH=3

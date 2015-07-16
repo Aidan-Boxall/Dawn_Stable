@@ -1,0 +1,8 @@
+import Crystal as c
+import functions as f
+
+
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+grouped_reflections = f.group_reflections(mycrys)
+print grouped_reflections

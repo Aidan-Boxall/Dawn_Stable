@@ -1,12 +1,3 @@
-non_equiv = f.momentum_transfer_vectors(l[1], mycrys)
-# choose random equivalent vectors
-dot = 0
-while dot<10**(-5) or 179.9<dot<180.1:
-    i = dnp.random.randint(len(vectors))
-    j=i
-    k=i
-    while i == j:
-            j = dnp.random.randint(len(vectors))
     while i==k or j==k:
         k = dnp.random.randint(len(vectors))
     dot = dnp.rad2deg(dnp.arccos(vectors[i].unit()* vectors[j].unit()))
@@ -198,3 +189,12 @@ print x**y
 #Configuring Environment, please wait
 import scisoftpy as dnp;import sys;sys.executable=''
 round(-5)
+#Configuring Environment, please wait
+import scisoftpy as dnp;import sys;sys.executable=''
+#Configuring Environment, please wait
+import scisoftpy as dnp;import sys;sys.executable=''
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+x = Vector([1,2,3])
+x
+x.elems
