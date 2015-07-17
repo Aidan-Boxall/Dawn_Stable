@@ -1,0 +1,86 @@
+import scisoftpy as dnp
+
+import Crystal as c
+import functions as f
+
+
+def two_theta_gap(index, grouped_reflections):
+    group = grouped_reflections[index]
+    current_2theta = group[0][4]
+    gaps =[]
+    try:
+        previous_group = grouped_reflections[index-1]
+        previous_2theta = previous_group[0][4]
+        gaps.append(dnp.abs(current_2theta-previous_2theta))
+    except IndexError:
+        pass
+    try:
+        next_group = grouped_reflections[index+1]
+        next_2theta = next_group[0][4]
+        gaps.append(dnp.abs(current_2theta-next_2theta))
+    except IndexError:
+        pass
+    return min(gaps)
+
+
+def normalised_two_theta_gaps(grouped_reflections):
+    two_theta_gaps = []
+    for index, group in enumerate(grouped_reflections):
+        two_theta_gaps.append(two_theta_gap(index, grouped_reflections))
+    max_gap = max(two_theta_gaps)
+    two_theta_gaps = [(gap/max_gap)*100.0 for gap in two_theta_gaps]
+    return dnp.array(two_theta_gaps)
+
+
+def ideal_two_theta_gap(index, grouped_reflections, ideal_two_theta):
+    group = grouped_reflections[index]
+    two_theta = group[0][4]
+    return dnp.abs(two_theta-ideal_two_theta)
+
+
+def noramlised_gap_to_ideal_two_theta(grouped_reflections, ideal_two_theta=45):
+    ideal_two_theta_gaps = []
+    for index, group in enumerate(grouped_reflections):
+        ideal_two_theta_gaps.append(ideal_two_theta_gap(index, grouped_reflections, ideal_two_theta))
+    min_gap = min(ideal_two_theta_gaps)
+    ideal_two_theta_gaps = [100.0-((gap-min_gap/gap)*100.0) for gap in ideal_two_theta_gaps]
+    return dnp.array(ideal_two_theta_gaps)
+
+
+def normalised_number_of_reflections(grouped_reflections):
+    no_of_reflec_list = []
+    for group in grouped_reflections:
+        no_of_reflec_list.append(len(group))
+    max_no = max(no_of_reflec_list)
+    no_of_reflec_list = [(no/max_no)*100.0 for no in no_of_reflec_list]
+    return dnp.array(no_of_reflec_list)
+
+
+def normalised_intensities(grouped_reflections):
+    normalised_intensities_list = []
+    for group in grouped_reflections:
+        intensities = []
+        for reflec in group:
+            intensities.append(reflec[2])
+        normalised_intensities_list.append(min(intensities))
+    # following two lines are necesary to renormalise the intensity after only
+        # considering the minimum intensitiy of each group.
+    max_in = max(normalised_intensities_list)
+    normalised_intensities_list = [(no/max_in)*100.0 for no in normalised_intensities_list]
+    return dnp.array(normalised_intensities_list)
+
+
+def choose_reflection(grouped_reflections):
+    factors = normalised_two_theta_gaps(grouped_reflections)
+    factors += noramlised_gap_to_ideal_two_theta(grouped_reflections)
+    factors += normalised_number_of_reflections(grouped_reflections)
+    factors += normalised_intensities(grouped_reflections)
+    factors = list(factors)
+    index = factors.index(max(factors))
+    return grouped_reflections[index]
+
+
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+grouped_reflections = f.group_reflections(mycrys,8)
+print len(choose_reflection(grouped_reflections))

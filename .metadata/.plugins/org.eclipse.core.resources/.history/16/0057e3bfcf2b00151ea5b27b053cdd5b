@@ -1,0 +1,5 @@
+def f(x):
+    return x,
+
+print f(5)
+print f(f(5))

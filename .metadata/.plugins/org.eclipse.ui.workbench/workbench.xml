@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="27" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
-<window height="769" maximized="true" width="1022" x="612" y="62">
+<window height="770" maximized="true" width="1020" x="260" y="62">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -59,9 +59,9 @@
 <part id="14"/>
 <part id="15"/>
 <part id="16"/>
+<part id="19"/>
 <part id="17"/>
 <part id="18"/>
-<part id="19"/>
 </presentation>
 </folder>
 </info>
@@ -114,37 +114,37 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/astro_lab.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="5194" selectionTopPixel="2215"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" partName="peak_finder (Diamond_Project)" path="/home/ljh75651/DAWN_stable/Diamond_Project/peak_finder.py" title="peak_finder (Diamond_Project)" tooltip="Diamond_Project/peak_finder.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/peak_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5409" selectionTopPixel="2007"/>
-</editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" partName="reflection_choice" path="/home/ljh75651/DAWN_stable/Diamond_Project/reflection_choice.py" title="reflection_choice" tooltip="Diamond_Project/reflection_choice.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/reflection_choice.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2887" selectionTopPixel="886"/>
 </editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" partName="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" title="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" workbook="DefaultEditorWorkbook">
+<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" partName="finding_the_rotation_matrix" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" title="finding_the_rotation_matrix" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="630" selectionOffset="3700" selectionTopPixel="1377"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15185" selectionTopPixel="5587"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_U_matrix.py" partName="finding_the_U_matrix (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_U_matrix.py" title="finding_the_U_matrix (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/finding_the_U_matrix.py" workbook="DefaultEditorWorkbook">
+<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_U_matrix.py" partName="finding_the_U_matrix" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_U_matrix.py" title="finding_the_U_matrix" tooltip="Diamond_Project_with_cctbx/finding_the_U_matrix.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/finding_the_U_matrix.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="71" selectionOffset="1261" selectionTopPixel="281"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py" title="unit_test (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/unit_test.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/unit_test.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="20" selectionOffset="6869" selectionTopPixel="2642"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="112" selectionTopPixel="0"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="linalg.py" partName="linalg" title="linalg" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="53223" selectionTopPixel="29121"/>
 </editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" partName="peak_finder (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/peak_finder.py" title="peak_finder (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/peak_finder.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="329" selectionTopPixel="0"/>
-</editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" partName="testing_rotation_finder (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/testing_rotation_finder.py" title="testing_rotation_finder (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1203" selectionTopPixel="428"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1203" selectionTopPixel="728"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="functions.py" partName="functions (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/functions.py" title="functions (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/functions.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/functions.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6338" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py" title="unit_test" tooltip="Diamond_Project_with_cctbx/unit_test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/unit_test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7776" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" partName="peak_finder" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/peak_finder.py" title="peak_finder" tooltip="Diamond_Project_with_cctbx/peak_finder.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -188,6 +188,7 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx"/>
+<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py"/>
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python"/>
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src"/>
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/05 Classes and Objects"/>
@@ -195,7 +196,7 @@
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/11 Decorators/BuiltInDecorators"/>
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/15 Inheritance"/>
 <expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/20 Operator Overloading"/>
-<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py"/>
+<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/functions.py"/>
 </viewState>
 </view>
 <view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 2" partName="Peak 2">
@@ -242,7 +243,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.dawb.workbench.ui.perspective.DataBrowsingPerspective" id="org.edna.workbench.application.perspective.DataPerspective" label="Data Browsing"/>
 <alwaysOnActionSet id="org.edna.common.ui.project.import"/>
@@ -277,47 +278,34 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="navigator-folder">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="navigator-folder">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11030cfb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@11030cfb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3081166" ratioLeft="391" ratioRight="878" relationship="2" relative="navigator-folder"/>
-<info folder="true" part="folder" ratio="0.87885714" ratioLeft="769" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">
-<page content="org.dawb.workbench.views.dataSetView" label="Metadata"/>
+<info folder="true" part="folder" ratio="0.87885714" ratioLeft="769" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.workbench.views.dataSetView" label="Metadata"/>
 <page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="No tool"/>
 <page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="folder_1" ratio="0.6761566" ratioLeft="570" ratioRight="273" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
+<info folder="true" part="folder_1" ratio="0.6761566" ratioLeft="570" ratioRight="273" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="No tool"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -365,6 +353,9 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.dawb.common.ui.views.headerTableView"/>
 <view id="com.python.pydev.ui.hierarchy.PyHierarchyView"/>
 <view id="org.python.pydev.debug.pyunit.pyUnitView"/>
 <view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewDP"/>
@@ -380,9 +371,6 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.dawb.common.ui.views.headerTableView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -396,7 +384,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c49329a" ratio="0.78291816" ratioLeft="660" ratioRight="183" relationship="4" relative="navigators">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c49329a" ratio="0.7781732" ratioLeft="656" ratioRight="187" relationship="4" relative="navigators">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -417,7 +405,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2789598" ratioLeft="354" ratioRight="915" relationship="2" relative="navigators"/>
-<info folder="true" part="debug" ratio="0.88377196" ratioLeft="806" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="debug" ratio="0.8399123" ratioLeft="766" ratioRight="146" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
@@ -693,160 +681,162 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/temp.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/functions.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/unit_test.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/finding_the_U_matrix.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/unit_test.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
 </editors>
-<item historyLabel="finding_the_U_matrix (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="1814" y="26"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6798" y="0"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="9958" y="0"/>
 </item>
-<item historyLabel="finding_the_U_matrix (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="1814" y="26"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="7525" y="18"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="9339" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5477" y="0"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="8378" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="7525" y="18"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="8576" y="738"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5477" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3433" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="7216" y="46"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="9958" y="0"/>
 </item>
-<item historyLabel="finding_the_U_matrix (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="1261" y="71"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3433" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5769" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3322" y="0"/>
 </item>
-<item historyLabel="finding_the_U_matrix (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="1261" y="71"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3298" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6509" y="0"/>
+<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
+<position info="not_deleted" x="8536" y="0"/>
 </item>
-<item historyLabel="testing_rotation_finder (Diamond_Project_with_cctbx)" index="3">
-<position info="not_deleted" x="1441" y="331"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3298" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6509" y="0"/>
+<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
+<position info="not_deleted" x="301" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6415" y="0"/>
+<item historyLabel="temp" index="0">
+<position info="not_deleted" x="1466" y="161"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="5375" y="0"/>
+<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
+<position info="not_deleted" x="301" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="finding_the_U_matrix (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="1261" y="71"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3657" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="7272" y="55"/>
 </item>
-<item historyLabel="testing_rotation_finder (Diamond_Project_with_cctbx)" index="3">
-<position info="not_deleted" x="1203" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3657" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5213" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="806" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5213" y="0"/>
+<item historyLabel="peak_finder" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="806" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5213" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="1944" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="3423" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="5213" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="13155" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="1944" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6064" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="13155" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6889" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="1944" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6064" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="13155" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6478" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="1944" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6064" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="13155" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6478" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="178" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6064" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="13155" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6478" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="179" y="21"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6064" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="45" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6867" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="179" y="21"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6506" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="45" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6574" y="88"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="322" y="3987"/>
 </item>
-<item historyLabel="testing_rotation_finder (Diamond_Project_with_cctbx)" index="3">
-<position info="not_deleted" x="1203" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="15185" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6574" y="88"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="2848" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6506" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="7513" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6868" y="0"/>
+<item historyLabel="finding_the_U_matrix" index="5">
+<position info="not_deleted" x="112" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6665" y="0"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="15185" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6868" y="0"/>
+<item historyLabel="unit_test" index="3">
+<position info="not_deleted" x="7513" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6869" y="20"/>
+<item historyLabel="finding_the_rotation_matrix" index="4">
+<position info="not_deleted" x="15185" y="0"/>
 </item>
-<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6665" y="0"/>
+<item historyLabel="peak_finder" index="1">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6869" y="20"/>
+<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
+<position info="not_deleted" x="6338" y="0"/>
 </item>
-<item active="true" historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="0">
-<position info="not_deleted" x="6665" y="0"/>
+<item active="true" historyLabel="unit_test" index="3">
+<position info="not_deleted" x="7513" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -854,6 +844,14 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="navigators"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+<trimItem IMemento.internal.id="plot"/>
+<trimItem IMemento.internal.id="debug"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -865,17 +863,26 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py">
-<persistable path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" tooltip="Diamond_Project_with_cctbx/peak_finder.py">
 <persistable path="/Diamond_Project_with_cctbx/peak_finder.py"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="linalg.py" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py">
-<persistable uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project_with_cctbx/unit_test.py">
 <persistable path="/Diamond_Project_with_cctbx/unit_test.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Diamond_Project_with_cctbx/functions.py">
+<persistable path="/Diamond_Project_with_cctbx/functions.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="temp.py" tooltip="Diamond_Project_with_cctbx/temp.py">
+<persistable path="/Diamond_Project_with_cctbx/temp.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="vpyhton.py" tooltip="Diamond_Project_with_cctbx/vpyhton.py">
+<persistable path="/Diamond_Project_with_cctbx/vpyhton.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py">
+<persistable path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="linalg.py" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py">
+<persistable uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project/unit_test.py">
 <persistable path="/Diamond_Project/unit_test.py"/>
@@ -898,17 +905,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py">
 <persistable path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Diamond_Project_with_cctbx/functions.py">
-<persistable path="/Diamond_Project_with_cctbx/functions.py"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" tooltip="Diamond_Project/reflection_choice.py">
 <persistable path="/Diamond_Project/reflection_choice.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" tooltip="Diamond_Project/peak_finder.py">
-<persistable path="/Diamond_Project/peak_finder.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="astro_lab.py" tooltip="Diamond_Project/astro_lab.py">
-<persistable path="/Diamond_Project/astro_lab.py"/>
 </file>
 </mruList>
 </workbench>

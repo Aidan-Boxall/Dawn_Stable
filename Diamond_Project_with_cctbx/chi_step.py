@@ -3,8 +3,6 @@ import scisoftpy as dnp
 
 LENGTH = 0.502 # The length between the sample and the detector.
 WIDTH = 195*172*10**-6  # Width of the detector 195 pixels times 172 microns
-
-
 def get_chi_steps(two_theta, starting_chi_value=100.0, final_chi_value=0.0):
     theta = dnp.radians(two_theta / 2.0) # converts to radians and halfs to theta
     radius = LENGTH * float(dnp.sin(theta))

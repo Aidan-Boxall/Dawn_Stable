@@ -1,0 +1,286 @@
+import scisoftpy as dnp
+import numpy as np
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+import copy
+
+
+def get_mean(indata):  # Need custom functions as array is too large for numpy.
+    """Returns the average of an array. Its defined as numpy.mean cannot handle
+        large arrays.
+
+    Args:
+        indata: An array to be averaged.
+
+    Returns:
+        mean: The mean of indata.
+    """
+    indata = indata.flatten()
+    mean = sum(indata) / float(len(indata))
+    return mean
+
+
+def get_stddev(indata, mean=None):
+    """Returns the standard deviation of an array. Its defined as numpy
+        standard deviation cannot handle large arrays.
+
+    Args:
+        indata: An array to find the standard deviation of.
+
+        mean: The mean of indata. If passed as None it is calculated.
+
+    Returns:
+        stddev: The standard deviation of indata.
+    """
+    indata = indata.flatten()
+    if mean is None:
+        mean = sum(indata) / float(len(indata))
+    indata = indata.flatten()
+    stddevlist = []
+    for value in indata:
+        stddevlist.append(value**2 - mean**2)
+    stddev = np.sqrt((1 / float(len(indata) - 1)) * sum(stddevlist))
+    return stddev
+
+
+def remove_peak(point, workdata, mask, peak_list):
+    """ Removes the peak which has its maximum at point from the workdata and
+            the mask. If the peak is valid adds it to the peak_list.
+
+    Args:
+        point: The coordinates of the highest value of the peak.
+
+        workdata: The workdata.
+
+        mask: The mask.
+
+        peak_list: The peak list.
+
+    Returns:
+        workdata: An updated copy of workdata.
+
+        mask: An updated copy of mask.
+
+        peak_list: An updated copy of peak list.
+    """
+    if mask[point]:
+        peak_list.append(point)
+        peak_mask = np.zeros(workdata.shape)
+        up = 0
+        while mask[(point[0] + up, point[1])]:
+            try:
+                peak_mask[(point[0] + up, point[1])] = 1
+            except IndexError:
+                break
+            up += 1
+        down = 0
+        while mask[(point[0] - down, point[1])]:
+            try:
+                peak_mask[(point[0] - down, point[1])] = 1
+            except IndexError:
+                break
+            down += 1
+        left = 0
+        while mask[(point[0], point[1] - left)]:
+            try:
+                peak_mask[(point[0], point[1] - left)] = 1
+            except IndexError:
+                break
+            left += 1
+        right = 0
+        while mask[(point[0], point[1] + right)]:
+            try:
+                peak_mask[(point[0], point[1] + right)] = 1
+            except IndexError:
+                break
+            right += 1
+        for y in range(-down, up+1):
+            for x in range(-left, right+1):
+                peak_mask[(point[0] + y, point[1] + x)] = 1
+        np.place(workdata, peak_mask, 0)
+        np.place(mask, peak_mask, 0)
+    return workdata, mask, peak_list
+
+
+def update_peak_list(workdata, mask, peak_list):
+    """Returns a list of current maxima in the workdata array.
+
+    Args:
+        workdata: A copy of roi_sums with the peaks already counted removed.
+
+        mask: An array the same size as workdata but with 1s if the points are
+            still being considered and 0s if they're not.
+
+        peak_list: The current peak list.
+
+    Returns:
+        len(maxcorods): Returns the number of points in workdata currently
+            equal to the maximum of workdata. Its returned becuase if it is
+            equal to the length of workdata there is no more peaks to be found.
+
+        workdata: An updated version of workdata.
+
+        mask: An updated version of the mask.
+
+        peak_list: An updated version of the peak list.
+    """
+    maximum = np.max(workdata)
+    maxpoints = np.where(workdata == maximum)
+    # Format into a list of xy coords.
+    maxcoords = zip(maxpoints[0], maxpoints[1])
+    for point in maxcoords:
+        workdata, mask, peak_list = remove_peak(point, workdata, mask,
+                                                peak_list)
+    return len(maxcoords), workdata, mask, peak_list
+
+
+def get_image_peak_list(roi_sums, expected_number_of_peaks=1):
+    """Returns a list of coordinates of images that contain peaks within the
+        ROI sums data.
+
+    Args:
+        roi_sums: The roi_sums array.
+
+        expected_number_of_peaks: The maximum number of peaks expected to be
+            found in the data.
+
+    Returns:
+        peak_list: A list of coordinates of images that contain peaks within
+            the ROI sums data.
+    """
+    mean = get_mean(roi_sums)
+    stddev = get_stddev(roi_sums, mean)
+    shape = roi_sums.shape
+    min_no_of_stddevs = 5
+    while min_no_of_stddevs > 1:
+        workdata = copy.deepcopy(roi_sums)
+        mask = np.ones(shape)
+        min_peak_height = mean + min_no_of_stddevs * stddev
+        for x, sub_array in enumerate(workdata):
+            for y, item in enumerate(sub_array):
+                if item < min_peak_height:
+                    workdata[x][y] = 0
+                    mask[x][y] = 0
+        peak_list = []
+        len_max_list = 0
+        len_workdata = len(workdata.flatten())
+        while len_max_list != len_workdata:
+            new_data = update_peak_list(workdata, mask, peak_list)
+            len_max_list = new_data[0]
+            workdata = new_data[1]
+            mask = new_data[2]
+            peak_list = new_data[3]
+            if len(peak_list) >= expected_number_of_peaks:
+                break
+        if len(peak_list) >= expected_number_of_peaks:
+            break
+        min_no_of_stddevs -= 1
+    if len(peak_list) == 0:
+        raise Exception('No peaks found')
+    return peak_list
+
+
+def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
+               show_images, plot_data, roi_key='roi7_sum'):
+    """Finds the images and pixel coordinates of peaks in the data.
+
+    Args:
+        data_dir: The file directory where the dat files and pilatus100k folder
+            is stored.
+
+        path_index_first: The first file number of the data.
+
+        path_index_end: The last file number of the data.
+
+        number_of_peaks: The maximum number of peaks expected to be found in
+            the data.
+
+        show_images: A boolean which if True the images are containing peaks
+            are plotted.
+
+        plot_data: A boolean which if True the ROI sum of the images are
+            plotted against chi and kphi values of the images.
+
+        roi_key: The dictionary key of the ROI sums values in the dat file. If
+            passed as None the ROI is defined in this function and summed by 
+            accessing all the tif files. N.B. This takes around 10 mins.
+
+    
+    """
+    chi = None
+    kphi = None
+    sums = None
+    roi_sums = None
+    for path_index in range(path_index_first, path_index_end):
+        try:
+            dat = dnp.io.load(data_dir+'{0:.0f}.dat'.format(path_index),
+                              warn=False)
+        except ValueError:
+            print data_dir+'{0:.0f}.dat'.format(path_index) + ' could not be found.'
+        if chi is None:
+            chi = np.array([[dat.metadata.chi]*len(dat.kphi)])
+        else:
+            chi = np.append(chi, np.array([[dat.metadata.chi]*len(dat.kphi)]),
+                            axis=0)
+        if kphi is None:
+            kphi = np.array([dat.kphi])
+        else:
+            kphi = np.append(kphi, [dat.kphi], axis=0)
+        if sums is None:
+            sums = np.array([dat.sum])
+        else:
+            sums = np.append(sums, [dat.sum], axis=0)
+        if roi_key is not None:
+            if roi_sums is None:
+                roi_sums = np.array([dat[roi_key]])
+            else:
+                roi_sums = np.append(roi_sums, [dat[roi_key]], axis=0)
+    if roi_sums is None:
+        # Define ROI and sum it.
+        centre = (108, 242)
+        width = 16
+        roi_sums = np.zeros(sums.shape)
+        for p in range(sums.shape[0]):
+            print p
+            for i in range(sums.shape[1]):
+                im = dnp.io.load(data_dir+'{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+p, i), warn = False)
+                data = im[0].transpose()
+                roi = data[centre[1]-width/2:centre[1]+width/2][:]
+                roi_sum = np.sum(roi)
+                roi_sums[p][i] = roi_sum
+    image_peak_list = get_image_peak_list(roi_sums, number_of_peaks)
+    peak_list = []
+    for peak in image_peak_list:
+        image_dir = data_dir+'{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+peak[0], peak[1])
+        im = dnp.io.load(image_dir, warn=False)
+        roi_centre = (108, 242)
+        roi_width = 16
+        data = im[0].transpose()
+        roi = data[roi_centre[1]-roi_width/2:roi_centre[1]+roi_width/2][:]
+        roi_max = np.max(roi)
+        roi_max_coords = np.where(im[0] == roi_max)
+        for point in zip(roi_max_coords[0], roi_max_coords[1]):
+            if roi_centre[1] - roi_width/2 <= point[1] < roi_centre[1] + roi_width/2:
+                peak_x = point[0]
+                peak_y = point[1]
+                break
+        peak_list.append((image_dir, peak_x, peak_y))
+    if show_images:
+        for peak in image_peak_list:
+            im = dnp.io.load(data_dir+'{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+peak[0], peak[1]), warn=False)
+            print roi_sums[peak], (path_index_first+peak[0], peak[1]), len(image_peak_list), chi[peak], kphi[peak]
+            plt.imshow(im[0])
+            plt.show()
+    if plot_data:
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        ax.scatter(chi,kphi,roi_sums)
+        ax.set_xlabel('Chi Angle')
+        ax.set_ylabel('Kphi Angle')
+        ax.set_zlabel('ROI Sum')
+        plt.show()
+    return peak_list
+
+
+print find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 4, False,
+                 False,'roi7_sum')

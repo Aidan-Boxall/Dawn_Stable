@@ -90,6 +90,11 @@ class TestUnit(unittest.TestCase):
 #         f.many_vector_plots(mycrys2)
 #         f.many_stereographic_plots(mycrys2)
 #         plt.show()
+    def test_peak_finder(self):
+        import peak_finder as fp
+        print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 4,
+                          False, False,'roi7_sum')
+
 
     def test_finding_the_U_matrix(self):
         import scisoftpy as dnp
@@ -97,7 +102,6 @@ class TestUnit(unittest.TestCase):
         import functions as f
         import matplotlib.pyplot as plt
         import finding_the_rotation_matrix as rm
-        import finding_the_U_matrix as u
         import copy
         import scitbx.math as scm
         from scitbx.matrix import col as Vector
@@ -175,7 +179,7 @@ class TestUnit(unittest.TestCase):
         all_vectors_copy = rm.rotate_list(rand_rot, all_vectors_copy)
         ax = fig.add_subplot(312, projection='3d')
         f.plot_vectors(all_vectors_copy, fig, ax)
-        U = u.find_U_matrix(mock_data, mycrys)
+        U = rm.find_U_matrix(mock_data, mycrys)
         rotator = U
         all_vectors_copy = rm.rotate_list(rotator, all_vectors_copy)
         ax = fig.add_subplot(313, projection='3d')

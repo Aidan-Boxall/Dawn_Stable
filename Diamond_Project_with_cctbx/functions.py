@@ -8,27 +8,19 @@ import finding_the_rotation_matrix as rm
 import Crystal
 
 
-def convert_to_radians(angle):
-    """Converts an angle in degrees to radians."""
-    return angle * (dnp.pi/180.0)
-
-
-def convert_to_degrees(angle):
-    """Converts an angle in radians to degrees."""
-    return angle * (180.0/dnp.pi)
-
-def group_reflections(crys, energy=8): 
+def group_reflections(crys, energy=8):
     """Groups reflections according to two theta value.
 
     Args:
         crys: A crystal class object.
 
     Returns:
-        grouped_reflection_list: A list of reflections grouped into lists of 
+        grouped_reflection_list: A list of reflections grouped into lists of
             reflections with the same two theta value.
     """
     reflection_list = crys.reflection_list(energy, refl='allowed',
-                                           print_list=False, anomalous_flag=True)
+                                           print_list=False,
+                                           anomalous_flag=True)
     grouped_reflection_list = []
     reflections_for_current_two_theta = []
     previous_two_theta = round(reflection_list[0][4], 9)
@@ -64,14 +56,13 @@ def momentum_transfer_vectors(reflection_list, crys):
     for i, reflection in enumerate(reflection_list):
         momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
         momentum_transfer_vector = Vector((momentum_transfer_vector[0],
-                                                momentum_transfer_vector[1],
-                                                    momentum_transfer_vector[2]))
+                                           momentum_transfer_vector[1],
+                                           momentum_transfer_vector[2]))
         momentum_transfer_vectors.append(momentum_transfer_vector)
     return momentum_transfer_vectors
 
 
 def plot_sphere(radius=1, fig=None, ax=None):
-    import numpy as np
     """Plots a sphere given a radius
 
     Args:
@@ -86,6 +77,7 @@ def plot_sphere(radius=1, fig=None, ax=None):
     Returns:
         None
     """
+    import numpy as np
     if fig is None:
         fig = plt.figure()
     if ax is None:
@@ -174,10 +166,11 @@ def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
             X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
             Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
             ax.plot(X,Y, color='green')
-    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
-    fig_len=max(axis_params)*1.1
-    ax.axis([-fig_len,fig_len,-fig_len,fig_len])
-    return xs,ys
+    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1, dnp.absolute(
+                   min(ys))*1.1, max(ys)*1.1]
+    fig_len = max(axis_params)*1.1
+    ax.axis([-fig_len, fig_len, -fig_len, fig_len])
+    return xs, ys
 
 
 def many_vector_plots(crys, energy=8, number_of_plots='all'):

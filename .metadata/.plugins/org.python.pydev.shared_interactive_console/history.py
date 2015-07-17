@@ -1,72 +1,3 @@
-    while i==k or j==k:
-        k = dnp.random.randint(len(vectors))
-    dot = dnp.rad2deg(dnp.arccos(vectors[i].unit()* vectors[j].unit()))
-print i, j, k
-i = 0 
-j = 4
-k = 2
-# add a non-equivalent vector
-mock_data = [vectors[i], vectors[j], vectors[k]] + vectors + non_equiv
-print 'Measured', mock_data[0].hkl, mock_data[1].hkl
-# add rotational error
-#mock_data = [add_rot_error(dat) for dat in mock_data]
-# Plot vectors with error added
-unit_mock_data = [dat.unit() for dat in mock_data]
-fig = plt.figure(1)
-ax = fig.add_subplot(233)
-fig2 = plt.figure(2)
-ax2 = fig2.add_subplot(233, projection='3d')
-f.plot_vectors(mock_data[:2], fig2, ax2)
-f.plot_sphere(mock_data[0].modulus(), fig2, ax2)
-xs= []
-ys=[]
-t = f.stereographic_projection([unit_mock_data[0]], fig,ax, color = 'black')
-xs.append(t[0][0])
-ys.append(t[1][0])
-t = f.stereographic_projection([unit_mock_data[1]], fig,ax, color = 'green')
-xs.append(t[0][0])
-ys.append(t[1][0])
-t = f.stereographic_projection([unit_mock_data[2]], fig,ax, color = 'orange')
-xs.append(t[0][0])
-ys.append(t[1][0])
-#t = f.stereographic_projection([unit_mock_data[3]], fig,ax, color = 'blue')
-xs.append(t[0][0])
-ys.append(t[1][0])
-axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
-fig_len=max(axis_params)*1.1
-ax.axis([-fig_len,fig_len,-fig_len,fig_len])
-# Add a random rotation and make some copys
-mock_data = rotations(mock_data, 1)
-data = copy.deepcopy(mock_data)
-data2 = copy.deepcopy(mock_data)
-# Plot the vectors after the random rotation
-ax = fig.add_subplot(234)
-unit_mock_data = [dat.unit() for dat in mock_data]
-ax2 = fig2.add_subplot(234, projection='3d')
-f.plot_vectors(mock_data[:9], fig2, ax2)
-f.plot_sphere(mock_data[0].modulus(), fig2, ax2)
-xs= []
-ys=[]
-t = f.stereographic_projection([unit_mock_data[0]], fig,ax, color = 'black')
-xs.append(t[0][0])
-ys.append(t[1][0])
-t = f.stereographic_projection([unit_mock_data[1]], fig,ax, color = 'green')
-xs.append(t[0][0])
-ys.append(t[1][0])
-t = f.stereographic_projection([unit_mock_data[2]], fig,ax, color = 'orange')
-xs.append(t[0][0])
-ys.append(t[1][0])
-t = f.stereographic_projection([unit_mock_data[3]], fig,ax, color = 'blue')
-xs.append(t[0][0])
-ys.append(t[1][0])
-axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1,dnp.absolute(min(ys))*1.1,max(ys)*1.1]
-fig_len=max(axis_params)*1.1
-ax.axis([-fig_len,fig_len,-fig_len,fig_len])
-# Find the vectors to aim for
-target_data = rm.finding_the_targets(mock_data, vectors)
-print 'Target:', str(target_data[0].hkl), target_data[1].hkl
-# Plot all equiv reflections and the target
-vectors_unit = [vector.unit() for vector in vectors]
 non_equiv_unit = [vector.unit() for vector in non_equiv]
 vectors += non_equiv
 ax = fig.add_subplot(231)
@@ -198,3 +129,72 @@ from scitbx.matrix import col as Vector
 x = Vector([1,2,3])
 x
 x.elems
+#Configuring Environment, please wait
+import scisoftpy as dnp;import sys;sys.executable=''
+import scisoftpy as dnp
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+import finding_the_rotation_matrix as rm
+import finding_the_U_matrix as u
+import copy
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+cd
+cd '~/DAWN_stable/Diamond_Project_with_cctbx'
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+all_vectors=[]
+for i, group in enumerate(l):
+    all_g = f.momentum_transfer_vectors(group, mycrys)
+    all_vectors += all_g
+zip(all_vectors)
+for vector in all_vectors:
+    vector = vector.elems
+    
+for vector in all_vectors:
+    vector = vector.elems
+    
+for vector in all_vectors:
+    vector = vector.dnp_array()
+    
+import scisoftpy as dnp
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+import finding_the_rotation_matrix as rm
+import finding_the_U_matrix as u
+import copy
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys)
+all_vectors=[]
+for i, group in enumerate(l):
+    all_g = f.momentum_transfer_vectors(group, mycrys)
+    all_vectors += all_g
+for vector in all_vectors:
+    vector = vector.elems
+    
+for vector in all_vectors:
+    vector = vector
+Vector
+cd
+cd '~/DAWN_stable/Diamond_Project_with_cctbx'
+cd
+pwd '~/DAWN_stable/Diamond_Project_with_cctbx'
+pwd '~/DAWN_stable/Diamond_Project_with_cctbx'
+wd '~/DAWN_stable/Diamond_Project_with_cctbx'
+wd ~/DAWN_stable/Diamond_Project_with_cctbx
+cwd ~/DAWN_stable/Diamond_Project_with_cctbx
+cwd '~/DAWN_stable/Diamond_Project_with_cctbx'
+cd '~/DAWN_stable/Diamond_Project_with_cctbx'
+pwd
+reload(f)

@@ -1,6 +1,11 @@
-INSTUPunit_test
-/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py
-INFOS:&&1|1|2|0&&2|3|2|1
-unit_test=2
-test_finding_the_U_matrix=3
-TestUnit=1
+INSTUPfunctions
+/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/functions.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0&&2|8|2|0
+functions=2
+stereographic_projection=6
+many_vector_plots=7
+many_stereographic_plots=8
+plot_vectors=5
+momentum_transfer_vectors=3
+group_reflections=1
+plot_sphere=4

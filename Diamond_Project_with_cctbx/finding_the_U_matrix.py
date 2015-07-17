@@ -1,8 +1,9 @@
+# This file is now redundant as it only defines a function which is now defined
+# in finding_the_rotation_matrix
+
 import scisoftpy as dnp
 import finding_the_rotation_matrix as rm
-import Crystal as c
 import functions as f
-import matplotlib.pyplot as plt
 import copy
 import scitbx.math as scm
 from scitbx.matrix import col as Vector
@@ -11,7 +12,7 @@ from scitbx.matrix import sqr as Rotator
 
 def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True):
     """Given a Crystal class object with a cif file loaded into it, this
-    function returns the U matrix as a dnp array.
+        function returns the U matrix as a dnp array.
 
     Args:
         found_vectors: A list of Vector class objects representing the momentum
@@ -21,8 +22,8 @@ def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True):
 
         beam_energy: The beam energy in keV.
 
-        optimise_U: If True the function optimises the U matrix before returning
-            can be set to False if in Jython because requires scipy.
+        optimise_U: If True the function optimises the U matrix before
+            returning can be set to False if in Jython because requires scipy.
 
     Returns:
         U: The U matrix as a dnp object.
@@ -30,29 +31,31 @@ def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True):
     # First gets all the allowed momentum transfer vectors of the crystal.
     grouped_reflections = f.group_reflections(crystal, beam_energy)
     all_vectors = []
-    for i, group in enumerate(grouped_reflections):
+    for group in grouped_reflections:
         group_vectors = f.momentum_transfer_vectors(group, crystal)
         all_vectors += group_vectors
     # Find the target vectors.
     target_vectors = rm.finding_the_targets(found_vectors, all_vectors)
     found_vectors_copy = copy.deepcopy(found_vectors)
     # Find and apply the first rotation.
-    r1 = rm.get_rotator(found_vectors[0], target_vectors[0])
-    found_vectors = rm.rotate_list(r1, found_vectors)
+    rotation1 = rm.get_rotator(found_vectors[0], target_vectors[0])
+    found_vectors = rm.rotate_list(rotation1, found_vectors)
 
     # Find the second rotation
-    r2 = rm.get_second_rotator(target_vectors[0], found_vectors[1], 
-                                    target_vectors[1])
+    rotation2 = rm.get_second_rotator(target_vectors[0], found_vectors[1],
+                                      target_vectors[1])
 
-    U = r2 * r1
+    U = rotation2 * rotation1
 
     # Optimising the U matrix
     def diff(array, data, vectors):
+        """This is a function used to optimise the U matrix. It evaluates
+        """
         x = array[0]
         y = array[1]
         z = array[2]
         angle = array[3]
-        axis = rm.Vector([x,y,z])
+        axis = rm.Vector([x, y, z])
         U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle))
         data = rm.rotate_list(U, data)
         index_list=[]
@@ -84,15 +87,19 @@ def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True):
             all_vectors), bounds=[(-1,1),(-1,1),(-1,1),(-dnp.pi, dnp.pi)])
         if optimise['success']:
             new_axis = Vector((optimise.x[0], optimise.x[1], optimise.x[2]))
-            new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis, optimise.x[3]))
+            new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis,
+                            optimise.x[3]))
             return new_U
         else:
             print optimise
             print diff(array, found_vectors_copy, all_vectors)
             new_axis = Vector((optimise.x[0], optimise.x[1], optimise.x[2]))
-            new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis, optimise.x[3]))
-            new_U_axis_angle = scm.r3_rotation_axis_and_angle_from_matrix(new_U)
-            array = dnp.array([new_axis[0], new_axis[1], new_axis[2], new_U_axis_angle.angle()])
+            new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis,
+                            optimise.x[3]))
+            new_U_axis_angle = scm.r3_rotation_axis_and_angle_from_matrix(
+                new_U)
+            array = dnp.array([new_axis[0], new_axis[1], new_axis[2],
+                               new_U_axis_angle.angle()])
             print diff(array, found_vectors_copy, all_vectors)
             print new_axis
             print axis
