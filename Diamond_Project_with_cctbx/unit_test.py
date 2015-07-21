@@ -136,7 +136,7 @@ class TestUnit(unittest.TestCase):
             if len(vectors)>4:
                 M = scm.matrix.sqr(vectors[0].elems + vectors[2].elems + vectors[4].elems)
                 if dnp.abs(M.determinant())<10**-3 and len(vectors)>4:
-                    vectors = [0,1,2,3,4,5,6,7,8]#len9>8
+                     vectors = [0,1,2,3,4,5,6,7,8]#len9>8
         f.plot_vectors(vectors)
 #         plt.show()
         all_vectors=[]
@@ -168,12 +168,6 @@ class TestUnit(unittest.TestCase):
         k=3
         mock_data = [vectors[i], vectors[j], vectors[k]]
         mock_data = [add_rot_error(dat) for dat in mock_data]
-        figm = plt.figure(3)
-        axm = figm.add_subplot(211, projection='3d')
-        f.plot_vectors([mock_data[0]], figm, axm, color='green')
-        f.plot_vectors([mock_data[1]], figm, axm, color='blue')
-        f.plot_vectors([mock_data[2]], figm, axm, color='red')
-        f.plot_sphere(mock_data[0].length(), figm, axm)
         rand_rot = random_rotation()
         mock_data = rm.rotate_list(rand_rot, mock_data)
         all_vectors_copy = rm.rotate_list(rand_rot, all_vectors_copy)

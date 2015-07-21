@@ -177,6 +177,8 @@ def get_image_peak_list(roi_sums, expected_number_of_peaks=1):
         min_no_of_stddevs -= 1
     if len(peak_list) == 0:
         raise Exception('No peaks found')
+    if len(peak_list) < expected_number_of_peaks:
+        print 'Warning: Less peaks found than expected. Expected {0} peaks but found {1} peaks.'.format(expected_number_of_peaks, len(peak_list))
     return peak_list
 
 
@@ -245,7 +247,7 @@ def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
         for p in range(sums.shape[0]):
             print p
             for i in range(sums.shape[1]):
-                im = dnp.io.load(data_dir+'{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+p, i), warn = False)
+                im = dnp.io.load(data_dir + '{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+p, i), warn = False)
                 data = im[0].transpose()
                 roi = data[centre[1]-width/2:centre[1]+width/2][:]
                 roi_sum = np.sum(roi)
@@ -262,7 +264,8 @@ def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
         roi_max = np.max(roi)
         roi_max_coords = np.where(im[0] == roi_max)
         for point in zip(roi_max_coords[0], roi_max_coords[1]):
-            if roi_centre[1] - roi_width/2 <= point[1] < roi_centre[1] + roi_width/2:
+            if roi_centre[1] - roi_width/2 <= point[1] < \
+                    roi_centre[1] + roi_width/2:
                 peak_x = point[0]
                 peak_y = point[1]
                 break

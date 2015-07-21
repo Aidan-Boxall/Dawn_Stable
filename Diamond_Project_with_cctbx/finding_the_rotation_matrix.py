@@ -123,7 +123,7 @@ def finding_the_targets(found_vectors, theoretical_vectors):
             the theoretical vectors to an accuracy of 2 decimal places and an
             angle between them which matches to the nearest degree.""")
     else:
-        def check_third_vector(targets, found_vectors, correct_length):
+        def check_third_vector(targets, found_vectors, correct_length, r):
             """Checks the third vector is on the 'right' side of the other two
                 using the cross product of the other two.
             """
@@ -131,39 +131,25 @@ def finding_the_targets(found_vectors, theoretical_vectors):
                                found_vectors[1].elems + found_vectors[2].elems)
             if dnp.abs(M.determinant()) < 10 ** -3:
                 # Vectors are coplanar so cannot use cross product method but
-                #     can use angles alone.
-                # Find third targets
+                # can use angles alone unless two of the vectors are anti
+                # parallel in which case there is a four fold rotational
+                # symmetry so the choice is arbitary. 
                 dot0 = found_vectors[0].normalize().dot(
                     found_vectors[2].normalize())
                 dot1 = found_vectors[1].normalize().dot(
                     found_vectors[2].normalize())
                 angle0 = float(dnp.rad2deg(dnp.arccos(dot0)))
                 angle1 = float(dnp.rad2deg(dnp.arccos(dot1)))
-                found_plane_normal = (found_vectors[0].cross(
-                    found_vectors[1])).normalize()
-                cross0 = (found_vectors[0].cross(found_vectors[2])).normalize()
-                cross1 = (found_vectors[1].cross(found_vectors[2])).normalize()
-                norm_proj0 = cross0.dot(found_plane_normal)
-                norm_proj1 = cross1.dot(found_plane_normal)
                 for vector in correct_length:
-                    if vector != targets[0] and vector != targets[1]:
+                    if round(found_vectors[2].length(), r) == round(
+                            vector.length(), r):
                         t_dot0 = targets[0].normalize().dot(vector.normalize())
                         t_angle0 = float(dnp.rad2deg(dnp.arccos(t_dot0)))
                         t_dot1 = targets[1].normalize().dot(vector.normalize())
                         t_angle1 = float(dnp.rad2deg(dnp.arccos(t_dot1)))
                         if angle0 - 0.5 < t_angle0 < angle0 + 0.5 and \
                                 angle1 - 0.5 < t_angle1 < angle1 + 0.5:
-                            target_plane_normal = (targets[0].cross(
-                                targets[1])).normalize()
-                            t_cross0 = (targets[0].cross(vector)).normalize()
-                            t_cross1 = (targets[1].cross(vector)).normalize()
-                            t_norm_proj0 = t_cross0.dot(target_plane_normal)
-                            t_norm_proj1 = t_cross1.dot(target_plane_normal)
-                            if t_norm_proj0 < 0 and norm_proj0 < 0 or \
-                                    t_norm_proj0 > 0 and norm_proj0 > 0:
-                                if t_norm_proj1 < 0 and norm_proj1 < 0 or \
-                                        t_norm_proj1 > 0 and norm_proj1 > 0:
-                                    return targets
+                            return targets
                 return []  # Reset targets as wrong combination was found
             else:
                 target_plane_normal = (targets[0].cross(
@@ -180,7 +166,8 @@ def finding_the_targets(found_vectors, theoretical_vectors):
                 angle0 = float(dnp.rad2deg(dnp.arccos(dot0)))
                 angle1 = float(dnp.rad2deg(dnp.arccos(dot1)))
                 for vector in correct_length:
-                    if vector != targets[0] and vector != targets[1]:
+                    if round(found_vectors[2].length(), r) == round(
+                            vector.length(), r):
                         t_dot0 = targets[0].normalize().dot(vector.normalize())
                         t_angle0 = float(dnp.rad2deg(dnp.arccos(t_dot0)))
                         t_dot1 = targets[1].normalize().dot(vector.normalize())
@@ -208,37 +195,36 @@ def finding_the_targets(found_vectors, theoretical_vectors):
                         correct_length.append(vector)
                         break
             for combination in combinations(correct_length, 2):
-                if combination[0] != combination[1]:
-                    if round(combination[0].length(), r) == round(
-                            found_vectors[0].length(), r) and round(
-                            combination[1].length(), r) == round(
-                            found_vectors[1].length(), r):
-                        target_dot = (combination[0].normalize()).dot(
-                            combination[1].normalize())
-                        target_angle = float(dnp.rad2deg(dnp.arccos(
-                            target_dot)))
-                        if found_angle-0.5 < target_angle < found_angle + 0.5:
-                            targets = list(combination)
+                if round(combination[0].length(), r) == round(
+                        found_vectors[0].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[1].length(), r):
+                    target_dot = (combination[0].normalize()).dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(dnp.arccos(
+                        target_dot)))
+                    if found_angle-0.5 < target_angle < found_angle + 0.5:
+                        targets = list(combination)
+                if len(targets) == 2:
+                    targets = check_third_vector(targets, found_vectors,
+                                                 correct_length, r)
                     if len(targets) == 2:
-                        targets = check_third_vector(targets, found_vectors,
-                                                     correct_length)
-                        if len(targets) == 2:
-                            return targets
-                    if round(combination[0].length(), r) == round(
-                            found_vectors[1].length(), r) and round(
-                            combination[1].length(), r) == round(
-                            found_vectors[0].length(), r):
-                        target_dot = combination[0].normalize().dot(
-                            combination[1].normalize())
-                        target_angle = float(dnp.rad2deg(dnp.arccos(
-                            target_dot)))
-                        if found_angle-0.5 < target_angle < found_angle+0.5:
-                            targets = [combination[1], combination[0]]
+                        return targets
+                if round(combination[0].length(), r) == round(
+                        found_vectors[1].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[0].length(), r):
+                    target_dot = combination[0].normalize().dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(dnp.arccos(
+                        target_dot)))
+                    if found_angle-0.5 < target_angle < found_angle+0.5:
+                        targets = [combination[1], combination[0]]
+                if len(targets) == 2:
+                    targets = check_third_vector(targets, found_vectors,
+                                                 correct_length, r)
                     if len(targets) == 2:
-                        targets = check_third_vector(targets, found_vectors,
-                                                     correct_length)
-                        if len(targets) == 2:
-                            return targets
+                        return targets
         raise Exception("""Could not find two vectors with moduli that match
             the theoretical vectors to an accuracy of 2 decimal places and an
             angle between them which matches to the nearest degree.""")
