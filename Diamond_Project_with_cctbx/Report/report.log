@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.3.25)  21 JUL 2015 10:45
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.3.25)  22 JUL 2015 13:29
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -294,25 +294,33 @@ driver: pdftex
 -----------------------
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <rotation1.jpg, id=12, 130
+6.8825pt x 1304.875pt>
+File: rotation1.jpg Graphic file (type jpg)
+
+<use rotation1.jpg> <rotation2.jpg, id=13, 1517.67pt x 1763.58875pt>
+File: rotation2.jpg Graphic file (type jpg)
+
+<use rotation2.jpg>
 No file report.bbl.
-[2] (./report.aux) ) 
+[2 <./rotation1.jpg> <./rotation2.jpg>] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2445 strings out of 256216
- 33311 string characters out of 1917072
- 104583 words of memory out of 1500000
- 5719 multiletter control sequences out of 10000+200000
+ 2460 strings out of 256216
+ 33529 string characters out of 1917072
+ 109583 words of memory out of 1500000
+ 5731 multiletter control sequences out of 10000+200000
  8869 words of font info for 32 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,6n,38p,1181b,226s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/s
-hare/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/blue
-sky/cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/c
-m/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb>
-Output written on report.pdf (2 pages, 56288 bytes).
+ 35i,6n,38p,1181b,289s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts
+/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pf
+b></usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb></usr/share/texmf/fonts/ty
+pe1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/b
+luesky/cm/cmr9.pfb>
+Output written on report.pdf (2 pages, 415004 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
+ 39 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

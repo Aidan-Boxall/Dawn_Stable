@@ -92,95 +92,110 @@ class TestUnit(unittest.TestCase):
 #         plt.show()
     def test_peak_finder(self):
         import peak_finder as fp
-        print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 4,
-                          False, False,'roi7_sum')
-
-
-    def test_finding_the_U_matrix(self):
-        import scisoftpy as dnp
-        import Crystal as c
-        import functions as f
         import matplotlib.pyplot as plt
-        import finding_the_rotation_matrix as rm
-        import copy
-        import scitbx.math as scm
-        from scitbx.matrix import col as Vector
-        from scitbx.matrix import sqr as Rotator
+        print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 50,
+                          True, True,'roi7_sum')
 
 
-        def add_rot_error(vector):
-            stddev = 0.1
-#             rand_rotation_x = rm.Rotator(rm.Vector(1),stddev)#,dnp.random.normal(0,stddev))
-#             rand_rotation_y = rm.Rotator(rm.Vector(0,1),-stddev)#, dnp.random.normal(0,stddev))
-#             rand_rotation_z = rm.Rotator(rm.Vector(0,0,1),stddev)#,dnp.random.normal(0,stddev))
-            rand_axis = Vector([dnp.random.random(),dnp.random.random(),dnp.random.random()])
-            rand_rotation = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(rand_axis, stddev, deg=True))
-            vector = rand_rotation * vector
-            return vector
-
-        def random_rotation():
-            rand_rotation_x = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([1.0,0,0]) ,dnp.random.randint(0,361), deg=True))
-            rand_rotation_y = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([0,1.0,0]),dnp.random.randint(0,361), deg=True))
-            rand_rotation_z = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([0.0,0.0,1.0]),dnp.random.randint(0,361), deg=True))
-            return rand_rotation_z*rand_rotation_y*rand_rotation_x
-
-        mycrys = c.Crystal()
-        mycrys.load_cif('NiCO3_icsd_61067.cif')
-        l = f.group_reflections(mycrys)
-        vectors =[]
-#         l_index = 16#3
+#     def test_finding_the_U_matrix(self):
+#         import scisoftpy as dnp
+#         import Crystal as c
+#         import functions as f
+#         import matplotlib.pyplot as plt
+#         import finding_the_rotation_matrix as rm
+#         import copy
+#         import scitbx.math as scm
+#         from scitbx.matrix import col as Vector
+#         from scitbx.matrix import sqr as Rotator
+# 
+# 
+#         def add_rot_error(vector):
+#             stddev = 0.1
+# #             rand_rotation_x = rm.Rotator(rm.Vector(1),stddev)#,dnp.random.normal(0,stddev))
+# #             rand_rotation_y = rm.Rotator(rm.Vector(0,1),-stddev)#, dnp.random.normal(0,stddev))
+# #             rand_rotation_z = rm.Rotator(rm.Vector(0,0,1),stddev)#,dnp.random.normal(0,stddev))
+#             rand_axis = Vector([dnp.random.random(),dnp.random.random(),dnp.random.random()])
+#             rand_rotation = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(rand_axis, stddev, deg=True))
+#             vector = rand_rotation * vector
+#             return vector
+# 
+#         def random_rotation():
+#             rand_rotation_x = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([1.0,0,0]) ,dnp.random.randint(0,361), deg=True))
+#             rand_rotation_y = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([0,1.0,0]),dnp.random.randint(0,361), deg=True))
+#             rand_rotation_z = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(Vector([0.0,0.0,1.0]),dnp.random.randint(0,361), deg=True))
+#             return rand_rotation_z*rand_rotation_y*rand_rotation_x
+# 
+#         mycrys = c.Crystal()
+#         mycrys.load_cif('NiCO3_icsd_61067.cif')
+#         l = f.group_reflections(mycrys, print_list=True)
+#         print l[15]
+#         vectors =[]
+#         while len(vectors)<3 or len(vectors)>7:
+#             l_index = dnp.random.randint(len(l))
+#             vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
+#             if len(vectors)>4:
+#                 M = scm.matrix.sqr(vectors[0].elems + vectors[2].elems + vectors[4].elems)
+#                 if dnp.abs(M.determinant())<10**-3 and len(vectors)>4:
+#                      vectors = [0,1,2,3,4,5,6,7,8]#len9>8
+#         l_index = 18
 #         vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
-        while len(vectors)<3 or len(vectors)>7:
-            l_index = dnp.random.randint(len(l))
-            vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
-            if len(vectors)>4:
-                M = scm.matrix.sqr(vectors[0].elems + vectors[2].elems + vectors[4].elems)
-                if dnp.abs(M.determinant())<10**-3 and len(vectors)>4:
-                     vectors = [0,1,2,3,4,5,6,7,8]#len9>8
-        f.plot_vectors(vectors)
+#         fig = plt.figure()
+#         ax = fig.add_subplot(111, projection='3d')
+#         f.plot_vectors(vectors, fig, ax)
+#         f.plot_sphere(vectors[0].length(), fig, ax)
+#         f.stereographic_projection(vectors)
+# #         plt.show()
+#         all_vectors=[]
+#         for i, group in enumerate(l):
+#             all_g = f.momentum_transfer_vectors(group, mycrys)
+#             all_vectors += all_g
+#         fig = plt.figure()
+#         ax = fig.add_subplot(311, projection='3d')
+#         f.plot_vectors(all_vectors, fig, ax)
+#         all_vectors_copy = copy.deepcopy(all_vectors)
+#         dot = 0
+#         while dot<10**(-5) or 179.5<dnp.arccos(dot)<180.5 or dot==-1 or dot==None:
+#             i = dnp.random.randint(len(vectors))
+#             j=i
+#             k=i
+#             while i == j:
+#                     j = dnp.random.randint(len(vectors))
+#             while i==k or j==k:
+#                 k = dnp.random.randint(len(vectors))
+#                 if k!=j and k!=i:
+#                     if dnp.abs(180-dnp.rad2deg(dnp.arccos(vectors[k].normalize().dot(vectors[i].normalize()))))%180.0 < 1:
+#                         k=i
+#                     if dnp.abs(180-dnp.rad2deg(dnp.arccos(vectors[k].normalize().dot(vectors[j].normalize()))))%180.0 < 1:
+#                         k=j
+#             dot = dnp.rad2deg(dnp.arccos(vectors[i].normalize().dot(vectors[j].normalize())))
+#         print l_index, i, j, k
+#         print l[l_index][i][0]
+#         print l[l_index][j][0]
+#         print l[l_index][k][0]
+# 
+#         mock_data = [vectors[i], vectors[j], vectors[k]]
+#         mock_data = [add_rot_error(dat) for dat in mock_data]
+#         
+#         figb = plt.figure()
+#         axb = figb.add_subplot(111, projection='3d')
+#         f.plot_vectors(mock_data, figb, axb)
+#         f.plot_sphere(mock_data[0].length(), figb, axb)
+#         f.stereographic_projection(mock_data)
+#         
+#         rand_rot = random_rotation()
+#         mock_data = rm.rotate_list(rand_rot, mock_data)
+#         
+#         all_vectors_copy = rm.rotate_list(rand_rot, all_vectors_copy)
+#         ax = fig.add_subplot(312, projection='3d')
+#         f.plot_vectors(all_vectors_copy, fig, ax)
+#         U = rm.find_U_matrix(mock_data, mycrys)
+#         rotator = U
+#         all_vectors_copy = rm.rotate_list(rotator, all_vectors_copy)
+#         ax = fig.add_subplot(313, projection='3d')
+#         f.plot_vectors(all_vectors_copy, fig, ax)
+# #         print 'Orientation', rand_rot
+# #         print 'U matrix', rotator
 #         plt.show()
-        all_vectors=[]
-        for i, group in enumerate(l):
-            all_g = f.momentum_transfer_vectors(group, mycrys)
-            all_vectors += all_g
-        fig = plt.figure()
-        ax = fig.add_subplot(311, projection='3d')
-        f.plot_vectors(all_vectors, fig, ax)
-        all_vectors_copy = copy.deepcopy(all_vectors)
-        dot = 0
-        while dot<10**(-5) or 179.9<dot<180.1:
-            i = dnp.random.randint(len(vectors))
-            j=i
-            k=i
-            while i == j:
-                    j = dnp.random.randint(len(vectors))
-            while i==k or j==k:
-                k = dnp.random.randint(len(vectors))
-                if k!=j and k!=i:
-                    if dnp.abs(180-dnp.rad2deg(dnp.arccos(vectors[k].normalize().dot(vectors[i].normalize()))))%180.0 < 1:
-                        k=i
-                    if dnp.abs(180-dnp.rad2deg(dnp.arccos(vectors[k].normalize().dot(vectors[j].normalize()))))%180.0 < 1:
-                        k=j
-            dot = dnp.rad2deg(dnp.arccos(vectors[i].normalize().dot(vectors[j].normalize())))
-        print l_index, i, j, k
-        i =0
-        j=4
-        k=3
-        mock_data = [vectors[i], vectors[j], vectors[k]]
-        mock_data = [add_rot_error(dat) for dat in mock_data]
-        rand_rot = random_rotation()
-        mock_data = rm.rotate_list(rand_rot, mock_data)
-        all_vectors_copy = rm.rotate_list(rand_rot, all_vectors_copy)
-        ax = fig.add_subplot(312, projection='3d')
-        f.plot_vectors(all_vectors_copy, fig, ax)
-        U = rm.find_U_matrix(mock_data, mycrys)
-        rotator = U
-        all_vectors_copy = rm.rotate_list(rotator, all_vectors_copy)
-        ax = fig.add_subplot(313, projection='3d')
-        f.plot_vectors(all_vectors_copy, fig, ax)
-#         print 'Orientation', rand_rot
-#         print 'U matrix', rotator
-        plt.show()
 
 
 

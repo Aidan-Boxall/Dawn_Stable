@@ -1,1 +1,14 @@
-DELSTRtesting_rotation_finder
+INSTUPfunctions
+/home/ljh75651/DAWN_stable/Diamond_Project/functions.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0&&2|8|2|0&&2|9|2|0&&2|10|2|0&&2|11|2|0
+functions=2
+stereographic_projection=9
+convert_to_radians=3
+unit_vector=1
+many_vector_plots=10
+convert_to_degrees=4
+many_stereographic_plots=11
+plot_vectors=8
+momentum_transfer_vectors=6
+group_reflections=5
+plot_sphere=7

@@ -1,0 +1,34 @@
+import scisoftpy as dnp
+
+
+LENGTH = 0.502 # The length between the sample and the detector.
+WIDTH = 195*172*10**-6  # Width of the detector 195 pixels times 172 microns
+def get_chi_steps(two_theta, starting_chi_value=100.0, final_chi_value=0.0):
+    theta = dnp.radians(two_theta / 2.0) # converts to radians and halfs to theta
+    radius = LENGTH * float(dnp.sin(theta))
+    delta_chi = float(dnp.rad2deg((WIDTH / radius)))
+    number_of_steps = dnp.abs(final_chi_value-starting_chi_value)/(delta_chi*0.5)
+    number_of_steps = int(number_of_steps)+1
+    return dnp.linspace(starting_chi_value, final_chi_value, number_of_steps)
+
+
+# import Crystal as c
+# ENERGY = 8  # photon energy in keV
+# # Loads the crystal data
+# MYCRYS = c.Crystal()
+# MYCRYS.load_cif('NiCO3_icsd_61067.cif')
+#   
+# # Produces delta_chi for each reflection
+# MYLIST = MYCRYS.reflection_list(ENERGY, print_list=False)
+# two_thetas = []
+#  
+# for lists in MYLIST:
+#     two_thetas.append(lists[4])
+#  
+# thetas = [two_theta / 2.0 * (dnp.pi / 180) for two_theta in two_thetas]
+#  
+# radii = [LENGTH * dnp.sin(theta) for theta in thetas]
+#  
+# delta_chis = [WIDTH / radius for radius in radii]
+# for i, theta in enumerate(two_thetas):
+#      print i + 1, theta, delta_chis[i] * (180 / dnp.pi)
