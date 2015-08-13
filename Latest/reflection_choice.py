@@ -1,6 +1,6 @@
 import scisoftpy as dnp
 from itertools import permutations
-import testing_a_single_reflection as ts
+# import testing_a_single_reflection as ts
 
 import Crystal as c
 import functions as f
@@ -129,69 +129,75 @@ def test_many_by_hkl(group, cif):
             return False
         i+=1
     return True
-counter=1
-mycrys = c.Crystal()
-cif='HoFe2_icsd_103499.cif'
-mycrys.load_cif('HoFe2_icsd_103499.cif')
-grouped_reflections = f.group_reflections(mycrys,8)
-while len(grouped_reflections)!=2:
-    group = choose_reflection(grouped_reflections, sum_on=True)
-    print 'Choice {}'.format(counter)
-    print group
-    print "Number of reflections {}".format(len(group))
-    grouped_reflections.remove(group)
-    print "{} groups left".format(len(grouped_reflections))
-    print
-    counter+=1
 
+def reflection_choice(cif, print_choices=0, choose_option=1):
+    mycrys = c.Crystal()
+    mycrys.load_cif(cif)
+    grouped_reflections = f.group_reflections(mycrys,8)
+    if print_choices<choose_option:
+        options_counter = choose_option
+    else:
+        options_counter=print_choices
+    for i in range(options_counter):
+        while len(grouped_reflections)>2:
+            group = choose_reflection(grouped_reflections, sum_on=True)
+            if print_choices<i:
+                print 'Choice {}'.format(i+1)
+                print group
+                print "Number of reflections {}".format(len(group))
+                print "{} groups left".format(len(grouped_reflections))
+                print
+            if choose_option == i+1:
+                chosen=group
+            grouped_reflections.remove(group)
 
-str="""
-import scisoftpy as dnp
-
-
-LENGTH = 0.502 # The length between the sample and the detector.
-WIDTH = 195*172*10**-6  # Width of the detector 195 pixels times 172 microns
-def get_chi_steps(two_theta, starting_chi_value=100.0, final_chi_value=0.0):
-    theta = dnp.radians(two_theta / 2.0) # converts to radians and halfs to theta
-    radius = LENGTH * float(dnp.sin(theta))
-    delta_chi = float(dnp.rad2deg((WIDTH / radius)))
-    number_of_steps = dnp.abs(final_chi_value-starting_chi_value)/(delta_chi*0.5)
-    number_of_steps = int(number_of_steps)+1
-    return dnp.linspace(starting_chi_value, final_chi_value, number_of_steps)
-
-
-hklval={0}
-chilist=get_chi_steps(c2th(hklval),95,0)
-
-#thick horizonal line for searching with known two-theta (vertical on display)
-#try:
-#       roiw = HardwareTriggerableDetectorDataProcessor('roiw', pil, [SumMaxPositionAndValue()])
-#except:
-#       pass
-
-iw=30; roi7.setRoi(int(ci-iw/2.),0,int(ci+iw/2.),maxj)
-
-ii=0
-for chival in range(0,len(chilist),2):
-        pos chi chilist[chival]
-        pos do do.pil
-        pos delta c2th(hklval) eta c2th(hklval)/2
-        pos do 0
-        checkbeam
-        try:
-                trajscan kphi -89 269 .2 pil .1 roi7
-        except:
-                pass
-        pos chi chilist[chival+1]
-        pos do do.pil
-        pos delta c2th(hklval) eta c2th(hklval)/2
-        pos do 0
-        checkbeam
-        try:
-                trajscan kphi 269 -89 .2 pil .1 roi7
-        except:
-                pass
-
-pos do do.pil
-""".format(list(group[0][0]))
-# print str
+    str="""
+    import scisoftpy as dnp
+    
+    
+    LENGTH = 0.502 # The length between the sample and the detector.
+    WIDTH = 195*172*10**-6  # Width of the detector 195 pixels times 172 microns
+    def get_chi_steps(two_theta, starting_chi_value=100.0, final_chi_value=0.0):
+        theta = dnp.radians(two_theta / 2.0) # converts to radians and halfs to theta
+        radius = LENGTH * float(dnp.sin(theta))
+        delta_chi = float(dnp.rad2deg((WIDTH / radius)))
+        number_of_steps = dnp.abs(final_chi_value-starting_chi_value)/(delta_chi*0.5)
+        number_of_steps = int(number_of_steps)+1
+        return dnp.linspace(starting_chi_value, final_chi_value, number_of_steps)
+    
+    
+    hklval={0}
+    chilist=get_chi_steps(c2th(hklval),95,0)
+    
+    #thick horizonal line for searching with known two-theta (vertical on display)
+    #try:
+    #       roiw = HardwareTriggerableDetectorDataProcessor('roiw', pil, [SumMaxPositionAndValue()])
+    #except:
+    #       pass
+    
+    iw=30; roi7.setRoi(int(ci-iw/2.),0,int(ci+iw/2.),maxj)
+    
+    ii=0
+    for chival in range(0,len(chilist),2):
+            pos chi chilist[chival]
+            pos do do.pil
+            pos delta c2th(hklval) eta c2th(hklval)/2
+            pos do 0
+            checkbeam
+            try:
+                    trajscan kphi -89 269 .2 pil .1 roi7
+            except:
+                    pass
+            pos chi chilist[chival+1]
+            pos do do.pil
+            pos delta c2th(hklval) eta c2th(hklval)/2
+            pos do 0
+            checkbeam
+            try:
+                    trajscan kphi 269 -89 .2 pil .1 roi7
+            except:
+                    pass
+    
+    pos do do.pil
+    """.format(list(chosen[0][0]))
+    return str

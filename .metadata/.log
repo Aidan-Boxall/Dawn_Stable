@@ -1917,3 +1917,6 @@ java.nio.channels.ClosedByInterruptException
 	at org.python.pydev.editor.hover.PyTextHover.getDocstringHover(PyTextHover.java:206)
 	at org.python.pydev.editor.hover.PyTextHover.getHoverInfo(PyTextHover.java:150)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.eclipse.ui 2 2 2015-08-13 12:37:03.700
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

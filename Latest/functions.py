@@ -385,7 +385,7 @@ def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
     return xs, ys
 
 
-def many_vector_plots(crys, energy=8, number_of_plots='all', with_sphere=False):
+def many_vector_plots(crys, number_of_plots='all', energy=8, with_sphere=False):
     """Given a crystal it produces a number of 3D plots of equivalent
            reflections.
 
@@ -405,7 +405,6 @@ def many_vector_plots(crys, energy=8, number_of_plots='all', with_sphere=False):
     if number_of_plots == 'all':
         number_of_plots = len(grouped_reflections)
     fig = plt.figure()
-    ax = fig.add_subplot(111, projection='3d')
     for i, group in enumerate(grouped_reflections):
         if i < number_of_plots:
             plot_width = dnp.sqrt(number_of_plots)+1

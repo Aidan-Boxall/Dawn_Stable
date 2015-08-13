@@ -1,1 +1,10 @@
-DELSTRunit_test
+INSTUPpeak_finder
+/home/ljh75651/DAWN_stable/Latest/peak_finder.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0
+peak_finder=2
+find_peaks=7
+get_stddev=3
+get_image_peak_list=6
+update_peak_list=5
+remove_peak=4
+get_mean=1

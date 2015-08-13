@@ -259,6 +259,7 @@ def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
                 roi_sums[p][i] = roi_sum
     image_peak_list = get_image_peak_list(roi_sums, number_of_peaks)
     peak_list = []
+    roi_max_list = []
     for peak in image_peak_list:
         image_dir = data_dir+'{0:.0f}-pilatus100k-files/00000_{1:05.0f}.tif'.format(path_index_first+peak[0], peak[1])
         im = dnp.io.load(image_dir, warn=False)
@@ -274,6 +275,7 @@ def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
 #             
 #             break
         roi_max = np.max(roi)
+        roi_max_list.append(roi_max)
         roi_max_coords = np.where(roi == roi_max)
         for point in zip(roi_max_coords[0], roi_max_coords[1]):
             peak_y = point[0]
@@ -291,8 +293,9 @@ def find_peaks(data_dir, path_index_first, path_index_end, number_of_peaks,
             roi_centre = (108, 242)
             data = im[0].transpose()
             roi_width = 30
-            data[roi_centre[1]-roi_width/2][:]=30000
-            data[roi_centre[1]+roi_width/2][:]=30000
+            roi_max = np.max
+            data[roi_centre[1]-roi_width/2][:]=roi_max_list[i]
+            data[roi_centre[1]+roi_width/2][:]=roi_max_list[i]
             plt.imshow(im[0])
             plt.colorbar()
             plt.set_cmap('Greys_r')

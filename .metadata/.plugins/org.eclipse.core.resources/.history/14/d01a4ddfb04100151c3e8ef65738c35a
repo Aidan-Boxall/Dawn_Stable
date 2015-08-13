@@ -1,0 +1,633 @@
+from scitbx.matrix import col as Vector
+import scisoftpy as dnp
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
+
+import finding_the_rotation_matrix as rm
+import Crystal as c
+
+
+def group_reflections(crys, energy=8, print_list=False, refl='orient'):
+    """Groups reflections according to two theta value.
+
+    Args:
+        crys: A crystal class object.
+
+        energy: The energy of the x-rays in keV. Default is 8.
+
+        print_list: Defaults to False. If True prints the list index, the hkl
+            values the first reflection in the group and the number of 
+            reflections in the group for each group in reflection list.
+
+        refl: The filter applied to the Bragg reflections read from the cif
+            file.
+
+    Returns:
+        grouped_reflection_list: A list of reflections grouped into lists of
+            reflections with the same two theta value.
+    """
+    reflection_list = crys.reflection_list(energy, refl=refl,
+                                           print_list=False,
+                                           anomalous_flag=True)
+    if len(reflection_list) == 0:
+        return []
+    grouped_reflection_list = []
+    reflections_for_current_two_theta = []
+    previous_two_theta = round(reflection_list[0][4], 9)
+    for i, reflection in enumerate(reflection_list):
+        if i > 0:
+            previous_two_theta = round(reflection_list[i-1][4], 9)
+        current_two_theta = round(reflection[4], 9)
+        if current_two_theta == previous_two_theta:
+            reflections_for_current_two_theta.append(reflection)
+        else:
+            grouped_reflection_list.append(reflections_for_current_two_theta)
+            reflections_for_current_two_theta = [reflection]
+    if reflections_for_current_two_theta != []:  # In case last angle has only
+                #                                            one reflection.
+        grouped_reflection_list.append(reflections_for_current_two_theta)
+    if print_list:
+        for i, group in enumerate(grouped_reflection_list):
+            print i, group[0][0], len(group)
+    return grouped_reflection_list
+
+
+def momentum_transfer_vectors(reflection_list, crys):
+    """Returns a list of the momentum transfer vectors in cartesian space
+    given a list of reflections.
+
+    Args:
+        reflection_list: A list of reflections
+
+        crys: The crystal to which the reflections belong.
+
+    Returns:
+        momentum_transfer_vectors: A list of the momentum transfer vectors.
+    """
+    b_matrix = crys.lattice.b_matrix()
+    momentum_transfer_vectors = []
+    for i, reflection in enumerate(reflection_list):
+        momentum_transfer_vector = dnp.dot(b_matrix, reflection[0])
+        momentum_transfer_vector = Vector((momentum_transfer_vector[0],
+                                           momentum_transfer_vector[1],
+                                           momentum_transfer_vector[2]))
+        momentum_transfer_vectors.append(momentum_transfer_vector)
+    return momentum_transfer_vectors
+
+
+def plot_sphere(radius=1, fig=None, ax=None, invisible=False):
+    """Plots a sphere given a radius
+
+    Args:
+        radius: The radius of the sphere.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the sphere is plotted. If None is passed a new
+                axis is made.
+
+        invisible: If True then an invisible sphere is plotted. This is useful
+            as a lazy way of setting the axis dimensions.
+
+    Returns:
+        None
+    """
+    import numpy as np
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * dnp.pi, 100)
+    theta = np.linspace(0, dnp.pi, 100)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    if invisible:
+        ax.scatter(x, y, z, s=0)
+    else:
+        ax.plot_wireframe(x, y, z, rstride=5, cstride=5, color='y')
+
+
+def plot_vectors(vector_list, fig=None, ax=None, color='black', size=30):
+    """Given a list of vectors it plots them in 3D as points.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        color: The color to make the points, defaults to black.
+
+        size: The size of the points, default is 30.
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+        zs.append(vector[2])
+    ax.scatter(xs, ys, zs, depthshade=True, s=size, c=color)
+
+
+
+def plot_vectors_wireframe(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them in 3D as a wireframe.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        color: The color to make the points, defaults to black.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs = []
+        ys = []
+        zs = []
+        if i%2==0 and i!=len(vector_list)-1:
+            xs.append(vector[0])
+            ys.append(vector[1])
+            zs.append(vector[2])
+            xs.append(vector_list[i+1][0])
+            ys.append(vector_list[i+1][1])
+            zs.append(vector_list[i+1][2])
+            ax.plot3D(xs, ys, zs)
+
+
+def plot_vectors_in_xy_plane(vector_list, fig=None, ax=None, color='black', size=30):
+    """Given a list of vectors it plots them in as points in the xy plane.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        color: The color to make the points, defaults to black.
+
+        size: The size of the points, default is 30.
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111)
+    xs = []
+    ys = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+    ax.scatter(xs, ys, s=size, c=color)
+
+
+def plot_vectors_as_lines(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them in 3D as lines.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the lines are plotted. If None is passed a new
+                axis is made.
+        color: The color to make the lines, defaults to black.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+        zs.append(vector[2])
+    for i, vector in enumerate(vector_list):
+        current_xs = [0, xs[i]]
+        current_ys = [0, ys[i]]
+        current_zs = [0, zs[i]]
+        ax.plot(current_xs, current_ys, current_zs, c=color)
+
+
+def plot_vectors_as_arrows(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them in 3D as arrows.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the arrows are plotted. If None is passed a new
+                axis is made.
+        color: The color to make the arrows, defaults to black.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    plot_vectors(vector_list, fig, ax, size=0)#sets axis size
+    ax.scatter(0,0,0,s=0)# ensures the origin is included
+    xs = []
+    ys = []
+    zs = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+        zs.append(vector[2])
+    from matplotlib.patches import FancyArrowPatch
+    from mpl_toolkits.mplot3d import proj3d
+    
+    class Arrow3D(FancyArrowPatch):
+        def __init__(self, xs, ys, zs, *args, **kwargs):
+            FancyArrowPatch.__init__(self, (0,0), (0,0), *args, **kwargs)
+            self._verts3d = xs, ys, zs
+    
+        def draw(self, renderer):
+            xs3d, ys3d, zs3d = self._verts3d
+            xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, renderer.M)
+            self.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+            FancyArrowPatch.draw(self, renderer)
+
+    for i, vector in enumerate(vector_list):
+        a = Arrow3D([0,xs[i]],[0,ys[i]],[0,zs[i]], mutation_scale=20, lw=1,
+                    arrowstyle="-|>", color=color)
+        ax.add_artist(a)
+
+def plot_vectors_as_arrows_in_xy_plane(vector_list, fig=None, ax=None,
+                                      color='black'):
+    """Given a list of vectors it plots them as 2D as arrows.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the arrows are plotted. If None is passed a new
+                axis is made.
+
+        color: The color to make the arrows, defaults to black.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111)
+    plot_vectors_in_xy_plane(vector_list, fig, ax, size=0)#sets axis size
+    ax.scatter(0,0,s=0)# ensures the origin is included
+    xs = []
+    ys = []
+    for i, vector in enumerate(vector_list):
+        xs.append(vector[0])
+        ys.append(vector[1])
+    from matplotlib.patches import Arrow
+    for i, vector in enumerate(vector_list):
+        a = Arrow(0, 0, xs[i] ,ys[i], color=color, width=0.15*vector.length())
+        ax.add_artist(a)
+
+def stereographic_projection(vector_list, fig=None, ax=None, color='black'):
+    """Given a list of vectors it plots them onto a stereographic projection.
+
+    Args:
+        vector_list: The list of vectors to be plotted.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        color: The color to make the points, defaults to black.
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111)
+    radius = dnp.linalg.norm(vector_list[0])
+    xs=[]
+    ys=[]
+    for i, vector in enumerate(vector_list):
+        xs.append((vector[0]*radius)/(radius-vector[2]))
+        ys.append((vector[1]*radius)/(radius-vector[2]))
+    ax.scatter(xs,ys, color=color)
+    
+    import numpy as np
+    # Source: http://matplotlib.org/examples/mplot3d/surface3d_demo2.html
+    phi = np.linspace(0, 2 * dnp.pi, 100)
+    theta = np.linspace(0, dnp.pi, 19)
+    x = radius * np.outer(np.cos(phi), np.sin(theta))
+    y = radius * np.outer(np.sin(phi), np.sin(theta))
+    z = radius * np.outer(np.ones(np.size(phi)), np.cos(theta))
+    for _, _theta in enumerate(theta):
+        if _theta != 0 and _theta!=dnp.pi/2:
+            x = radius * np.outer(np.cos(phi), np.sin(_theta))
+            y = radius * np.outer(np.sin(phi), np.sin(_theta))
+            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+            ax.plot(X,Y, color='red')
+        elif _theta == dnp.pi/2:
+            x = radius * np.outer(np.cos(phi), np.sin(_theta))
+            y = radius * np.outer(np.sin(phi), np.sin(_theta))
+            z = radius * np.outer(np.ones(np.size(phi)), np.cos(_theta))
+            X=[(_x*radius)/(radius-z[i]) for i, _x in enumerate(x)]
+            Y=[(_y*radius)/(radius-z[i]) for i, _y in enumerate(y)]
+            ax.plot(X,Y, color='green')
+    axis_params = [dnp.absolute(min(xs))*1.1, max(xs)*1.1, dnp.absolute(
+                   min(ys))*1.1, max(ys)*1.1]
+    fig_len = max(axis_params)*1.1
+    ax.axis([-fig_len, fig_len, -fig_len, fig_len])
+    return xs, ys
+
+
+def many_vector_plots(crys, number_of_plots='all', energy=8, with_sphere=False):
+    """Given a crystal it produces a number of 3D plots of equivalent
+           reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+        with_sphere: Option to plot the vectors on a sphere.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = dnp.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1, projection='3d')
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            plot_vectors(vectors, fig, ax)
+            if with_sphere:
+                plot_sphere(dnp.linalg.norm(vectors[0]), fig, ax)
+
+
+def many_stereographic_plots(crys, number_of_plots='all', energy=8):
+    """Given a crystal it produces a number of stereographic plots of 
+        equivalent reflections.
+
+    Args:
+        crys: The crystal to be used.
+
+        number_of_plots: The number_of_plots to produce, default is 'all'
+
+        energy: The beam energy.
+
+    Returns:
+        None
+    """
+    grouped_reflections = group_reflections(crys, energy)
+    if number_of_plots == 'all':
+        number_of_plots = len(grouped_reflections)
+    fig = plt.figure()
+    for i, group in enumerate(grouped_reflections):
+        if i < number_of_plots:
+            plot_width = dnp.sqrt(number_of_plots)+1
+            ax = fig.add_subplot(plot_width, plot_width, i+1)
+            vectors = momentum_transfer_vectors(grouped_reflections[i],
+                                                    crys)
+            stereographic_projection(vectors, fig, ax)
+
+
+def plot_by_hkl(cif, hkl_list, fig=None, ax=None, energy=8, refl='orient',
+                with_sphere=True):
+    """
+    Given a list of hkl values and cif file this plots the momentum transfer
+        vectors of the reflection in the crystal Cartesian coordinate 
+        system.
+
+    Args:
+        cif: The cif file of the crystal to be used.
+
+        hkl_list: A list of hkl values.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        energy: The beam energy.
+
+        refl: The filter applied to the Bragg reflections read from the cif
+            file.
+
+        with_sphere: Option to plot the vectors on a sphere.
+
+    Returns:
+        None
+    """
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    mycrys = c.Crystal()
+    mycrys.load_cif(cif)
+    grouped_reflections = group_reflections(mycrys, energy=energy, refl=refl)
+    all_vectors = []
+    for i, group in enumerate(grouped_reflections):
+        group_vectors = momentum_transfer_vectors(group, mycrys)
+        for j, item in enumerate(group):
+            vector_hkl = (group_vectors[j], item[0])
+            all_vectors.append(vector_hkl)
+    for hkl in hkl_list:
+        for vector in all_vectors:
+            if hkl == vector[1]:
+                plot_vectors([vector[0]], fig, ax)
+                if with_sphere:
+                    radius = vector[0].length()
+                break
+    if with_sphere:
+        plot_sphere(radius, fig, ax)
+
+def find_2theta_nearest_by_hkl(cif, hkl, energy=8):
+    """
+    Given a hkl value it finds its Bragg angle and the two closest allowed
+        reflections.
+
+    Args:
+        cif: The cif file of the crystal to be used.
+
+        hkl: A hkl value.
+
+        energy: The beam energy.
+
+    Returns:
+        A tuple: (two_theta_below, two_theta of this hkl, two_theta_above)
+    """
+    refl='allowed'
+    mycrys = c.Crystal()
+    mycrys.load_cif(cif)
+    grouped_reflections = group_reflections(mycrys, energy=energy, refl=refl)
+    for i, group in enumerate(grouped_reflections):
+        group_vectors = momentum_transfer_vectors(group, mycrys)
+        for j, item in enumerate(group):
+            if hkl == item[0]:
+                two_theta = item[4]
+                try:
+                    two_theta_above = grouped_reflections[i+1][0][4]
+                except:
+                    pass
+                try:
+                    two_theta_below=grouped_reflections[i-1][0][4]
+                except:
+                    pass
+                break
+    return two_theta_below, two_theta, two_theta_above
+
+def plot_by_hkl_group(cif, hkl, fig=None, ax=None, energy=8,):
+    """
+    Similar to plot by hkl but plots the entire equivalent group of reflections
+        and also returns them as a list.
+
+    Args:
+        cif: The cif file of the crystal to be used.
+
+        hkl: A hkl value.
+
+        fig: The figure onto which the axis is plotted. If None is passed a new
+                figure is made.
+
+        ax: The axis onto which the points are plotted. If None is passed a new
+                axis is made.
+
+        energy: The beam energy.
+
+    Returns:
+        group_vectors: A list of the vectors which have been plotted.
+    """
+    refl='allowed'
+    if fig is None:
+        fig = plt.figure()
+    if ax is None:
+        ax = fig.add_subplot(111, projection='3d')
+    mycrys = c.Crystal()
+    mycrys.load_cif(cif)
+    grouped_reflections = group_reflections(mycrys, energy=energy, refl=refl)
+    group_vectors = None
+    for i, group in enumerate(grouped_reflections):
+        for indx, item in enumerate(group):
+            if hkl == item[0]:
+                group_vectors = momentum_transfer_vectors(group, mycrys)
+                break
+        if group_vectors is not None:
+            break
+    plot_vectors_as_arrows(group_vectors, fig,ax)
+    return group_vectors
+
+
+def find_hkls(mycrys, vectors, energy=8):
+    """
+    Given a Crystal class instance and a list of momentum transfer vectors in
+        the crystal Cartesian frame returns a list of hkl values.
+
+    Args:
+        mycrys: The crystal to be used.
+
+        vectors: A list of momentum transfer vectors.
+
+        energy: The beam energy.
+
+    Returns:
+        hkls: A list of the vectors hkls.
+    """
+    refl='allowed'
+    grouped_reflections = group_reflections(mycrys, energy=energy, refl=refl)
+    all_vectors = []
+    for i, group in enumerate(grouped_reflections):
+        group_vectors = momentum_transfer_vectors(group, mycrys)
+        for j, item in enumerate(group):
+            vector_hkl = (group_vectors[j], item[0], len(group), group)
+            all_vectors.append(vector_hkl)
+    hkls = []
+    for vector in vectors:
+        for vector_hkl in all_vectors:
+            if vector == vector_hkl[0]:
+                hkls.append(vector_hkl[1])
+                break
+    return hkls
+
+def find_vector_by_hkl(mycrys, hkl, energy=8):
+    """
+    Given a Crystal class instance and a hkl value returns a momentum transfer
+        vector in the crystal Cartesian frame
+
+    Args:
+        mycrys: The crystal to be used.
+
+        hkl: A hkl value.
+
+        energy: The beam energy.
+
+    Returns:
+        vector: A momentum transfer vector in the crystal Cartesian frame
+    """
+    refl='allowed'
+    grouped_reflections = group_reflections(mycrys, energy=energy, refl=refl)
+    all_vectors = []
+    vector = None
+    for i, group in enumerate(grouped_reflections):
+        for j, item in enumerate(group):
+            if item[0]==(hkl):
+                group_vectors = momentum_transfer_vectors(group, mycrys)
+                vector = group_vectors[j]
+                break
+        if vector!=None:
+            break
+    return vector
+

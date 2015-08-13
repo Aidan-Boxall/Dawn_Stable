@@ -141,16 +141,16 @@ def test_by_hkl(cif, hkl_list, add_error=True, create_plots=True,  old_filter=Fa
     else:
         return False
 
-cif = 'NiCO3_icsd_61067.cif'
-hkl_list = [(-2, 0, 16), (2, -2, 16), (0, 2, 16)] 
-i = 1
-print i
-while True:
-    test_by_hkl(cif, hkl_list, add_error=False, old_filter=False, create_plots=True)
-#     if not test_by_hkl(cif, hkl_list, add_error=False, old_filter=False, create_plots=False):
-#         break
-    plt.show()
-    break
- 
- 
-plt.show()
+# cif = 'NiCO3_icsd_61067.cif'
+# hkl_list = [(-2, 0, 16), (2, -2, 16), (0, 2, 16)] 
+# i = 1
+# print i
+# while True:
+#     test_by_hkl(cif, hkl_list, add_error=False, old_filter=False, create_plots=True)
+# #     if not test_by_hkl(cif, hkl_list, add_error=False, old_filter=False, create_plots=False):
+# #         break
+#     plt.show()
+#     break
+#  
+#  
+# plt.show()

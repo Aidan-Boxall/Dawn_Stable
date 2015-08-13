@@ -3,48 +3,6 @@ import unittest
 
 class TestUnit(unittest.TestCase):
 
-    def test_reflection_plotting(self):
-        import functions as f
-        import Crystal as c
-        import numpy as np
-        import matplotlib.pyplot as plt
-  
-  
-        from mpl_toolkits.mplot3d import Axes3D
-        mycrys = c.Crystal()
-        mycrys.load_cif('icsd_29288-Si.cif')
-  
-        grouped_reflections = f.group_reflections(mycrys,8)
-        fig = plt.figure()
-        for i, group in enumerate(grouped_reflections):
-            plot_width=np.sqrt(len(grouped_reflections))+1
-            ax = fig.add_subplot(plot_width,plot_width,i+1, projection='3d')
-            vectors = f.momentum_transfer_vectors(grouped_reflections[i],
-                                                   mycrys)
-            f.plot_vectors(vectors,fig,ax)
-            f.plot_sphere(np.linalg.norm(vectors[0]),fig,ax)
- 
-  
-    def test_stereogaphic_projection(self):
-        import functions as f
-        import Crystal as c
-        import numpy as np
-        import matplotlib.pyplot as plt
- 
- 
-        mycrys = c.Crystal()
-        mycrys.load_cif('icsd_29288-Si.cif')
- 
-        grouped_reflections = f.group_reflections(mycrys,8)
-        fig = plt.figure()
-        for i, group in enumerate(grouped_reflections):
-            plot_width=np.sqrt(len(grouped_reflections))+1
-            ax = fig.add_subplot(plot_width,plot_width,i+1)
-            vectors = f.momentum_transfer_vectors(grouped_reflections[i],
-                                                  mycrys)
-            print i, len(group), grouped_reflections[i][0][4]
-            f.stereographic_projection(vectors,fig,ax)
-        plt.show()
 
     def test_plotting(self):
         import functions as f
@@ -56,11 +14,16 @@ class TestUnit(unittest.TestCase):
         mycrys.load_cif('NiCO3_icsd_61067.cif')
         mycrys2 = c.Crystal()
         mycrys2.load_cif('icsd_29288-Si.cif') 
-        f.many_vector_plots(mycrys,8,1)
-        f.many_stereographic_plots(mycrys,8,10)
+        f.many_vector_plots(mycrys,10)
+        f.many_stereographic_plots(mycrys,10)
         f.many_vector_plots(mycrys2)
         f.many_stereographic_plots(mycrys2)
         plt.show()
+
+    def test_reflection_chioce(self):
+        import reflection_choice as rc
+        jython_code = rc.reflection_choice('HoFe2_icsd_103499.cif', print_choices=5, choose_option=1)
+        print jython_code
 
     def test_peak_finder(self):
         import peak_finder as fp
@@ -119,23 +82,10 @@ class TestUnit(unittest.TestCase):
                 return total
         mycrys = c.Crystal()
         mycrys.load_cif('NiCO3_icsd_61067.cif')
-        l = f.group_reflections(mycrys, print_list=False)
-        print l[15]
+        l = f.group_reflections(mycrys)
         vectors =[]
-        while len(vectors)<3 or len(vectors)>7:
-            l_index = dnp.random.randint(len(l))
-            vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
-            if len(vectors)>4:
-                M = scm.matrix.sqr(vectors[0].elems + vectors[2].elems + vectors[4].elems)
-                if dnp.abs(M.determinant())<10**-3 and len(vectors)>4:
-                     vectors = [0,1,2,3,4,5,6,7,8]#len9>8
         l_index = dnp.random.randint(len(l))
         vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
-        fig = plt.figure()
-        ax = fig.add_subplot(111, projection='3d')
-        f.plot_vectors(vectors, fig, ax)
-        f.plot_sphere(vectors[0].length(), fig, ax)
-        f.stereographic_projection(vectors)
 #         plt.show()
         all_vectors=[]
         for i, group in enumerate(l):
@@ -143,6 +93,7 @@ class TestUnit(unittest.TestCase):
             all_vectors += all_g
         fig = plt.figure()
         ax = fig.add_subplot(311, projection='3d')
+        ax.set_title('Unedited Reciprocal Space')
         f.plot_vectors(all_vectors, fig, ax)
         all_vectors_copy = copy.deepcopy(all_vectors)
         dot = 0
@@ -169,17 +120,12 @@ class TestUnit(unittest.TestCase):
         mock_data = [vectors[i], vectors[j], vectors[k]]
         mock_data = [add_rot_error(dat) for dat in mock_data]
           
-        figb = plt.figure()
-        axb = figb.add_subplot(111, projection='3d')
-        f.plot_vectors(mock_data, figb, axb)
-        f.plot_sphere(mock_data[0].length(), figb, axb)
-        f.stereographic_projection(mock_data)
-          
         rand_rot = random_rotation()
         mock_data = rm.rotate_list(rand_rot, mock_data)
           
         all_vectors_copy = rm.rotate_list(rand_rot, all_vectors_copy)
         ax = fig.add_subplot(312, projection='3d')
+        ax.set_title('Randomly Rotated Reciprocal Space')
         f.plot_vectors(all_vectors_copy, fig, ax)
         U = rm.find_U_matrix(mock_data, mycrys, optimise_U=True)
         rotator = U
@@ -187,6 +133,7 @@ class TestUnit(unittest.TestCase):
         print 'diff', difference
         all_vectors_copy = rm.rotate_list(rotator, all_vectors_copy)
         ax = fig.add_subplot(313, projection='3d')
+        ax.set_title('Randomly Rotated Reciprocal Space after U Matrix')
         f.plot_vectors(all_vectors_copy, fig, ax)
 #         print 'Orientation', rand_rot
 #         print 'U matrix', rotator
