@@ -1,0 +1,5233 @@
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 3, 0), (2, 0, -2) and (-1, 3, 0)
+ 
+Difference: 2.08685126064e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:1 tried 1 passed 0 failled time so far: 1.34195709229
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-1, 2, -3) and (1, 1, -3)
+ 
+Difference: 7.55932561413e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 1 tried 1 passed 0 failled time so far: 1.47063302994
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, -2, 0) and (-2, 0, 0)
+ 
+Difference: 1.48305444443e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:2 tried 2 passed 0 failled time so far: 1.7455329895
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 2, 3), (-2, 1, 3) and (-1, -1, 3)
+ 
+Difference: 7.17150466642e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 2 tried 2 passed 0 failled time so far: 2.5924050808
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -2), (2, 4, 4) and (-4, 2, 4)
+ 
+Difference: 6.26353088593e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:3 tried 3 passed 0 failled time so far: 5.11286711693
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, -3, 5), (-5, -3, -3) and (-3, -5, -3)
+ 
+Difference: 1.21753192099e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 3 tried 3 passed 0 failled time so far: 7.09659409523
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, 1, -2), (-1, -1, -2) and (-1, -1, 2)
+ 
+Difference: 18.4142135624
+OLD FILTER: CASE FAILLED
+ 
+For old filter:4 tried 3 passed 1 failled time so far: 7.59320211411
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, 1, 0), (-1, 2, 0) and (2, -1, 0)
+ 
+Difference: 1.37322841839e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 4 tried 4 passed 0 failled time so far: 10.5095541477
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, -1, 1), (-1, -1, -1) and (-1, 2, -1)
+ 
+Difference: 8.96956626724e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:5 tried 4 passed 1 failled time so far: 11.3683760166
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, 4, 0), (0, 0, -4) and (4, 0, 0)
+ 
+Difference: 9.17986425147e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 5 tried 5 passed 0 failled time so far: 13.8453309536
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, -2, -2), (2, 0, -2) and (0, -2, 2)
+ 
+Difference: 1.33150776178e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:6 tried 5 passed 1 failled time so far: 14.1842250824
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-1, -1, 0) and (2, -1, 0)
+ 
+Difference: 2.502913298e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 6 tried 6 passed 0 failled time so far: 14.3050301075
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 2, -1), (-2, 0, 1) and (0, 2, 1)
+ 
+Difference: 1.18470949786e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:7 tried 6 passed 1 failled time so far: 14.591037035
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (1, -2, 3) and (1, 1, -3)
+ 
+Difference: 7.1030209357e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 7 tried 7 passed 0 failled time so far: 14.7215621471
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (2, 2, -1), (2, -2, -1) and (2, -2, 1)
+ 
+Difference: 2.61601736469e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:8 tried 7 passed 1 failled time so far: 15.4049739838
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 1.67455055364e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 8 tried 8 passed 0 failled time so far: 15.577614069
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -2, -2), (-2, 0, -2) and (0, -2, 2)
+ 
+Difference: 8.24783141851e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:9 tried 8 passed 1 failled time so far: 17.3356900215
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-1, -1, 1), (-1, 1, -1) and (-1, -1, -1)
+ 
+Difference: 9.44305408791e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 9 tried 9 passed 0 failled time so far: 19.3078539371
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 0, -3), (1, 0, -3) and (1, -1, -3)
+ 
+Difference: 5.41262626953e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:10 tried 9 passed 1 failled time so far: 20.1888639927
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 0, 0), (0, 0, 2) and (0, 2, 0)
+ 
+Difference: 0.14548268081
+NEW FILTER: CASE PASSED
+ 
+For new filter: 10 tried 10 passed 0 failled time so far: 20.3759400845
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, -1, -5), (-5, -1, 3) and (-1, -5, 3)
+ 
+Difference: 27.4283237952
+OLD FILTER: CASE FAILLED
+ 
+For old filter:11 tried 9 passed 2 failled time so far: 22.4904351234
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (1, -2, 3) and (1, 1, -3)
+ 
+Difference: 3.38878100495e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 11 tried 11 passed 0 failled time so far: 22.6139109135
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 1, 1), (1, -2, -1) and (2, -1, 1)
+ 
+Difference: 8.99940347108e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:12 tried 10 passed 2 failled time so far: 23.447715044
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, 6), (-2, -2, 6) and (-2, 2, -6)
+ 
+Difference: 6.85708946375e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 12 tried 12 passed 0 failled time so far: 25.5669491291
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -1, 11), (-3, -1, -11) and (-1, -3, 11)
+ 
+Difference: 4.75047282376e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:13 tried 11 passed 2 failled time so far: 32.2563941479
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, -1, 1), (1, -1, -1) and (-1, -1, 1)
+ 
+Difference: 0.0303273554036
+NEW FILTER: CASE PASSED
+ 
+For new filter: 13 tried 13 passed 0 failled time so far: 32.4622061253
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (-1, -1, 2) and (1, -1, 2)
+ 
+Difference: 2.26502699261e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:14 tried 12 passed 2 failled time so far: 32.8079469204
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, 0), (1, 0, 0) and (0, 0, 1)
+ 
+Difference: 1.20275375636e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 14 tried 14 passed 0 failled time so far: 32.9941530228
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, -1, -3), (-1, 2, 3) and (1, -2, 3)
+ 
+Difference: 5.72740299937e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:15 tried 13 passed 2 failled time so far: 33.8692719936
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, -1), (1, -1, 1) and (1, -1, -1)
+ 
+Difference: 5.31749183984e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 15 tried 15 passed 0 failled time so far: 34.0708630085
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -4, 8), (0, 4, 8) and (-4, 0, 8)
+ 
+Difference: 2.03321303879e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:16 tried 14 passed 2 failled time so far: 40.6003069878
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, -1, 0), (-1, 0, 0) and (0, -1, 0)
+ 
+Difference: 5.00541200417e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 16 tried 16 passed 0 failled time so far: 41.4611971378
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, 1, 2), (-1, 1, -2) and (1, 0, -2)
+ 
+Difference: 2.28046772494e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:17 tried 15 passed 2 failled time so far: 41.7478260994
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, 0, 0), (0, -2, 0) and (0, 0, 2)
+ 
+Difference: 1.115843453e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 17 tried 17 passed 0 failled time so far: 42.3662199974
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 3, 1), (1, -3, -1) and (1, -3, 1)
+ 
+Difference: 1.17874498332e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:18 tried 16 passed 2 failled time so far: 42.834758997
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (5, 0, 2), (5, -5, -2) and (0, 5, -2)
+ 
+Difference: 1.26576621917e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 18 tried 18 passed 0 failled time so far: 45.8001770973
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, -1, 2), (1, 1, 2) and (-1, -1, 2)
+ 
+Difference: 3.41573298655e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:19 tried 17 passed 2 failled time so far: 46.6487209797
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (-1, -1, 0) and (-1, 0, -1)
+ 
+Difference: 1.17853594443e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 19 tried 19 passed 0 failled time so far: 46.8698060513
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 3, -2), (1, 3, 2) and (1, -3, 2)
+ 
+Difference: 2.03356608352e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:20 tried 18 passed 2 failled time so far: 47.3573770523
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 1, 1), (1, 1, -1) and (1, -1, 1)
+ 
+Difference: 1.32798048581e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 20 tried 20 passed 0 failled time so far: 49.343364954
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 0, 1), (0, -2, -1) and (-2, 2, 1)
+ 
+Difference: 3.06853459831e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:21 tried 19 passed 2 failled time so far: 50.1439390182
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-2, 1, 3) and (1, -2, -3)
+ 
+Difference: 4.17554076359e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 21 tried 21 passed 0 failled time so far: 50.2867670059
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, -5), (0, 2, 0) and (-2, 0, 0)
+ 
+Difference: 6.95310806837e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:22 tried 20 passed 2 failled time so far: 51.1472370625
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 3), (0, -1, -3) and (1, -1, 3)
+ 
+Difference: 5.10771461705e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 22 tried 22 passed 0 failled time so far: 51.4137890339
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (1, 0, 1) and (1, -1, -1)
+ 
+Difference: 4.92404771469e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:23 tried 21 passed 2 failled time so far: 52.2523579597
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (0, -2, 2) and (2, -2, -2)
+ 
+Difference: 8.48119184094e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 23 tried 23 passed 0 failled time so far: 52.4861681461
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 0, -2), (1, 0, -2) and (-1, 1, 2)
+ 
+Difference: 4.65957101891e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:24 tried 22 passed 2 failled time so far: 53.3095269203
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 4), (1, -1, 4) and (-1, 0, -4)
+ 
+Difference: 4.66565376075e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 24 tried 24 passed 0 failled time so far: 54.5153830051
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 2, 4), (-1, 2, -4) and (-1, -1, 4)
+ 
+Difference: 6.05496093216e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:25 tried 23 passed 2 failled time so far: 55.3496229649
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -4, -8), (4, -4, 8) and (-4, 0, 8)
+ 
+Difference: 1.73015499116e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 25 tried 25 passed 0 failled time so far: 58.4899659157
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -4), (-4, 4, 4) and (-4, 4, -4)
+ 
+Difference: 1.14611983946e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:26 tried 24 passed 2 failled time so far: 60.5958440304
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, 0, -2), (0, -4, -2) and (-4, 4, -2)
+ 
+Difference: 1.20239336688e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 26 tried 26 passed 0 failled time so far: 63.5034980774
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -2, -10), (2, -2, 10) and (2, 0, -10)
+ 
+Difference: 1.49619307907e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:27 tried 25 passed 2 failled time so far: 70.1041269302
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-4, 2, 12), (-4, 2, -12) and (2, 2, -12)
+ 
+Difference: 1.45139497941e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 27 tried 27 passed 0 failled time so far: 73.6480240822
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, 2), (-1, -2, -1) and (2, 1, 1)
+ 
+Difference: 1.08751644752e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:28 tried 26 passed 2 failled time so far: 73.9314501286
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-2, 2, -6), (-6, -2, -2) and (-2, 2, 6)
+ 
+Difference: 27.4283237952
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 28 tried 27 passed 1 failled time so far: 75.8880059719
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 3, 1), (3, 1, -1) and (1, 3, -1)
+ 
+Difference: 6.49047293576e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:29 tried 27 passed 2 failled time so far: 77.8818409443
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 1, 1), (1, -1, 1) and (-1, 0, -1)
+ 
+Difference: 4.72992463165e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 29 tried 28 passed 1 failled time so far: 78.723567009
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 2, 2), (2, 0, 2) and (-2, 0, 2)
+ 
+Difference: 1.89475560054e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:30 tried 28 passed 2 failled time so far: 79.9162809849
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 2, 1), (-1, -2, -2) and (-2, -1, -2)
+ 
+Difference: 6.59393800345e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 30 tried 29 passed 1 failled time so far: 80.1158559322
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, 1, -2), (-1, -1, -2) and (1, 1, -2)
+ 
+Difference: 18.4142135624
+OLD FILTER: CASE FAILLED
+ 
+For old filter:31 tried 28 passed 3 failled time so far: 80.5872499943
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, -1, 1), (1, -1, -1) and (-1, -1, 1)
+ 
+Difference: 0.0303273554036
+NEW FILTER: CASE PASSED
+ 
+For new filter: 31 tried 30 passed 1 failled time so far: 80.7838020325
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 0, 2), (-1, 1, 2) and (-1, 1, -2)
+ 
+Difference: 3.59034404123e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:32 tried 29 passed 3 failled time so far: 81.6648321152
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, -3), (-1, -1, 3) and (2, -1, 3)
+ 
+Difference: 6.04600838275e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 32 tried 31 passed 1 failled time so far: 81.7926239967
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-1, -3, 1), (-1, -1, -3) and (-1, 1, -3)
+ 
+Difference: 1.11191830135e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:33 tried 30 passed 3 failled time so far: 83.8100371361
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 1), (1, 1, 0) and (1, 0, 1)
+ 
+Difference: 9.75421623967e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 33 tried 32 passed 1 failled time so far: 84.0034971237
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -3, -1), (-1, 3, 1) and (1, -3, 1)
+ 
+Difference: 7.27047680232e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:34 tried 31 passed 3 failled time so far: 84.5179209709
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-1, -5, -3), (-5, 1, -3) and (1, 3, 5)
+ 
+Difference: 4.61907942465e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 34 tried 33 passed 1 failled time so far: 86.8342549801
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, 1, 2), (-1, 1, -2) and (1, 0, -2)
+ 
+Difference: 2.8387273946e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:35 tried 32 passed 3 failled time so far: 87.1372139454
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, 2), (-2, -2, 2) and (-2, 2, -2)
+ 
+Difference: 1.02684808157e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 35 tried 34 passed 1 failled time so far: 89.2452349663
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-2, 1, 4), (-1, 2, 4) and (-2, 1, -4)
+ 
+Difference: 2.92398225874e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:36 tried 33 passed 3 failled time so far: 90.0987839699
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 1, -7), (-2, -1, -7) and (3, -2, -7)
+ 
+Difference: 5.31732309246e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 36 tried 35 passed 1 failled time so far: 93.1994490623
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, -1, 1), (-1, -1, -1) and (1, -2, -1)
+ 
+Difference: 4.28376614871e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:37 tried 34 passed 3 failled time so far: 94.0530221462
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, -2), (2, -2, -2) and (-2, 2, -2)
+ 
+Difference: 1.64868885427e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 37 tried 36 passed 1 failled time so far: 96.1089661121
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 1, -5), (-1, 5, 1) and (-5, -1, -1)
+ 
+Difference: 1.05082302238e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:38 tried 35 passed 3 failled time so far: 98.661315918
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 1), (1, -1, -1) and (-1, 0, -1)
+ 
+Difference: 1.37683248724e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 38 tried 37 passed 1 failled time so far: 98.8893520832
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, 0), (1, 0, 0) and (-1, 1, 0)
+ 
+Difference: 7.26762944168e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:39 tried 36 passed 3 failled time so far: 99.7364280224
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 1, -11), (-3, 1, 11) and (-1, -2, -11)
+ 
+Difference: 7.46289414445e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 39 tried 38 passed 1 failled time so far: 102.828794956
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -3), (-1, 1, 3) and (0, 1, -3)
+ 
+Difference: 7.86344732452e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:40 tried 37 passed 3 failled time so far: 103.66011405
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, -2, -1), (2, 1, 1) and (1, 1, 2)
+ 
+Difference: 8.29963928905e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 40 tried 39 passed 1 failled time so far: 103.873520136
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, 1, 3), (-1, 1, -3) and (-1, -1, 3)
+ 
+Difference: 6.22282171721e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:41 tried 38 passed 3 failled time so far: 104.370337009
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 0), (1, -1, 0) and (0, 1, 0)
+ 
+Difference: 1.25379548527e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 41 tried 40 passed 1 failled time so far: 105.137300968
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, 0, -1), (0, -2, -1) and (2, 0, 1)
+ 
+Difference: 3.96215045063e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:42 tried 39 passed 3 failled time so far: 105.988702059
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (1, -2, 0) and (2, -1, 0)
+ 
+Difference: 1.0195651309e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 42 tried 41 passed 1 failled time so far: 106.118160963
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, 1, 5), (1, -1, 5) and (-1, 0, 5)
+ 
+Difference: 2.80174444643e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:43 tried 40 passed 3 failled time so far: 106.469702005
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 3), (-1, 1, 3) and (-1, 0, -3)
+ 
+Difference: 6.16984854807e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 43 tried 42 passed 1 failled time so far: 106.683036089
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -3, 1), (-3, -1, 1) and (-1, 4, 1)
+ 
+Difference: 69.5791162777
+OLD FILTER: CASE FAILLED
+ 
+For old filter:44 tried 40 passed 4 failled time so far: 113.063491106
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, 0, -8), (-1, 1, -8) and (0, 1, 8)
+ 
+Difference: 1.10829054858e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 44 tried 43 passed 1 failled time so far: 116.104783058
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, -1, -3), (-1, 2, -3) and (-1, -1, 3)
+ 
+Difference: 4.80424709281e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:45 tried 41 passed 4 failled time so far: 116.982012033
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 1, 4), (-1, 0, -4) and (0, 1, -4)
+ 
+Difference: 1.44857556738e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 45 tried 44 passed 1 failled time so far: 117.203300953
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 4), (0, 1, -4) and (-1, 1, -4)
+ 
+Difference: 2.94177059529e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:46 tried 42 passed 4 failled time so far: 118.012902975
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -2), (1, -1, 2) and (-1, 0, 2)
+ 
+Difference: 1.07579857415e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 46 tried 45 passed 1 failled time so far: 118.277915955
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-6, -2, -2), (-2, -6, 2) and (2, -6, -2)
+ 
+Difference: 5.72742652585e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:47 tried 43 passed 4 failled time so far: 120.423955917
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-1, -1, 0) and (2, -1, 0)
+ 
+Difference: 3.06219140234e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 47 tried 46 passed 1 failled time so far: 120.565508127
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 3), (1, -1, -3) and (0, -1, 3)
+ 
+Difference: 6.02174266312e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:48 tried 44 passed 4 failled time so far: 121.429311991
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, -4), (-4, -2, 2) and (-2, 2, 4)
+ 
+Difference: 1.8322330178e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 48 tried 47 passed 1 failled time so far: 123.454601049
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, -4, -4), (4, 4, -4) and (4, -4, -4)
+ 
+Difference: 1.12003308594e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:49 tried 45 passed 4 failled time so far: 125.440388918
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, 2), (-2, -2, 2) and (-2, 2, -2)
+ 
+Difference: 7.0424885551e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 49 tried 48 passed 1 failled time so far: 127.396861076
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, 3), (-1, 1, -3) and (-1, -1, 3)
+ 
+Difference: 4.26154162594e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:50 tried 46 passed 4 failled time so far: 127.90734911
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 4, -4), (2, -4, 4) and (-2, -4, -4)
+ 
+Difference: 7.50854479565e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 50 tried 49 passed 1 failled time so far: 129.868294954
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -5, -6), (1, 4, 6) and (-4, -1, -6)
+ 
+Difference: 1.61169180507e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:51 tried 47 passed 4 failled time so far: 136.314103127
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 2, 7), (-2, 3, 7) and (3, -1, 7)
+ 
+Difference: 1.44490150505e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 51 tried 50 passed 1 failled time so far: 139.316915035
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (2, 2, -1), (-2, 2, 1) and (-2, 2, -1)
+ 
+Difference: 1.39422010585e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:52 tried 48 passed 4 failled time so far: 140.331249952
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-2, 2, 2), (-2, 0, -2) and (0, 2, -2)
+ 
+Difference: 1.2619886486e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 52 tried 51 passed 1 failled time so far: 140.571738958
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 3, 12), (0, 3, 12) and (3, 0, -12)
+ 
+Difference: 8.48818910348e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:53 tried 49 passed 4 failled time so far: 146.997589111
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, -1, 4), (-1, -1, -4) and (-1, 2, -4)
+ 
+Difference: 4.75667500033e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 53 tried 52 passed 1 failled time so far: 147.844317913
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:54 tried 49 passed 5 failled time so far: 148.178444147
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 4.37248797669e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 54 tried 53 passed 1 failled time so far: 148.837007046
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, 2), (2, -1, -2) and (-1, 2, -2)
+ 
+Difference: 4.58137292848e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:55 tried 50 passed 5 failled time so far: 149.836961985
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (0, -2, 2) and (-2, 2, 2)
+ 
+Difference: 1.76906886339e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 55 tried 54 passed 1 failled time so far: 150.130718946
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -3, 1), (1, 3, 1) and (-1, 3, 1)
+ 
+Difference: 2.76436897037e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:56 tried 51 passed 5 failled time so far: 150.60732007
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (-1, -1, 0) and (-1, 0, -1)
+ 
+Difference: 1.43177260997e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 56 tried 55 passed 1 failled time so far: 150.847259998
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -2), (2, 2, 1) and (1, 2, 2)
+ 
+Difference: 1.6381315159e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:57 tried 52 passed 5 failled time so far: 151.181796074
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (2, -2, -2) and (0, 2, -2)
+ 
+Difference: 4.89951214905e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 57 tried 56 passed 1 failled time so far: 151.404209137
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, 2), (-2, 0, 2) and (0, -2, 2)
+ 
+Difference: 1.50687849226e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:58 tried 53 passed 5 failled time so far: 151.707546949
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, -2, 1), (-2, 1, 1) and (-1, -1, 1)
+ 
+Difference: 3.88597296321e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 58 tried 57 passed 1 failled time so far: 152.575617075
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, -2), (2, 0, 2) and (2, 0, -2)
+ 
+Difference: 6.51849915467e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:59 tried 54 passed 5 failled time so far: 153.373750925
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-1, -1, 3), (3, 1, -1) and (-3, -1, -1)
+ 
+Difference: 1.19355218653e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 59 tried 58 passed 1 failled time so far: 155.393774986
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, 2, 0) and (2, 0, 0)
+ 
+Difference: 1.36304499888e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:60 tried 55 passed 5 failled time so far: 155.718816042
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, -3) and (1, -2, -3)
+ 
+Difference: 3.13804133272e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 60 tried 59 passed 1 failled time so far: 155.854912043
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (1, 1, 0)
+ 
+Difference: 1.88097133534e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:61 tried 56 passed 5 failled time so far: 156.131772041
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, 3) and (1, 1, -3)
+ 
+Difference: 5.28563947465e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 61 tried 60 passed 1 failled time so far: 156.969094992
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -4), (-1, 0, -4) and (0, -1, 4)
+ 
+Difference: 2.01322167203e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:62 tried 57 passed 5 failled time so far: 157.27512598
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 4), (0, -1, 4) and (1, -1, -4)
+ 
+Difference: 8.78963649781e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 62 tried 61 passed 1 failled time so far: 157.503833055
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -3, 2), (1, -3, -2) and (-1, -3, -2)
+ 
+Difference: 3.36566990122e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:63 tried 58 passed 5 failled time so far: 158.009128094
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 0), (-1, 1, 0) and (-1, 0, 0)
+ 
+Difference: 7.78929325003e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 63 tried 62 passed 1 failled time so far: 158.236565113
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -2, 1), (2, 1, 1) and (1, -2, 1)
+ 
+Difference: 1.6615222703e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:64 tried 59 passed 5 failled time so far: 158.556322098
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, 2), (-2, 2, 2) and (-2, 0, -2)
+ 
+Difference: 9.88958934724e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 64 tried 63 passed 1 failled time so far: 158.816939116
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 1, -1), (-1, -1, -1) and (-1, 2, 1)
+ 
+Difference: 2.86586229313e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:65 tried 60 passed 5 failled time so far: 159.644752979
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 0, 14), (-2, 2, 14) and (0, 2, -14)
+ 
+Difference: 3.00458599407e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 65 tried 64 passed 1 failled time so far: 162.655297995
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 0, 2), (2, 2, 0) and (2, 0, -2)
+ 
+Difference: 1.49155978698e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:66 tried 61 passed 5 failled time so far: 164.757655144
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, 0, 4), (0, -4, 4) and (4, -4, -4)
+ 
+Difference: 5.52329130543e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 66 tried 65 passed 1 failled time so far: 167.843682051
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, 4), (0, 2, -4) and (2, 0, 4)
+ 
+Difference: 3.37294934672e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:67 tried 62 passed 5 failled time so far: 168.176680088
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (6, 2, 0), (0, -6, -2) and (-2, -6, 0)
+ 
+Difference: 1.70522775216e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 67 tried 66 passed 1 failled time so far: 170.146902084
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, -1, -2), (-1, 1, -2) and (-1, 0, 2)
+ 
+Difference: 1.58338372699e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:68 tried 63 passed 5 failled time so far: 170.465497971
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 2, 2), (-2, 2, 2) and (2, 0, -2)
+ 
+Difference: 3.72463777665e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 68 tried 67 passed 1 failled time so far: 171.272015095
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 1, 12), (-2, 1, -12) and (-1, -1, 12)
+ 
+Difference: 2.45573667261e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:69 tried 64 passed 5 failled time so far: 177.54521513
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 3), (0, -1, -3) and (-1, 0, 3)
+ 
+Difference: 7.31619817338e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 69 tried 68 passed 1 failled time so far: 177.776094913
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, 1) and (-1, -1, 0)
+ 
+Difference: 2.00908380651e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:70 tried 65 passed 5 failled time so far: 178.071898937
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 4, 4), (-4, 4, 2) and (-4, -4, 2)
+ 
+Difference: 7.41268354673e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 70 tried 69 passed 1 failled time so far: 180.148118019
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 1), (0, -1, 0) and (1, 0, 0)
+ 
+Difference: 2.33438793812e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:71 tried 66 passed 5 failled time so far: 180.49394393
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, -1, 3), (-1, 0, 3) and (1, -1, -3)
+ 
+Difference: 7.03218245872e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 71 tried 70 passed 1 failled time so far: 181.306113005
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, 0, -4), (4, 4, 0) and (4, 0, -4)
+ 
+Difference: 2.92800585096e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:72 tried 67 passed 5 failled time so far: 183.400264025
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, -3, -5), (3, -5, 3) and (-3, -5, -3)
+ 
+Difference: 7.64407289459e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 72 tried 71 passed 1 failled time so far: 185.524333954
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 1, 3), (-2, 1, 3) and (-1, 2, 3)
+ 
+Difference: 4.05837698806e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:73 tried 68 passed 5 failled time so far: 186.42327714
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -2, -15), (2, -1, -15) and (2, -1, 15)
+ 
+Difference: 24.4316253817
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 73 tried 71 passed 2 failled time so far: 189.470747948
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 1, 1), (-1, 0, -1) and (0, -1, 1)
+ 
+Difference: 2.8661789617e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:74 tried 69 passed 5 failled time so far: 190.522881985
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, -2, 4), (2, 2, 4) and (4, 2, -2)
+ 
+Difference: 43.8226974622
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 74 tried 71 passed 3 failled time so far: 192.525107145
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 3), (1, 0, -3) and (1, -1, 3)
+ 
+Difference: 6.96723971017e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:75 tried 70 passed 5 failled time so far: 193.320018053
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, -1, 1), (1, 1, 3) and (-3, -1, -1)
+ 
+Difference: 8.84064471543e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 75 tried 72 passed 3 failled time so far: 195.306282043
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, -1, -2), (1, 2, 1) and (2, 1, 1)
+ 
+Difference: 1.856062071e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:76 tried 71 passed 5 failled time so far: 195.588086128
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (0, -1, 1) and (-1, 1, -1)
+ 
+Difference: 5.55831598419e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 76 tried 73 passed 3 failled time so far: 196.464281082
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 1, -4), (-3, 2, 4) and (-1, 3, -4)
+ 
+Difference: 1.61401735263e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:77 tried 72 passed 5 failled time so far: 202.993786097
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 5.35043839571e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 77 tried 74 passed 3 failled time so far: 203.126091003
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, -3, -5), (-3, 5, -3) and (3, -3, 5)
+ 
+Difference: 8.6549758149e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:78 tried 73 passed 5 failled time so far: 205.372590065
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 0), (-1, -1, 0) and (-1, 2, 0)
+ 
+Difference: 1.19736221654e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 78 tried 75 passed 3 failled time so far: 205.501968145
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -3, -6), (-3, 3, -6) and (0, 3, -6)
+ 
+Difference: 6.46339355082e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:79 tried 74 passed 5 failled time so far: 212.074023008
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -2, -9), (-1, 2, -9) and (-1, -1, 9)
+ 
+Difference: 1.23997399221e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 79 tried 76 passed 3 failled time so far: 214.961043119
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, 1, 0), (1, 0, 0) and (1, -1, 0)
+ 
+Difference: 4.18999230142e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:80 tried 75 passed 5 failled time so far: 215.786401987
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -2, -10), (2, -2, 10) and (-2, 0, 10)
+ 
+Difference: 2.754978478e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 80 tried 77 passed 3 failled time so far: 219.129548073
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, 3), (-1, 1, 3) and (1, 1, -3)
+ 
+Difference: 3.42505949303e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:81 tried 76 passed 5 failled time so far: 219.639219999
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 1, 1), (-1, -1, 1) and (-1, 1, -1)
+ 
+Difference: 9.38650177428e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 81 tried 78 passed 3 failled time so far: 221.711956978
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -2, -1), (2, 0, 1) and (-2, -1, 0)
+ 
+Difference: 1.33367848159e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:82 tried 77 passed 5 failled time so far: 222.020043135
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (1, -2, 0) and (-2, 1, 0)
+ 
+Difference: 3.62779485617e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 82 tried 79 passed 3 failled time so far: 222.712033033
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (1, -2, 3) and (2, -1, 3)
+ 
+Difference: 2.18713180945e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:83 tried 78 passed 5 failled time so far: 222.995201111
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -1), (-1, -1, -2) and (-1, -2, -1)
+ 
+Difference: 1.43036219122e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 83 tried 80 passed 3 failled time so far: 223.227571011
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, -2, -2), (2, 0, 2) and (0, -2, 2)
+ 
+Difference: 1.27508280825e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:84 tried 79 passed 5 failled time so far: 223.555320978
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (5, -1, 3), (-1, -3, -5) and (-5, -1, 3)
+ 
+Difference: 1.03511017848e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 84 tried 81 passed 3 failled time so far: 225.547971964
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (1, 1, 2), (1, 1, -2) and (-1, 1, -2)
+ 
+Difference: 1.95211536604e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:85 tried 80 passed 5 failled time so far: 225.887064934
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, -1), (1, -1, -1) and (-1, 1, -1)
+ 
+Difference: 0.0307512688707
+NEW FILTER: CASE PASSED
+ 
+For new filter: 85 tried 82 passed 3 failled time so far: 226.270831108
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, -2), (2, 0, -2) and (0, -2, 2)
+ 
+Difference: 2.40309824593e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:86 tried 81 passed 5 failled time so far: 226.612504005
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (0, -2, 2) and (2, -2, -2)
+ 
+Difference: 1.04539242949e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 86 tried 83 passed 3 failled time so far: 226.876595974
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-2, -2, 1), (2, -2, -1) and (2, -2, 1)
+ 
+Difference: 1.71009043838e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:87 tried 82 passed 5 failled time so far: 227.368932962
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -1), (-1, -2, -1) and (1, 1, 2)
+ 
+Difference: 1.08066829275e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 87 tried 84 passed 3 failled time so far: 227.576210976
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, -1, 1), (2, -1, -1) and (2, -1, 1)
+ 
+Difference: 2.0419970007e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:88 tried 83 passed 5 failled time so far: 227.925480127
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (1, -2, 0) and (-2, 1, 0)
+ 
+Difference: 4.38129096808e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 88 tried 85 passed 3 failled time so far: 228.041772127
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 3), (1, 0, -3) and (-1, 1, 3)
+ 
+Difference: 4.42972521381e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:89 tried 84 passed 5 failled time so far: 228.873099089
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, -1, -1), (-1, -1, 1) and (-1, 1, -1)
+ 
+Difference: 0.0307507001684
+NEW FILTER: CASE PASSED
+ 
+For new filter: 89 tried 86 passed 3 failled time so far: 229.530601978
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 2, -1), (0, -2, -1) and (-2, 2, -1)
+ 
+Difference: 3.03963206042e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:90 tried 85 passed 5 failled time so far: 230.388296127
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, 0), (2, -4, 0) and (-4, 2, 0)
+ 
+Difference: 8.08493373381e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 90 tried 87 passed 3 failled time so far: 233.392647028
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -1), (0, -1, 0) and (-1, 0, 0)
+ 
+Difference: 0.207138986638
+OLD FILTER: CASE PASSED
+ 
+For old filter:91 tried 86 passed 5 failled time so far: 234.078061104
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, 3), (2, 2, -3) and (-2, 4, -3)
+ 
+Difference: 9.94576147792e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 91 tried 88 passed 3 failled time so far: 237.148186922
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (1, -1, -2) and (1, -1, 2)
+ 
+Difference: 2.13070283713e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:92 tried 87 passed 5 failled time so far: 237.492273092
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (-2, 1, -3) and (-1, 2, 3)
+ 
+Difference: 5.20893208467e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 92 tried 89 passed 3 failled time so far: 237.619076967
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-2, -2, 0), (0, -2, 4) and (2, -2, 0)
+ 
+Difference: 7.3796077788e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:93 tried 88 passed 5 failled time so far: 238.118915081
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, -1, -5), (-1, -5, 3) and (-5, -3, -1)
+ 
+Difference: 1.47811900628e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 93 tried 90 passed 3 failled time so far: 240.171656132
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, 1, -2), (-1, -1, 2) and (1, -1, -2)
+ 
+Difference: 18.4142135624
+OLD FILTER: CASE FAILLED
+ 
+For old filter:94 tried 88 passed 6 failled time so far: 240.680145025
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, -2, 6), (2, -2, -6) and (-2, -2, 6)
+ 
+Difference: 1.78647910996e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 94 tried 91 passed 3 failled time so far: 242.774243116
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (1, 1, 0)
+ 
+Difference: 1.24458262728e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:95 tried 89 passed 6 failled time so far: 243.102720022
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (1, -1, -1) and (1, 0, -1)
+ 
+Difference: 4.01646271869e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 95 tried 92 passed 3 failled time so far: 243.943299055
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, 1) and (-1, -1, 0)
+ 
+Difference: 6.94770061191e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:96 tried 90 passed 6 failled time so far: 244.224941015
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, 1), (-1, 2, 1) and (-2, 1, 1)
+ 
+Difference: 3.6762123957e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 96 tried 93 passed 3 failled time so far: 245.630969048
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -3, -8), (-2, -1, 8) and (-2, 3, -8)
+ 
+Difference: 1.77038865732e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:97 tried 91 passed 6 failled time so far: 252.535287142
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 1), (-1, 1, 1) and (-1, 1, -1)
+ 
+Difference: 5.53193864311e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 97 tried 94 passed 3 failled time so far: 253.32692194
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -4), (1, 0, 4) and (0, 1, -4)
+ 
+Difference: 2.960041076e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:98 tried 92 passed 6 failled time so far: 253.62076211
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, 0, 0), (0, -2, 0) and (0, 0, 2)
+ 
+Difference: 9.25733172107e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 98 tried 95 passed 3 failled time so far: 253.812819004
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, -4), (2, -1, 4) and (1, 1, -4)
+ 
+Difference: 6.78365907869e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:99 tried 93 passed 6 failled time so far: 254.653883934
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, 1, 1), (-1, -1, 1) and (-1, 1, -1)
+ 
+Difference: 6.85657877551e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 99 tried 96 passed 3 failled time so far: 254.840232134
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 4), (-1, 0, -4) and (0, -1, 4)
+ 
+Difference: 6.51400457538e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:100 tried 94 passed 6 failled time so far: 255.701553106
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 8.26560003232e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 100 tried 97 passed 3 failled time so far: 255.85871315
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (0, -2, -4), (0, -2, 4) and (2, -2, 0)
+ 
+Difference: 2.98264376019e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:101 tried 95 passed 6 failled time so far: 256.319620132
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, 3) and (2, -1, 3)
+ 
+Difference: 5.07918404556e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 101 tried 98 passed 3 failled time so far: 256.446516037
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, -1), (-1, 1, 1) and (-1, -1, -1)
+ 
+Difference: 2.31880409707e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:102 tried 96 passed 6 failled time so far: 257.341635942
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, 9), (-4, 2, 9) and (2, -4, -9)
+ 
+Difference: 1.18737306225e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 102 tried 99 passed 3 failled time so far: 260.775924921
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, 1) and (-1, -1, 0)
+ 
+Difference: 1.82566787639e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:103 tried 97 passed 6 failled time so far: 261.064024925
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, -4, -2), (2, -4, -4) and (4, -4, 2)
+ 
+Difference: 1.52032552001e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 103 tried 100 passed 3 failled time so far: 263.13330698
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, -4, -4), (-4, -4, 4) and (-4, 4, -4)
+ 
+Difference: 5.42746150211e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:104 tried 98 passed 6 failled time so far: 265.125126123
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 1, 0), (-1, 0, 0) and (0, 1, 0)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 104 tried 100 passed 4 failled time so far: 265.422852993
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 1, 4), (-1, 2, 4) and (1, -2, 4)
+ 
+Difference: 5.89114367111e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:105 tried 99 passed 6 failled time so far: 266.732537031
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (5, 0, 2), (0, -5, 2) and (5, -5, -2)
+ 
+Difference: 9.16068638279e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 105 tried 101 passed 4 failled time so far: 269.723266125
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, -2, -2), (-2, 0, -2) and (-2, -2, 0)
+ 
+Difference: 7.28244817613e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:106 tried 100 passed 6 failled time so far: 271.788717031
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, -2), (0, -1, -2) and (1, -1, 2)
+ 
+Difference: 6.21017817527e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 106 tried 102 passed 4 failled time so far: 272.012512922
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, -1), (1, -1, -1) and (1, -1, 1)
+ 
+Difference: 4.87263399785e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:107 tried 101 passed 6 failled time so far: 272.505676985
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, 0, 0), (0, 0, -2) and (0, -2, 0)
+ 
+Difference: 1.06744619317e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 107 tried 103 passed 4 failled time so far: 272.716259003
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -2), (0, -2, 0) and (-2, 0, 0)
+ 
+Difference: 0.207138050147
+OLD FILTER: CASE PASSED
+ 
+For old filter:108 tried 102 passed 6 failled time so far: 273.999045134
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 2, 8), (-2, 0, -8) and (0, 2, -8)
+ 
+Difference: 1.73515021315e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 108 tried 104 passed 4 failled time so far: 277.122638941
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -4), (4, -4, -4) and (4, -4, 4)
+ 
+Difference: 1.56797514522e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:109 tried 103 passed 6 failled time so far: 279.103760004
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, 1, 15), (1, 1, -15) and (2, -1, 15)
+ 
+Difference: 1.29695779805e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 109 tried 105 passed 4 failled time so far: 282.240287066
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, 1, -2), (1, 1, 2) and (1, -1, -2)
+ 
+Difference: 18.4142135624
+OLD FILTER: CASE FAILLED
+ 
+For old filter:110 tried 103 passed 7 failled time so far: 282.732626915
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, 4, 4), (-4, 4, -4) and (-4, -4, -4)
+ 
+Difference: 3.69572206504e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 110 tried 106 passed 4 failled time so far: 284.86977005
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -2), (2, 2, 1) and (1, 2, 2)
+ 
+Difference: 2.42244880885e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:111 tried 104 passed 7 failled time so far: 285.1582551
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, 2), (2, -2, -2) and (-2, 0, -2)
+ 
+Difference: 1.87344542464e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 111 tried 107 passed 4 failled time so far: 285.402426958
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, 2), (-2, 0, 2) and (0, -2, 2)
+ 
+Difference: 3.85982300687e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:112 tried 105 passed 7 failled time so far: 285.861629963
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-2, 1, -3) and (-1, -1, 3)
+ 
+Difference: 4.73967321045e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 112 tried 108 passed 4 failled time so far: 285.98565197
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -5), (0, 1, -5) and (2, -2, 0)
+ 
+Difference: 2.78409941298e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:113 tried 106 passed 7 failled time so far: 286.814726114
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 1, 2), (3, -2, 2) and (-2, 3, -2)
+ 
+Difference: 1.70514895527e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 113 tried 109 passed 4 failled time so far: 289.710355043
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (2, -1, 0) and (-1, -1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:114 tried 106 passed 8 failled time so far: 289.99958992
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 2, 2), (-2, -2, -1) and (-2, -1, -2)
+ 
+Difference: 7.46294916005e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 114 tried 110 passed 4 failled time so far: 290.203989029
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 0), (-1, 0, 0) and (1, -1, 0)
+ 
+Difference: 4.23000616288e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:115 tried 107 passed 8 failled time so far: 291.086115122
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 0, 1), (0, -1, -1) and (-1, -1, 0)
+ 
+Difference: 8.61537748078e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 115 tried 111 passed 4 failled time so far: 291.306030989
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, 4), (0, 2, -4) and (0, 2, 4)
+ 
+Difference: 1.87172432497e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:116 tried 108 passed 8 failled time so far: 291.602095127
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 0), (1, -1, 0) and (0, 1, 0)
+ 
+Difference: 1.12700722294e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 116 tried 112 passed 4 failled time so far: 291.822909117
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, -1, -3), (2, 1, -3) and (-1, -2, 3)
+ 
+Difference: 2.67205240786e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:117 tried 109 passed 8 failled time so far: 292.139074087
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-2, 1, -3) and (-1, 2, 3)
+ 
+Difference: 8.27201092609e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 117 tried 113 passed 4 failled time so far: 292.276989937
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, -3) and (-2, 1, -3)
+ 
+Difference: 2.43377072418e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:118 tried 110 passed 8 failled time so far: 293.064157009
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-1, 2, 3) and (2, -1, 3)
+ 
+Difference: 1.34508190966e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 118 tried 114 passed 4 failled time so far: 293.196079016
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, -1), (1, -1, 1) and (-1, -1, -1)
+ 
+Difference: 6.88574112431e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:119 tried 111 passed 8 failled time so far: 293.842709064
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, 0, 0), (0, 0, -1) and (0, -1, 0)
+ 
+Difference: 5.63062561696e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 119 tried 115 passed 4 failled time so far: 294.037766933
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 1, 3), (-1, 2, -3) and (-2, 1, -3)
+ 
+Difference: 9.21501476897e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:120 tried 112 passed 8 failled time so far: 295.348865986
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (5, 0, -4), (0, -5, -4) and (-5, 5, -4)
+ 
+Difference: 8.34520941291e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 120 tried 116 passed 4 failled time so far: 298.980046034
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 0, 1), (0, -2, -1) and (2, -2, 1)
+ 
+Difference: 3.17360355752e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:121 tried 113 passed 8 failled time so far: 299.824599981
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -4, -10), (-4, 0, -10) and (0, 4, -10)
+ 
+Difference: 9.83615145348e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 121 tried 117 passed 4 failled time so far: 303.45907402
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -1, -14), (1, -1, 14) and (-1, 0, 14)
+ 
+Difference: 2.26170435313e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:122 tried 114 passed 8 failled time so far: 310.176676989
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 0, 2), (2, -2, -2) and (0, 2, -2)
+ 
+Difference: 1.22291510362e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 122 tried 118 passed 4 failled time so far: 313.31697011
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, 3) and (-2, 1, -3)
+ 
+Difference: 3.39900184582e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:123 tried 115 passed 8 failled time so far: 314.22329092
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 3), (1, 1, -3) and (-2, 1, -3)
+ 
+Difference: 9.51215343494e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 123 tried 119 passed 4 failled time so far: 314.343328953
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, 3), (-1, 1, 3) and (1, 1, -3)
+ 
+Difference: 3.16470715287e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:124 tried 116 passed 8 failled time so far: 314.826971054
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 3, 3), (1, -3, 3) and (-3, -3, -1)
+ 
+Difference: 9.26123665125e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 124 tried 120 passed 4 failled time so far: 316.803412914
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 4, 2), (1, 3, -2) and (3, 1, 2)
+ 
+Difference: 1.06569220205e-12
+OLD FILTER: CASE PASSED
+ 
+For old filter:125 tried 117 passed 8 failled time so far: 323.409836054
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 2, 2), (2, 1, 2) and (-2, -2, -1)
+ 
+Difference: 8.15941270004e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 125 tried 121 passed 4 failled time so far: 323.669228077
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, -1, -5), (1, -1, 5) and (-1, 0, 5)
+ 
+Difference: 3.13025047129e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:126 tried 118 passed 8 failled time so far: 323.951703072
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 0, 8), (0, -2, 8) and (-2, 2, 8)
+ 
+Difference: 4.28561964773e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 126 tried 122 passed 4 failled time so far: 327.060527086
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (2, -1, 0) and (1, 1, 0)
+ 
+Difference: 1.00968673981e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:127 tried 119 passed 8 failled time so far: 327.358607054
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-1, -1, -3) and (1, -2, -3)
+ 
+Difference: 3.847155941e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 127 tried 123 passed 4 failled time so far: 328.004846096
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -2, -2), (-1, -1, -2) and (-2, 1, -2)
+ 
+Difference: 3.42276925696e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:128 tried 120 passed 8 failled time so far: 328.859162092
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -4), (-4, 4, 4) and (-4, 4, -4)
+ 
+Difference: 1.18344472142e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 128 tried 124 passed 4 failled time so far: 330.833029032
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -3, -12), (3, 0, 12) and (3, 0, -12)
+ 
+Difference: 1.85443407517e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:129 tried 121 passed 8 failled time so far: 337.541305065
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, 1, -3), (1, 0, -3) and (0, -1, -3)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 129 tried 124 passed 5 failled time so far: 337.759815931
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, -1, 2), (1, 1, 2) and (-1, -1, 2)
+ 
+Difference: 2.36156709438e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:130 tried 122 passed 8 failled time so far: 338.262628078
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -1, 2), (-1, 0, 2) and (0, 1, 2)
+ 
+Difference: 1.17860921486e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 130 tried 125 passed 5 failled time so far: 338.47480011
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-4, 2, 3), (-4, 2, -3) and (-2, -2, 3)
+ 
+Difference: 2.46939589145e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:131 tried 123 passed 8 failled time so far: 345.145766973
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 5), (0, 2, 0) and (2, -2, 0)
+ 
+Difference: 36.0383981385
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 131 tried 125 passed 6 failled time so far: 346.053503036
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 2), (0, -2, -1) and (-2, -1, 0)
+ 
+Difference: 7.93175727586e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:132 tried 124 passed 8 failled time so far: 346.352397919
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 6.0256007771e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 132 tried 126 passed 6 failled time so far: 346.505111933
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -3), (1, -1, -3) and (0, 1, -3)
+ 
+Difference: 4.51483946339e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:133 tried 125 passed 8 failled time so far: 347.339743137
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -3), (-1, 1, -3) and (-1, 0, 3)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 133 tried 126 passed 7 failled time so far: 347.598654032
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, -1), (1, -1, -1) and (-1, 1, -1)
+ 
+Difference: 9.64601706525e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:134 tried 126 passed 8 failled time so far: 347.875251055
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, 0, 10), (0, -4, 10) and (4, -4, -10)
+ 
+Difference: 1.05270093821e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 134 tried 127 passed 7 failled time so far: 351.051798105
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (1, 1, -2) and (1, -1, 2)
+ 
+Difference: 8.47674639581e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:135 tried 127 passed 8 failled time so far: 351.396311045
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 1, 12), (1, -2, -12) and (-1, -1, 12)
+ 
+Difference: 1.5700055023e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 135 tried 128 passed 7 failled time so far: 354.384832144
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, -1, 1), (1, -1, -1) and (-1, 1, -1)
+ 
+Difference: 1.60686027179e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:136 tried 128 passed 8 failled time so far: 354.688817024
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-4, 4, -2), (-4, 0, 2) and (0, 4, 2)
+ 
+Difference: 1.01382910931e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 136 tried 129 passed 7 failled time so far: 357.617331028
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-2, -2, 1), (-2, 2, 1) and (-2, -2, -1)
+ 
+Difference: 3.4163439364e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:137 tried 129 passed 8 failled time so far: 358.126878023
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 3), (0, -1, -3) and (0, 1, -3)
+ 
+Difference: 4.80537233115e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 137 tried 130 passed 7 failled time so far: 358.96983695
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, -1, 1), (-1, 1, 1) and (-1, 1, -1)
+ 
+Difference: 1.93569669418e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:138 tried 130 passed 8 failled time so far: 359.269500017
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 1), (1, 0, 1) and (-1, -1, 0)
+ 
+Difference: 6.42956905401e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 138 tried 131 passed 7 failled time so far: 359.454929113
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 0, -2), (1, 0, -2) and (-1, 1, -2)
+ 
+Difference: 4.75406955095e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:139 tried 131 passed 8 failled time so far: 360.825892925
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 3), (2, -1, -3) and (-2, 1, -3)
+ 
+Difference: 3.30861586072e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 139 tried 132 passed 7 failled time so far: 360.959242105
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -1), (0, 1, -1) and (-1, 1, 1)
+ 
+Difference: 5.70805332891e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:140 tried 132 passed 8 failled time so far: 361.798099995
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -2), (0, -2, 0) and (2, 0, 0)
+ 
+Difference: 7.23062560408e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 140 tried 133 passed 7 failled time so far: 362.070074081
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -2, 1), (-2, 0, 1) and (0, 2, 1)
+ 
+Difference: 2.3452918953e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:141 tried 133 passed 8 failled time so far: 362.378612041
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, 3, -1), (-3, 1, -3) and (-3, -1, -3)
+ 
+Difference: 8.54216159528e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 141 tried 134 passed 7 failled time so far: 364.399187088
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, -3) and (-2, 1, -3)
+ 
+Difference: 2.61802892553e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:142 tried 134 passed 8 failled time so far: 364.682322025
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -1), (-1, -1, -2) and (1, 2, 1)
+ 
+Difference: 1.38077435751e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 142 tried 135 passed 7 failled time so far: 364.945723057
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, 5, -1), (1, -3, -5) and (5, -3, 1)
+ 
+Difference: 1.2311458806e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:143 tried 135 passed 8 failled time so far: 367.00347209
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, 5), (0, -1, -5) and (2, -2, 0)
+ 
+Difference: 37.199712533
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 143 tried 135 passed 8 failled time so far: 367.850950956
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, 1, 5), (1, -1, 5) and (-1, 0, 5)
+ 
+Difference: 5.4045849233e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:144 tried 136 passed 8 failled time so far: 368.137774944
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 1), (1, 1, 0) and (-1, 0, -1)
+ 
+Difference: 2.31348361859e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 144 tried 136 passed 8 failled time so far: 368.364256144
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -2), (0, -2, 0) and (2, 0, 0)
+ 
+Difference: 0.234311843915
+OLD FILTER: CASE PASSED
+ 
+For old filter:145 tried 137 passed 8 failled time so far: 368.644081116
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -3, 4), (-3, 1, -4) and (3, -2, -4)
+ 
+Difference: 1.75464233846e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 145 tried 137 passed 8 failled time so far: 371.587775946
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, 4), (0, -2, 4) and (-2, 0, -4)
+ 
+Difference: 2.48709998637e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:146 tried 138 passed 8 failled time so far: 371.915333033
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (1, 0, 1) and (-1, 1, -1)
+ 
+Difference: 4.826694123e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 146 tried 138 passed 8 failled time so far: 372.755360126
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -1, -3), (1, -1, 3) and (-1, -1, 3)
+ 
+Difference: 1.77143688504e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:147 tried 139 passed 8 failled time so far: 373.263890982
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, 2), (-2, 2, 2) and (-2, 0, -2)
+ 
+Difference: 9.14418228682e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 147 tried 139 passed 8 failled time so far: 373.541363001
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 1), (0, -1, 0) and (-1, 0, 0)
+ 
+Difference: 7.49201412426e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:148 tried 140 passed 8 failled time so far: 373.830538034
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, 2, 4), (4, 2, 4) and (4, 2, -4)
+ 
+Difference: 1.15669535532e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 148 tried 140 passed 8 failled time so far: 375.889485121
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-5, 4, 6), (5, -1, -6) and (1, 4, 6)
+ 
+Difference: 6.36396324967e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:149 tried 141 passed 8 failled time so far: 382.309658051
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, -1, 1), (1, -1, -1) and (-1, -1, 1)
+ 
+Difference: 0.0307508261323
+NEW FILTER: CASE PASSED
+ 
+For new filter: 149 tried 141 passed 8 failled time so far: 383.406033039
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 3, 6), (0, 3, -6) and (0, -3, -6)
+ 
+Difference: 3.37529056001e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:150 tried 142 passed 8 failled time so far: 390.075829029
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 2, -4), (4, -4, 2) and (-4, -4, -2)
+ 
+Difference: 9.54301661358e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 150 tried 142 passed 8 failled time so far: 392.586859941
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, -1, -3), (2, -1, -3) and (2, -1, 3)
+ 
+Difference: 4.46444413408e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:151 tried 143 passed 8 failled time so far: 392.934885979
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 1, 4), (-2, 1, -4) and (-1, 2, -4)
+ 
+Difference: 5.71734849346e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 151 tried 143 passed 8 failled time so far: 393.781994104
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, -4), (0, -2, -4) and (2, 0, 4)
+ 
+Difference: 9.68587637534e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:152 tried 144 passed 8 failled time so far: 394.0862391
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-1, -1, 0) and (2, -1, 0)
+ 
+Difference: 6.06176022949e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 152 tried 144 passed 8 failled time so far: 394.227405071
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, -4), (0, 2, 4) and (2, 0, 4)
+ 
+Difference: 2.84370078166e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:153 tried 145 passed 8 failled time so far: 394.567227125
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, 1, 1), (1, 1, -1) and (-1, 1, -1)
+ 
+Difference: 2.97224505338e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 153 tried 145 passed 8 failled time so far: 395.255954027
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (-2, 1, 0) and (1, 1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:154 tried 145 passed 9 failled time so far: 395.581013918
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, 2), (-2, 2, 2) and (-2, 0, -2)
+ 
+Difference: 9.94857601061e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 154 tried 146 passed 8 failled time so far: 395.812191963
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 2, 2), (2, 0, 2) and (0, 2, -2)
+ 
+Difference: 1.72816722881e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:155 tried 146 passed 9 failled time so far: 396.642666101
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, 0), (0, -1, -1) and (-1, 0, -1)
+ 
+Difference: 1.52883863156e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 155 tried 147 passed 8 failled time so far: 396.845983982
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (2, -1, 0) and (1, 1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:156 tried 146 passed 10 failled time so far: 397.646994114
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 3), (1, -2, -3) and (-2, 1, -3)
+ 
+Difference: 4.8876473044e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 156 tried 148 passed 8 failled time so far: 397.84730792
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 5.24259674743e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:157 tried 147 passed 10 failled time so far: 398.151521921
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -1, -2), (1, -1, 2) and (-1, 0, 2)
+ 
+Difference: 2.71069568586e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 157 tried 149 passed 8 failled time so far: 401.301083088
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -1), (-1, 0, -1) and (0, -1, 1)
+ 
+Difference: 6.0117036019e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:158 tried 148 passed 10 failled time so far: 401.58474803
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, 2), (-1, 2, 2) and (-2, 1, 2)
+ 
+Difference: 6.72916099478e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 158 tried 150 passed 8 failled time so far: 402.416554928
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, 3, 3), (-1, 5, 1) and (-1, -1, -5)
+ 
+Difference: 1.80794368236e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:159 tried 149 passed 10 failled time so far: 404.400525093
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, 4), (0, -1, -4) and (1, 0, -4)
+ 
+Difference: 2.80881964527e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 159 tried 151 passed 8 failled time so far: 405.3386271
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, -1, 4), (-1, -1, -4) and (-1, 1, 4)
+ 
+Difference: 2.8122848515e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:160 tried 150 passed 10 failled time so far: 406.146450043
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -3, -2), (-2, -1, 2) and (-2, 3, -2)
+ 
+Difference: 9.74528510698e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 160 tried 152 passed 8 failled time so far: 409.10881114
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 3, -11), (-1, -2, -11) and (2, 1, -11)
+ 
+Difference: 1.76996532926e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:161 tried 151 passed 10 failled time so far: 416.115076065
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, -4, -2), (-2, 4, -4) and (-4, -4, -2)
+ 
+Difference: 8.79752912223e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 161 tried 153 passed 8 failled time so far: 418.200657129
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (1, 0, 1) and (-1, 1, 1)
+ 
+Difference: 3.02768169927e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:162 tried 152 passed 10 failled time so far: 419.073082924
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 4), (-1, 1, 4) and (-1, 0, -4)
+ 
+Difference: 8.78264710031e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 162 tried 154 passed 8 failled time so far: 419.30026412
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -2, -1), (1, 2, 0) and (-2, 0, -1)
+ 
+Difference: 2.27002701408e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:163 tried 153 passed 10 failled time so far: 419.620409012
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 1), (0, -1, 1) and (1, -1, -1)
+ 
+Difference: 1.25898331664e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 163 tried 155 passed 8 failled time so far: 419.863126993
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (1, 2, -1), (-1, 2, 1) and (-1, 2, -1)
+ 
+Difference: 1.83531310039e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:164 tried 154 passed 10 failled time so far: 420.173820019
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, -2, 4), (4, -2, 2) and (4, -2, -2)
+ 
+Difference: 1.14675098049e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 164 tried 156 passed 8 failled time so far: 422.645718098
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, -1, -4), (2, -1, -4) and (1, -2, 4)
+ 
+Difference: 8.60100877204e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:165 tried 155 passed 10 failled time so far: 423.478121996
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, 3, 1), (-1, 3, -3) and (-1, -3, -3)
+ 
+Difference: 1.36513417321e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 165 tried 157 passed 8 failled time so far: 425.439171076
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, -3), (-1, 1, 3) and (-1, 1, -3)
+ 
+Difference: 4.31150270878e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:166 tried 156 passed 10 failled time so far: 426.275815964
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, -1, -3), (1, -2, -3) and (-2, 1, -3)
+ 
+Difference: 6.81225650972e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 166 tried 158 passed 8 failled time so far: 426.406481028
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, 1, 3), (1, -1, 3) and (-1, -1, 3)
+ 
+Difference: 4.89265504308e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:167 tried 157 passed 10 failled time so far: 426.871803999
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, -1, -3), (1, -2, -3) and (2, -1, 3)
+ 
+Difference: 1.16717255412e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 167 tried 159 passed 8 failled time so far: 427.006757975
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, 3, 3), (1, -1, -5) and (1, -5, -1)
+ 
+Difference: 1.28602911669e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:168 tried 158 passed 10 failled time so far: 429.171939135
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 1, 1), (2, -3, -1) and (-1, -2, 1)
+ 
+Difference: 3.09494715523e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 168 tried 160 passed 8 failled time so far: 432.311658144
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -1), (-1, 0, -1) and (0, 1, -1)
+ 
+Difference: 2.10618613159e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:169 tried 159 passed 10 failled time so far: 432.612967968
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (1, -2, 0) and (-2, 1, 0)
+ 
+Difference: 3.93701404765e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 169 tried 161 passed 8 failled time so far: 432.779748917
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, 1, 5), (1, -1, -5) and (-2, 2, 0)
+ 
+Difference: 1.61252765603e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:170 tried 160 passed 10 failled time so far: 433.570311069
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 3), (-1, 1, 3) and (1, -1, 3)
+ 
+Difference: 1.37813441032e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 170 tried 162 passed 8 failled time so far: 433.789258003
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -1, -8), (-1, 1, -8) and (-1, 0, 8)
+ 
+Difference: 2.53183854481e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:171 tried 161 passed 10 failled time so far: 440.184194088
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-1, -1, -3) and (1, 1, -3)
+ 
+Difference: 4.81728872868e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 171 tried 163 passed 8 failled time so far: 440.308558941
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, 2), (-1, -2, -1) and (2, 1, 1)
+ 
+Difference: 2.30144007389e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:172 tried 162 passed 10 failled time so far: 440.581427097
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, -3) and (1, 1, -3)
+ 
+Difference: 4.07672972595e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 172 tried 164 passed 8 failled time so far: 440.698634148
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (-2, 1, -3) and (1, 1, -3)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:173 tried 162 passed 11 failled time so far: 441.339652061
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 0), (1, -1, 0) and (0, 1, 0)
+ 
+Difference: 1.66295448813e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 173 tried 165 passed 8 failled time so far: 442.059277058
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, -2, 2), (2, 2, -4) and (-2, 2, -4)
+ 
+Difference: 1.69373596184e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:174 tried 163 passed 11 failled time so far: 444.037154913
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, -3, -10), (1, 2, -10) and (-2, -1, -10)
+ 
+Difference: 1.14294650052e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 174 tried 166 passed 8 failled time so far: 446.942284107
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 2, -1), (2, 0, -1) and (0, 2, 1)
+ 
+Difference: 1.63117776956e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:175 tried 164 passed 11 failled time so far: 447.263833046
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, 3), (-4, 2, 3) and (2, 2, -3)
+ 
+Difference: 6.90155045769e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 175 tried 167 passed 8 failled time so far: 450.379725933
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 4, 12), (4, -2, 12) and (2, 2, -12)
+ 
+Difference: 39.0906006108
+OLD FILTER: CASE FAILLED
+ 
+For old filter:176 tried 164 passed 12 failled time so far: 456.599347115
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, -2), (1, -1, 2) and (0, 1, 2)
+ 
+Difference: 6.82460848662e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 176 tried 168 passed 8 failled time so far: 456.873918056
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 1, 4), (-2, 1, 4) and (-2, 1, -4)
+ 
+Difference: 4.11695147482e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:177 tried 165 passed 12 failled time so far: 457.671764135
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 4), (1, -1, -4) and (0, 1, -4)
+ 
+Difference: 1.50728433894e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 177 tried 169 passed 8 failled time so far: 457.984993935
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (0, 2, 4), (2, 2, 0) and (-2, 2, 0)
+ 
+Difference: 2.47853812539e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:178 tried 166 passed 12 failled time so far: 458.463909149
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 2, 1), (2, -2, 1) and (2, 0, -1)
+ 
+Difference: 4.71487746787e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 178 tried 170 passed 8 failled time so far: 459.358901978
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 2), (-1, -2, 0) and (-2, -1, 0)
+ 
+Difference: 1.42787644262e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:179 tried 167 passed 12 failled time so far: 459.679811954
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, -3), (-1, 2, 3) and (2, -1, 3)
+ 
+Difference: 6.61098113248e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 179 tried 171 passed 8 failled time so far: 459.812834978
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 1, 4), (2, -1, 4) and (1, 1, -4)
+ 
+Difference: 9.54822240908e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:180 tried 168 passed 12 failled time so far: 460.657810926
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -2), (2, 0, 0) and (0, 2, 0)
+ 
+Difference: 9.27209927598e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 180 tried 172 passed 8 failled time so far: 460.845511913
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -5, -1), (5, -2, 1) and (3, 2, 1)
+ 
+Difference: 1.9056820832e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:181 tried 169 passed 12 failled time so far: 467.11777401
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 3), (1, -1, 3) and (-1, 0, 3)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 181 tried 172 passed 9 failled time so far: 467.380784988
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -4), (-1, 0, -4) and (0, -1, 4)
+ 
+Difference: 1.41955030577e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:182 tried 170 passed 12 failled time so far: 467.659284115
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, -4, 4), (-4, 2, -4) and (-2, -4, 4)
+ 
+Difference: 2.68750178705e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 182 tried 173 passed 9 failled time so far: 469.800902128
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 1, 4), (1, 0, 4) and (0, -1, 4)
+ 
+Difference: 1.34133743402e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:183 tried 171 passed 12 failled time so far: 470.295463085
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 1, -3), (-1, 2, -3) and (2, -1, -3)
+ 
+Difference: 8.84493621925e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 183 tried 174 passed 9 failled time so far: 473.220215082
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, -2), (-2, 2, 2) and (2, -2, 2)
+ 
+Difference: 1.31805047139e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:184 tried 172 passed 12 failled time so far: 475.2114501
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, 4, 4), (-4, -4, 4) and (-4, -4, -4)
+ 
+Difference: 1.07269964116e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 184 tried 175 passed 9 failled time so far: 477.306720018
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -3, -11), (-1, 4, -11) and (1, 3, -11)
+ 
+Difference: 2.34417893975e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:185 tried 173 passed 12 failled time so far: 483.995065928
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, -6), (-2, -6, 2) and (2, -6, 2)
+ 
+Difference: 6.72029514839e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 185 tried 176 passed 9 failled time so far: 486.059430122
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 2, -2), (-2, 2, 2) and (2, 2, 2)
+ 
+Difference: 1.22687564974e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:186 tried 174 passed 12 failled time so far: 488.030367136
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, 0, 0), (0, -1, 0) and (0, 0, 1)
+ 
+Difference: 6.17462234989e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 186 tried 177 passed 9 failled time so far: 488.21660614
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, -4, -4), (4, 4, -4) and (4, -4, 4)
+ 
+Difference: 1.19253941602e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:187 tried 175 passed 12 failled time so far: 490.311797142
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 4), (0, -1, 4) and (-1, 1, 4)
+ 
+Difference: 7.09612152529e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 187 tried 178 passed 9 failled time so far: 491.066522121
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, -5, 4), (-5, 2, -4) and (3, -5, -4)
+ 
+Difference: 5.26059389006e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:188 tried 176 passed 12 failled time so far: 497.405153036
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 1, 3), (-1, 0, 3) and (0, 1, 3)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 188 tried 178 passed 10 failled time so far: 497.65001297
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, -1, -4), (-2, 1, 4) and (-1, 2, 4)
+ 
+Difference: 5.7207391039e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:189 tried 177 passed 12 failled time so far: 498.492542028
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, 12), (-2, 4, -12) and (-2, 4, 12)
+ 
+Difference: 7.94963070562e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 189 tried 179 passed 10 failled time so far: 501.583954096
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, 0, 1), (0, -1, 1) and (1, -1, 0)
+ 
+Difference: 1.86641485849e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:190 tried 178 passed 12 failled time so far: 501.880617142
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 1), (1, 1, 0) and (1, 0, 1)
+ 
+Difference: 3.28865994516e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 190 tried 180 passed 10 failled time so far: 502.102772951
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (2, 1, -1), (-2, -1, -1) and (1, -2, -1)
+ 
+Difference: 13.3298221281
+OLD FILTER: CASE FAILLED
+ 
+For old filter:191 tried 178 passed 13 failled time so far: 502.424524069
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 2, 2), (-2, 1, -2) and (2, -1, -2)
+ 
+Difference: 3.02779813047e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 191 tried 181 passed 10 failled time so far: 503.296921968
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 1, 1), (-1, 0, -1) and (0, 1, -1)
+ 
+Difference: 2.29699649443e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:192 tried 179 passed 13 failled time so far: 503.585466146
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 3), (-2, 1, 3) and (-1, 2, 3)
+ 
+Difference: 7.23716510189e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 192 tried 182 passed 10 failled time so far: 503.703478098
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, 0, -5), (-1, 1, 5) and (0, -2, 0)
+ 
+Difference: 37.199712533
+OLD FILTER: CASE FAILLED
+ 
+For old filter:193 tried 179 passed 14 failled time so far: 504.551237106
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 2, 2), (2, 1, 2) and (-2, -2, -1)
+ 
+Difference: 9.11111327847e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 193 tried 183 passed 10 failled time so far: 504.78937006
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, -2, 0) and (2, 0, 0)
+ 
+Difference: 1.00895146357e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:194 tried 180 passed 14 failled time so far: 505.112036943
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, 0, -14), (0, -1, -14) and (1, -1, 14)
+ 
+Difference: 2.06049595095e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 194 tried 184 passed 10 failled time so far: 508.068645
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (1, 1, 2), (-1, -1, 2) and (1, -1, -2)
+ 
+Difference: 1.58299375853e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:195 tried 181 passed 14 failled time so far: 508.373677969
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (1, -2, 0) and (2, -1, 0)
+ 
+Difference: 6.35638411227e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 195 tried 185 passed 10 failled time so far: 508.500141144
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -1, 1), (1, -1, -1) and (1, 1, 1)
+ 
+Difference: 4.65026239957e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:196 tried 182 passed 14 failled time so far: 509.377032995
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, 1, 3), (-3, 3, -1) and (-3, -3, -1)
+ 
+Difference: 2.1047931427e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 196 tried 186 passed 10 failled time so far: 511.784254074
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, 1, 14), (-1, 1, -14) and (1, 0, -14)
+ 
+Difference: 1.75661351839e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:197 tried 183 passed 14 failled time so far: 518.004229069
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-2, 0, 2), (-2, 0, -2) and (-2, 2, -2)
+ 
+Difference: 5.20486377014e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 197 tried 187 passed 10 failled time so far: 518.882756948
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -2, -3), (-2, -1, -3) and (1, 2, -3)
+ 
+Difference: 3.37880967804e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:198 tried 184 passed 14 failled time so far: 519.672514915
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -1), (0, -1, 0) and (1, 0, 0)
+ 
+Difference: 2.61225920045e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 198 tried 188 passed 10 failled time so far: 519.86737895
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -2), (1, 0, 2) and (0, -1, 2)
+ 
+Difference: 4.07523589172e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:199 tried 185 passed 14 failled time so far: 520.715739012
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (-2, 2, 2) and (0, 2, -2)
+ 
+Difference: 9.34799908581e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 199 tried 189 passed 10 failled time so far: 521.105497122
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -2), (1, 0, 2) and (0, 1, -2)
+ 
+Difference: 5.36627883322e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:200 tried 186 passed 14 failled time so far: 521.929857969
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -1, -1), (-1, 0, -1) and (0, 1, -1)
+ 
+Difference: 1.41238961504e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 200 tried 190 passed 10 failled time so far: 522.152670145
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, -1, 2), (-1, 2, 2) and (2, -1, -2)
+ 
+Difference: 3.23091640914e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:201 tried 187 passed 14 failled time so far: 523.016441107
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 1, 1), (-1, 0, -1) and (0, 1, -1)
+ 
+Difference: 1.25325087081e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 201 tried 191 passed 10 failled time so far: 523.249536037
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -4), (0, 1, -4) and (1, -1, 4)
+ 
+Difference: 3.5419820243e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:202 tried 188 passed 14 failled time so far: 524.138670921
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, 0, 0), (0, 0, -2) and (0, -2, 0)
+ 
+Difference: 4.96042005546e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 202 tried 192 passed 10 failled time so far: 524.369580984
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 1, 1), (1, 0, 1) and (0, 1, -1)
+ 
+Difference: 1.80523201766e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:203 tried 189 passed 14 failled time so far: 524.664659977
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (2, 4, 2), (2, -4, -2) and (-2, -4, 2)
+ 
+Difference: 1.22505002488e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 203 tried 193 passed 10 failled time so far: 526.789984941
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, 1, 5), (0, 1, -5) and (-2, 0, 0)
+ 
+Difference: 3.77233470807e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:204 tried 190 passed 14 failled time so far: 527.645611048
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (-1, 2, 0) and (2, -1, 0)
+ 
+Difference: 3.43831350258e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 204 tried 194 passed 10 failled time so far: 527.761331081
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, -2, -2), (2, 0, 2) and (0, -2, 2)
+ 
+Difference: 1.36132664376e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:205 tried 191 passed 14 failled time so far: 528.097808123
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 1, 1), (1, 1, 2) and (1, 2, 1)
+ 
+Difference: 5.38639399551e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 205 tried 195 passed 10 failled time so far: 528.302632093
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -1), (1, 0, 1) and (0, -1, 1)
+ 
+Difference: 1.18193243613e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:206 tried 192 passed 14 failled time so far: 528.60592103
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, -2, 6), (0, -6, 2) and (-2, -6, 0)
+ 
+Difference: 2.27842848401e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 206 tried 196 passed 10 failled time so far: 531.053442955
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 2), (1, 0, 2) and (-2, -1, 0)
+ 
+Difference: 4.62564257861e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:207 tried 193 passed 14 failled time so far: 531.845679045
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (0, -2, 2) and (-2, 2, 2)
+ 
+Difference: 1.04574536554e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 207 tried 197 passed 10 failled time so far: 532.063244104
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, -3) and (1, -2, 3)
+ 
+Difference: 4.14691787123e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:208 tried 194 passed 14 failled time so far: 532.40644598
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 0), (-1, 1, 0) and (-1, 0, 0)
+ 
+Difference: 5.89329842261e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 208 tried 198 passed 10 failled time so far: 532.667515993
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (-1, 0, -1) and (1, 1, 0)
+ 
+Difference: 2.46021012266e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:209 tried 195 passed 14 failled time so far: 533.113737106
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 4), (0, -1, 4) and (-1, 1, 4)
+ 
+Difference: 1.04778974014e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 209 tried 199 passed 10 failled time so far: 533.331640959
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (1, 2, -1), (-1, -2, -1) and (2, -1, -1)
+ 
+Difference: 1.98401276575e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:210 tried 196 passed 14 failled time so far: 533.658883095
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -4), (-4, 4, 4) and (-4, 4, -4)
+ 
+Difference: 1.21802345125e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 210 tried 200 passed 10 failled time so far: 535.759454012
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, 4), (0, -2, 4) and (-2, 0, -4)
+ 
+Difference: 3.23392606409e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:211 tried 197 passed 14 failled time so far: 536.100120068
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 4), (1, -1, -4) and (-1, 0, -4)
+ 
+Difference: 5.13193961756e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 211 tried 201 passed 10 failled time so far: 536.444423914
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -1), (0, 1, -1) and (-1, 1, -1)
+ 
+Difference: 3.5072799758e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:212 tried 198 passed 14 failled time so far: 537.281831026
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-2, 1, -3) and (-1, 2, 3)
+ 
+Difference: 5.76945148577e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 212 tried 202 passed 10 failled time so far: 537.399497986
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (2, 0, -4), (0, -2, 4) and (0, 2, 4)
+ 
+Difference: 3.58594925073e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:213 tried 199 passed 14 failled time so far: 537.69811511
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (-1, -1, 3) and (2, -1, 3)
+ 
+Difference: 6.10828546253e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 213 tried 203 passed 10 failled time so far: 537.816133976
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, -1, -4), (-2, 1, -4) and (1, 1, -4)
+ 
+Difference: 6.67845043813e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:214 tried 200 passed 14 failled time so far: 538.703529119
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, 4, 4), (-4, 0, 4) and (4, -4, 0)
+ 
+Difference: 7.17314134018e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 214 tried 204 passed 10 failled time so far: 540.861073017
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, 1, -1), (1, -1, -1) and (1, -1, 1)
+ 
+Difference: 3.7974672228e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:215 tried 201 passed 14 failled time so far: 541.958558083
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -1, -4), (-1, 0, -4) and (0, 1, -4)
+ 
+Difference: 7.37942375948e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 215 tried 205 passed 10 failled time so far: 542.690514088
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:216 tried 201 passed 15 failled time so far: 543.105205059
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 3), (2, -1, -3) and (1, -2, -3)
+ 
+Difference: 6.68411722126e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 216 tried 206 passed 10 failled time so far: 543.231161118
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 6.70052690988e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:217 tried 202 passed 15 failled time so far: 543.51423192
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, 0, 2), (0, -2, -2) and (2, -2, -2)
+ 
+Difference: 7.49054869567e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 217 tried 207 passed 10 failled time so far: 544.328482151
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -1), (0, 1, 0) and (-1, 0, 0)
+ 
+Difference: 0.207139419633
+OLD FILTER: CASE PASSED
+ 
+For old filter:218 tried 203 passed 15 failled time so far: 545.089266062
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 0), (0, -1, 0) and (1, -1, 0)
+ 
+Difference: 5.63209355491e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 218 tried 208 passed 10 failled time so far: 545.354598999
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -3, 2), (-1, 3, 2) and (-1, 3, -2)
+ 
+Difference: 3.16819154028e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:219 tried 204 passed 15 failled time so far: 545.811358929
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 2, 2), (-2, -2, -1) and (-2, -1, -2)
+ 
+Difference: 6.82524496448e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 219 tried 209 passed 10 failled time so far: 546.05261898
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-1, 2, 0), (2, -1, 0) and (1, 1, 0)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:220 tried 204 passed 16 failled time so far: 546.343668938
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, -1, 4), (-1, 0, 4) and (0, -1, -4)
+ 
+Difference: 4.52975258425e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 220 tried 210 passed 10 failled time so far: 547.201147079
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 2, -1), (2, 0, -1) and (0, -2, -1)
+ 
+Difference: 2.03130655454e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:221 tried 205 passed 16 failled time so far: 547.488569975
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, -3) and (2, -1, 3)
+ 
+Difference: 8.32911763845e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 221 tried 211 passed 10 failled time so far: 547.623762131
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (4, 4, -2), (2, -4, -4) and (-4, -2, -4)
+ 
+Difference: 5.83428921858e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:222 tried 206 passed 16 failled time so far: 549.788011074
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, -1, 4), (1, -2, -4) and (2, -1, -4)
+ 
+Difference: 5.2985163723e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 222 tried 212 passed 10 failled time so far: 550.875111103
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, -2, 0) and (-2, 0, 0)
+ 
+Difference: 1.42133787236e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:223 tried 207 passed 16 failled time so far: 551.190634012
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -3, 1), (2, -3, -1) and (-2, -1, -1)
+ 
+Difference: 1.55280104408e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 223 tried 213 passed 10 failled time so far: 555.077949047
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (0, -1, -5), (-1, 1, -5) and (1, 0, -5)
+ 
+Difference: 5.86701010804e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:224 tried 208 passed 16 failled time so far: 555.407895088
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, 2, -2), (2, 0, 2) and (2, -2, 0)
+ 
+Difference: 1.92734506252e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 224 tried 214 passed 10 failled time so far: 557.47200799
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, 2), (2, 0, 2) and (2, 0, -2)
+ 
+Difference: 1.88409207758e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:225 tried 209 passed 16 failled time so far: 557.771090984
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -1), (-1, -1, -2) and (-1, -2, -1)
+ 
+Difference: 8.72017075622e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 225 tried 215 passed 10 failled time so far: 557.994651079
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -5, -7), (-5, 2, -7) and (-2, 5, -7)
+ 
+Difference: 2.19068529847e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:226 tried 210 passed 16 failled time so far: 564.475355148
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, 3), (0, -1, -3) and (-1, 0, 3)
+ 
+Difference: 9.75062878465e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 226 tried 216 passed 10 failled time so far: 564.72886014
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, -3, 1), (1, 3, 3) and (3, 1, -3)
+ 
+Difference: 1.97461167505e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:227 tried 211 passed 16 failled time so far: 566.747339964
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, -2, -2), (-2, 0, -2) and (0, 2, -2)
+ 
+Difference: 9.95921654094e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 227 tried 217 passed 10 failled time so far: 569.789957047
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, -1, -3), (2, -1, -3) and (2, -1, 3)
+ 
+Difference: 1.78800367768e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:228 tried 212 passed 16 failled time so far: 570.552322149
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 2, 2), (-2, -2, -1) and (-2, -1, -2)
+ 
+Difference: 7.19807004749e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 228 tried 218 passed 10 failled time so far: 570.779513121
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, -1) and (0, -1, 1)
+ 
+Difference: 4.83315627421e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:229 tried 213 passed 16 failled time so far: 571.862093925
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -2, 8), (-2, 2, 8) and (-2, 0, -8)
+ 
+Difference: 1.00484307535e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 229 tried 219 passed 10 failled time so far: 574.76049614
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (0, 2, 2), (-2, 0, 2) and (0, -2, 2)
+ 
+Difference: 1.57785040554e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:230 tried 214 passed 16 failled time so far: 575.07160902
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 2, 2), (-2, 2, 2) and (2, 0, -2)
+ 
+Difference: 6.7136084652e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 230 tried 220 passed 10 failled time so far: 575.909873962
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 0, -4), (-1, 0, 4) and (0, 1, -4)
+ 
+Difference: 4.5148572266e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:231 tried 215 passed 16 failled time so far: 576.742077112
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, 2, -2), (2, 2, 0) and (2, 0, -2)
+ 
+Difference: 1.10661362473e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 231 tried 221 passed 10 failled time so far: 578.864644051
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 0, -1), (0, 1, -1) and (1, -1, 0)
+ 
+Difference: 7.2533143419
+OLD FILTER: CASE FAILLED
+ 
+For old filter:232 tried 215 passed 17 failled time so far: 579.16485405
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, -4, -9), (-4, 2, -9) and (-2, 4, -9)
+ 
+Difference: 1.23255420931e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 232 tried 222 passed 10 failled time so far: 582.235098124
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -2, -15), (-2, 1, -15) and (-1, -1, 15)
+ 
+Difference: 39.0906006108
+OLD FILTER: CASE FAILLED
+ 
+For old filter:233 tried 215 passed 18 failled time so far: 588.454517126
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -1), (1, 0, 0) and (0, 1, 0)
+ 
+Difference: 4.52080812702e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 233 tried 223 passed 10 failled time so far: 588.678034067
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 5, -5), (-5, 3, -5) and (-3, -2, 5)
+ 
+Difference: 3.70737179145e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:234 tried 216 passed 18 failled time so far: 595.157859087
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -1, 0), (-1, 0, 0) and (0, 1, 0)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 234 tried 223 passed 11 failled time so far: 595.443835974
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (-1, -1, 2) and (-1, 1, -2)
+ 
+Difference: 1.80731759998e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:235 tried 217 passed 18 failled time so far: 595.787682056
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, 0, -3), (1, -1, 3) and (0, 1, 3)
+ 
+Difference: 7.06410161514
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 235 tried 223 passed 12 failled time so far: 596.000324011
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-1, -3, 1), (-1, -3, -1) and (-1, 3, -1)
+ 
+Difference: 3.88142039529e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:236 tried 218 passed 18 failled time so far: 596.498156071
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 0), (-1, 1, 0) and (-1, 0, 0)
+ 
+Difference: 1.84930084652e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 236 tried 224 passed 12 failled time so far: 596.709730148
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 1, 2), (2, 2, 1) and (1, 2, 2)
+ 
+Difference: 4.9246253136e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:237 tried 219 passed 18 failled time so far: 597.036349058
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 1, 1), (1, -1, 1) and (1, 0, -1)
+ 
+Difference: 4.47824014111e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 237 tried 225 passed 12 failled time so far: 597.890525103
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (-2, -2, 1), (2, -2, -1) and (-2, 2, -1)
+ 
+Difference: 2.06837042277e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:238 tried 220 passed 18 failled time so far: 598.399117947
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (1, -2, -3) and (-2, 1, -3)
+ 
+Difference: 7.02460389922e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 238 tried 226 passed 12 failled time so far: 598.52364707
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (1, -2, -3) and (-1, -1, 3)
+ 
+Difference: 2.10542338516e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:239 tried 221 passed 18 failled time so far: 598.836478949
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-2, 2, 2), (-2, 0, -2) and (0, 2, -2)
+ 
+Difference: 2.72288944977e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 239 tried 227 passed 12 failled time so far: 599.087813139
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, -2), (0, -2, 0) and (2, 0, 0)
+ 
+Difference: 0.207139586551
+OLD FILTER: CASE PASSED
+ 
+For old filter:240 tried 222 passed 18 failled time so far: 600.16676712
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, -1, -1), (-1, -1, -2) and (-1, -2, -1)
+ 
+Difference: 8.63572770264e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 240 tried 228 passed 12 failled time so far: 600.386400938
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, -3), (1, 0, 3) and (1, -1, 3)
+ 
+Difference: 5.62221089609e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:241 tried 223 passed 18 failled time so far: 601.217706919
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (1, -2, 3) and (2, -1, 3)
+ 
+Difference: 4.98930959286e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 241 tried 229 passed 12 failled time so far: 601.333810091
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (1, -2, -4), (-1, 2, -4) and (1, 1, -4)
+ 
+Difference: 5.48238761896e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:242 tried 224 passed 18 failled time so far: 602.13360405
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (1, -5, 6), (-1, -4, 6) and (4, -5, 6)
+ 
+Difference: 2.02768284031e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 242 tried 230 passed 12 failled time so far: 605.341201067
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, -1, -16), (3, -1, 16) and (-1, 3, -16)
+ 
+Difference: 4.14677100795e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:243 tried 225 passed 18 failled time so far: 612.42672801
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 2, 1), (-3, 1, -1) and (-1, -2, 1)
+ 
+Difference: 2.18601279589e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 243 tried 231 passed 12 failled time so far: 615.339486122
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-2, 2, 4), (-4, 2, -2) and (2, -4, 2)
+ 
+Difference: 1.59839945695e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:244 tried 226 passed 18 failled time so far: 617.332088947
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (1, -1, 0), (-1, 0, 0) and (0, -1, 0)
+ 
+Difference: 4.52352004454e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 244 tried 232 passed 12 failled time so far: 618.150430918
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (2, 1, 3), (-1, -2, 3) and (-2, 1, -3)
+ 
+Difference: 1.85947717523e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:245 tried 227 passed 18 failled time so far: 618.449790955
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, -2, 2), (-2, 2, 0) and (2, 0, 2)
+ 
+Difference: 8.72312336211e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 245 tried 233 passed 12 failled time so far: 620.570837021
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, 1) and (1, 1, 0)
+ 
+Difference: 7.1126035735e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:246 tried 228 passed 18 failled time so far: 620.856240988
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (-1, 2, 0) and (2, -1, 0)
+ 
+Difference: 4.24812972351e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 246 tried 234 passed 12 failled time so far: 620.991974115
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (2, 2, -1), (-2, 2, 1) and (-2, 2, -1)
+ 
+Difference: 4.50211619358e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:247 tried 229 passed 18 failled time so far: 621.494475126
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 1, 1), (1, 1, 0) and (1, 0, 1)
+ 
+Difference: 2.07627429026e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 247 tried 235 passed 12 failled time so far: 621.684458971
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -1), (1, 0, 1) and (0, -1, 1)
+ 
+Difference: 1.0762038706e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:248 tried 230 passed 18 failled time so far: 621.974756956
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -1, 1), (-1, 1, 1) and (-1, 0, -1)
+ 
+Difference: 9.9945774101e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 248 tried 236 passed 12 failled time so far: 622.199135065
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, 2, 0) and (-2, 0, 0)
+ 
+Difference: 6.65353568261e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:249 tried 231 passed 18 failled time so far: 622.525761127
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, -1, 1), (1, -1, -1) and (-1, -1, 1)
+ 
+Difference: 0.0307507816165
+NEW FILTER: CASE PASSED
+ 
+For new filter: 249 tried 237 passed 12 failled time so far: 623.243706942
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-4, 4, -2), (-4, 0, 2) and (0, 4, 2)
+ 
+Difference: 1.07405005711e-11
+OLD FILTER: CASE PASSED
+ 
+For old filter:250 tried 232 passed 18 failled time so far: 629.867632151
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (2, -2, -2) and (0, 2, -2)
+ 
+Difference: 1.08748365838e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 250 tried 238 passed 12 failled time so far: 630.147331953
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -1, -3), (1, 1, 3) and (-2, 1, -3)
+ 
+Difference: 7.2
+OLD FILTER: CASE FAILLED
+ 
+For old filter:251 tried 232 passed 19 failled time so far: 630.449538946
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, 4, 0), (0, 0, -4) and (-4, 0, 0)
+ 
+Difference: 5.17872861477e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 251 tried 239 passed 12 failled time so far: 632.537187099
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (-2, 1, 3), (1, 1, 3) and (1, 1, -3)
+ 
+Difference: 2.89359829262e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:252 tried 233 passed 19 failled time so far: 632.873561144
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 1, 1), (1, 1, 2) and (1, 2, 1)
+ 
+Difference: 8.1390872033e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 252 tried 240 passed 12 failled time so far: 633.057955027
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, 0, 2), (0, -2, 0) and (-2, 0, 0)
+ 
+Difference: 9.92183040624e-15
+OLD FILTER: CASE PASSED
+ 
+For old filter:253 tried 234 passed 19 failled time so far: 633.852888107
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-4, 4, 0), (4, 0, 4) and (0, -4, -4)
+ 
+Difference: 8.53398036087e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 253 tried 241 passed 12 failled time so far: 973.675086021
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -2, 1), (2, 0, -1) and (0, 2, 1)
+ 
+Difference: 2.29294919012e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:254 tried 235 passed 19 failled time so far: 973.970165968
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, -3) and (-1, 2, 3)
+ 
+Difference: 5.61888391423e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 254 tried 242 passed 12 failled time so far: 974.165715933
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 1), (-1, 0, 1) and (0, 1, -1)
+ 
+Difference: 5.41070742763e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:255 tried 236 passed 19 failled time so far: 975.018249035
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 3.48815646106e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 255 tried 243 passed 12 failled time so far: 975.149857044
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, 1, 8), (-1, 1, -8) and (1, 0, -8)
+ 
+Difference: 3.2072363742e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:256 tried 237 passed 19 failled time so far: 981.44499898
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 2, 0), (-2, 1, 0) and (-1, -1, 0)
+ 
+Difference: 3.75921349604e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 256 tried 244 passed 12 failled time so far: 982.34265995
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, 1, 1), (1, 1, -3) and (-1, 1, 3)
+ 
+Difference: 9.20788570891e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:257 tried 238 passed 19 failled time so far: 984.339466095
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -2, 2), (-2, 0, 2) and (2, -2, -2)
+ 
+Difference: 6.90657824266e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 257 tried 245 passed 12 failled time so far: 985.208730936
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, -3, 1), (-1, 3, 3) and (1, 3, 3)
+ 
+Difference: 1.67288985867e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:258 tried 239 passed 19 failled time so far: 987.313575029
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-2, 0, 2), (-2, -2, 0) and (2, -2, 0)
+ 
+Difference: 6.56047505584e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 258 tried 246 passed 12 failled time so far: 989.375138998
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (-1, 1, 2) and (-1, 1, -2)
+ 
+Difference: 2.0853921967e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:259 tried 240 passed 19 failled time so far: 989.715266943
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -5), (0, 1, -5) and (2, -2, 0)
+ 
+Difference: 2.90026059581e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 259 tried 247 passed 12 failled time so far: 990.564734936
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -2, -2), (2, 0, 2) and (0, -2, 2)
+ 
+Difference: 1.5937488523e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:260 tried 241 passed 19 failled time so far: 990.856040001
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, -1, -1), (1, 0, -1) and (0, 1, -1)
+ 
+Difference: 5.83581149876e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 260 tried 248 passed 12 failled time so far: 992.14697504
+ 
+Chose cif file: Orthorhombic.cif
+ 
+Chose reflections (1, -1, 2), (-1, -1, -2) and (1, 1, -2)
+ 
+Difference: 2.02953944965e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:261 tried 242 passed 19 failled time so far: 992.673856974
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 0), (-1, 2, 0) and (2, -1, 0)
+ 
+Difference: 3.68965423085e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 261 tried 249 passed 12 failled time so far: 992.794984102
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (-1, 0, -3), (-1, 0, 3) and (0, 1, -3)
+ 
+Difference: 4.80947977898e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:262 tried 243 passed 19 failled time so far: 993.587211132
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (2, 0, 2), (-2, 2, 2) and (0, 2, -2)
+ 
+Difference: 1.19975941189e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 262 tried 250 passed 12 failled time so far: 993.82992506
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (1, 1, -1), (-1, 1, 1) and (-1, 1, -1)
+ 
+Difference: 1.50025784733e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:263 tried 244 passed 19 failled time so far: 994.13727212
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, 3), (-1, 2, 3) and (2, -1, 3)
+ 
+Difference: 6.61421668337e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 263 tried 251 passed 12 failled time so far: 994.338011026
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (0, 1, 0), (1, 0, 0) and (1, -1, 0)
+ 
+Difference: 5.00403916084e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:264 tried 245 passed 19 failled time so far: 995.128164053
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-1, 3, 1), (1, -1, -3) and (-3, 1, -1)
+ 
+Difference: 7.89180778216e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 264 tried 252 passed 12 failled time so far: 997.219811916
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, -1, -1), (-1, 0, -1) and (0, 1, -1)
+ 
+Difference: 2.65501601312e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:265 tried 246 passed 19 failled time so far: 997.498633146
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (-1, 1, 4), (-1, 0, -4) and (1, 0, -4)
+ 
+Difference: 6.74255788562e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 265 tried 253 passed 12 failled time so far: 998.782048941
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-2, 0, 4), (0, -2, -4) and (-2, 0, -4)
+ 
+Difference: 1.16738745008e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:266 tried 247 passed 19 failled time so far: 999.121762037
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (2, 1, 1), (1, 1, 2) and (1, 2, 1)
+ 
+Difference: 1.17984900548e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 266 tried 254 passed 12 failled time so far: 999.319649935
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (0, -1, -2), (-1, -2, 0) and (2, 0, 1)
+ 
+Difference: 3.0327746573e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:267 tried 248 passed 19 failled time so far: 999.627815008
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (1, 1, -3), (1, -2, -3) and (2, -1, 3)
+ 
+Difference: 6.54630252567e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 267 tried 255 passed 12 failled time so far: 999.766252041
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (0, -6, 2), (0, -2, 6) and (0, -2, -6)
+ 
+Difference: 9.59607952026e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:268 tried 249 passed 19 failled time so far: 1001.93333197
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 2, -3), (-2, 4, 3) and (4, -2, 3)
+ 
+Difference: 1.08558126454e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 268 tried 256 passed 12 failled time so far: 1004.857337
+ 
+Chose cif file: Trigonal_rhombolatt_hexaxes.cif
+ 
+Chose reflections (2, -2, 1), (-2, 0, 1) and (0, -2, -1)
+ 
+Difference: 1.07173350478e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:269 tried 250 passed 19 failled time so far: 1005.16771102
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-1, -2, -2), (-2, -2, -1) and (-2, -1, -2)
+ 
+Difference: 8.75634248428e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 269 tried 257 passed 12 failled time so far: 1005.35444903
+ 
+Chose cif file: Trigonal_hexlatt.cif
+ 
+Chose reflections (0, -2, 1), (-2, 2, 1) and (2, -2, 1)
+ 
+Difference: 6.518606222e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:270 tried 251 passed 19 failled time so far: 1006.21043396
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (3, -1, 1), (3, 1, -1) and (1, -3, 1)
+ 
+Difference: 27.4283237952
+NEW FILTER: CASE FAILLED
+ 
+For new filter: 270 tried 257 passed 13 failled time so far: 1008.16519403
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 5, 5), (-5, 3, -5) and (2, 3, 5)
+ 
+Difference: 1.63124325048e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:271 tried 252 passed 19 failled time so far: 1014.42470312
+ 
+Chose cif file: Hexagonal.cif
+ 
+Chose reflections (2, -1, 1), (-2, 1, 1) and (1, -2, -1)
+ 
+Difference: 5.19873545062e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 271 tried 258 passed 13 failled time so far: 1015.29465604
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (1, 3, 1), (-3, -1, -1) and (1, -1, 3)
+ 
+Difference: 8.42199482678e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:272 tried 253 passed 19 failled time so far: 1017.38436794
+ 
+Chose cif file: Monoclinic.cif
+ 
+Couldn't find a good set of reflections so starting again...
+ 
+Chose cif file: Trigonal_rhombolatt_rhomboaxes.cif
+ 
+Chose reflections (-2, 0, 0), (0, 0, -2) and (0, 2, 0)
+ 
+Difference: 9.30994092764e-15
+NEW FILTER: CASE PASSED
+ 
+For new filter: 272 tried 259 passed 13 failled time so far: 1018.11197805
+ 
+Chose cif file: Tetragonal.cif
+ 
+Chose reflections (-1, -1, -2), (1, 1, -2) and (1, -1, -2)
+ 
+Difference: 1.94701190584e-14
+OLD FILTER: CASE PASSED
+ 
+For old filter:273 tried 254 passed 19 failled time so far: 1018.46059513
+ 
+Chose cif file: icsd_29288-Si.cif
+ 
+Chose reflections (-3, 1, 3), (3, -3, 1) and (-1, 3, 3)
+ 

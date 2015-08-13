@@ -1,0 +1,78 @@
+import scisoftpy as dnp
+import Crystal as c
+import functions as f
+import matplotlib.pyplot as plt
+import finding_the_rotation_matrix as rm
+import copy
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+from matplotlib.patches import Arc
+
+#  three_vectors.png
+mycrys = c.Crystal()
+mycrys.load_cif('NiCO3_icsd_61067.cif')
+l = f.group_reflections(mycrys, refl='allowed')
+vectors =[]
+l_index = 0
+vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
+M = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(vectors[0].cross(vectors[2]).cross(Vector((0,0,-10))), dnp.arccos((vectors[0]+vectors[2]).normalize().dot(Vector((0,0,1)))))) 
+vectors = rm.rotate_list(M, vectors)
+M2 = Rotator(scm.r3_rotation_axis_and_angle_as_matrix((vectors[0]+vectors[2]), dnp.pi)) 
+vector = M2*vectors[4]
+vectors = rm.rotate_list(M.transpose(), vectors)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors([Vector([0.25,0,0])],fig, ax, size=0)
+f.plot_vectors_as_arrows([vectors[0]], fig, ax, color='red')
+f.plot_vectors_as_arrows([vectors[2]], fig, ax, color='blue')
+f.plot_vectors_as_arrows([vectors[4]], fig, ax, color='orange')
+ 
+#  four_vectors.png
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors([Vector([0.25,0,0])],fig, ax, size=0)
+f.plot_vectors_as_arrows([vectors[0]], fig, ax, color='red')
+f.plot_vectors_as_arrows([vectors[2]], fig, ax, color='blue')
+f.plot_vectors_as_arrows([vectors[4]], fig, ax, color='orange')
+f.plot_vectors_as_arrows([vector], fig, ax, color='green')
+# 
+# 
+#  cross_product.png
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+f.plot_vectors([Vector([0.25,0,0])],fig, ax, size=0)
+f.plot_vectors_as_arrows([vectors[0]], fig, ax, color='red')
+f.plot_vectors_as_arrows([vectors[2]], fig, ax, color='blue')
+f.plot_vectors_as_arrows([vectors[4]], fig, ax, color='orange')
+f.plot_vectors_as_arrows([vector], fig, ax, color='green')
+f.plot_vectors_as_arrows([vectors[0].cross(vectors[2]).normalize()*vector.length()], fig, ax)
+
+#  coplanar.png
+# mycrys = c.Crystal()
+# mycrys.load_cif('NiCO3_icsd_61067.cif')
+# l = f.group_reflections(mycrys, refl='allowed')
+# vectors =[]
+# l_index = 3
+# vectors = f.momentum_transfer_vectors(l[l_index], mycrys)
+# fig = plt.figure()
+# ax = fig.add_subplot(111)
+# h = vectors[0].length()*0.8
+# a = Arc((0,0), h, h, -30,0,60)
+# ax.add_artist(a)
+# h = vectors[0].length()*0.6
+# a = Arc((0,0), h, h, 30,0,180)
+# ax.add_artist(a)
+# h = vectors[0].length()*0.7
+# a = Arc((0,0), h, h, -150,0,120)
+# ax.add_artist(a)
+# f.plot_vectors_as_arrows_in_xy_plane(vectors, fig, ax)
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[1]], fig, ax, color='orange')
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[3]], fig, ax, color='orange')
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[2]], fig, ax, color='blue')
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[0]], fig, ax, color='blue')
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[4]], fig, ax, color='red')
+# f.plot_vectors_as_arrows_in_xy_plane([vectors[5]], fig, ax, color='green')
+# f.plot_vectors_as_arrows([vectors[0].cross(vectors[2])], fig, ax)
+
+plt.show()

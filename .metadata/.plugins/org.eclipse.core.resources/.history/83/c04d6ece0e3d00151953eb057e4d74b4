@@ -1,0 +1,73 @@
+import peak_finder as fp
+import scisoftpy as dnp
+import numpy as np
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+import functions as f
+import Crystal as c
+import matplotlib.pyplot as plt
+# x axis in beam in
+# z axis the vertical
+data_dir='/dls/i16/data/2015/cm12169-3/'
+print len(data_dir)
+LENGTH = 0.502 # The length between the sample and the detector.
+cif = 'HoFe2_icsd_103499.cif'
+
+h = 6.62606957*10**-34
+light_speed = 299792458
+beam_energy = 8
+beam_energy_J = (beam_energy*1000)*1.6*10**-19
+wave_length = ((h*light_speed)/beam_energy_J)*10**10  #Angstrums
+wave_vector = 1/wave_length
+x_axis = Vector((1,0,0))
+y_axis = Vector((0,1,0))
+z_axis = Vector((0,0,1))
+
+detector_angle = 35
+peaks = fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 527341, 527358, 20, False, False, 'roi7_sum')
+print peaks[0][0][29:37]
+path_index = 527341
+data = []
+# for peak in peaks:
+#     dat = dnp.io.load(data_dir+'{0:.0f}.dat'.format(path_index),
+#                               warn=False)
+#     delta = dat.metadata['delta']+9.2
+#     eta = dat.metadata['eta']
+#     chi = dat.metadata['chi']
+#     phi = dat.metadata['phi']
+#     coords = (peak[1],peak[2])
+#     image_centre = (108, 242)
+#     pix_vector = Vector((peak[2] - image_centre[0], peak[1] - image_centre[1]))
+#     pix_vector*=172*10**-6 # in meters
+#     pix_vector = Vector([-pix_vector[1]*np.sin(np.radians(delta + detector_angle)), pix_vector[0], pix_vector[1]*np.cos(np.radians(delta + detector_angle))])
+#     beam_out = Vector((np.cos(np.radians(delta)), 0.0, np.sin(delta)))*LENGTH # Wave out in meters
+#     beam_out += pix_vector # In meters
+#     beam_out = beam_out.normalize()
+#     beam_out = beam_out*wave_vector
+#     beam_in = x_axis*wave_vector
+#     mom_trans = beam_out - beam_in
+#      
+#     eta_rot =  Rotator(scm.r3_rotation_axis_and_angle_as_matrix(-y_axis, -eta, deg = True))
+#     mom_trans = eta_rot*mom_trans
+#     chi_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(x_axis, -chi, deg = True))
+#     mom_trans = chi_rot*mom_trans
+#     phi_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(z_axis, -phi, deg = True))
+#     mom_trans = phi_rot*mom_trans
+#     data.append(mom_trans)
+#     path_index+=1
+#  
+# fig = plt.figure()
+# ax = fig.add_subplot(111, projection='3d')
+# i,j = -0.5,0.5
+# # ax.set_xlim(i,j)
+# # ax.set_ylim(i,j)
+# # ax.set_zlim(i,j)
+# # f.plot_vectors_as_arrows([beam_in],fig,ax, color = 'red')
+# # f.plot_vectors_as_arrows([beam_out],fig,ax, color = 'blue')
+# # f.plot_vectors_as_arrows([mom_trans],fig,ax, color = 'green')
+# f.plot_vectors_as_arrows(data)
+# plt.show()
+ 
+
+

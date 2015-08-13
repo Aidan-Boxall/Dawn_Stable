@@ -1,0 +1,374 @@
+import scisoftpy as dnp
+import functions as f
+import copy
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+from itertools import combinations
+
+def arccos(x):
+    if x < -1:
+        return dnp.arccos(-1)
+    if x >  1:
+        return dnp.arccos(1)
+    else:
+        return dnp.arccos(x)
+
+def get_rotator(vector, target):
+    """Given a vector and a target vector finds the Rotator that turns one into
+        the other.
+
+    Args:
+        vector: The first momentum transfer vector found experimentally in the
+            lab frame.
+
+        target: The target momentum transfer vector found from data in the tif
+            file in the crystal cartesian frame which has been assumed to be
+            the same vector as vector.
+
+    Returns:
+        The rotation matrix which transforms vector into target. It is
+            returned as a Rotator which is a scitbx.matrix.sqr class instance.
+    """
+    axis = vector.cross(target)
+    axis = axis.normalize()
+    angle = arccos(vector.normalize().dot(target.normalize()))
+    return Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle))
+
+
+def get_second_rotator(origional_target, vector, target):
+    """After the first rotation is applied (see get_rotator) the experimental
+        vectors are aligned to theoretical ones apart from a rotation about the
+        target vector from the first rotation.
+
+    Args:
+        origional_target: This is the target from the first rotation
+            (get_rotator) which is used as the axis for this rotation.
+
+        vector: This is the second momentum transfer vector found
+            experimentally in the lab frame.
+
+        target: The target momentum transfer vector found from data in the tif
+            file in the crystal cartesian frame which has been assumed to be
+            the same vector as vector.
+
+    Returns:
+        The rotation matrix which transforms vector into target. It is
+            returned as a Rotator which is a scitbx.matrix.sqr class instance.
+    """
+    axis = origional_target.normalize()
+    vector = vector.normalize()
+    target = target.normalize()
+    v1 = vector - axis*(vector.dot(axis))
+    v2 = target - axis*(target.dot(axis))
+    angle = arccos(v1.normalize().dot(v2.normalize()))
+    angle = float(angle)
+    if ((v1.cross(v2)).normalize()).dot(axis.normalize()) > 0:
+        return Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle))
+    else:
+        return Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, -angle))
+
+
+def finding_the_targets(found_vectors, theoretical_vectors):
+    """Given the experimental momentum transfer vectors in the lab frame and
+        all of the reciprocal space vectors in the crystal frame it returns
+        the reciprocal vectors which match the experimental vectors. They are
+        matched by modulus and the angle between them. In the case of three
+        found vectors being passed both the angles are checked and methods
+        involving the cross product of two of the vectors dotted with the third
+        are used to check the choice of target vectors is correct. If only two
+        vectors are passed it assumes they have been chosen carefully so that
+        only valid solutions are possible.
+
+    Args:
+        found_vectors: A list of the found momentum transfer vectors in the lab
+            frame.
+
+        theoretical_vectors: A list of all the vectors in the crystal cartesian
+            reciprocal space.
+
+    Returns:
+        targets: A list of the vectors in the crystal cartesian reciprocal
+            space that match the experimentally found vectors.
+    """
+    if len(found_vectors) == 2:
+        found_dot = (found_vectors[0].normalize()).dot(
+            found_vectors[1].normalize())
+        found_angle = float(dnp.rad2deg(arccos(found_dot)))
+        for r in range(9, 1, -1):
+            # Filter by length:
+            correct_length = []
+            for vector in theoretical_vectors:
+                for found_vector in found_vectors:
+                    if round(vector.length(), r) == round(
+                            found_vector.length(), r):
+                        correct_length.append(vector)
+                        break
+            for combination in combinations(correct_length, 2):
+                if round(combination[0].length(), r) == round(
+                        found_vectors[0].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[1].length(), r):
+                    target_dot = combination[0].normalize().dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(arccos(target_dot)))
+                    if found_angle - 0.5 < target_angle < found_angle + 0.5:
+                        return list(combination)
+                if round(combination[0].length(), r) == round(
+                        found_vectors[1].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[0].length(), r):
+                    target_dot = combination[0].normalize().dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(arccos(target_dot)))
+                    if found_angle-0.5 < target_angle < found_angle+0.5:
+                        return [combination[1], combination[0]]
+        raise Exception("""Could not find two vectors with moduli that match
+            the theoretical vectors to an accuracy of 2 decimal places and an
+            angle between them which matches to the nearest degree.""")
+    else:
+        def check_third_vector(targets, found_vectors, correct_length, r):
+            """Checks the third vector is on the 'right' side of the other two
+                using the cross product of the other two.
+            """
+            M = scm.matrix.sqr(found_vectors[0].elems +
+                               found_vectors[1].elems + found_vectors[2].elems)
+            print 'M', M
+            if dnp.abs(M.determinant()) < 5*10 ** -3:
+                # Vectors are coplanar so cannot use cross product method but
+                # can use angles alone unless two of the vectors are anti
+                # parallel in which case there is a four fold rotational
+                # symmetry so the choice is arbitary. 
+                dot0 = found_vectors[0].normalize().dot(
+                    found_vectors[2].normalize())
+                dot1 = found_vectors[1].normalize().dot(
+                    found_vectors[2].normalize())
+                angle0 = float(dnp.rad2deg(arccos(dot0)))
+                angle1 = float(dnp.rad2deg(arccos(dot1)))
+                for vector in correct_length:
+                    if round(found_vectors[2].length(), r) == round(
+                            vector.length(), r):
+                        t_dot0 = targets[0].normalize().dot(vector.normalize())
+                        t_angle0 = float(dnp.rad2deg(arccos(t_dot0)))
+                        t_dot1 = targets[1].normalize().dot(vector.normalize())
+                        t_angle1 = float(dnp.rad2deg(arccos(t_dot1)))
+                        if angle0 - 0.5 < t_angle0 < angle0 + 0.5 and \
+                                angle1 - 0.5 < t_angle1 < angle1 + 0.5:
+                            return targets
+                return []  # Reset targets as wrong combination was found
+            else:
+                target_plane_normal = (targets[0].cross(
+                    targets[1])).normalize()
+                found_plane_normal = (found_vectors[0].cross(
+                    found_vectors[1])).normalize()
+                found_dot = found_vectors[2].normalize().dot(
+                    found_plane_normal)
+                # Find third target
+                dot0 = found_vectors[0].normalize().dot(
+                    found_vectors[2].normalize())
+                dot1 = found_vectors[1].normalize().dot(
+                    found_vectors[2].normalize())
+                angle0 = float(dnp.rad2deg(arccos(dot0)))
+                angle1 = float(dnp.rad2deg(arccos(dot1)))
+                for vector in correct_length:
+                    if round(found_vectors[2].length(), r) == round(
+                            vector.length(), r):
+                        t_dot0 = targets[0].normalize().dot(vector.normalize())
+                        t_angle0 = float(dnp.rad2deg(arccos(t_dot0)))
+                        t_dot1 = targets[1].normalize().dot(vector.normalize())
+                        t_angle1 = float(dnp.rad2deg(arccos(t_dot1)))
+                        if angle0-0.5 < t_angle0 < angle0 + 0.5 and \
+                                angle1 - 0.5 < t_angle1 < angle1 + 0.5:
+                            target_dot = vector.normalize().dot(
+                                target_plane_normal)
+                            if target_dot < 0 and found_dot < 0 or\
+                                    target_dot > 0 and found_dot > 0:
+                                targets.append(vector)
+                                return targets
+                return []  # Reset targets as wrong combination was found
+
+        found_dot = (found_vectors[0].normalize()).dot(
+            found_vectors[1].normalize())
+        found_angle = float(dnp.rad2deg(arccos(found_dot)))
+        targets = []
+        for r in range(9, 1, -1):
+            # Filter by length:
+            correct_length = []
+            for vector in theoretical_vectors:
+                for found_vector in found_vectors:
+                    if round(vector.length(), r) == round(
+                            found_vector.length(), r):
+                        correct_length.append(vector)
+                        break
+            print found_vectors[0].length()
+            print theoretical_vectors[0].length()
+            print 'r',r
+            print 'correct', correct_length
+            for combination in combinations(correct_length, 2):
+                if round(combination[0].length(), r) == round(
+                        found_vectors[0].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[1].length(), r):
+                    target_dot = (combination[0].normalize()).dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(arccos(
+                        target_dot)))
+                    if found_angle-0.5 < target_angle < found_angle + 0.5:
+                        targets = list(combination)
+                if len(targets) == 2:
+                    targets = check_third_vector(targets, found_vectors,
+                                                 correct_length, r)
+                    if len(targets) >= 2:
+                        return targets
+                if round(combination[0].length(), r) == round(
+                        found_vectors[1].length(), r) and round(
+                        combination[1].length(), r) == round(
+                        found_vectors[0].length(), r):
+                    target_dot = combination[0].normalize().dot(
+                        combination[1].normalize())
+                    target_angle = float(dnp.rad2deg(arccos(
+                        target_dot)))
+                    if found_angle-0.5 < target_angle < found_angle+0.5:
+                        targets = [combination[1], combination[0]]
+                if len(targets) == 2:
+                    targets = check_third_vector(targets, found_vectors,
+                                                 correct_length, r)
+                    if len(targets) >= 2:
+                        return targets
+
+        import matplotlib.pyplot as plt
+        log = open('test_log_with_error.txt', 'a')
+        log.write("Couldn't find targets.")
+        log.write('\n\n\n')
+        log.close()
+        fig = plt.figure()
+        ax = fig.add_subplot(111, projection='3d')
+        f.plot_vectors_as_arrows([found_vectors[0]], fig, ax, color='red')
+        f.plot_vectors_as_arrows([found_vectors[1]], fig, ax, color='green')
+        f.plot_vectors_as_arrows([found_vectors[2]], fig, ax, color='blue')
+        f.plot_sphere(found_vectors[0].length(), fig, ax)
+        plt.show()
+        raise Exception("""Could not find two vectors with moduli that match
+            the theoretical vectors to an accuracy of 2 decimal places and an
+            angle between them which matches to the nearest degree.""")
+
+
+def rotate_list(rotation, vector_list):
+    """Takes a list of vectors and applies a rotation to them.
+
+    Args:
+        rotation: A scitbx.matrix.sqr instance representing a rotational matrix
+            .
+
+        vector_list: A list of vectors to be rotated.
+
+    Returns:
+        vector_list: A list of rotated vectors.
+    """
+    vectors_list = copy.deepcopy(vector_list)
+    for i, vector in enumerate(vectors_list):
+        vector = rotation * vector
+        vectors_list[i] = vector
+    return vectors_list
+
+
+def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True,
+                  refl='orient'):
+    """Given a Crystal class object with a cif file loaded into it, this
+        function returns the U matrix as a dnp array.
+
+    Args:
+        found_vectors: A list of Vector class objects representing the momentum
+            transfer vectors of the measured Bragg peaks.
+
+        crystal: A Crystal class object.
+
+        beam_energy: The beam energy in keV.
+
+        optimise_U: If True the function optimises the U matrix before
+            returning can be set to False if in Jython because requires scipy.
+
+    Returns:
+        U: The U matrix as a dnp object.
+    """
+    # First gets all the allowed momentum transfer vectors of the crystal.
+    grouped_reflections = f.group_reflections(crystal, beam_energy, refl=refl)
+    all_vectors = []
+    for group in grouped_reflections:
+        group_vectors = f.momentum_transfer_vectors(group, crystal)
+        all_vectors += group_vectors
+    # Find the target vectors.
+    target_vectors = finding_the_targets(found_vectors, all_vectors)
+    found_vectors_copy = copy.deepcopy(found_vectors)
+    # Find and apply the first rotation.
+    rotation1 = get_rotator(found_vectors[0], target_vectors[0])
+    found_vectors = rotate_list(rotation1, found_vectors)
+
+    # Find the second rotation
+    rotation2 = get_second_rotator(target_vectors[0], found_vectors[1],
+                                      target_vectors[1])
+
+    U = rotation2 * rotation1
+
+    # Optimising the U matrix
+    def diff(array, data, vectors):
+        """This is a function used to optimise the U matrix. It evaluates
+        """
+        x = array[0]
+        y = array[1]
+        z = array[2]
+        angle = array[3]
+        axis = Vector([x, y, z])
+        U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle))
+        data = rotate_list(U, data)
+        index_list=[]
+        for i, dat in enumerate(data):
+            diffs = []
+            dat = dat
+            for j, vector in enumerate(vectors):
+                diffs.append((dat-vector).length())
+            index = diffs.index(min(dnp.abs(diffs)))
+            index_list.append(index)
+        targets = [0]*len(data)
+        for i, idx in enumerate(index_list):
+            targets[i] = vectors[idx]
+        total = 0
+        for i, dat in enumerate(data):
+            total += dnp.abs((dat - targets[i]).length())
+        return total
+
+    if not optimise_U:
+        return U
+    elif optimise_U:
+            # The array gives a first estimate for the arguments for the diff
+            # function.
+        U_axis_angle = scm.r3_rotation_axis_and_angle_from_matrix(U)
+        axis = Vector(U_axis_angle.axis)
+        array = dnp.array([axis[0], axis[1], axis[2], U_axis_angle.angle()])
+        import scipy.optimize
+        optimise = scipy.optimize.minimize(diff, array, (found_vectors_copy,
+                                                         all_vectors),
+                                           bounds=[(-1, 1), (-1, 1), (-1, 1),
+                                                   (-dnp.pi, dnp.pi)])
+        if optimise['success']:
+            new_axis = Vector((optimise.x[0], optimise.x[1], optimise.x[2]))
+            new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis,
+                            optimise.x[3]))
+            return new_U
+        else:
+#             print optimise
+#             print diff(array, found_vectors_copy, all_vectors)
+#             new_axis = Vector((optimise.x[0], optimise.x[1], optimise.x[2]))
+#             new_U = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(new_axis,
+#                             optimise.x[3]))
+#             new_U_axis_angle = scm.r3_rotation_axis_and_angle_from_matrix(
+#                 new_U)
+#             array = dnp.array([new_axis[0], new_axis[1], new_axis[2],
+#                                new_U_axis_angle.angle()])
+# #             print diff(array, found_vectors_copy, all_vectors)
+# #             print new_axis
+# #             print axis
+            print 'U matrix optimisation failed.'
+            return U
+    else:
+        raise Exception("""optimise_U must be a boolean type""")

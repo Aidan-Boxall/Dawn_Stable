@@ -1,0 +1,82 @@
+#! /usr/bin/env python
+import numpy as np
+import h5py
+import argparse
+from shutil import copyfile
+import re
+
+def extract_metadata( datfile ):
+    ascii_meta = {}
+    with open( datfile ) as f:
+        meta = False
+        for line in f:
+            if meta:
+                if "</MetaDataAtStart>" in line:
+                    break
+                (key, val) = line.split('=')
+                ascii_meta[ key ] = val.strip()
+            if "<MetaDataAtStart>" in line:
+                meta = True
+    return ascii_meta
+
+def correct_nexus_file( nexusfile, tif_path_template, delta_offset, offset_vector ):
+    offset_data = np.array([delta_offset])
+    offset_vector = np.array(offset_vector)
+    with h5py.File( nexusfile, 'r+' ) as f:
+        #add delta offset as transformation axes
+        transformation_g = f["entry1"]["instrument"]["transformations"]
+        dset_offset = transformation_g.require_dataset("offsetdelta", (1,), "d", offset_data)
+        dset_offset.attrs["depends_on"] = "/entry1/instrument/transformations/gamma"
+        dset_offset.attrs["vector"] = offset_vector
+        dset_offset.attrs["units"] = "deg"
+        dset_offset.attrs["axis"] = 1 #really hacky - i don't actually know what this is
+        dset_offset.attrs["local_name"] ="delta_axis_offset.delta_axis_offset"
+        dset_offset.attrs["transformation_type"] = "rotation"
+
+        #rewrite image_data with correct filepaths
+        detector_g = f["entry1"]["instrument"]["pil100k"]
+        dset_imagepaths = detector_g["image_data"]
+        for idx in xrange( 0, len(dset_imagepaths) ) :
+            original = dset_imagepaths[idx][0]
+            digits = re.findall(r'\d+', original)
+            if len(digits) < 1:
+                continue
+            new = tif_path_template % int(digits[-1])
+            new = new.replace("'", "")
+            dset_imagepaths[idx] = new
+
+def fix_scan_file( scan_number ):
+    datfile = "%s.dat" % scan_number
+    nexusfile = "%s.nxs" % scan_number
+    correctedfile = "%s_c.nxs" % scan_number
+    aflnlahflkhfak
+    with open('log.txt','w') as f:
+        f.write(str(scan_number))
+        g.write(cats)
+
+    ascii_meta = extract_metadata( datfile )
+    delta_axis_offset = ascii_meta['delta_axis_offset']
+    delta_offset_vector = [0, -1, 0]
+    path_template = ascii_meta['pilatus100k_path_template']
+    copyfile( nexusfile, correctedfile )
+    correct_nexus_file( correctedfile, path_template, delta_axis_offset, delta_offset_vector )
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument( 'scan_number', nargs='?' )
+    parser.add_argument( '--start', nargs='?' )
+    parser.add_argument( '--end', nargs='?' )
+    args = parser.parse_args()
+    if args.scan_number is None and (args.start is None or args.end is None):
+        raise ValueError( "Must specify input file or file range" )
+    if args.scan_number is not None:
+        scans = [ args.scan_number ]
+    else:
+        scans = range( int(args.start), int(args.end) + 1 )
+
+    for scan in scans:
+        fix_scan_file( str(scan) )
+
+
+if __name__ == "__main__":
+    main()

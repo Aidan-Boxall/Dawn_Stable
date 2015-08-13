@@ -1,0 +1,68 @@
+import peak_finder as fp
+import scisoftpy as dnp
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+import functions as f
+import Crystal as c
+import matplotlib.pyplot as plt
+
+data_dir='/dls/i16/data/2015/cm12169-3/'
+path_index = 527341
+
+peak = fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 527341, 527358, 1, False, False, 'roi7_sum')[0]
+coords = (peak[1],peak[2])
+image_centre = (242, 108)
+pix_vector = Vector((peak[2] - image_centre[1], peak[1] - image_centre[0], 0))*172*10**-6
+LENGTH = 0.502 # The length between the sample and the detector.
+
+print coords
+cif = 'HoFe2_icsd_103499.cif'
+dat = dnp.io.load(data_dir+'{0:.0f}.dat'.format(path_index),
+                              warn=False)
+print dat.metadata.keys()
+
+h = 6.62606957*10**-34
+light_speed = 299792458
+beam_energy = 8
+beam_energy_J = (beam_energy*1000)*1.6*10**-19
+wave_length = ((h*light_speed)/beam_energy_J)*10**10  #Angstrums
+
+radius = 1/wave_length
+delta = dat.metadata['delta']+9.2
+beam_vector = Vector((0,0,LENGTH))
+k0 = Vector((0,0,1))
+axis = Vector((1,0,0))
+angle = -delta/2.0
+beam_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle, deg = True))
+beam_vector = beam_rot*beam_vector
+
+axis = Vector((1,0,0))
+angle = 35
+detector_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, -angle, deg = True))
+k0_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(axis, angle, deg = True))
+pixpic_vector = detector_rot*pix_vector
+
+
+k0 = k0_rot*k0
+k0*=radius
+beam_vector+=pix_vector
+beam_vector = beam_vector.normalize()*radius
+
+mom_vector = beam_vector - k0
+
+
+f.plot_vectors_as_arrows([beam_vector])
+plt.show()
+
+
+print detector_rot
+
+mycrys = c.Crystal()
+mycrys.load_cif(cif)
+l = f.group_reflections(mycrys, print_list=False)
+
+vectors = f.momentum_transfer_vectors(l[0], mycrys)
+print vectors[1].length()
+
+

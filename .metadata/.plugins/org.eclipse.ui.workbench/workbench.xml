@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="19" version="2.0">
 <workbenchAdvisor/>
-<window height="770" maximized="true" width="1020" x="260" y="62">
+<window height="768" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -10,12 +10,9 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="com.python.pydev.debug.actionSet" itemType="typeToolBarContribution" x="68" y="30"/>
-<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.dawb.tango.extensions.shared.memory" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="uk.ac.diamond.scisoft.analysis.rcp.plotting.actions.showPlotViewToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -23,227 +20,41 @@
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.dawnsci.intro.show.welcome" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="uk.ac.diamond.scisoft.feedback.openFeedback" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.python.pydev.toolbars.evaluateActionSetterToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="232" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.dawb.workbench.editor.H5Editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.dawb.workbench.editors.AsciiEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.dawb.workbench.editors.ImageEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.python.pydev.editor.PythonEditor" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Python">
+<page focus="true" label="Workspace - Data Browsing">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="19"/>
-<part id="17"/>
-<part id="18"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.python.pydev.editor.PythonEditor" name="02_classmethod_decorator.py" partName="02_classmethod_decorator" path="/home/ljh75651/Desktop/python-examples/Python/src/11 Decorators/BuiltInDecorators/02_classmethod_decorator.py" title="02_classmethod_decorator" tooltip="Python/src/11 Decorators/BuiltInDecorators/02_classmethod_decorator.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Python/src/11 Decorators/BuiltInDecorators/02_classmethod_decorator.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="456" selectionTopPixel="97"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="09.attribute-lookup.py" partName="09" path="/home/ljh75651/Desktop/python-examples/Python/src/05 Classes and Objects/09.attribute-lookup.py" title="09" tooltip="Python/src/05 Classes and Objects/09.attribute-lookup.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Python/src/05 Classes and Objects/09.attribute-lookup.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="2.overloading-square-brackets.py" partName="2" path="/home/ljh75651/Desktop/python-examples/Python/src/20 Operator Overloading/2.overloading-square-brackets.py" title="2" tooltip="Python/src/20 Operator Overloading/2.overloading-square-brackets.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Python/src/20 Operator Overloading/2.overloading-square-brackets.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="292" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="1.overloading-numeric-types.py" partName="1" path="/home/ljh75651/Desktop/python-examples/Python/src/20 Operator Overloading/1.overloading-numeric-types.py" title="1" tooltip="Python/src/20 Operator Overloading/1.overloading-numeric-types.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Python/src/20 Operator Overloading/1.overloading-numeric-types.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="549"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="functions.py" partName="functions (Diamond_Project)" path="/home/ljh75651/DAWN_stable/Diamond_Project/functions.py" title="functions (Diamond_Project)" tooltip="Diamond_Project/functions.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/functions.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1107" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder_with_ROI.py" partName="peak_finder_with_ROI" path="/home/ljh75651/DAWN_stable/Diamond_Project/peak_finder_with_ROI.py" title="peak_finder_with_ROI" tooltip="Diamond_Project/peak_finder_with_ROI.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/peak_finder_with_ROI.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3039" selectionTopPixel="1175"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="chi_step.py" partName="chi_step" path="/home/ljh75651/DAWN_stable/Diamond_Project/chi_step.py" title="chi_step" tooltip="Diamond_Project/chi_step.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/chi_step.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="630" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" partName="testing_rotation_finder (Diamond_Project)" path="/home/ljh75651/DAWN_stable/Diamond_Project/testing_rotation_finder.py" title="testing_rotation_finder (Diamond_Project)" tooltip="Diamond_Project/testing_rotation_finder.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/testing_rotation_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="8243" selectionTopPixel="2743"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="Crystal.py" partName="Crystal" path="/home/ljh75651/DAWN_stable/Diamond_Project/Crystal.py" title="Crystal" tooltip="Diamond_Project/Crystal.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/Crystal.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14998" selectionTopPixel="4930"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="peak_finding.py" partName="peak_finding" path="/home/ljh75651/DAWN_stable/Diamond_Project/peak_finding.py" title="peak_finding" tooltip="Diamond_Project/peak_finding.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/peak_finding.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="2436" selectionTopPixel="1661"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="UsefullStuff.py" partName="UsefullStuff" title="UsefullStuff" tooltip="/dls_sw/i16/scripts/Porter/UsefullStuff.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/dls_sw/i16/scripts/Porter/UsefullStuff.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4181"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="astro_lab.py" partName="astro_lab" path="/home/ljh75651/DAWN_stable/Diamond_Project/astro_lab.py" title="astro_lab" tooltip="Diamond_Project/astro_lab.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/astro_lab.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="5194" selectionTopPixel="2215"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" partName="reflection_choice" path="/home/ljh75651/DAWN_stable/Diamond_Project/reflection_choice.py" title="reflection_choice" tooltip="Diamond_Project/reflection_choice.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project/reflection_choice.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2887" selectionTopPixel="886"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" partName="finding_the_rotation_matrix" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" title="finding_the_rotation_matrix" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="15185" selectionTopPixel="5587"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_U_matrix.py" partName="finding_the_U_matrix" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_U_matrix.py" title="finding_the_U_matrix" tooltip="Diamond_Project_with_cctbx/finding_the_U_matrix.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/finding_the_U_matrix.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="112" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="linalg.py" partName="linalg" title="linalg" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="53223" selectionTopPixel="29121"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" partName="testing_rotation_finder (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/testing_rotation_finder.py" title="testing_rotation_finder (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1203" selectionTopPixel="728"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="functions.py" partName="functions (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/functions.py" title="functions (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/functions.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/functions.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6338" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py" title="unit_test" tooltip="Diamond_Project_with_cctbx/unit_test.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/unit_test.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7776" selectionTopPixel="0"/>
-</editor>
-<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" partName="peak_finder" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/peak_finder.py" title="peak_finder" tooltip="Diamond_Project_with_cctbx/peak_finder.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
-<view id="org.python.pydev.debug.pyunit.pyUnitView" partName="PyUnit">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotView1" partName="Plot 1">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.dawb.common.ui.views.headerTableView" partName="Header Table">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.sda.navigator.views.FileView" partName="File Navigator">
-<viewState DIR="/dls/i16/data/2015/cm12169-3/521881.dat"/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewDP" partName="Dataset Plot">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:surface" partName="surface">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
-</view>
-<view id="org.dawb.workbench.plotting.views.toolPageView.1D" partName="No tool">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hi" partName="hi">
-<viewState/>
-</view>
-<view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
-<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx"/>
-<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/05 Classes and Objects"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/11 Decorators"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/11 Decorators/BuiltInDecorators"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/15 Inheritance"/>
-<expanded IMemento.internal.id="/home/ljh75651/Desktop/python-examples/Python/src/20 Operator Overloading"/>
-<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/functions.py"/>
-</viewState>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 2" partName="Peak 2">
-<viewState/>
-</view>
-<view id="org.dawb.workbench.plotting.views.toolPageView.3D" partName="No tool">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 1" partName="Peak 1">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.views.DatasetInspectorView" partName="Dataset Inspector">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ProgressView" partName="Progress">
-<viewState/>
-</view>
-<view id="com.python.pydev.ui.hierarchy.PyHierarchyView" partName="Hierarchy View">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hip" partName="hip">
-<viewState/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.views.ImageExplorerView" partName="Image Explorer">
-<viewState DIR="/dls/i16/data/2015/cm12169-3/518478-pilatus100k-files"/>
-</view>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.livePlotView" partName="Live Plot">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
+<view id="org.eclipse.ui.views.ProgressView" partName="Progress"/>
 <view id="org.dawb.passerelle.views.ValueView" partName="Value">
 <viewState/>
 </view>
-<view id="org.dawb.workbench.views.dataSetView" partName="Metadata">
+<view id="org.dawb.workbench.views.dataSetView" partName="Data">
 <viewState/>
 </view>
-<view id="org.dawb.workbench.plotting.views.toolPageView.2D" partName="No tool">
-<viewState/>
-</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.dawb.workbench.plotting.views.toolPageView.1D" partName="XY Tools"/>
+<view id="org.dawb.common.ui.views.headerTableView" partName="Header Table"/>
+<view id="org.dawb.workbench.plotting.views.toolPageView.2D" partName="Image Tools"/>
+<view id="uk.ac.diamond.sda.navigator.views.FileView" partName="File Navigator"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="uk.ac.diamond.scisoft.jythonperspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.edna.workbench.application.perspective.DataPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.dawb.workbench.ui.perspective.DataBrowsingPerspective" id="org.edna.workbench.application.perspective.DataPerspective" label="Data Browsing"/>
 <alwaysOnActionSet id="org.edna.common.ui.project.import"/>
@@ -261,9 +72,9 @@
 <perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
 <perspective_action id="org.python.pydev.ui.PythonPerspective"/>
 <perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_menu_item_id id="project"/>
-<hide_menu_item_id id="navigate"/>
 <hide_menu_item_id id="org.eclipse.ui.run"/>
+<hide_menu_item_id id="navigate"/>
+<hide_menu_item_id id="project"/>
 <hide_menu_item_id id="org.eclipse.search.menu"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
@@ -278,105 +89,11 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="navigator-folder">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
-<page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11030cfb" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.3081166" ratioLeft="391" ratioRight="878" relationship="2" relative="navigator-folder"/>
-<info folder="true" part="folder" ratio="0.87885714" ratioLeft="769" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.workbench.views.dataSetView" label="Metadata"/>
-<page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="No tool"/>
-<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="folder_1" ratio="0.6761566" ratioLeft="570" ratioRight="273" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
-<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="No tool"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
-</folder>
-</info>
-</mainWindow>
-</layout>
-</perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="uk.ac.diamond.scisoft.analysis.rcp.JythonPerspective" id="uk.ac.diamond.scisoft.jythonperspective" label="Python"/>
-<alwaysOnActionSet id="org.edna.common.ui.project.import"/>
-<alwaysOnActionSet id="org.dawb.tango.extensions.shared.memory"/>
-<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="uk.ac.diamond.scisoft.actionSet1"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<show_view_action id="org.python.pydev.views.PyCodeCoverageView"/>
-<show_view_action id="org.python.pydev.navigator.view"/>
-<show_view_action id="org.python.pydev.debug.pyunit.pyUnitView"/>
-<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
-<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
-<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
-<show_view_action id="org.eclipse.ui.views.ProblemView"/>
-<show_view_action id="org.eclipse.pde.runtime.LogView"/>
-<show_view_action id="org.eclipse.ui.views.TaskList"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.project.PythonProjectWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonSourceFolderWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonPackageWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonModuleWizard"/>
-<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
-<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
-<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
-<perspective_action id="uk.ac.diamond.scisoft.dataexplorationperspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
-<perspective_action id="org.python.pydev.ui.PythonPerspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.dawb.common.ui.views.headerTableView"/>
-<view id="com.python.pydev.ui.hierarchy.PyHierarchyView"/>
-<view id="org.python.pydev.debug.pyunit.pyUnitView"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewDP"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 1"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 2"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotView1"/>
-<view id="org.dawb.workbench.plotting.views.toolPageView.3D"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hi"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hip"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:surface"/>
-<view id="org.python.pydev.navigator.view"/>
-<view id="uk.ac.diamond.sda.navigator.views.FileView"/>
-<view id="org.eclipse.debug.ui.VariableView"/>
-<view id="org.eclipse.debug.ui.ExpressionView"/>
-<view id="org.eclipse.debug.ui.DebugView"/>
-<fastViewBars/>
 <layout>
 <mainWindow>
-<info folder="true" part="navigators">
-<folder activePageID="org.python.pydev.navigator.view" appearance="2" expanded="2">
-<page content="org.python.pydev.navigator.view" label="PyDev Package Explorer"/>
+<info folder="true" part="navigator-folder">
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
@@ -384,32 +101,19 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c49329a" ratio="0.7781732" ratioLeft="656" ratioRight="187" relationship="4" relative="navigators">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="navigators">
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2789598" ratioLeft="354" ratioRight="915" relationship="2" relative="navigators"/>
-<info folder="true" part="debug" ratio="0.8399123" ratioLeft="766" ratioRight="146" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
-<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="202" ratioRight="808" relationship="2" relative="navigator-folder"/>
+<info folder="true" part="folder" ratio="0.5990099" ratioLeft="484" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">
+<page content="org.dawb.workbench.views.dataSetView" label="Data"/>
+<page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="Image Tools"/>
+<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -417,261 +121,18 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="plot" ratio="0.29905438" ratioLeft="253" ratioRight="593" relationship="4" relative="debug">
-<folder activePageID="org.python.pydev.debug.pyunit.pyUnitView" appearance="2" expanded="2">
-<page content="com.python.pydev.ui.hierarchy.PyHierarchyView" label="Hierarchy View"/>
-<page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewDP" label="Dataset Plot"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 1" label="Peak 1"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 2" label="Peak 2"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotView1" label="Plot 1"/>
-<page content="org.dawb.workbench.plotting.views.toolPageView.3D" label="No tool"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hi" label="hi"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:hip" label="hip"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:surface" label="surface"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 6" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 3" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 4" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 5" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 7" label="LabelNotFound"/>
-<page content="org.dawb.workbench.views.dataSetView" label="LabelNotFound"/>
+<info folder="true" part="folder_1" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.dawb.passerelle.views.ValueView" appearance="2" expanded="2">
+<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="XY Tools"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
-</folder>
-</info>
-<info folder="true" part="bottom" ratio="0.60616845" ratioLeft="511" ratioRight="332" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 9" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 8" label="LabelNotFound"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewMultiple:Peak 10" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-</mainWindow>
-</layout>
-</perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="org.python.pydev.ui.perspective.PythonPerspectiveFactory" id="org.python.pydev.ui.PythonPerspective" label="PyDev"/>
-<alwaysOnActionSet id="org.edna.common.ui.project.import"/>
-<alwaysOnActionSet id="org.dawb.tango.extensions.shared.memory"/>
-<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="uk.ac.diamond.scisoft.actionSet1"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
-<show_view_action id="org.python.pydev.views.PyCodeCoverageView"/>
-<show_view_action id="org.python.pydev.navigator.view"/>
-<show_view_action id="org.python.pydev.debug.pyunit.pyUnitView"/>
-<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
-<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
-<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
-<show_view_action id="org.eclipse.ui.views.ProblemView"/>
-<show_view_action id="org.eclipse.pde.runtime.LogView"/>
-<show_view_action id="org.eclipse.ui.views.TaskList"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.project.PythonProjectWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonSourceFolderWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonPackageWizard"/>
-<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonModuleWizard"/>
-<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
-<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
-<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
-<perspective_action id="uk.ac.diamond.scisoft.dataexplorationperspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
-<perspective_action id="org.python.pydev.ui.PythonPerspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.python.pydev.navigator.view"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="topLeft">&#x0A;<folder activePageID="org.python.pydev.navigator.view" appearance="2" expanded="2">&#x0A;<page content="org.python.pydev.navigator.view" label="PyDev Package Explorer"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="topLeft">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.25993723" ratioLeft="497" ratioRight="1415" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.74951077" ratioLeft="766" ratioRight="256" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-</mainWindow>
-</layout>
-</perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
-<alwaysOnActionSet id="org.edna.common.ui.project.import"/>
-<alwaysOnActionSet id="org.dawb.tango.extensions.shared.memory"/>
-<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="uk.ac.diamond.scisoft.actionSet1"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
-<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
-<alwaysOnActionSet id="com.python.pydev.debug.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
-<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
-<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
-<alwaysOnActionSet id="org.python.pydev.exceptionBreakpoints"/>
-<alwaysOnActionSet id="org.python.pydev.pyPropertyTrace"/>
-<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
-<show_view_action id="org.eclipse.debug.ui.DebugView"/>
-<show_view_action id="org.eclipse.debug.ui.VariableView"/>
-<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
-<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
-<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
-<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
-<show_view_action id="org.eclipse.ui.views.TaskList"/>
-<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
-<show_view_action id="org.eclipse.pde.runtime.LogView"/>
-<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
-<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
-<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
-<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.dataexplorationperspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
-<perspective_action id="org.python.pydev.ui.PythonPerspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.TaskList"/>
-<view id="org.eclipse.debug.ui.VariableView"/>
-<view id="org.eclipse.debug.ui.BreakpointView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.75" ratioLeft="804" ratioRight="268" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
-<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
-<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.44900498" ratioLeft="361" ratioRight="443" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
-<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="956" ratioRight="956" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
-<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
-<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-</presentation>
-</folder>
-</info>
-</mainWindow>
-</layout>
-</perspective>
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor class="uk.ac.diamond.scisoft.analysis.rcp.DataExplorationPerspective" id="uk.ac.diamond.scisoft.dataexplorationperspective" label="DExplore"/>
-<alwaysOnActionSet id="org.edna.common.ui.project.import"/>
-<alwaysOnActionSet id="org.dawb.tango.extensions.shared.memory"/>
-<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
-<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
-<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
-<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
-<alwaysOnActionSet id="uk.ac.diamond.scisoft.actionSet1"/>
-<perspective_action id="uk.ac.diamond.scisoft.dataexplorationperspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
-<perspective_action id="org.python.pydev.ui.PythonPerspective"/>
-<perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<view id="uk.ac.diamond.sda.navigator.views.FileView"/>
-<view id="org.dawb.common.ui.views.headerTableView"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.views.ImageExplorerView"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.livePlotView"/>
-<view id="uk.ac.diamond.scisoft.analysis.rcp.views.DatasetInspectorView"/>
-<fastViewBars/>
-<viewLayoutRec closeable="false" id="org.eclipse.ui.navigator.ProjectExplorer"/>
-<viewLayoutRec closeable="false" id="uk.ac.diamond.scisoft.analysis.rcp.views.DatasetInspectorView" showTitle="false" standalone="true"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="navigators">&#x0A;<folder activePageID="uk.ac.diamond.sda.navigator.views.FileView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
-<page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="954" ratioRight="318" relationship="2" relative="navigators">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
-<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
-</folder>
-</info>
-<info part="org.eclipse.ui.editorss" ratio="0.14937107" ratioLeft="190" ratioRight="1082" relationship="2" relative="navigators"/>
-<info folder="true" part="data" ratio="0.2495379" ratioLeft="270" ratioRight="812" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="uk.ac.diamond.scisoft.analysis.rcp.plotViewDP" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
-</folder>
-</info>
-<info folder="true" part="toolPageFolder" ratio="0.5997537" ratioLeft="487" ratioRight="325" relationship="2" relative="data">&#x0A;<folder activePageID="org.dawb.common.ui.views.headerTableView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.views.ImageExplorerView" label="Image Explorer"/>
-<page content="uk.ac.diamond.scisoft.analysis.rcp.livePlotView" label="Live Plot"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@387ddc97" ratio="0.5" ratioLeft="423" ratioRight="423" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="uk.ac.diamond.scisoft.analysis.rcp.views.DatasetInspectorView" appearance="4" expanded="2">&#x0A;<page content="uk.ac.diamond.scisoft.analysis.rcp.views.DatasetInspectorView" label="Dataset Inspector"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -679,179 +140,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/temp.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/functions.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/unit_test.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/finding_the_U_matrix.py"/>
-</editors>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="9958" y="0"/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="9339" y="0"/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="8378" y="0"/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="8576" y="738"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3433" y="0"/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="9958" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3433" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3322" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3298" y="0"/>
-</item>
-<item historyLabel="peak_finder (Diamond_Project_with_cctbx)" index="1">
-<position info="not_deleted" x="8536" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3298" y="0"/>
-</item>
-<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="301" y="0"/>
-</item>
-<item historyLabel="temp" index="0">
-<position info="not_deleted" x="1466" y="161"/>
-</item>
-<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="301" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3657" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="7272" y="55"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3657" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3423" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="806" y="0"/>
-</item>
-<item historyLabel="peak_finder" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="806" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="1944" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="3423" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="13155" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="1944" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="13155" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="1944" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="13155" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="1944" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="13155" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="178" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="13155" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="179" y="21"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="45" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="179" y="21"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="45" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="322" y="3987"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="15185" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="2848" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="7513" y="0"/>
-</item>
-<item historyLabel="finding_the_U_matrix" index="5">
-<position info="not_deleted" x="112" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="15185" y="0"/>
-</item>
-<item historyLabel="unit_test" index="3">
-<position info="not_deleted" x="7513" y="0"/>
-</item>
-<item historyLabel="finding_the_rotation_matrix" index="4">
-<position info="not_deleted" x="15185" y="0"/>
-</item>
-<item historyLabel="peak_finder" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="functions (Diamond_Project_with_cctbx)" index="2">
-<position info="not_deleted" x="6338" y="0"/>
-</item>
-<item active="true" historyLabel="unit_test" index="3">
-<position info="not_deleted" x="7513" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="navigators"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="plot"/>
-<trimItem IMemento.internal.id="debug"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -862,51 +156,5 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" tooltip="Diamond_Project_with_cctbx/peak_finder.py">
-<persistable path="/Diamond_Project_with_cctbx/peak_finder.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project_with_cctbx/unit_test.py">
-<persistable path="/Diamond_Project_with_cctbx/unit_test.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Diamond_Project_with_cctbx/functions.py">
-<persistable path="/Diamond_Project_with_cctbx/functions.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="temp.py" tooltip="Diamond_Project_with_cctbx/temp.py">
-<persistable path="/Diamond_Project_with_cctbx/temp.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="vpyhton.py" tooltip="Diamond_Project_with_cctbx/vpyhton.py">
-<persistable path="/Diamond_Project_with_cctbx/vpyhton.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py">
-<persistable path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="linalg.py" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py">
-<persistable uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/lib/python2.7/site-packages/numpy/linalg/linalg.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project/unit_test.py">
-<persistable path="/Diamond_Project/unit_test.py"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="__init__.py" tooltip="/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/scitbx/matrix/__init__.py">
-<persistable uri="file:/dls_sw/apps/python/anaconda/1.7.0/64/cctbx/cctbx_sources/scitbx/matrix/__init__.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" tooltip="Diamond_Project/finding_the_rotation_matrix.py">
-<persistable path="/Diamond_Project/finding_the_rotation_matrix.py"/>
-</file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pydev_runfiles.py" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/pydev_runfiles.py">
-<persistable uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/plugins/org.python.pydev_3.6.0.201406232321/pysrc/pydev_runfiles.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_U_matrix.py" tooltip="Diamond_Project_with_cctbx/finding_the_U_matrix.py">
-<persistable path="/Diamond_Project_with_cctbx/finding_the_U_matrix.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_U_matrix.py" tooltip="Diamond_Project/finding_the_U_matrix.py">
-<persistable path="/Diamond_Project/finding_the_U_matrix.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py">
-<persistable path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" tooltip="Diamond_Project/reflection_choice.py">
-<persistable path="/Diamond_Project/reflection_choice.py"/>
-</file>
-</mruList>
+<mruList/>
 </workbench>

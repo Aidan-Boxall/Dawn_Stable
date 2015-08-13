@@ -1,0 +1,9 @@
+import peak_finder as fp
+import scisoftpy as dnp
+import scitbx.math as scm
+from scitbx.matrix import col as Vector
+from scitbx.matrix import sqr as Rotator
+
+print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 527341, 527358, 1,True, False, 'roi7_sum')[0]
+cif = 'HoFe2_icsd_103499.cif'
+

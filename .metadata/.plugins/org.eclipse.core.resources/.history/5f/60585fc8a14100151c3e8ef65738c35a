@@ -1,0 +1,151 @@
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 2, -8), (-1, -2, -8) and (3, -1, -8)
+ 
+Difference: 2.06019650546e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:1 tried 1 passed 0 failled time so far: 6.51086306572
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, -2, -10), (2, -2, 10) and (2, 0, -10)
+ 
+Difference: 1.21492852219e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 1 tried 1 passed 0 failled 0 failled due to filter time so far: 9.78972196579
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 1, 10), (-1, 3, -10) and (-2, 3, 10)
+ 
+Difference: 3.53074630557e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:2 tried 2 passed 0 failled time so far: 16.0288479328
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, 0, 4), (0, 2, 4) and (2, -2, 4)
+ 
+Difference: 9.8866311604e-14
+NEW FILTER: CASE PASSED
+ 
+For new filter: 2 tried 2 passed 0 failled 0 failled due to filter time so far: 19.301967144
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -5, -3), (-1, -4, -3) and (-5, 1, 3)
+ 
+Difference: 39.0906006108
+OLD FILTER: CASE FAILLED
+ 
+For old filter:3 tried 2 passed 1 failled time so far: 25.5902040005
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-2, -3, 1), (-3, -2, -1) and (5, -3, -1)
+ 
+Difference: 2.59690591718e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 3 tried 3 passed 0 failled 0 failled due to filter time so far: 28.8963980675
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 1, -14), (1, -3, -14) and (-3, 2, -14)
+ 
+Difference: 71.2975331361
+OLD FILTER: CASE FAILLED
+ 
+For old filter:4 tried 2 passed 2 failled time so far: 35.1335091591
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 2, -2), (1, 2, 2) and (2, 1, -2)
+ 
+Difference: 1.63947196529e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 4 tried 4 passed 0 failled 0 failled due to filter time so far: 38.4081990719
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-1, 3, 5), (-2, 3, -5) and (2, 1, -5)
+ 
+Difference: 1.73019652372e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:1 tried 1 passed 0 failled time so far: 24.3800108433
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-5, 2, 8), (-2, -3, -8) and (-3, 5, -8)
+ 
+Difference: 9.98403071714e-14
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-3, 2, 13), (1, -3, 13) and (-3, 1, -13)
+ 
+Difference: 1.93017051231e-13
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (5, -1, -6), (-4, 5, 6) and (-1, -4, 6)
+ 
+Difference: 39.0906006108
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-1, 1, 10), (0, -1, 10) and (-1, 0, -10)
+ 
+Difference: 1.57723428083e-13
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -5, -10), (5, -2, 10) and (5, -3, -10)
+ 
+Difference: 1.09145227903e-13
+OLD FILTER: CASE PASSED
+ 
+For old filter:1 tried 1 passed 0 failled time so far: 16.263381958
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (2, 1, -5), (2, -3, 5) and (-1, -2, -5)
+ 
+Difference: 1.04141121124e-13
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (-1, 0, 2), (1, -1, 2) and (0, -1, -2)
+ 
+Difference: 1.60338102202e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 1 tried 1 passed 0 failled 0 failled due to filter time so far: 23.6803438663
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (3, -2, -13), (-1, -2, 13) and (-1, 3, -13)
+ 
+Difference: 1.12064818409e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 2 tried 2 passed 0 failled 0 failled due to filter time so far: 35.2437939644
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (4, -1, -10), (4, -3, 10) and (-1, 4, 10)
+ 
+Difference: 1.18634208557e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 1 tried 1 passed 0 failled 0 failled due to filter time so far: 20.5850841999
+ 
+Chose cif file: NiCO3_icsd_61067.cif
+ 
+Chose reflections (0, 2, 16), (-2, 2, -16) and (2, 0, -16)
+ 
+Difference: 1.82845886806e-13
+NEW FILTER: CASE PASSED
+ 
+For new filter: 2 tried 2 passed 0 failled 0 failled due to filter time so far: 1608.07282305
+ 

@@ -1,0 +1,10 @@
+INSTUPtesting_a_single_reflection
+/home/ljh75651/DAWN_stable/Latest/testing_a_single_reflection.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0
+test_by_hkl=7
+testing_a_single_reflection=2
+arccos=1
+diff=5
+random_rotation=4
+add_rot_error=3
+test_data=6

@@ -1,0 +1,3 @@
+import peak_finder as fp
+
+print len(fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 527341, 527358, 25,False, False, 'roi7_sum'))
