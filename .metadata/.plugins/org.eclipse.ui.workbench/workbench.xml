@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="19" version="2.0">
+<workbench progressCount="27" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -10,8 +10,9 @@
 <coolItem id="group.file" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="144" y="30"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.python.pydev.navigate.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.dawb.tango.extensions.shared.memory" itemType="typeToolBarContribution" x="40" y="30"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="156" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="60" y="30"/>
 <coolItem id="uk.ac.diamond.scisoft.analysis.rcp.plotting.actions.showPlotViewToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -28,20 +29,40 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page focus="true" label="Workspace - Data Browsing">
+<page focus="true" label="Workspace - PyDev">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py" title="unit_test" tooltip="Diamond_Project_with_cctbx/unit_test.py" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/unit_test.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="fluffy_latest.py" partName="fluffy_latest" path="/home/ljh75651/DAWN_stable/Latest/fluffy_latest.py" title="fluffy_latest" tooltip="Latest/fluffy_latest.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/fluffy_latest.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="67" selectionOffset="27837" selectionTopPixel="19204"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" partName="pixel_to_vector (Latest)" path="/home/ljh75651/DAWN_stable/Latest/pixel_to_vector.py" title="pixel_to_vector (Latest)" tooltip="Latest/pixel_to_vector.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/pixel_to_vector.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="31" selectionOffset="702" selectionTopPixel="103"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel_real_motor.py" partName="pixel_real_motor" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/pixel_real_motor.py" title="pixel_real_motor" tooltip="Diamond_Project_with_cctbx/pixel_real_motor.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2745" selectionOffset="1044" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="fixnexus.py" partName="fixnexus" path="/home/ljh75651/DAWN_stable/Latest/fixnexus.py" title="fixnexus" tooltip="Latest/fixnexus.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/fixnexus.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2060" selectionTopPixel="796"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="io.py" partName="io" title="io" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2797" selectionTopPixel="1547"/>
 </editor>
 </editors>
 <views>
@@ -55,13 +76,24 @@
 <view id="org.dawb.workbench.views.dataSetView" partName="Metadata">
 <viewState/>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console"/>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D" partName="XY Tools"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView" partName="PyUnit">
+<viewState/>
+</view>
 <view id="org.dawb.common.ui.views.headerTableView" partName="Header Table"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.2D" partName="Image Tools"/>
+<view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
+<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest"/>
+<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest/fixnexus.py"/>
+</viewState>
+</view>
 <view id="uk.ac.diamond.sda.navigator.views.FileView" partName="File Navigator"/>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.edna.workbench.application.perspective.DataPerspective">
+<perspectives activePart="org.python.pydev.editor.PythonEditor" activePerspective="org.python.pydev.ui.PythonPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.dawb.workbench.ui.perspective.DataBrowsingPerspective" id="org.edna.workbench.application.perspective.DataPerspective" label="Data Browsing"/>
 <alwaysOnActionSet id="org.edna.common.ui.project.import"/>
@@ -79,9 +111,9 @@
 <perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
 <perspective_action id="org.python.pydev.ui.PythonPerspective"/>
 <perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
-<hide_menu_item_id id="project"/>
-<hide_menu_item_id id="navigate"/>
 <hide_menu_item_id id="org.eclipse.ui.run"/>
+<hide_menu_item_id id="navigate"/>
+<hide_menu_item_id id="project"/>
 <hide_menu_item_id id="org.eclipse.search.menu"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
@@ -96,49 +128,113 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.dawb.workbench.plotting.views.toolPageView.1D"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="navigator-folder">
-<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="navigator-folder">&#x0A;<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="uk.ac.diamond.sda.navigator.views.FileView" label="File Navigator"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="navigator-folder">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.2" ratioLeft="202" ratioRight="808" relationship="2" relative="navigator-folder"/>
+<info folder="true" part="folder" ratio="0.5990099" ratioLeft="484" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.workbench.views.dataSetView" label="Metadata"/>
+<page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="Image Tools"/>
+<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="folder_1" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.dawb.passerelle.views.ValueView" appearance="2" expanded="2">&#x0A;<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
+<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="XY Tools"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.python.pydev.ui.perspective.PythonPerspectiveFactory" id="org.python.pydev.ui.PythonPerspective" label="PyDev"/>
+<alwaysOnActionSet id="org.edna.common.ui.project.import"/>
+<alwaysOnActionSet id="org.dawb.tango.extensions.shared.memory"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="uk.ac.diamond.scisoft.actionSet1"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="com.python.pydev.navigate.actionSet"/>
+<show_view_action id="org.python.pydev.views.PyCodeCoverageView"/>
+<show_view_action id="org.python.pydev.navigator.view"/>
+<show_view_action id="org.python.pydev.debug.pyunit.pyUnitView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="org.python.pydev.ui.wizards.project.PythonProjectWizard"/>
+<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonSourceFolderWizard"/>
+<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonPackageWizard"/>
+<new_wizard_action id="org.python.pydev.ui.wizards.files.PythonModuleWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<perspective_action id="uk.ac.diamond.scisoft.dataexplorationperspective"/>
+<perspective_action id="uk.ac.diamond.scisoft.diffractionviewerperspective"/>
+<perspective_action id="org.python.pydev.ui.PythonPerspective"/>
+<perspective_action id="uk.ac.diamond.scisoft.peema.rcp.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.python.pydev.navigator.view"/>
+<view id="org.python.pydev.debug.pyunit.pyUnitView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="topLeft">
+<folder activePageID="org.python.pydev.navigator.view" appearance="2" expanded="2">
+<page content="org.python.pydev.navigator.view" label="PyDev Package Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="topLeft">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.3498818" ratioLeft="444" ratioRight="825" relationship="2" relative="navigator-folder"/>
-<info folder="true" part="folder" ratio="0.5990099" ratioLeft="484" ratioRight="324" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.dawb.workbench.views.dataSetView" appearance="2" expanded="2">
-<page content="org.dawb.workbench.views.dataSetView" label="Metadata"/>
-<page content="org.dawb.workbench.plotting.views.toolPageView.2D" label="Image Tools"/>
-<page content="org.dawb.common.ui.views.headerTableView" label="Header Table"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
-</folder>
-</info>
-<info folder="true" part="folder_1" ratio="0.6985871" ratioLeft="445" ratioRight="192" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.dawb.passerelle.views.ValueView" appearance="2" expanded="2">
-<page content="org.dawb.passerelle.views.ValueView" label="Value"/>
-<page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<info part="org.eclipse.ui.editorss" ratio="0.3790386" ratioLeft="481" ratioRight="788" relationship="2" relative="topLeft"/>
+<info folder="true" part="bottom" ratio="0.5160142" ratioLeft="435" ratioRight="408" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.dawb.workbench.plotting.views.toolPageView.1D" label="XY Tools"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -149,10 +245,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/unit_test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/fluffy_latest.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/pixel_to_vector.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/fixnexus.py"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
 </editors>
-<item active="true" historyLabel="unit_test" index="0">
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="379" y="157"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="284" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="887" y="99"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="3333" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="42" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="756" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="188" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="242" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="650" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="236" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="131" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="236" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="124" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="236" y="0"/>
+</item>
+<item historyLabel="io" index="4">
+<position info="not_deleted" x="2797" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="2085" y="34"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="650" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="2085" y="34"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="fixnexus" index="3">
+<position info="not_deleted" x="2060" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="2">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="639" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="702" y="31"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="28706" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="731" y="0"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="702" y="31"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="27825" y="12"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="28206" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="702" y="31"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="28223" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector (Latest)" index="1">
+<position info="not_deleted" x="702" y="31"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="28262" y="15"/>
+</item>
+<item historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="28239" y="0"/>
+</item>
+<item active="true" historyLabel="fluffy_latest" index="0">
+<position info="not_deleted" x="27837" y="67"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -171,8 +418,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project_with_cctbx/unit_test.py">
-<persistable path="/Diamond_Project_with_cctbx/unit_test.py"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="io.py" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py">
+<persistable uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fixnexus.py" tooltip="Latest/fixnexus.py">
+<persistable path="/Latest/fixnexus.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_real_motor.py" tooltip="Diamond_Project_with_cctbx/pixel_real_motor.py">
+<persistable path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" tooltip="Diamond_Project_with_cctbx/pixel_to_vector.py">
+<persistable path="/Diamond_Project_with_cctbx/pixel_to_vector.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" tooltip="Latest/pixel_to_vector.py">
+<persistable path="/Latest/pixel_to_vector.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel.py" tooltip="Diamond_Project_with_cctbx/pixel.py">
+<persistable path="/Diamond_Project_with_cctbx/pixel.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Latest/unit_test.py">
+<persistable path="/Latest/unit_test.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Latest/functions.py">
+<persistable path="/Latest/functions.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fluffy_latest.py" tooltip="Latest/fluffy_latest.py">
+<persistable path="/Latest/fluffy_latest.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fluffy.py" tooltip="Diamond_Project_with_cctbx/fluffy.py">
+<persistable path="/Diamond_Project_with_cctbx/fluffy.py"/>
 </file>
 </mruList>
 </workbench>

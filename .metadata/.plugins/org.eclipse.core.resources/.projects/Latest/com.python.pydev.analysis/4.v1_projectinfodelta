@@ -1,1 +1,12 @@
-DELSTRpeak_finder
+INSTUPreflection_choice
+/home/ljh75651/DAWN_stable/Latest/reflection_choice.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0&&2|8|2|0&&2|9|2|0&&2|2|2|0
+noramlised_gap_to_ideal_two_theta=5
+normalised_two_theta_gaps=3
+choose_reflection=8
+ideal_two_theta_gap=4
+normalised_intensities=7
+two_theta_gap=1
+reflection_choice=2
+normalised_number_of_reflections=6
+test_many_by_hkl=9

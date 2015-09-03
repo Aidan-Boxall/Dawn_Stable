@@ -44,6 +44,7 @@ for peak in peaks:
     kappa = dat.metadata['kap']
     ktheta = dat.metadata['kth']
     kphi = dat.kphi[image_number-1]
+    delta = dat.metadata['delta']+9.2
     print kappa
     print ktheta
     print kphi
@@ -75,8 +76,8 @@ for peak in peaks:
 # #     f.plot_vectors_as_arrows([mom_trans],fig,ax, color = 'green')
 # #     plt.show()
 # 
-#     eta_rot =  Rotator(scm.r3_rotation_axis_and_angle_as_matrix(y_axis, eta, deg = True))#+ve eta as left handed rotations
-#     mom_trans = eta_rot*mom_trans
+    ktheta_rot =  Rotator(scm.r3_rotation_axis_and_angle_as_matrix(y_axis, ktheta, deg = True))#+ve eta as left handed rotations
+    mom_trans = ktheta_rot*mom_trans
 #     print 'eta rot',eta
 #     print mom_trans
 #     print 
@@ -89,14 +90,14 @@ for peak in peaks:
 # #     f.plot_vectors_as_arrows([mom_trans],fig,ax, color = 'green')
 # #     plt.show()
 # 
-#     chi_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(x_axis, -chi, deg = True))
-#     mom_trans = chi_rot*mom_trans
+    kappa_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(x_axis, kappa, deg = True))
+    mom_trans = kappa_rot*mom_trans
 # #     print 'chi rot',chi
 # #     print mom_trans
 # #     print
 # #     print 'phi offset', dat.metadata.kphi-dat.metadata.phi
-#     phi_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(y_axis, phi, deg = True))#+ve phi as left handed rotations
-#     mom_trans = phi_rot*mom_trans
+    kphi_rot = Rotator(scm.r3_rotation_axis_and_angle_as_matrix(y_axis, kphi, deg = True))#+ve phi as left handed rotations
+    mom_trans = kphi_rot*mom_trans
 # #     print 'phi rot',phi
 # #     print mom_trans
 # #     print 
@@ -105,11 +106,12 @@ for peak in peaks:
 #     print chi
 # #     print phi
 # #     print
-#     data.append(mom_trans)
+    data.append(mom_trans)
 # 
 # 
 # print len(data)
-# # f.plot_vectors_as_arrows(data)
+f.plot_vectors_as_arrows(data)
+plt.show()
 # dot = data[0].normalize().dot(data[1].normalize())
 # print 'angl1', np.rad2deg(np.arccos(dot))
 # dot = data[2].normalize().dot(data[3].normalize())

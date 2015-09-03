@@ -31,6 +31,8 @@ f.plot_vectors_as_arrows([vectors[4]], fig, ax, color='orange')
 f.plot_sphere(vectors[0].length(),fig,ax,True)
 
 ax = fig.add_subplot(212, projection='3d')
-f.plot_vectors_as_arrows(all_vectors, fig, ax)
+f.plot_vectors(all_vectors)
+all_vectors = rm.rotate_list(M*M, all_vectors)
+f.plot_vectors(all_vectors)
 
 plt.show()

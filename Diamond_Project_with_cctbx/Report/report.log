@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2014.3.19)  28 JUL 2015 13:18
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2014.3.19)  24 AUG 2015 14:39
 entering extended mode
  %&-line parsing enabled.
 **report.tex
@@ -214,7 +214,11 @@ Package: geometry 2002/07/08 v3.2 Page Geometry
 \Gm@odd@mp=\dimen130
 \Gm@even@mp=\dimen131
 \Gm@dimlist=\toks22
-) (./report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `vectors1' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -294,14 +298,17 @@ driver: pdftex
 -----------------------
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <three_vectors.png, id=12,
- 578.16pt x 433.62pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <vectors.png, id=12, 468.7
+5125pt x 167.62625pt>
+File: vectors.png Graphic file (type png)
+
+<use vectors.png> <three_vectors.png, id=13, 578.16pt x 433.62pt>
 File: three_vectors.png Graphic file (type png)
 
-<use three_vectors.png> <four_vectors.png, id=13, 578.16pt x 433.62pt>
+<use three_vectors.png> [2 <./vectors.png>]
+<four_vectors.png, id=21, 578.16pt x 433.62pt>
 File: four_vectors.png Graphic file (type png)
-
-<use four_vectors.png> [2 <./three_vectors.png> <./four_vectors.png>]
+ <use four_vectors.png>
 <angles.png, id=22, 578.16pt x 433.62pt>
 File: angles.png Graphic file (type png)
  <use angles.png>
@@ -310,31 +317,36 @@ File: coplanar.png Graphic file (type png)
  <use coplanar.png>
 <rotation1.jpg, id=24, 1306.8825pt x 1304.875pt>
 File: rotation1.jpg Graphic file (type jpg)
- <use rotation1.jpg>
-<rotation2.jpg, id=25, 1517.67pt x 1763.58875pt>
+ <use rotation1.jpg> [3 <./three_vectors.png> <./four_vectors.png> <./angles.pn
+g> <./coplanar.png>]
+<rotation2.jpg, id=33, 1517.67pt x 1763.58875pt>
 File: rotation2.jpg Graphic file (type jpg)
  <use rotation2.jpg>
 No file report.bbl.
-[3 <./angles.png> <./coplanar.png> <./rotation1.jpg> <./rotation2.jpg>]
-(./report.aux) ) 
+[4 <./rotation1.jpg> <./rotation2.jpg>] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2488 strings out of 256216
- 33972 string characters out of 1917072
- 105583 words of memory out of 1500000
- 5754 multiletter control sequences out of 10000+200000
+ 2494 strings out of 256216
+ 34055 string characters out of 1917072
+ 103583 words of memory out of 1500000
+ 5759 multiletter control sequences out of 10000+200000
  9630 words of font info for 35 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 35i,6n,38p,1222b,291s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share
-/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/
-cm/cmbx9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/te
-xmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/c
-mr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/f
-onts/type1/bluesky/cm/cmr9.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.
-pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy7.pfb>
-Output written on report.pdf (3 pages, 564878 bytes).
+ 35i,6n,38p,1222b,365s stack positions out of 5000i,500n,6000p,200000b,15000s
+</usr/share/texmf/fonts/type1/bluesky/cm/cmbx10.pfb></usr/share/texmf/fonts/t
+ype1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmbx9.pfb><
+/usr/share/texmf/fonts/type1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type
+1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr
+/share/texmf/fonts/type1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/blu
+esky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr9.pfb></usr/share/
+texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/bluesky/c
+m/cmsy7.pfb>
+Output written on report.pdf (4 pages, 573325 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

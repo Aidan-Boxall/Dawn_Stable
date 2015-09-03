@@ -1,3 +1,6 @@
+#A script designed to chose an optimal set of reflections to measure and to
+# produce a Jython script to do so.
+
 import scisoftpy as dnp
 from itertools import permutations
 # import testing_a_single_reflection as ts

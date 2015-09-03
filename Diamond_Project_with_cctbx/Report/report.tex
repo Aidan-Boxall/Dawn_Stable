@@ -35,6 +35,10 @@ to produce python code that could provide an orientation matrix for a crystal of
 
 \begin{multicols}{2}
 \section*{Introduction}
+The aim of this project was to produce a system for automating the orientation of crystsal samples in beamline I16 at Diamond Light Source. Crystal orienation has to be carried out at the start of every experiment. It is a time consuming and repetitive task which makes it well suited to automation. Crystal orientation has to be found by measuring Bragg reflections. It is not always possible to do it simply by eye as the samples can be in the order of tens of microns in size.
+
+\subsection*{Method Steps}
+There were a number of steps to be completed in order to orienate the crystal. Firstly the program had to determine the best Bragg reflections to measure. This was determined by a number of factors. Once the reflections have been chosen the code prints a Jython script to run the machine to collect the data. Once the data has been collected the nect step is to find the peaks in the data. Typically the data contains in the order of 10000 images and only around 3 or 4 peaks so this is an importatant step. Once the peaks have been found the image data has to be converted to vectors. This was one of the more challenging steps. A number of scripts had to be produced to calculte the vectors and extract the axis and angles required to rotate the vectors into the appropiate reference frame. Once the vectors were in the correct frame the next step was to match these vectors to the corrosponding vectors in the theoretical crystal Cartesian frame. Finally the orientation matrix U was found by finding the rotations which rotate the found vectors onto the the theorectical ones.
 
 \section*{Choosing Bragg Reflections}
 The first aim of the project was to write a python script that could choose appropriate Bragg reflections to use for crystal orientation. This was achieved 
@@ -65,7 +69,14 @@ To ensure that areas around the top of peaks were not counted as peaks the follo
 
 Once a list of images containing peaks had been found the coordinates of the peaks within the images was found by assuming the peaks were the brightest pixel in the ROI.
 
-The peaks found in the image data were converted to momentum transfer vectors in the lab Cartesian frame using code developed by another Diamond employee.
+\section*{Converting the Images to Vectors}
+The first step to converting the images to vectors was to find the beam vectors in the lab frame. The vector requied is the momentum transfer vector 
+\begin{center}
+\includegraphics [width=\columnwidth]{vectors.png}
+\captionof{figure}{Shows the relationship between the beam vectors and the momentum transfer vector: $\vec{q} = \vec{k_1}-\vec{k_0}$.}
+\label{vectors}
+\end{center}
+
 
 \section*{Finding the Orientation Matrix}
 Finding the orientation matrix was the most challenging and arguably the most important part of the project. Early in the planning it was realised an orientation matrix could be calculated by comparing two found momentum transfer vectors in the lab Cartesian frame to two theoretical momentum transfer vectors in the crystal Cartesian frame and finding the rotations required to transform one set to the other. The set of theoretical momentum transfer vectors consists of the entire set of vectors in the crystal's reciprocal space %CHECK is it actually all of them? Isn't reciprocal space infinite? Is it a unit cell of reciprocal space?

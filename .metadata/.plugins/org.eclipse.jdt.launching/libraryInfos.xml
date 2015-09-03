@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64" version="1.7.0_76">
+<libraryInfo home="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre" version="1.7.0_76">
 <bootpath>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/resources.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/rt.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/sunrsasign.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jsse.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jce.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/charsets.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jfr.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/classes"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/resources.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/rt.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/sunrsasign.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jsse.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jce.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/charsets.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jfr.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/classes"/>
 </bootpath>
 <extensionDirs>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/ext"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/ext"/>
 <entry path="/usr/java/packages/lib/ext"/>
 </extensionDirs>
 <endorsedDirs>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/endorsed"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre" version="1.7.0_76">
+<libraryInfo home="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64" version="1.7.0_76">
 <bootpath>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/resources.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/rt.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/sunrsasign.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jsse.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jce.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/charsets.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/jfr.jar"/>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/classes"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/resources.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/rt.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/sunrsasign.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jsse.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jce.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/charsets.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/jfr.jar"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/classes"/>
 </bootpath>
 <extensionDirs>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/ext"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/ext"/>
 <entry path="/usr/java/packages/lib/ext"/>
 </extensionDirs>
 <endorsedDirs>
-<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150617-1611-linux64/jre/lib/endorsed"/>
+<entry path="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/jre/lib/endorsed"/>
 </endorsedDirs>
 </libraryInfo>
 </libraryInfos>
