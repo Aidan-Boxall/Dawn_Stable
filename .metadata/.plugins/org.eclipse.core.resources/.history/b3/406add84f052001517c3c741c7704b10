@@ -13,7 +13,6 @@ from itertools import combinations
 # from fixnexus import fix_scan_file
 # import peak_finder as fp
 
-#Parameters
 data_dir='/dls/i16/data/2015/cm12169-3/'
 cif = 'HoFe2_icsd_103499.cif'
 

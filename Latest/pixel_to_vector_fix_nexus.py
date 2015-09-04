@@ -9,10 +9,17 @@ import pickle
 from fixnexus import fix_scan_file
 import peak_finder as fp
 
+#Parameters
 data_dir='/dls/i16/data/2015/cm12169-3/'
 cif = 'HoFe2_icsd_103499.cif'
-peaks = fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 6,
-                          True, False, 'roi7_sum')#('/dls/i16/data/2015/cm12169-3/', 527359, 527369, 8, False, False, 'roi7_sum')
+roi_key = 'roi7_sum'
+first_scan_no = 521280
+last_scan_no = 521311
+expected_no_of_peaks = 6 #This is an upper limit.
+
+
+peaks = fp.find_peaks(data_dir, first_scan_no, last_scan_no, expected_no_of_peaks,
+                          False, False, roi_key)#('/dls/i16/data/2015/cm12169-3/', 527359, 527369, 8, False, False, 'roi7_sum')
 
 
 for peak in peaks:

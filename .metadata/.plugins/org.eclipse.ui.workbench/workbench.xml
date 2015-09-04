@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="27" version="2.0">
+<workbench progressCount="26" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="0" y="25">
 <fastViewData fastViewLocation="1024"/>
@@ -40,13 +40,26 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="fluffy_latest.py" partName="fluffy_latest" path="/home/ljh75651/DAWN_stable/Latest/fluffy_latest.py" title="fluffy_latest" tooltip="Latest/fluffy_latest.py" workbook="DefaultEditorWorkbook">
+<editor id="org.python.pydev.editor.PythonEditor" name="fluffy_latest.py" partName="fluffy_latest" path="/home/ljh75651/DAWN_stable/Latest/fluffy_latest.py" title="fluffy_latest" tooltip="Latest/fluffy_latest.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/fluffy_latest.py"/>
-<editorState selectionHorizontalPixel="0" selectionLength="67" selectionOffset="27837" selectionTopPixel="19204"/>
+<editorState selectionHorizontalPixel="0" selectionLength="67" selectionOffset="27837" selectionTopPixel="19210"/>
 </editor>
 <editor id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" partName="pixel_to_vector (Latest)" path="/home/ljh75651/DAWN_stable/Latest/pixel_to_vector.py" title="pixel_to_vector (Latest)" tooltip="Latest/pixel_to_vector.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/pixel_to_vector.py"/>
@@ -63,6 +76,58 @@
 <editor id="org.python.pydev.editor.PythonEditor" name="io.py" partName="io" title="io" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2797" selectionTopPixel="1547"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test (Latest)" path="/home/ljh75651/DAWN_stable/Latest/unit_test.py" title="unit_test (Latest)" tooltip="Latest/unit_test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/unit_test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="912" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="unit_test.py" partName="unit_test (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/unit_test.py" title="unit_test (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/unit_test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/unit_test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1456"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="testing_a_single_reflection.py" partName="testing_a_single_reflection" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/testing_a_single_reflection.py" title="testing_a_single_reflection" tooltip="Diamond_Project_with_cctbx/testing_a_single_reflection.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/testing_a_single_reflection.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="2277"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" partName="testing_rotation_finder" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/testing_rotation_finder.py" title="testing_rotation_finder" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="4501"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="test.py" partName="test" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/test.py" title="test" tooltip="Diamond_Project_with_cctbx/test.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/test.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" partName="peak_finder" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/peak_finder.py" title="peak_finder" tooltip="Diamond_Project_with_cctbx/peak_finder.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel.py" partName="pixel" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/pixel.py" title="pixel" tooltip="Diamond_Project_with_cctbx/pixel.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/pixel.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="942" selectionTopPixel="260"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" partName="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" path="/home/ljh75651/DAWN_stable/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" title="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" partName="finding_the_rotation_matrix (Latest)" path="/home/ljh75651/DAWN_stable/Latest/finding_the_rotation_matrix.py" title="finding_the_rotation_matrix (Latest)" tooltip="Latest/finding_the_rotation_matrix.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/finding_the_rotation_matrix.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="13551" selectionTopPixel="4575"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" partName="reflection_choice" path="/home/ljh75651/DAWN_stable/Latest/reflection_choice.py" title="reflection_choice" tooltip="Latest/reflection_choice.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/reflection_choice.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5491" selectionTopPixel="2068"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_find_qs.py" partName="pixel_to_vector_find_qs" path="/home/ljh75651/DAWN_stable/Latest/pixel_to_vector_find_qs.py" title="pixel_to_vector_find_qs" tooltip="Latest/pixel_to_vector_find_qs.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/pixel_to_vector_find_qs.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="258" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_fix_nexus.py" partName="pixel_to_vector_fix_nexus" path="/home/ljh75651/DAWN_stable/Latest/pixel_to_vector_fix_nexus.py" title="pixel_to_vector_fix_nexus" tooltip="Latest/pixel_to_vector_fix_nexus.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/pixel_to_vector_fix_nexus.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="281" selectionTopPixel="0"/>
+</editor>
+<editor id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_rotations.py" partName="pixel_to_vector_rotations" path="/home/ljh75651/DAWN_stable/Latest/pixel_to_vector_rotations.py" title="pixel_to_vector_rotations" tooltip="Latest/pixel_to_vector_rotations.py" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Latest/pixel_to_vector_rotations.py"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="365" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -88,7 +153,8 @@
 <view id="org.python.pydev.navigator.view" partName="PyDev Package Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0">
 <expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest"/>
-<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest/fixnexus.py"/>
+<expanded IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest/reflection_choice.py"/>
+<selected IMemento.internal.id="/home/ljh75651/DAWN_stable/Latest/finding_the_rotation_matrix.py"/>
 </viewState>
 </view>
 <view id="uk.ac.diamond.sda.navigator.views.FileView" partName="File Navigator"/>
@@ -225,7 +291,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.3790386" ratioLeft="481" ratioRight="788" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.5160142" ratioLeft="435" ratioRight="408" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.9369676" ratioLeft="550" ratioRight="37" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.python.pydev.debug.pyunit.pyUnitView" label="PyUnit"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -249,110 +315,21 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/pixel_to_vector.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/fixnexus.py"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/unit_test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/unit_test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/testing_a_single_reflection.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/test.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/peak_finder.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/pixel.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/finding_the_rotation_matrix.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/reflection_choice.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/pixel_to_vector_find_qs.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/pixel_to_vector_fix_nexus.py"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" path="/Latest/pixel_to_vector_rotations.py"/>
 </editors>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="379" y="157"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="284" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="887" y="99"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="3333" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="3333" y="0"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="42" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="756" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="188" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="242" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="650" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="236" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="131" y="0"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="236" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="124" y="0"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="236" y="0"/>
-</item>
-<item historyLabel="io" index="4">
-<position info="not_deleted" x="2797" y="0"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="2085" y="34"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="650" y="0"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="fixnexus" index="3">
-<position info="not_deleted" x="2085" y="34"/>
-</item>
-<item historyLabel="pixel_real_motor" index="2">
-<position info="not_deleted" x="1044" y="2745"/>
-</item>
-<item historyLabel="pixel_to_vector (Latest)" index="1">
-<position info="not_deleted" x="639" y="0"/>
-</item>
 <item historyLabel="fixnexus" index="3">
 <position info="not_deleted" x="2060" y="0"/>
 </item>
@@ -398,8 +375,110 @@
 <item historyLabel="fluffy_latest" index="0">
 <position info="not_deleted" x="28239" y="0"/>
 </item>
-<item active="true" historyLabel="fluffy_latest" index="0">
+<item historyLabel="fluffy_latest" index="0">
 <position info="not_deleted" x="27837" y="67"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="24" y="0"/>
+</item>
+<item historyLabel="unit_test (Diamond_Project_with_cctbx)" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testing_a_single_reflection" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="testing_rotation_finder" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="test" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="peak_finder" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_real_motor" index="10">
+<position info="not_deleted" x="1044" y="2745"/>
+</item>
+<item historyLabel="pixel" index="11">
+<position info="not_deleted" x="942" y="14"/>
+</item>
+<item historyLabel="peak_finder" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="912" y="0"/>
+</item>
+<item historyLabel="peak_finder" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="912" y="0"/>
+</item>
+<item historyLabel="finding_the_rotation_matrix (Diamond_Project_with_cctbx)" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="finding_the_rotation_matrix (Latest)" index="13">
+<position info="not_deleted" x="15534" y="0"/>
+</item>
+<item historyLabel="unit_test (Latest)" index="4">
+<position info="not_deleted" x="912" y="0"/>
+</item>
+<item historyLabel="reflection_choice" index="14">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="reflection_choice" index="14">
+<position info="not_deleted" x="5491" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_fix_nexus" index="16">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="328" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_fix_nexus" index="16">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="328" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="257" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="258" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_fix_nexus" index="16">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_rotations" index="17">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_fix_nexus" index="16">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_find_qs" index="15">
+<position info="not_deleted" x="258" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_rotations" index="17">
+<position info="not_deleted" x="365" y="0"/>
+</item>
+<item historyLabel="pixel_to_vector_fix_nexus" index="16">
+<position info="not_deleted" x="281" y="0"/>
+</item>
+<item active="true" historyLabel="finding_the_rotation_matrix (Latest)" index="13">
+<position info="not_deleted" x="15534" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -418,35 +497,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="io.py" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py">
-<persistable uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_rotations.py" tooltip="Latest/pixel_to_vector_rotations.py">
+<persistable path="/Latest/pixel_to_vector_rotations.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fixnexus.py" tooltip="Latest/fixnexus.py">
-<persistable path="/Latest/fixnexus.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_fix_nexus.py" tooltip="Latest/pixel_to_vector_fix_nexus.py">
+<persistable path="/Latest/pixel_to_vector_fix_nexus.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_real_motor.py" tooltip="Diamond_Project_with_cctbx/pixel_real_motor.py">
-<persistable path="/Diamond_Project_with_cctbx/pixel_real_motor.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="script.sh" tooltip="Latest/script.sh">
+<persistable path="/Latest/script.sh"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" tooltip="Diamond_Project_with_cctbx/pixel_to_vector.py">
-<persistable path="/Diamond_Project_with_cctbx/pixel_to_vector.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector_find_qs.py" tooltip="Latest/pixel_to_vector_find_qs.py">
+<persistable path="/Latest/pixel_to_vector_find_qs.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel_to_vector.py" tooltip="Latest/pixel_to_vector.py">
-<persistable path="/Latest/pixel_to_vector.py"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="reflection_choice.py" tooltip="Latest/reflection_choice.py">
+<persistable path="/Latest/reflection_choice.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" tooltip="Latest/finding_the_rotation_matrix.py">
+<persistable path="/Latest/finding_the_rotation_matrix.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="finding_the_rotation_matrix.py" tooltip="Diamond_Project_with_cctbx/finding_the_rotation_matrix.py">
+<persistable path="/Diamond_Project_with_cctbx/finding_the_rotation_matrix.py"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="pixel.py" tooltip="Diamond_Project_with_cctbx/pixel.py">
 <persistable path="/Diamond_Project_with_cctbx/pixel.py"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="peak_finder.py" tooltip="Diamond_Project_with_cctbx/peak_finder.py">
+<persistable path="/Diamond_Project_with_cctbx/peak_finder.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="test.py" tooltip="Diamond_Project_with_cctbx/test.py">
+<persistable path="/Diamond_Project_with_cctbx/test.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing_rotation_finder.py" tooltip="Diamond_Project_with_cctbx/testing_rotation_finder.py">
+<persistable path="/Diamond_Project_with_cctbx/testing_rotation_finder.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="testing_a_single_reflection.py" tooltip="Diamond_Project_with_cctbx/testing_a_single_reflection.py">
+<persistable path="/Diamond_Project_with_cctbx/testing_a_single_reflection.py"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Diamond_Project_with_cctbx/unit_test.py">
+<persistable path="/Diamond_Project_with_cctbx/unit_test.py"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="unit_test.py" tooltip="Latest/unit_test.py">
 <persistable path="/Latest/unit_test.py"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="functions.py" tooltip="Latest/functions.py">
-<persistable path="/Latest/functions.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fluffy_latest.py" tooltip="Latest/fluffy_latest.py">
-<persistable path="/Latest/fluffy_latest.py"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="fluffy.py" tooltip="Diamond_Project_with_cctbx/fluffy.py">
-<persistable path="/Diamond_Project_with_cctbx/fluffy.py"/>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.python.pydev.editor.PythonEditor" name="io.py" tooltip="/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py">
+<persistable uri="file:/dls_sw/apps/DawnDiamond/1.9/builds-stable/DawnDiamond-1.9.0.v20150817-1436-linux64/plugins/uk.ac.diamond.scisoft.python_1.3.0/scisoftpy/io.py"/>
 </file>
 </mruList>
 </workbench>

@@ -323,7 +323,9 @@ def find_U_matrix(found_vectors, crystal, beam_energy=8, optimise_U=True,
 
     # Optimising the U matrix
     def diff(array, data, vectors):
-        """This is a function used to optimise the U matrix. It evaluates
+        """This is a function used to optimise the U matrix. It evaluates the
+        difference between the rotated set of vectors and their corosponding
+        vectors in reciprical space. 
         """
         x = array[0]
         y = array[1]

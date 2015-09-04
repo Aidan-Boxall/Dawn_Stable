@@ -1,1 +1,12 @@
-DELSTRreflection_choice
+INSTUPpixel_to_vector_find_qs
+/home/ljh75651/DAWN_stable/Latest/pixel_to_vector_find_qs.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&3|5|2|0&&3|6|2|0&&3|7|2|0&&3|8|2|0&&3|9|2|0
+cif=3
+scan_number=6
+q=9
+data_dir=1
+file_name=7
+qs=5
+pixel_to_vector_find_qs=2
+peaks=4
+image_number=8

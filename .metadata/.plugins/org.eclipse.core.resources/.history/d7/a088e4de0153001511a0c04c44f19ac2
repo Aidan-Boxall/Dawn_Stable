@@ -142,9 +142,9 @@ def reflection_choice(cif, print_choices=0, choose_option=1):
     else:
         options_counter=print_choices
     for i in range(options_counter):
-        if len(grouped_reflections)>2:
+        while len(grouped_reflections)>2:
             group = choose_reflection(grouped_reflections, sum_on=True)
-            if i<print_choices:
+            if print_choices<i:
                 print 'Choice {}'.format(i+1)
                 print group
                 print "Number of reflections {}".format(len(group))

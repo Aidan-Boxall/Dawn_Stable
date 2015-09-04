@@ -28,7 +28,7 @@ class TestUnit(unittest.TestCase):
     def test_peak_finder(self):
         import peak_finder as fp
         import matplotlib.pyplot as plt
-        print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 521280, 521311, 6,
+        print fp.find_peaks('/dls/i16/data/2015/cm12169-3/', 527359, 527369, 6,
                           True, False, 'roi7_sum')
         plt.show()
 

@@ -1,1 +1,10 @@
-DELSTRreflection_choice
+INSTUPfinding_the_rotation_matrix
+/home/ljh75651/DAWN_stable/Latest/finding_the_rotation_matrix.py
+INFOS:&&2|1|2|0&&2|3|2|0&&2|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0
+finding_the_targets=5
+finding_the_rotation_matrix=2
+arccos=1
+find_U_matrix=7
+get_second_rotator=4
+get_rotator=3
+rotate_list=6

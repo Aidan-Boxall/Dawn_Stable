@@ -1,34 +1,41 @@
 # import numpy as np
+# import scisoftpy as dnp
 # import scitbx.math as scm
 # from scitbx.matrix import col as Vector
 # from scitbx.matrix import sqr as Rotator
 import pickle
 
-from fluffy_latest import get_q
-# from fixnexus import fix_scan_file
-# import peak_finder as fp
+# from fluffy_latest import get_q
+from fixnexus import fix_scan_file
+import peak_finder as fp
 
-#Parameters
 data_dir='/dls/i16/data/2015/cm12169-3/'
 cif = 'HoFe2_icsd_103499.cif'
+roi_key = 'roi7_sum'
+first_scan_no = 521280
+last_scan_no = 521311
+expected_no_of_peaks = 6
 
-with open("peaks.pkl", 'rb') as peakfile:
-    peaks = pickle.load(peakfile)
 
-qs = []
+peaks = fp.find_peaks(data_dir, first_scan_no, last_scan_no, expected_no_of_peaks,
+                          False, False, roi_key)#('/dls/i16/data/2015/cm12169-3/', 527359, 527369, 8, False, False, 'roi7_sum')
+
 
 for peak in peaks:
     scan_number = peak[0][29:35]
+    fix_scan_file(data_dir, scan_number)
     file_name = data_dir + scan_number + '_c.nxs'
-    image_number = int(peak[0][-9:-4])
-    q = get_q(file_name ,(peak[1], peak[2]), image_number - 1)
-    qs.append(q)
 
-with open("qs", "wb") as qfile:
-    pickle.dump(qs, qfile)
+with open("peaks.pkl", 'wb') as peaksfile:
+    pickle.dump(peaks, peaksfile)
 
-print "Done finding qs"
+print "Done fixing nexus files."
 
+
+
+#     q = get_q(file_name ,(0,0))
+#     print q
+#     print
 
 
 #     kappa = dat.metadata['kap']

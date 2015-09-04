@@ -1,9 +1,1 @@
-INSTUPunit_test
-/home/ljh75651/DAWN_stable/Latest/unit_test.py
-INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1
-unit_test=2
-test_plotting=5
-test_peak_finder=6
-test_reflection_plotting=3
-TestUnit=1
-test_stereogaphic_projection=4
+DELSTRreflection_choice
